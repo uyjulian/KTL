@@ -88,13 +88,13 @@ namespace ktl {
 		NativeEncoding();
 	public:
 		//
-		//	SUMMARY: URLƒGƒ“ƒR[ƒhŒnƒtƒ‰ƒO
+		//	SUMMARY: URLã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ç³»ãƒ•ãƒ©ã‚°
 		//
 		static flag_type const uefSpaceToPlus = 0x00000001;
 		static flag_type const uefEncodeTilde = 0x00000100;
 	public:
 		//
-		//	SUMMARY: URLƒGƒ“ƒR[ƒhŒnƒƒ\ƒbƒh
+		//	SUMMARY: URLã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant URLEncodeToAsciiOctet(
 			tjs_char const* charset,
@@ -150,7 +150,7 @@ namespace ktl {
 			tTJSVariantOctet const* source
 			);
 		//
-		//	SUMMARY: Base64ƒGƒ“ƒR[ƒhŒnƒƒ\ƒbƒh
+		//	SUMMARY: Base64ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant base64EncodeToAsciiOctet(
 			tTJSVariantOctet const* source,
@@ -167,7 +167,7 @@ namespace ktl {
 			tTJSVariantOctet const* source
 			);
 		//
-		//	SUMMARY: ƒGƒ“ƒR[ƒhŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant encodeToOctet(
 			tjs_char const* charset,
@@ -183,14 +183,14 @@ namespace ktl {
 			tjs_char const* source_charset
 			);
 		//
-		//	SUMMARY: ”äŠrŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ¯”è¼ƒç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static bool sameCharsetAlias(
 			tjs_char const* name1,
 			tjs_char const* name2
 			);
 		//
-		//	SUMMARY: ŒŸoŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ¤œå‡ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant detect(
 			tTJSVariantOctet const* source,
@@ -228,13 +228,13 @@ namespace ktl {
 		void TJS_INTF_METHOD Invalidate();
 	public:
 		//
-		//	SUMMARY: URLƒGƒ“ƒR[ƒhŒnƒtƒ‰ƒO
+		//	SUMMARY: URLã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ç³»ãƒ•ãƒ©ã‚°
 		//
 		static tTVInteger const uefSpaceToPlus = NativeEncoding::uefSpaceToPlus;
 		static tTVInteger const uefEncodeTilde = NativeEncoding::uefEncodeTilde;
 	public:
 		//
-		//	SUMMARY: URLƒGƒ“ƒR[ƒhŒnƒƒ\ƒbƒh
+		//	SUMMARY: URLã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant URLEncodeToAsciiOctet(
 			tTJSVariantString const* charset,
@@ -290,7 +290,7 @@ namespace ktl {
 			tTJSVariantOctet const* source
 			);
 		//
-		//	SUMMARY: Base64ƒGƒ“ƒR[ƒhŒnƒƒ\ƒbƒh
+		//	SUMMARY: Base64ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant base64EncodeToAsciiOctet(
 			tTJSVariantOctet const* source,
@@ -307,7 +307,7 @@ namespace ktl {
 			tTJSVariantOctet const* source
 			);
 		//
-		//	SUMMARY: ƒGƒ“ƒR[ƒhŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant encodeToOctet(
 			tTJSVariantString const* charset,
@@ -323,14 +323,14 @@ namespace ktl {
 			tTJSVariantString const* source_charset
 			);
 		//
-		//	SUMMARY: ”äŠrŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ¯”è¼ƒç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static bool sameCharsetAlias(
 			tTJSVariantString const* name1,
 			tTJSVariantString const* name2
 			);
 		//
-		//	SUMMARY: ŒŸoŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ¤œå‡ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant detect(
 			tTJSVariantOctet const* source,

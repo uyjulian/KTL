@@ -53,10 +53,10 @@ namespace ktl {
 		typedef ISerializer::version_type version_type;
 	public:
 		virtual ~ISerializationStack() {}
-		//	SUMMARY: �v�f�̒l�̐ݒ�����݂�
-		//		: �V���A���C�U�̌ďo���K�v�łȂ��Ȃ�΁A�^��Ԃ�
-		//		: �V���A���C�U�̌ďo���K�v�ł���Ȃ�΁A�U��Ԃ�
-		//		: �V���A���C�Y���ɌĂ΂��
+		//	SUMMARY: 要素の値の設定を試みる
+		//		: シリアライザの呼出が必要でないならば、真を返す
+		//		: シリアライザの呼出が必要であるならば、偽を返す
+		//		: シリアライズ中に呼ばれる
 		virtual bool set(
 			key_type const& key,
 			tTJSVariant const* v,
@@ -64,8 +64,8 @@ namespace ktl {
 			)
 			= 0;
 
-		//	SUMMARY: �V�����X�^�b�N��ς�
-		//		: �V���A���C�Y���ɌĂ΂��
+		//	SUMMARY: 新しいスタックを積む
+		//		: シリアライズ中に呼ばれる
 		virtual void pushOnSave(
 			key_type const& key,
 			tTJSVariant const* v,
@@ -75,39 +75,39 @@ namespace ktl {
 			)
 			= 0;
 
-		//	SUMMARY: �X�^�b�N��߂�
-		//		: �V���A���C�Y���ɌĂ΂��
+		//	SUMMARY: スタックを戻す
+		//		: シリアライズ中に呼ばれる
 		virtual void popOnSave() = 0;
 
-		//	SUMMARY: �V���A���C�U�̌ďo���K�v���ǂ���
-		//		: �K�v�łȂ��Ȃ�΁A�^��Ԃ�
-		//		: �K�v�ł���Ȃ�΁A�U��Ԃ�
-		//		: �f�V���A���C�Y���ɌĂ΂��
+		//	SUMMARY: シリアライザの呼出が必要かどうか
+		//		: 必要でないならば、真を返す
+		//		: 必要であるならば、偽を返す
+		//		: デシリアライズ中に呼ばれる
 		virtual bool isLeaf(key_type const& key) = 0;
 
-		//	SUMMARY: �v�f�̒l�𒼐ڎ擾����
-		//		: �f�V���A���C�Y���ɌĂ΂��
+		//	SUMMARY: 要素の値を直接取得する
+		//		: デシリアライズ中に呼ばれる
 		virtual void get(key_type const& key, tTJSVariant* v) = 0;
 
-		//	SUMMARY: �����̃X�^�b�N��ς�
-		//		: �f�V���A���C�Y���ɌĂ΂��
+		//	SUMMARY: 既存のスタックを積む
+		//		: デシリアライズ中に呼ばれる
 		virtual void pushOnLoad(key_type const& key) = 0;
 
-		//	SUMMARY: �X�^�b�N��߂�
-		//		: �V���A���C�U���Ԃ����C���X�^���X��o�^����
-		//		: �f�V���A���C�Y���ɌĂ΂��
+		//	SUMMARY: スタックを戻す
+		//		: シリアライザが返したインスタンスを登録する
+		//		: デシリアライズ中に呼ばれる
 		virtual void popOnLoad(tTJSVariant const* v) = 0;
 
-		//	SUMMARY: ���݂̃X�^�b�N����A�v�f�̃V���A���C�U�L�[��Ԃ�
-		//		: �f�V���A���C�Y���ɌĂ΂��
+		//	SUMMARY: 現在のスタックから、要素のシリアライザキーを返す
+		//		: デシリアライズ中に呼ばれる
 		virtual key_type serializer(key_type const& key) = 0;
 
-		//	SUMMARY: ���݂̃X�^�b�N����A�v�f�̃V���A���C�U�o�[�W������Ԃ�
-		//		: �f�V���A���C�Y���ɌĂ΂��
+		//	SUMMARY: 現在のスタックから、要素のシリアライザバージョンを返す
+		//		: デシリアライズ中に呼ばれる
 		virtual version_type version(key_type const& key) = 0;
 
-		//	SUMMARY: ���݂̃X�^�b�N����A�v�f�̃V���A���C�UID��Ԃ�
-		//		: �f�V���A���C�Y���ɌĂ΂��
+		//	SUMMARY: 現在のスタックから、要素のシリアライザIDを返す
+		//		: デシリアライズ中に呼ばれる
 		virtual key_type identity(key_type const& key) = 0;
 	};
 }	// namespace ktl

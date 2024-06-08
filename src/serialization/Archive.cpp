@@ -24,11 +24,11 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME ArchiveClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassArchive, Archive, Archive)
 	//
-	//	SUMMARY: “à•”Œnƒƒ\ƒbƒh
+	//	SUMMARY: å†…éƒ¨ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Archive, stack, getStack);
 	//
-	//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(saveText)
 	{
@@ -85,7 +85,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(loadBinary);
 	//
-	//	SUMMARY: PtƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+	//	SUMMARY: Ptã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(savePtXML)
 	{
@@ -165,11 +165,11 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(loadPtINFO);
 	//
-	//	SUMMARY: ‘€ìŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ“ä½œç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_METHOD_DECL_PARAM_VOID_RES_VOID(Archive, clear);
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Archive, size, size);
 

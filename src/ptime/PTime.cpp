@@ -24,11 +24,11 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME PTimeClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassPTime, PTime, PTime)
 	//
-	//	SUMMARY: “à•”Œnƒƒ\ƒbƒh
+	//	SUMMARY: å†…éƒ¨ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(PTime, instance, getInstance);
 	//
-	//	SUMMARY: Š„‚è“–‚ÄŒnƒƒ\ƒbƒh
+	//	SUMMARY: å‰²ã‚Šå½“ã¦ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_METHOD_DECL_INVOKE_PARAM_VOID_RES_VARIANT(PTime, assignLocalTimeSecondClock);
 	SPRIG_KRKR_NATIVE_METHOD_DECL_INVOKE_PARAM_VOID_RES_VARIANT(PTime, assignUniversalTimeSecondClock);
@@ -149,7 +149,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(assignTimeFromISOString);
 	//
-	//	SUMMARY: •ÏXŒnƒƒ\ƒbƒh
+	//	SUMMARY: å¤‰æ›´ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(moveYears)
 	{
@@ -216,7 +216,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(moveMicroseconds);
 	//
-	//	SUMMARY: •¶Žš—ñ‰»Œnƒƒ\ƒbƒh
+	//	SUMMARY: æ–‡å­—åˆ—åŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_METHOD_DECL_PARAM_VOID_RES_VARIANT(PTime, toString);
 	SPRIG_KRKR_NATIVE_METHOD_DECL_PARAM_VOID_RES_VARIANT(PTime, toISOString);
@@ -227,7 +227,7 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_METHOD_DECL_PARAM_VOID_RES_VARIANT(PTime, toTimeString);
 	SPRIG_KRKR_NATIVE_METHOD_DECL_PARAM_VOID_RES_VARIANT(PTime, toTimeISOString);
 	//
-	//	SUMMARY: “ú•tƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ—¥ä»˜ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(PTime, year, year);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(PTime, month, month);
@@ -238,7 +238,7 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(PTime, julianDay, julianDay);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(PTime, modjulianDay, modjulianDay);
 	//
-	//	SUMMARY: ŽžƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ™‚åˆ»ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(PTime, hours, hours);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(PTime, minutes, minutes);

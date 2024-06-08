@@ -43,7 +43,7 @@ namespace ktl {
 		: coord_trans_(new coord_trans_type())
 	{}
 	//
-	//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE NativeSpriteCoord::string_instance_type NativeSpriteCoord::saveCoordTransByText() const {
 		std::basic_ostringstream<tjs_char> os;
@@ -105,13 +105,13 @@ namespace ktl {
 		}
 	}
 	//
-	//	SUMMARY: XVŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ›´æ–°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void NativeSpriteCoord::update() {
 		coord_trans_->update();
 	}
 	//
-	//	SUMMARY: ƒpƒ‰ƒ[ƒ^Œnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE sprig::call_traits<NativeSpriteCoord::scaling_type>::getter_type NativeSpriteCoord::getScaling() const {
 		return coord_trans_->refScaling();
@@ -144,7 +144,7 @@ namespace ktl {
 		coord_trans_->refCenter() = v;
 	}
 	//
-	//	SUMMARY: ƒpƒ‰ƒ[ƒ^ƒvƒƒpƒeƒCŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ—ãƒ­ãƒ‘ãƒ†ã‚¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE NativeSpriteCoord::trans_element_type NativeSpriteCoord::getScalingX() const {
 		return coord_trans_->refScaling().get<0>();
@@ -207,7 +207,7 @@ namespace ktl {
 		coord_trans_->refCenter().get<1>() = v;
 	}
 	//
-	//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE sprig::call_traits<NativeSpriteCoord::size_type>::getter_type NativeSpriteCoord::getSize() const {
 		return coord_trans_->getSize();
@@ -228,7 +228,7 @@ namespace ktl {
 		return coord_trans_->getEnclosedSize();
 	}
 	//
-	//	SUMMARY: Žæ“¾ƒvƒƒpƒeƒCŒnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE NativeSpriteCoord::coord_element_type NativeSpriteCoord::getSizeX() const {
 		return coord_trans_->getSize().get<0>();
@@ -346,7 +346,7 @@ namespace ktl {
 		instance_.reset();
 	}
 	//
-	//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant SpriteCoord::saveCoordTransByText() const {
 		return tTJSVariant(instance_->saveCoordTransByText()->c_str());
@@ -368,13 +368,13 @@ namespace ktl {
 		instance_->loadCoordTransByBinary(data);
 	}
 	//
-	//	SUMMARY: XVŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ›´æ–°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void SpriteCoord::update() {
 		instance_->update();
 	}
 	//
-	//	SUMMARY: ƒpƒ‰ƒ[ƒ^Œnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void SpriteCoord::setScaling(tTVReal v1, tTVReal v2) {
 		instance_->setScaling(scaling_type(v1, v2));
@@ -437,7 +437,7 @@ namespace ktl {
 	KTL_SPRITE_COORD_INTERIOR_GETTER_COORD_IMPL(getter_name); \
 	KTL_SPRITE_COORD_INTERIOR_SETTER_COORD_IMPL(setter_name);
 	//
-	//	SUMMARY: ƒpƒ‰ƒ[ƒ^ƒvƒƒpƒeƒCŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ—ãƒ­ãƒ‘ãƒ†ã‚¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_SPRITE_COORD_INTERIOR_TRANS_IMPL(getScalingX, setScalingX);
 	KTL_SPRITE_COORD_INTERIOR_TRANS_IMPL(getScalingY, setScalingY);
@@ -450,7 +450,7 @@ namespace ktl {
 	KTL_SPRITE_COORD_INTERIOR_COORD_IMPL(getCenterX, setCenterX);
 	KTL_SPRITE_COORD_INTERIOR_COORD_IMPL(getCenterY, setCenterY);
 	//
-	//	SUMMARY: Žæ“¾ƒvƒƒpƒeƒCŒnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_SPRITE_COORD_INTERIOR_GETTER_COORD_IMPL(getSizeX);
 	KTL_SPRITE_COORD_INTERIOR_GETTER_COORD_IMPL(getSizeY);

@@ -40,27 +40,27 @@ namespace ktl {
 		NativeStorageStream();
 	public:
 		//
-		//	SUMMARY: ƒAƒNƒZƒXŒnƒtƒ‰ƒO
+		//	SUMMARY: ã‚¢ã‚¯ã‚»ã‚¹ç³»ãƒ•ãƒ©ã‚°
 		//
 		static flag_type const afRead = TJS_BS_READ;
 		static flag_type const afWrite = TJS_BS_WRITE;
 		static flag_type const afAppend = TJS_BS_APPEND;
 		static flag_type const afUpdate = TJS_BS_UPDATE;
 		//
-		//	SUMMARY: ƒV[ƒNŒnƒtƒ‰ƒO
+		//	SUMMARY: ã‚·ãƒ¼ã‚¯ç³»ãƒ•ãƒ©ã‚°
 		//
 		static flag_type const sfSet = TJS_BS_SEEK_SET;
 		static flag_type const sfCur = TJS_BS_SEEK_CUR;
 		static flag_type const sfEnd = TJS_BS_SEEK_END;
 	public:
 		//
-		//	SUMMARY: ŠJ•ÂŒnƒƒ\ƒbƒh
+		//	SUMMARY: é–‹é–‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool open(tjs_char const* storage, flag_type flag);
 		bool close();
 		bool isOpen() const;
 		//
-		//	SUMMARY: “ÇžŒnƒƒ\ƒbƒh
+		//	SUMMARY: èª­è¾¼ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant readOctet();
 		tTJSVariant readOctet(size_type size);
@@ -69,7 +69,7 @@ namespace ktl {
 		tTJSVariant readNarrowString();
 		tTJSVariant readNarrowString(size_type size);
 		//
-		//	SUMMARY: ‘žŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ›¸è¾¼ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		int_type writeOctet(tTJSVariantOctet const* source);
 		int_type writeOctet(tTJSVariantOctet const* source, size_type spos);
@@ -83,7 +83,7 @@ namespace ktl {
 		int_type writeBlock(byte_type const* first, byte_type const* last);
 		int_type writeBytes(byte_type const* data, size_type size);
 		//
-		//	SUMMARY: ƒV[ƒNŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚·ãƒ¼ã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		int_type seek(int_type offset, flag_type flag);
 		int_type current();
@@ -100,14 +100,14 @@ namespace ktl {
 		boost::shared_ptr<NativeStorageStream> instance_;
 	public:
 		//
-		//	SUMMARY: ƒAƒNƒZƒXŒnƒtƒ‰ƒO
+		//	SUMMARY: ã‚¢ã‚¯ã‚»ã‚¹ç³»ãƒ•ãƒ©ã‚°
 		//
 		static tTVInteger const afRead = NativeStorageStream::afRead;
 		static tTVInteger const afWrite = NativeStorageStream::afWrite;
 		static tTVInteger const afAppend = NativeStorageStream::afAppend;
 		static tTVInteger const afUpdate = NativeStorageStream::afUpdate;
 		//
-		//	SUMMARY: ƒV[ƒNŒnƒtƒ‰ƒO
+		//	SUMMARY: ã‚·ãƒ¼ã‚¯ç³»ãƒ•ãƒ©ã‚°
 		//
 		static tTVInteger const sfSet = NativeStorageStream::sfSet;
 		static tTVInteger const sfCur = NativeStorageStream::sfCur;
@@ -121,13 +121,13 @@ namespace ktl {
 			);
 		void TJS_INTF_METHOD Invalidate();
 		//
-		//	SUMMARY: ŠJ•ÂŒnƒƒ\ƒbƒh
+		//	SUMMARY: é–‹é–‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool open(tTJSVariantString const* storage, tTVInteger flag);
 		bool close();
 		bool isOpen() const;
 		//
-		//	SUMMARY: “ÇžŒnƒƒ\ƒbƒh
+		//	SUMMARY: èª­è¾¼ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant readOctet();
 		tTJSVariant readOctet(tTVInteger size);
@@ -136,7 +136,7 @@ namespace ktl {
 		tTJSVariant readNarrowString();
 		tTJSVariant readNarrowString(tTVInteger size);
 		//
-		//	SUMMARY: ‘žŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ›¸è¾¼ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTVInteger writeOctet(tTJSVariantOctet const* source);
 		tTVInteger writeOctet(tTJSVariantOctet const* source, tTVInteger spos);
@@ -150,7 +150,7 @@ namespace ktl {
 		tTVInteger writeBlock(sprig::krkr::tjs::intptr_type first, sprig::krkr::tjs::intptr_type last);
 		tTVInteger writeBytes(sprig::krkr::tjs::intptr_type data, tTVInteger size);
 		//
-		//	SUMMARY: ƒV[ƒNŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚·ãƒ¼ã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTVInteger seek(tTVInteger offset, tTVInteger flag);
 		tTVInteger current();

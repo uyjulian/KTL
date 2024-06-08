@@ -24,7 +24,7 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME GeometryClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassGeometry, Geometry, Geometry)
 	//
-	//	SUMMARY: ƒWƒIƒƒgƒŠƒ‚ƒfƒ‹Œnƒtƒ‰ƒO
+	//	SUMMARY: ã‚¸ã‚ªãƒ¡ãƒˆãƒªãƒ¢ãƒ‡ãƒ«ç³»ãƒ•ãƒ©ã‚°
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(gmfPoint, Geometry::gmfPoint);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(gmfSegment, Geometry::gmfSegment);
@@ -36,7 +36,7 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(gmfMultiLinestring, Geometry::gmfMultiLinestring);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(gmfMultiPolygon, Geometry::gmfMultiPolygon);
 	//
-	//	SUMMARY: ’P€Œnƒƒ\ƒbƒh
+	//	SUMMARY: å˜é …ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(isEmpty)
 	{
@@ -260,7 +260,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(matrixTransform);
 	//
-	//	SUMMARY: “ñ€Œnƒƒ\ƒbƒh
+	//	SUMMARY: äºŒé …ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(disjoint)
 	{
@@ -396,7 +396,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(expand);
 	//
-	//	SUMMARY: IOŒnƒƒ\ƒbƒh
+	//	SUMMARY: IOç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(readWKT)
 	{

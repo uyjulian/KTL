@@ -59,7 +59,7 @@ namespace ktl {
 		if (!in) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒI[ƒvƒ“‚ÉŽ¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚ªãƒ¼ãƒ—ãƒ³ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -70,7 +70,7 @@ namespace ktl {
 		if (FAILED(in->Seek(move, TJS_BS_SEEK_END, &new_pos))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒV[ƒN‚ÉŽ¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚·ãƒ¼ã‚¯ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -84,7 +84,7 @@ namespace ktl {
 		if (FAILED(in->Seek(move, TJS_BS_SEEK_SET, &new_pos))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒV[ƒN‚ÉŽ¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚·ãƒ¼ã‚¯ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -94,7 +94,7 @@ namespace ktl {
 		if (FAILED(in->Read(&binary[0], file_size, &io_size))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹“Çž‚ÉŽ¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«èª­è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -107,7 +107,7 @@ namespace ktl {
 		if (!in) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒI[ƒvƒ“‚ÉŽ¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚ªãƒ¼ãƒ—ãƒ³ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -118,7 +118,7 @@ namespace ktl {
 		if (FAILED(in->Seek(move, TJS_BS_SEEK_END, &new_pos))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒV[ƒN‚ÉŽ¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚·ãƒ¼ã‚¯ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -132,7 +132,7 @@ namespace ktl {
 		if (FAILED(in->Seek(move, TJS_BS_SEEK_SET, &new_pos))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒV[ƒN‚ÉŽ¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚·ãƒ¼ã‚¯ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -143,7 +143,7 @@ namespace ktl {
 		if (FAILED(in->Read(&binary[0], result_size, &io_size))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹“Çž‚ÉŽ¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«èª­è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -156,7 +156,7 @@ namespace ktl {
 		if (!in) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒI[ƒvƒ“‚ÉŽ¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚ªãƒ¼ãƒ—ãƒ³ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -167,7 +167,7 @@ namespace ktl {
 		if (FAILED(in->Seek(move, TJS_BS_SEEK_END, &new_pos))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒV[ƒN‚ÉŽ¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚·ãƒ¼ã‚¯ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -181,7 +181,7 @@ namespace ktl {
 		if (FAILED(in->Seek(move, TJS_BS_SEEK_SET, &new_pos))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒV[ƒN‚ÉŽ¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚·ãƒ¼ã‚¯ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -195,7 +195,7 @@ namespace ktl {
 		if (FAILED(in->Read(&binary[0], result_size, &io_size))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹“Çž‚ÉŽ¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«èª­è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -205,7 +205,7 @@ namespace ktl {
 	template<typename Impl>
 	NativeChecksum<Impl>::NativeChecksum() {}
 	//
-	//	SUMMARY: ŒvŽZŒnƒƒ\ƒbƒh
+	//	SUMMARY: è¨ˆç®—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	KTL_INLINE typename NativeChecksum<Impl>::value_type NativeChecksum<Impl>::calculateBlock(byte_type const* first, byte_type const* last) {
@@ -248,7 +248,7 @@ namespace ktl {
 		if (!loadStorage(binary, storage)) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹“Çž‚ÉŽ¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«èª­è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return NativeChecksum<Impl>::value_type();
@@ -310,7 +310,7 @@ namespace ktl {
 		return ChecksumUtils::toVariantHexString(calculateStorage(storage), upper);
 	}
 	//
-	//	SUMMARY: ˆ—Œnƒƒ\ƒbƒh
+	//	SUMMARY: å‡¦ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	KTL_INLINE void NativeChecksum<Impl>::reset() {
@@ -451,7 +451,7 @@ namespace ktl {
 		if (!loadStorage(binary, storage)) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹“Çž‚ÉŽ¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«èª­è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return 0;
@@ -470,7 +470,7 @@ namespace ktl {
 		if (!loadStorage(binary, storage, spos)) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹“Çž‚ÉŽ¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«èª­è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return 0;
@@ -489,7 +489,7 @@ namespace ktl {
 		if (!loadStorage(binary, storage, spos, ssize)) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹“Çž‚ÉŽ¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«èª­è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return 0;
@@ -503,7 +503,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	KTL_INLINE typename NativeChecksum<Impl>::value_type NativeChecksum<Impl>::checksum() const {
@@ -540,7 +540,7 @@ namespace ktl {
 		instance_.reset();
 	}
 	//
-	//	SUMMARY: ŒvŽZŒnƒƒ\ƒbƒh
+	//	SUMMARY: è¨ˆç®—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	KTL_INLINE tTJSVariant Checksum<Impl>::calculateBlock(sprig::krkr::tjs::intptr_type first, sprig::krkr::tjs::intptr_type last) {
@@ -694,7 +694,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: ˆ—Œnƒƒ\ƒbƒh
+	//	SUMMARY: å‡¦ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	KTL_INLINE void Checksum<Impl>::reset() {
@@ -813,7 +813,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	KTL_INLINE tTJSVariant Checksum<Impl>::checksum() const {

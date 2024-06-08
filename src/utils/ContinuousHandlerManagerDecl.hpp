@@ -58,7 +58,7 @@ namespace ktl {
 		void TJS_INTF_METHOD OnContinuousCallback(tjs_uint64 tick);
 	public:
 		//
-		//	SUMMARY: ƒnƒ“ƒhƒ‰ŠÇ—Œnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒãƒ³ãƒ‰ãƒ©ç®¡ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool insert(
 			sprig::call_traits<key_type>::param_type key,
@@ -82,18 +82,18 @@ namespace ktl {
 			);
 		optional_value_type findValue(sprig::call_traits<key_type>::param_type key) const;
 		//
-		//	SUMMARY: o—ÍŒnƒƒ\ƒbƒh
+		//	SUMMARY: å‡ºåŠ›ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void beginPerformanceTimer();
 		void endPerformanceTimer();
 		void execHandlers(tjs_uint64 tick);
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool getRun() const;
 		void setRun(bool v);
 		//
-		//	SUMMARY: ƒfƒoƒbƒOŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ‡ãƒãƒƒã‚°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool getEnablePerformanceTimer() const;
 		void setEnablePerformanceTimer(bool v);
@@ -116,7 +116,7 @@ namespace ktl {
 			);
 		void TJS_INTF_METHOD Invalidate();
 		//
-		//	SUMMARY: ƒnƒ“ƒhƒ‰ŠÇ—Œnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒãƒ³ãƒ‰ãƒ©ç®¡ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool insert(
 			tTJSString const& key,
@@ -131,12 +131,12 @@ namespace ktl {
 		bool setPriority(tTJSString const& key, tTVReal v);
 		tTJSVariant find(tTJSString const& key) const;
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool getRun() const;
 		void setRun(bool v);
 		//
-		//	SUMMARY: ƒfƒoƒbƒOŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ‡ãƒãƒƒã‚°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool getEnablePerformanceTimer() const;
 		void setEnablePerformanceTimer(bool v);

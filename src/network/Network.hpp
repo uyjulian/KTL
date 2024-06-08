@@ -37,7 +37,7 @@ namespace ktl {
 	//
 	NativeNetwork::NativeNetwork() {}
 	//
-	//	SUMMARY: I/OƒT[ƒrƒXŒnƒƒ\ƒbƒh
+	//	SUMMARY: I/Oã‚µãƒ¼ãƒ“ã‚¹ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void NativeNetwork::run() {
 		NetworkService::get_mutable_instance().run();
@@ -64,7 +64,7 @@ namespace ktl {
 		return NetworkService::get_const_instance().thread_count();
 	}
 	//
-	//	SUMMARY: ƒ†[ƒeƒBƒŠƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ¦ãƒ¼ãƒ†ã‚£ãƒªãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativeNetwork::downloadHTTP(tjs_char const* url, tjs_char const* storage) {
 		return NetworkUtils::downloadHTTP(url, storage);
@@ -84,13 +84,13 @@ namespace ktl {
 		return tTJSVariant(result.c_str());
 	}
 	//
-	//	SUMMARY: ƒXƒŒƒbƒhŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¹ãƒ¬ãƒƒãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE NativeNetwork::size_type NativeNetwork::getThreadHardwareConcurrency() {
 		return boost::thread::hardware_concurrency();
 	}
 	//
-	//	SUMMARY: ƒNƒƒbƒNŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¯ãƒ­ãƒƒã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant NativeNetwork::getClockTime() {
 		boost::system::error_code error;
@@ -101,7 +101,7 @@ namespace ktl {
 		return tTVInteger(boost::chrono::duration_cast<milliseconds_type>(time_point.time_since_epoch()).count());
 	}
 	//
-	//	SUMMARY: I—¹Žžˆ—Œnƒƒ\ƒbƒh
+	//	SUMMARY: çµ‚äº†æ™‚å‡¦ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE NativeNetwork::flag_type NativeNetwork::getOnKillFlag() {
 		return NetworkService::get_const_instance().get_on_kill_flag();
@@ -131,7 +131,7 @@ namespace ktl {
 		instance_.reset();
 	}
 	//
-	//	SUMMARY: I/OƒT[ƒrƒXŒnƒƒ\ƒbƒh
+	//	SUMMARY: I/Oã‚µãƒ¼ãƒ“ã‚¹ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void Network::run() {
 		NativeNetwork::run();
@@ -164,7 +164,7 @@ namespace ktl {
 		return NativeNetwork::threadCount();
 	}
 	//
-	//	SUMMARY: ƒ†[ƒeƒBƒŠƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ¦ãƒ¼ãƒ†ã‚£ãƒªãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool Network::downloadHTTP(tTJSVariantString const* url, tTJSVariantString const* storage) {
 		return NativeNetwork::downloadHTTP(
@@ -182,19 +182,19 @@ namespace ktl {
 		return NativeNetwork::hostName();
 	}
 	//
-	//	SUMMARY: ƒXƒŒƒbƒhŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¹ãƒ¬ãƒƒãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVInteger Network::getThreadHardwareConcurrency() {
 		return NativeNetwork::getThreadHardwareConcurrency();
 	}
 	//
-	//	SUMMARY: ƒNƒƒbƒNŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¯ãƒ­ãƒƒã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant Network::getClockTime() {
 		return NativeNetwork::getClockTime();
 	}
 	//
-	//	SUMMARY: I—¹Žžˆ—Œnƒƒ\ƒbƒh
+	//	SUMMARY: çµ‚äº†æ™‚å‡¦ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVInteger Network::getOnKillFlag() {
 		return NativeNetwork::getOnKillFlag();

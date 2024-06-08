@@ -116,7 +116,7 @@ namespace ktl {
 		if (!source_length) {
 			return buffer;
 		}
-		//	COMMENT: •ÏŠ·
+		//	COMMENT: å¤‰æ›
 		UErrorCode error = U_ZERO_ERROR;
 		int32_t length = ::ucnv_fromUChars(
 			converter_,
@@ -161,7 +161,7 @@ namespace ktl {
 		if (!source_length) {
 			return string;
 		}
-		//	COMMENT: •ÏŠ·
+		//	COMMENT: å¤‰æ›
 		UErrorCode error = U_ZERO_ERROR;
 		int32_t length = ::ucnv_toUChars(
 			converter_,
@@ -223,7 +223,7 @@ namespace ktl {
 		tjs_char const* source
 		)
 	{
-		//	COMMENT: ƒRƒ“ƒo[ƒ^ì¬
+		//	COMMENT: ã‚³ãƒ³ãƒãƒ¼ã‚¿ä½œæˆ
 		UErrorCode error = U_ZERO_ERROR;
 		boost::shared_ptr<UConverter> converter(
 			::ucnv_openU(to, &error),
@@ -242,7 +242,7 @@ namespace ktl {
 			buffer.clear();
 			return true;
 		}
-		//	COMMENT: •ÏŠ·
+		//	COMMENT: å¤‰æ›
 		error = U_ZERO_ERROR;
 		int32_t length = ::ucnv_fromUChars(
 			converter.get(),
@@ -287,7 +287,7 @@ namespace ktl {
 		tjs_char const* from
 		)
 	{
-		//	COMMENT: ƒRƒ“ƒo[ƒ^ì¬
+		//	COMMENT: ã‚³ãƒ³ãƒãƒ¼ã‚¿ä½œæˆ
 		UErrorCode error = U_ZERO_ERROR;
 		boost::shared_ptr<UConverter> converter(
 			::ucnv_openU(from, &error),
@@ -305,7 +305,7 @@ namespace ktl {
 			string.clear();
 			return true;
 		}
-		//	COMMENT: •ÏŠ·
+		//	COMMENT: å¤‰æ›
 		error = U_ZERO_ERROR;
 		int32_t length = ::ucnv_toUChars(
 			converter.get(),
@@ -352,7 +352,7 @@ namespace ktl {
 		if (!in) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒI[ƒvƒ“‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚ªãƒ¼ãƒ—ãƒ³ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -363,7 +363,7 @@ namespace ktl {
 		if (FAILED(in->Seek(move, TJS_BS_SEEK_END, &new_pos))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒV[ƒN‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚·ãƒ¼ã‚¯ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -377,7 +377,7 @@ namespace ktl {
 		if (FAILED(in->Seek(move, TJS_BS_SEEK_SET, &new_pos))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒV[ƒN‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚·ãƒ¼ã‚¯ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -387,7 +387,7 @@ namespace ktl {
 		if (FAILED(in->Read(&binary[0], file_size, &io_size))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹“Ç‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«èª­è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -404,7 +404,7 @@ namespace ktl {
 		if (!out) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒI[ƒvƒ“‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚ªãƒ¼ãƒ—ãƒ³ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return -1;
@@ -416,7 +416,7 @@ namespace ktl {
 		if (FAILED(out->Write(data, length, &io_size))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹‘‚É¸”s‚µ‚Ü‚µ‚½"),
+				SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«æ›¸è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ"),
 				sprig::krkr::internal_error
 				);
 			return io_size;
@@ -465,7 +465,7 @@ namespace ktl {
 			tokenizer_type::value_type const& token = *token_i;
 			pt_string_type::size_type sharp_pos = token.rfind(sharp);
 			if (sharp_pos == pt_string_type::npos) {
-				//	COMMENT: '#' ‚ª–³‚¢ê‡
+				//	COMMENT: '#' ãŒç„¡ã„å ´åˆ
 				iterator found = node->to_iterator(node->find(token));
 				if (found == node->end()) {
 					found = node->push_back(
@@ -480,7 +480,7 @@ namespace ktl {
 				}
 				node = found->second;
 			} else if (sharp_pos == token.size() - 1) {
-				//	COMMENT: '#' ‚ª––”ö‚Ìê‡
+				//	COMMENT: '#' ãŒæœ«å°¾ã®å ´åˆ
 				pt_string_type key;
 				pt_string_type spec = token.substr(0, sharp_pos);
 				SpecAnalyzer spec_analyzer(spec);
@@ -514,7 +514,7 @@ namespace ktl {
 				}
 				node = found->second;
 			} else {
-				//	COMMENT: '#' ‚ª’†ŠÔ‚Ìê‡
+				//	COMMENT: '#' ãŒä¸­é–“ã®å ´åˆ
 				pt_string_type key = token.substr(0, sharp_pos);
 				pt_string_type spec = token.substr(sharp_pos + 1);
 				SpecAnalyzer spec_analyzer(spec);
@@ -622,7 +622,7 @@ namespace ktl {
 			tokenizer_type::value_type const& token = *token_i;
 			pt_string_type::size_type sharp_pos = token.rfind(sharp);
 			if (sharp_pos == pt_string_type::npos) {
-				//	COMMENT: '#' ‚ª–³‚¢ê‡
+				//	COMMENT: '#' ãŒç„¡ã„å ´åˆ
 				iterator found = node->to_iterator(node->find(token));
 				if (found == node->end()) {
 					return boost::none;
@@ -635,7 +635,7 @@ namespace ktl {
 				}
 				node = found->second;
 			} else if (sharp_pos == token.size() - 1) {
-				//	COMMENT: '#' ‚ª––”ö‚Ìê‡
+				//	COMMENT: '#' ãŒæœ«å°¾ã®å ´åˆ
 				pt_string_type spec = token.substr(0, sharp_pos);
 				SpecAnalyzer spec_analyzer(spec);
 				iterator found = node->end();
@@ -657,7 +657,7 @@ namespace ktl {
 				}
 				node = found->second;
 			} else {
-				//	COMMENT: '#' ‚ª’†ŠÔ‚Ìê‡
+				//	COMMENT: '#' ãŒä¸­é–“ã®å ´åˆ
 				pt_string_type key = token.substr(0, sharp_pos);
 				pt_string_type spec = token.substr(sharp_pos + 1);
 				SpecAnalyzer spec_analyzer(spec);
@@ -702,7 +702,7 @@ namespace ktl {
 		return ptree_;
 	}
 	//
-	//	SUMMARY: ƒAƒNƒZƒXŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¢ã‚¯ã‚»ã‚¹ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant NativePTree::get(tjs_char const* path_exists) const {
 		boost::optional<pt_ptree_type const&> node = getNodeExists(
@@ -900,7 +900,7 @@ namespace ktl {
 		return true;
 	}
 	//
-	//	SUMMARY: •¡»Œnƒƒ\ƒbƒh
+	//	SUMMARY: è¤‡è£½ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE sprig::krkr::tjs::object_type NativePTree::clone(tjs_char const* path_exists) const {
 		boost::optional<pt_ptree_type const&> node = getNodeExists(
@@ -936,7 +936,7 @@ namespace ktl {
 		return true;
 	}
 	//
-	//	SUMMARY: XML“Ç‚İ‚İŒnƒƒ\ƒbƒh
+	//	SUMMARY: XMLèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativePTree::readXML(
 		tjs_char const* source,
@@ -1005,7 +1005,7 @@ namespace ktl {
 		return readXML(string.c_str(), flag);
 	}
 	//
-	//	SUMMARY: JSON“Ç‚İ‚İŒnƒƒ\ƒbƒh
+	//	SUMMARY: JSONèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativePTree::readJSON(
 		tjs_char const* source
@@ -1069,7 +1069,7 @@ namespace ktl {
 		return readJSON(string.c_str());
 	}
 	//
-	//	SUMMARY: INI“Ç‚İ‚İŒnƒƒ\ƒbƒh
+	//	SUMMARY: INIèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativePTree::readINI(
 		tjs_char const* source
@@ -1133,7 +1133,7 @@ namespace ktl {
 		return readINI(string.c_str());
 	}
 	//
-	//	SUMMARY: INFO“Ç‚İ‚İŒnƒƒ\ƒbƒh
+	//	SUMMARY: INFOèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativePTree::readINFO(
 		tjs_char const* source
@@ -1197,7 +1197,7 @@ namespace ktl {
 		return readINFO(string.c_str());
 	}
 	//
-	//	SUMMARY: YAML“Ç‚İ‚İŒnƒƒ\ƒbƒh
+	//	SUMMARY: YAMLèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativePTree::readYAML(
 		tjs_char const* source,
@@ -1207,7 +1207,7 @@ namespace ktl {
 		std::basic_istringstream<tjs_char> is(source ? source : SPRIG_KRKR_TJS_W(""));
 		pt_ptree_type ptree;
 		{
-			//	COMMENT: ƒRƒ“ƒo[ƒ^ì¬
+			//	COMMENT: ã‚³ãƒ³ãƒãƒ¼ã‚¿ä½œæˆ
 			UErrorCode error = U_ZERO_ERROR;
 			boost::shared_ptr<UConverter> converter(
 				::ucnv_openU(L"UTF-8", &error),
@@ -1282,7 +1282,7 @@ namespace ktl {
 		return readYAML(string.c_str(), flag);
 	}
 	//
-	//	SUMMARY: HTML“Ç‚İ‚İŒnƒƒ\ƒbƒh
+	//	SUMMARY: HTMLèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativePTree::readHTML(
 		tjs_char const* source,
@@ -1357,7 +1357,7 @@ namespace ktl {
 		return readHTML(string.c_str(), flag);
 	}
 	//
-	//	SUMMARY: XML‘‚«o‚µŒnƒƒ\ƒbƒh
+	//	SUMMARY: XMLæ›¸ãå‡ºã—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant NativePTree::writeXMLToString(
 		boost::optional<tjs_char> indent_char,
@@ -1450,7 +1450,7 @@ namespace ktl {
 		}
 	}
 	//
-	//	SUMMARY: JSON‘‚«o‚µŒnƒƒ\ƒbƒh
+	//	SUMMARY: JSONæ›¸ãå‡ºã—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant NativePTree::writeJSONToString(
 		bool pretty
@@ -1528,7 +1528,7 @@ namespace ktl {
 		}
 	}
 	//
-	//	SUMMARY: INI‘‚«o‚µŒnƒƒ\ƒbƒh
+	//	SUMMARY: INIæ›¸ãå‡ºã—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant NativePTree::writeINIToString() const {
 		std::basic_ostringstream<tjs_char> os;
@@ -1598,7 +1598,7 @@ namespace ktl {
 		}
 	}
 	//
-	//	SUMMARY: INFO‘‚«o‚µŒnƒƒ\ƒbƒh
+	//	SUMMARY: INFOæ›¸ãå‡ºã—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant NativePTree::writeINFOToString(
 		boost::optional<tjs_char> indent_char,
@@ -1688,7 +1688,7 @@ namespace ktl {
 		}
 	}
 	//
-	//	SUMMARY: YAML‘‚«o‚µŒnƒƒ\ƒbƒh
+	//	SUMMARY: YAMLæ›¸ãå‡ºã—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant NativePTree::writeYAMLToString(
 		flag_type flag
@@ -1696,7 +1696,7 @@ namespace ktl {
 	{
 		std::basic_ostringstream<tjs_char> os;
 		{
-			//	COMMENT: ƒRƒ“ƒo[ƒ^ì¬
+			//	COMMENT: ã‚³ãƒ³ãƒãƒ¼ã‚¿ä½œæˆ
 			UErrorCode error = U_ZERO_ERROR;
 			boost::shared_ptr<UConverter> converter(
 				::ucnv_openU(L"UTF-8", &error),
@@ -1721,7 +1721,7 @@ namespace ktl {
 	{
 		std::basic_ostringstream<tjs_char> os;
 		{
-			//	COMMENT: ƒRƒ“ƒo[ƒ^ì¬
+			//	COMMENT: ã‚³ãƒ³ãƒãƒ¼ã‚¿ä½œæˆ
 			UErrorCode error = U_ZERO_ERROR;
 			boost::shared_ptr<UConverter> converter(
 				::ucnv_openU(L"UTF-8", &error),
@@ -1760,7 +1760,7 @@ namespace ktl {
 			os << SPRIG_KRKR_TJS_W('\xFEFF');
 		}
 		{
-			//	COMMENT: ƒRƒ“ƒo[ƒ^ì¬
+			//	COMMENT: ã‚³ãƒ³ãƒãƒ¼ã‚¿ä½œæˆ
 			UErrorCode error = U_ZERO_ERROR;
 			boost::shared_ptr<UConverter> converter(
 				::ucnv_openU(L"UTF-8", &error),
@@ -1802,7 +1802,7 @@ namespace ktl {
 		}
 	}
 	//
-	//	SUMMARY: ƒtƒH[ƒ}ƒbƒgŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativePTree::trimXML() {
 		sprig::trim_xml(ptree_);
@@ -1827,7 +1827,7 @@ namespace ktl {
 		return true;
 	}
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tjs_char NativePTree::getPathSeparator() const {
 		return path_separator_;
@@ -1867,13 +1867,13 @@ namespace ktl {
 		return instance_->getValue();
 	}
 	//
-	//	SUMMARY: “à•”Œnƒƒ\ƒbƒh
+	//	SUMMARY: å†…éƒ¨ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE sprig::krkr::tjs::intptr_type PTree::getInstance() {
 		return reinterpret_cast<sprig::krkr::tjs::intptr_type>(this);
 	}
 	//
-	//	SUMMARY: ƒAƒNƒZƒXŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¢ã‚¯ã‚»ã‚¹ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant PTree::get(tTJSVariantString const* path_exists) const {
 		return instance_->get(
@@ -1936,7 +1936,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: •¡»Œnƒƒ\ƒbƒh
+	//	SUMMARY: è¤‡è£½ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE sprig::krkr::tjs::object_type PTree::clone(tTJSVariantString const* path_exists) const {
 		return instance_->clone(
@@ -1950,7 +1950,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: XML“Ç‚İ‚İŒnƒƒ\ƒbƒh
+	//	SUMMARY: XMLèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool PTree::readXML(
 		tTJSVariantString const* source,
@@ -1997,7 +1997,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: JSON“Ç‚İ‚İŒnƒƒ\ƒbƒh
+	//	SUMMARY: JSONèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool PTree::readJSON(
 		tTJSVariantString const* source
@@ -2036,7 +2036,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: INI“Ç‚İ‚İŒnƒƒ\ƒbƒh
+	//	SUMMARY: INIèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool PTree::readINI(
 		tTJSVariantString const* source
@@ -2075,7 +2075,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: INFO“Ç‚İ‚İŒnƒƒ\ƒbƒh
+	//	SUMMARY: INFOèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool PTree::readINFO(
 		tTJSVariantString const* source
@@ -2114,7 +2114,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: YAML“Ç‚İ‚İŒnƒƒ\ƒbƒh
+	//	SUMMARY: YAMLèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool PTree::readYAML(
 		tTJSVariantString const* source,
@@ -2161,7 +2161,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: HTML“Ç‚İ‚İŒnƒƒ\ƒbƒh
+	//	SUMMARY: HTMLèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool PTree::readHTML(
 		tTJSVariantString const* source,
@@ -2208,7 +2208,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: XML‘‚«o‚µŒnƒƒ\ƒbƒh
+	//	SUMMARY: XMLæ›¸ãå‡ºã—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant PTree::writeXMLToString(
 		boost::optional<tTVInteger> indent_char,
@@ -2265,7 +2265,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: JSON‘‚«o‚µŒnƒƒ\ƒbƒh
+	//	SUMMARY: JSONæ›¸ãå‡ºã—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant PTree::writeJSONToString(
 		bool pretty
@@ -2299,7 +2299,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: INI‘‚«o‚µŒnƒƒ\ƒbƒh
+	//	SUMMARY: INIæ›¸ãå‡ºã—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant PTree::writeINIToString() const {
 		return instance_->writeINIToString();
@@ -2325,7 +2325,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: INFO‘‚«o‚µŒnƒƒ\ƒbƒh
+	//	SUMMARY: INFOæ›¸ãå‡ºã—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant PTree::writeINFOToString(
 		boost::optional<tTVInteger> indent_char,
@@ -2382,7 +2382,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: YAML‘‚«o‚µŒnƒƒ\ƒbƒh
+	//	SUMMARY: YAMLæ›¸ãå‡ºã—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant PTree::writeYAMLToString(
 		tTVInteger flag
@@ -2418,7 +2418,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: ƒtƒH[ƒ}ƒbƒgŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool PTree::trimXML() {
 		return instance_->trimXML();
@@ -2438,7 +2438,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVInteger PTree::getPathSeparator() const {
 		return instance_->getPathSeparator();

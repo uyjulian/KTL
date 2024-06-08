@@ -49,7 +49,7 @@ namespace ktl {
 		NativeBzip2Decompressor();
 	public:
 		//
-		//	SUMMARY: ƒZƒbƒgƒAƒbƒvŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚»ãƒƒãƒˆã‚¢ãƒƒãƒ—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void reset();
 		bool setup();
@@ -57,12 +57,12 @@ namespace ktl {
 		bool finish();
 		bool flush();
 		//
-		//	SUMMARY: ƒpƒ‰ƒ[ƒ^Œnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool getSmall() const;
 		void setSmall(bool v);
 		//
-		//	SUMMARY: ˆ—Œnƒƒ\ƒbƒh
+		//	SUMMARY: å‡¦ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		int_type processBlock(byte_type const* first, byte_type const* last);
 		int_type processBytes(byte_type const* data, size_type size);
@@ -74,7 +74,7 @@ namespace ktl {
 		int_type processStorage(tjs_char const* storage, size_type spos);
 		int_type processStorage(tjs_char const* storage, size_type spos, size_type ssize);
 		//
-		//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		size_type size() const;
 		tTJSVariant asOctet() const;
@@ -87,7 +87,7 @@ namespace ktl {
 		tTJSVariant asNarrowString(size_type pos) const;
 		tTJSVariant asNarrowString(size_type pos, size_type size) const;
 		//
-		//	SUMMARY: ƒXƒgƒŒ[ƒWŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¹ãƒˆãƒ¬ãƒ¼ã‚¸ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		int_type saveStorage(tjs_char const* storage) const;
 		int_type saveStorage(tjs_char const* storage, size_type pos) const;
@@ -112,7 +112,7 @@ namespace ktl {
 		void TJS_INTF_METHOD Invalidate();
 	public:
 		//
-		//	SUMMARY: ƒZƒbƒgƒAƒbƒvŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚»ãƒƒãƒˆã‚¢ãƒƒãƒ—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void reset();
 		bool setup();
@@ -120,12 +120,12 @@ namespace ktl {
 		bool finish();
 		bool flush();
 		//
-		//	SUMMARY: ƒpƒ‰ƒ[ƒ^Œnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool getSmall() const;
 		void setSmall(bool v);
 		//
-		//	SUMMARY: ˆ—Œnƒƒ\ƒbƒh
+		//	SUMMARY: å‡¦ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTVInteger processBlock(sprig::krkr::tjs::intptr_type first, sprig::krkr::tjs::intptr_type last);
 		tTVInteger processBytes(sprig::krkr::tjs::intptr_type data, tTVInteger size);
@@ -137,7 +137,7 @@ namespace ktl {
 		tTVInteger processStorage(tTJSVariantString const* storage, tTVInteger spos);
 		tTVInteger processStorage(tTJSVariantString const* storage, tTVInteger spos, tTVInteger ssize);
 		//
-		//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTVInteger size() const;
 		tTJSVariant asOctet() const;
@@ -150,7 +150,7 @@ namespace ktl {
 		tTJSVariant asNarrowString(tTVInteger pos) const;
 		tTJSVariant asNarrowString(tTVInteger pos, tTVInteger size) const;
 		//
-		//	SUMMARY: ƒXƒgƒŒ[ƒWŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¹ãƒˆãƒ¬ãƒ¼ã‚¸ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTVInteger saveStorage(tTJSVariantString const* storage) const;
 		tTVInteger saveStorage(tTJSVariantString const* storage, tTVInteger pos) const;

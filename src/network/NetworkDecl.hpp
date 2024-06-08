@@ -33,7 +33,7 @@ namespace ktl {
 		NativeNetwork();
 	public:
 		//
-		//	SUMMARY: ƒCƒ“ƒ^[ƒlƒbƒgÚ‘±Œnƒtƒ‰ƒO
+		//	SUMMARY: ã‚¤ãƒ³ã‚¿ãƒ¼ãƒãƒƒãƒˆæŽ¥ç¶šç³»ãƒ•ãƒ©ã‚°
 		//
 		static flag_type const cifModem = INTERNET_CONNECTION_MODEM;
 		static flag_type const cifLAN = INTERNET_CONNECTION_LAN;
@@ -43,24 +43,24 @@ namespace ktl {
 		static flag_type const cifOffline = INTERNET_CONNECTION_OFFLINE;
 		static flag_type const cifConfigured = INTERNET_CONNECTION_CONFIGURED;
 		//
-		//	SUMMARY: I—¹Žžˆ—Œnƒtƒ‰ƒO
+		//	SUMMARY: çµ‚äº†æ™‚å‡¦ç†ç³»ãƒ•ãƒ©ã‚°
 		//
 		static flag_type const okfStop = NetworkService::stop_on_kill;
 		static flag_type const okfFinish = NetworkService::finish_on_kill;
 		static flag_type const okfDoNothing = NetworkService::do_nothing_on_kill;
 		//
-		//	SUMMARY: ƒvƒƒgƒRƒ‹Œnƒtƒ‰ƒO
+		//	SUMMARY: ãƒ—ãƒ­ãƒˆã‚³ãƒ«ç³»ãƒ•ãƒ©ã‚°
 		//
 		static flag_type const pfIPv4 = NetworkUtils::pfIPv4;
 		static flag_type const pfIPv6 = NetworkUtils::pfIPv6;
 		//
-		//	SUMMARY: Š®—¹ðŒŒnƒtƒ‰ƒO
+		//	SUMMARY: å®Œäº†æ¡ä»¶ç³»ãƒ•ãƒ©ã‚°
 		//
 		static flag_type const ccfTransferAtLeast = NetworkUtils::ccfTransferAtLeast;
 		static flag_type const ccfTransferExactly = NetworkUtils::ccfTransferExactly;
 	public:
 		//
-		//	SUMMARY: I/OƒT[ƒrƒXŒnƒƒ\ƒbƒh
+		//	SUMMARY: I/Oã‚µãƒ¼ãƒ“ã‚¹ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static void run();
 		static void run(size_type new_thread_count);
@@ -71,22 +71,22 @@ namespace ktl {
 		static void stop();
 		static size_type threadCount();
 		//
-		//	SUMMARY: ƒ†[ƒeƒBƒŠƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ¦ãƒ¼ãƒ†ã‚£ãƒªãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static bool downloadHTTP(tjs_char const* url, tjs_char const* storage);
 		static flag_type getInternetConnetionState();
 		static bool isInternetConnected();
 		static tTJSVariant hostName();
 		//
-		//	SUMMARY: ƒXƒŒƒbƒhŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¹ãƒ¬ãƒƒãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static size_type getThreadHardwareConcurrency();
 		//
-		//	SUMMARY: ƒNƒƒbƒNŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¯ãƒ­ãƒƒã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant getClockTime();
 		//
-		//	SUMMARY: I—¹Žžˆ—Œnƒƒ\ƒbƒh
+		//	SUMMARY: çµ‚äº†æ™‚å‡¦ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static flag_type getOnKillFlag();
 		static void setOnKillFlag(flag_type on_kill_flag);
@@ -110,7 +110,7 @@ namespace ktl {
 		void TJS_INTF_METHOD Invalidate();
 	public:
 		//
-		//	SUMMARY: ƒCƒ“ƒ^[ƒlƒbƒgÚ‘±Œnƒtƒ‰ƒO
+		//	SUMMARY: ã‚¤ãƒ³ã‚¿ãƒ¼ãƒãƒƒãƒˆæŽ¥ç¶šç³»ãƒ•ãƒ©ã‚°
 		//
 		static tTVInteger const cifModem = NativeNetwork::cifModem;
 		static tTVInteger const cifLAN = NativeNetwork::cifLAN;
@@ -120,24 +120,24 @@ namespace ktl {
 		static tTVInteger const cifOffline = NativeNetwork::cifOffline;
 		static tTVInteger const cifConfigured = NativeNetwork::cifConfigured;
 		//
-		//	SUMMARY: I—¹Žžˆ—Œnƒtƒ‰ƒO
+		//	SUMMARY: çµ‚äº†æ™‚å‡¦ç†ç³»ãƒ•ãƒ©ã‚°
 		//
 		static tTVInteger const okfStop = NativeNetwork::okfStop;
 		static tTVInteger const okfFinish = NativeNetwork::okfFinish;
 		static tTVInteger const okfDoNothing = NativeNetwork::okfDoNothing;
 		//
-		//	SUMMARY: ƒvƒƒgƒRƒ‹Œnƒtƒ‰ƒO
+		//	SUMMARY: ãƒ—ãƒ­ãƒˆã‚³ãƒ«ç³»ãƒ•ãƒ©ã‚°
 		//
 		static tTVInteger const pfIPv4 = NativeNetwork::pfIPv4;
 		static tTVInteger const pfIPv6 = NativeNetwork::pfIPv6;
 		//
-		//	SUMMARY: Š®—¹ðŒŒnƒtƒ‰ƒO
+		//	SUMMARY: å®Œäº†æ¡ä»¶ç³»ãƒ•ãƒ©ã‚°
 		//
 		static tTVInteger const ccfTransferAtLeast = NativeNetwork::ccfTransferAtLeast;
 		static tTVInteger const ccfTransferExactly = NativeNetwork::ccfTransferExactly;
 	public:
 		//
-		//	SUMMARY: I/OƒT[ƒrƒXŒnƒƒ\ƒbƒh
+		//	SUMMARY: I/Oã‚µãƒ¼ãƒ“ã‚¹ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static void run();
 		static void run(tTVInteger new_thread_count);
@@ -148,22 +148,22 @@ namespace ktl {
 		static void stop();
 		static tTVInteger threadCount();
 		//
-		//	SUMMARY: ƒ†[ƒeƒBƒŠƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ¦ãƒ¼ãƒ†ã‚£ãƒªãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static bool downloadHTTP(tTJSVariantString const* url, tTJSVariantString const* storage);
 		static tTVInteger getInternetConnetionState();
 		static bool isInternetConnected();
 		static tTJSVariant hostName();
 		//
-		//	SUMMARY: ƒXƒŒƒbƒhŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¹ãƒ¬ãƒƒãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVInteger getThreadHardwareConcurrency();
 		//
-		//	SUMMARY: ƒNƒƒbƒNŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¯ãƒ­ãƒƒã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant getClockTime();
 		//
-		//	SUMMARY: I—¹Žžˆ—Œnƒƒ\ƒbƒh
+		//	SUMMARY: çµ‚äº†æ™‚å‡¦ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVInteger getOnKillFlag();
 		static void setOnKillFlag(tTVInteger on_kill_flag);

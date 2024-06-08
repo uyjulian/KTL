@@ -51,7 +51,7 @@ namespace ktl {
 	}
 	NativeLocalFiles::NativeLocalFiles() {}
 	//
-	//	SUMMARY: �R�s�[�n���\�b�h
+	//	SUMMARY: コピー系メソッド
 	//
 	KTL_INLINE void NativeLocalFiles::copy(tjs_char const* from, tjs_char const* to) {
 		boost::filesystem::copy(getLocalName(from).c_str(), getLocalName(to).c_str());
@@ -81,7 +81,7 @@ namespace ktl {
 		boost::filesystem::create_symlink(getLocalName(to).c_str(), getLocalName(new_symlink).c_str());
 	}
 	//
-	//	SUMMARY: ���n���\�b�h
+	//	SUMMARY: 情報系メソッド
 	//
 	KTL_INLINE bool NativeLocalFiles::exists(tjs_char const* p) {
 		return boost::filesystem::exists(getLocalName(p).c_str());
@@ -123,7 +123,7 @@ namespace ktl {
 		return boost::filesystem::read_symlink(getLocalName(p).c_str()).c_str();
 	}
 	//
-	//	SUMMARY: �폜�n���\�b�h
+	//	SUMMARY: 削除系メソッド
 	//
 	KTL_INLINE bool NativeLocalFiles::remove(tjs_char const* p) {
 		return boost::filesystem::remove(getLocalName(p).c_str());
@@ -132,7 +132,7 @@ namespace ktl {
 		return boost::filesystem::remove_all(getLocalName(p).c_str());
 	}
 	//
-	//	SUMMARY: �ύX�n���\�b�h
+	//	SUMMARY: 変更系メソッド
 	//
 	KTL_INLINE void NativeLocalFiles::rename(tjs_char const* old_p, tjs_char const* new_p) {
 		boost::filesystem::rename(getLocalName(old_p).c_str(), getLocalName(new_p).c_str());
@@ -141,7 +141,7 @@ namespace ktl {
 		boost::filesystem::resize_file(getLocalName(p).c_str(), new_size);
 	}
 	//
-	//	SUMMARY: �X�e�[�^�X�n���\�b�h
+	//	SUMMARY: ステータス系メソッド
 	//
 	KTL_INLINE tTJSVariant NativeLocalFiles::space(tjs_char const* p) {
 		boost::filesystem::space_info info(boost::filesystem::space(getLocalName(p).c_str()));
@@ -199,7 +199,7 @@ namespace ktl {
 		return boost::filesystem::symlink_status(getLocalName(p).c_str()).permissions();
 	}
 	//
-	//	SUMMARY: �擾�n���\�b�h
+	//	SUMMARY: 取得系メソッド
 	//
 	KTL_INLINE tTJSString NativeLocalFiles::currentPath() {
 		return boost::filesystem::current_path().c_str();
@@ -211,7 +211,7 @@ namespace ktl {
 		return boost::filesystem::unique_path(model).c_str();
 	}
 	//
-	//	SUMMARY: �񋓌n���\�b�h
+	//	SUMMARY: 列挙系メソッド
 	//
 	KTL_INLINE tTJSVariant NativeLocalFiles::enumDirectoryEntry(
 		tjs_char const* p,
@@ -335,7 +335,7 @@ namespace ktl {
 		instance_.reset();
 	}
 	//
-	//	SUMMARY: �R�s�[�n���\�b�h
+	//	SUMMARY: コピー系メソッド
 	//
 	KTL_INLINE void LocalFiles::copy(tTJSVariantString const* from, tTJSVariantString const* to) {
 		NativeLocalFiles::copy(
@@ -362,7 +362,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: �쐬�n���\�b�h
+	//	SUMMARY: 作成系メソッド
 	//
 	KTL_INLINE bool LocalFiles::createDirectories(tTJSVariantString const* p) {
 		return NativeLocalFiles::createDirectories(
@@ -393,7 +393,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: ���n���\�b�h
+	//	SUMMARY: 情報系メソッド
 	//
 	KTL_INLINE bool LocalFiles::exists(tTJSVariantString const* p) {
 		return NativeLocalFiles::exists(
@@ -464,7 +464,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: �폜�n���\�b�h
+	//	SUMMARY: 削除系メソッド
 	//
 	KTL_INLINE bool LocalFiles::remove(tTJSVariantString const* p) {
 		return NativeLocalFiles::remove(
@@ -477,7 +477,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: �ύX�n���\�b�h
+	//	SUMMARY: 変更系メソッド
 	//
 	KTL_INLINE void LocalFiles::rename(tTJSVariantString const* old_p, tTJSVariantString const* new_p) {
 		NativeLocalFiles::rename(
@@ -492,7 +492,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: �X�e�[�^�X�n���\�b�h
+	//	SUMMARY: ステータス系メソッド
 	//
 	KTL_INLINE tTJSVariant LocalFiles::space(tTJSVariantString const* p) {
 		return NativeLocalFiles::space(
@@ -550,7 +550,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: �擾�n���\�b�h
+	//	SUMMARY: 取得系メソッド
 	//
 	KTL_INLINE tTJSString LocalFiles::currentPath() {
 		return NativeLocalFiles::currentPath();
@@ -567,7 +567,7 @@ namespace ktl {
 			;
 	}
 	//
-	//	SUMMARY: �񋓌n���\�b�h
+	//	SUMMARY: 列挙系メソッド
 	//
 	KTL_INLINE tTJSVariant LocalFiles::enumDirectoryEntry(
 		tTJSVariantString const* p,

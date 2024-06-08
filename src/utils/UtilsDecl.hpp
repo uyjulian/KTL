@@ -137,55 +137,55 @@ namespace ktl {
 		NativeUtils();
 	public:
 		//
-		//	SUMMARY: ƒZ[ƒuŒnƒtƒ‰ƒO
+		//	SUMMARY: ã‚»ãƒ¼ãƒ–ç³»ãƒ•ãƒ©ã‚°
 		//
 		static flag_type const sfNoConstQualifier = 0x00000001;
 		//
-		//	SUMMARY: ’è”ŒnƒvƒƒpƒeƒB
+		//	SUMMARY: å®šæ•°ç³»ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£
 		//
 		static size_type const sizeofWChar = sizeof(tjs_char);
 		static size_type const sizeofNChar = sizeof(tjs_nchar);
 	public:
 		//
-		//	SUMMARY: ƒIƒuƒWƒFƒNƒgŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant getCii(iTJSDispatch2* obj);
 		static tTJSVariant getCii(iTJSDispatch2* obj, size_type num);
 		static tTJSVariant getCount(tTJSVariantClosure const& closure);
 		static tTJSVariant getContext(tTJSVariantClosure const& closure);
 		//
-		//	SUMMARY: ƒIƒNƒeƒbƒgŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚ªã‚¯ãƒ†ãƒƒãƒˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static byte_type const* getOctetData(tTJSVariantOctet const* octet);
 		static size_type getOctetSize(tTJSVariantOctet const* octet);
 		static byte_type const* beginOctet(tTJSVariantOctet const* octet);
 		static byte_type const* endOctet(tTJSVariantOctet const* octet);
 		//
-		//	SUMMARY: •¶Žš—ñŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ–‡å­—åˆ—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static byte_type const* getStringData(tjs_char const* string);
 		static size_type getStringSize(tjs_char const* string);
 		static byte_type const* beginString(tjs_char const* string);
 		static byte_type const* endString(tjs_char const* string);
 		//
-		//	SUMMARY: •ÏŠ·Œnƒƒ\ƒbƒh
+		//	SUMMARY: å¤‰æ›ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant toString(tTJSVariant const* v);
 		static tTJSVariant toReadableString(tTJSVariant const* v);
 		static tTJSVariant toReadableString(tTJSVariant const* v, size_type max_size);
 		static tTJSVariant toExpressionString(tTJSVariant const* v);
 		//
-		//	SUMMARY: ƒXƒgƒŒ[ƒWŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¹ãƒˆãƒ¬ãƒ¼ã‚¸ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant loadStorageToOctet(tjs_char const* storage);
 		static size_type saveStorageFromOctet(tjs_char const* storage, tTJSVariantOctet const* octet);
 		//
-		//	SUMMARY: —ñ‹“Œnƒƒ\ƒbƒh
+		//	SUMMARY: åˆ—æŒ™ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant enumMembers(tTJSVariantClosure const& closure);
 		static tTJSVariant enumMembersName(tTJSVariantClosure const& closure);
 		//
-		//	SUMMARY: ƒZ[ƒuŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚»ãƒ¼ãƒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant saveStructString(
 			tTJSVariant const* v,
@@ -220,55 +220,55 @@ namespace ktl {
 		void TJS_INTF_METHOD Invalidate();
 	public:
 		//
-		//	SUMMARY: ƒZ[ƒuŒnƒtƒ‰ƒO
+		//	SUMMARY: ã‚»ãƒ¼ãƒ–ç³»ãƒ•ãƒ©ã‚°
 		//
 		static tTVInteger const sfNoConstQualifier = NativeUtils::sfNoConstQualifier;
 		//
-		//	SUMMARY: ’è”ŒnƒvƒƒpƒeƒB
+		//	SUMMARY: å®šæ•°ç³»ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£
 		//
 		static tTVInteger const sizeofWChar = NativeUtils::sizeofWChar;
 		static tTVInteger const sizeofNChar = NativeUtils::sizeofNChar;
 	public:
 		//
-		//	SUMMARY: ƒIƒuƒWƒFƒNƒgŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant getCii(iTJSDispatch2* obj);
 		static tTJSVariant getCii(iTJSDispatch2* obj, tTVInteger num);
 		static tTJSVariant getCount(tTJSVariantClosure const& closure);
 		static tTJSVariant getContext(tTJSVariantClosure const& closure);
 		//
-		//	SUMMARY: ƒIƒNƒeƒbƒgŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚ªã‚¯ãƒ†ãƒƒãƒˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static sprig::krkr::tjs::intptr_type getOctetData(tTJSVariantOctet const* octet);
 		static tTVInteger getOctetSize(tTJSVariantOctet const* octet);
 		static sprig::krkr::tjs::intptr_type beginOctet(tTJSVariantOctet const* octet);
 		static sprig::krkr::tjs::intptr_type endOctet(tTJSVariantOctet const* octet);
 		//
-		//	SUMMARY: •¶Žš—ñŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ–‡å­—åˆ—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static sprig::krkr::tjs::intptr_type getStringData(tTJSVariantString const* string);
 		static tTVInteger getStringSize(tTJSVariantString const* string);
 		static sprig::krkr::tjs::intptr_type beginString(tTJSVariantString const* string);
 		static sprig::krkr::tjs::intptr_type endString(tTJSVariantString const* string);
 		//
-		//	SUMMARY: •ÏŠ·Œnƒƒ\ƒbƒh
+		//	SUMMARY: å¤‰æ›ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant toString(tTJSVariant const* v);
 		static tTJSVariant toReadableString(tTJSVariant const* v);
 		static tTJSVariant toReadableString(tTJSVariant const* v, tTVInteger max_size);
 		static tTJSVariant toExpressionString(tTJSVariant const* v);
 		//
-		//	SUMMARY: ƒXƒgƒŒ[ƒWŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¹ãƒˆãƒ¬ãƒ¼ã‚¸ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant loadStorageToOctet(tTJSVariantString const* storage);
 		static tTVInteger saveStorageFromOctet(tTJSVariantString const* storage, tTJSVariantOctet const* octet);
 		//
-		//	SUMMARY: —ñ‹“Œnƒƒ\ƒbƒh
+		//	SUMMARY: åˆ—æŒ™ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant enumMembers(tTJSVariantClosure const& closure);
 		static tTJSVariant enumMembersName(tTJSVariantClosure const& closure);
 		//
-		//	SUMMARY: ƒZ[ƒuŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚»ãƒ¼ãƒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant saveStructString(
 			tTJSVariant const* v,

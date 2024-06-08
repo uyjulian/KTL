@@ -24,7 +24,7 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME NetworkClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassNetwork, Network, Network)
 	//
-	//	SUMMARY: ƒCƒ“ƒ^[ƒlƒbƒgÚ‘±Œnƒtƒ‰ƒO
+	//	SUMMARY: ã‚¤ãƒ³ã‚¿ãƒ¼ãƒãƒƒãƒˆæŽ¥ç¶šç³»ãƒ•ãƒ©ã‚°
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(cifModem, Network::cifModem);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(cifLAN, Network::cifLAN);
@@ -34,23 +34,23 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(cifOffline, Network::cifOffline);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(cifConfigured, Network::cifConfigured);
 	//
-	//	SUMMARY: I—¹Žžˆ—Œnƒtƒ‰ƒO
+	//	SUMMARY: çµ‚äº†æ™‚å‡¦ç†ç³»ãƒ•ãƒ©ã‚°
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(okfStop, Network::okfStop);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(okfFinish, Network::okfFinish);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(okfDoNothing, Network::okfDoNothing);
 	//
-	//	SUMMARY: ƒvƒƒgƒRƒ‹Œnƒtƒ‰ƒO
+	//	SUMMARY: ãƒ—ãƒ­ãƒˆã‚³ãƒ«ç³»ãƒ•ãƒ©ã‚°
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(pfIPv4, Network::pfIPv4);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(pfIPv6, Network::pfIPv6);
 	//
-	//	SUMMARY: Š®—¹ðŒŒnƒtƒ‰ƒO
+	//	SUMMARY: å®Œäº†æ¡ä»¶ç³»ãƒ•ãƒ©ã‚°
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(ccfTransferAtLeast, Network::ccfTransferAtLeast);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(ccfTransferExactly, Network::ccfTransferExactly);
 	//
-	//	SUMMARY: I/OƒT[ƒrƒXŒnƒƒ\ƒbƒh
+	//	SUMMARY: I/Oã‚µãƒ¼ãƒ“ã‚¹ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(run)
 	{
@@ -97,7 +97,7 @@ namespace ktl {
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(stop)
 	SPRIG_KRKR_NATIVE_STATIC_PROP_DECL_VARIANT_GETONLY(Network, threadCount, threadCount);
 	//
-	//	SUMMARY: ƒ†[ƒeƒBƒŠƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ¦ãƒ¼ãƒ†ã‚£ãƒªãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(downloadHTTP)
 	{
@@ -114,11 +114,11 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_STATIC_PROP_DECL_VARIANT_GETONLY(Network, isInternetConnected, isInternetConnected);
 	SPRIG_KRKR_NATIVE_STATIC_PROP_DECL_VARIANT_GETONLY(Network, hostName, hostName);
 	//
-	//	SUMMARY: ƒXƒŒƒbƒhŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¹ãƒ¬ãƒƒãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_STATIC_PROP_DECL_VARIANT_GETONLY(Network, threadHardwareConcurrency, getThreadHardwareConcurrency);
 	//
-	//	SUMMARY: ƒNƒƒbƒNŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¯ãƒ­ãƒƒã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(getClockTime)
 	{
@@ -129,7 +129,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(getClockTime)
 	//
-	//	SUMMARY: I—¹Žžˆ—Œnƒƒ\ƒbƒh
+	//	SUMMARY: çµ‚äº†æ™‚å‡¦ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_STATIC_PROP_DECL_VARIANT(Network, onKillFlag, getOnKillFlag, setOnKillFlag);
 

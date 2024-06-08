@@ -26,11 +26,11 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME DownloaderClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassDownloader, Downloader, Downloader)
 	//
-	//	SUMMARY: ƒ_ƒEƒ“ƒ[ƒhŒnƒtƒ‰ƒO
+	//	SUMMARY: ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ç³»ãƒ•ãƒ©ã‚°
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(dhfAnalyHTTPHeader, Downloader::dhfAnalyHTTPHeader);
 	//
-	//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+	//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(reset)
 	{
@@ -42,7 +42,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(reset);
 	//
-	//	SUMMARY: ƒ_ƒEƒ“ƒ[ƒhŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(downloadHTTP)
 	{
@@ -95,13 +95,13 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Downloader, failed, failed);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Downloader, cancelled, cancelled);
 	//
-	//	SUMMARY: î•ñŒnƒƒ\ƒbƒh
+	//	SUMMARY: æƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Downloader, transferredSize, transferredSize);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Downloader, contentLength, contentLength);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Downloader, chunked, chunked);
 	//
-	//	SUMMARY: ƒoƒbƒtƒ@ƒ_ƒEƒ“ƒ[ƒhŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒãƒƒãƒ•ã‚¡ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(downloadHTTPToBuffer)
 	{
@@ -151,7 +151,7 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Downloader, bufferEnable, bufferEnable);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Downloader, bufferSize, bufferSize);
 	//
-	//	SUMMARY: ƒoƒbƒtƒ@Žæ“¾Œnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒãƒƒãƒ•ã‚¡å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(getBufferAsOctet)
 	{
@@ -217,7 +217,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(getBufferAsNarrowString);
 	//
-	//	SUMMARY: ƒ^ƒCƒ€ƒAƒEƒgŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¿ã‚¤ãƒ ã‚¢ã‚¦ãƒˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(waitTimeoutFromNow)
 	{
@@ -263,7 +263,7 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Downloader, expiresTimeoutFromNow, expiresTimeoutFromNow);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Downloader, expiresTimeoutAt, expiresTimeoutAt);
 	//
-	//	SUMMARY: ‘Ò‹@Œnƒƒ\ƒbƒh
+	//	SUMMARY: å¾…æ©Ÿç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(join)
 	{
@@ -275,7 +275,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(join)
 	//
-	//	SUMMARY: ƒ|ƒXƒgŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒã‚¹ãƒˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(addPostDataEncoded)
 	{
@@ -310,7 +310,7 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Downloader, postDataEnable, postDataEnable);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Downloader, postDataSize, postDataSize);
 	//
-	//	SUMMARY: URLî•ñŒnƒƒ\ƒbƒh
+	//	SUMMARY: URLæƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Downloader, hostName, hostName);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Downloader, serviceName, serviceName);
@@ -318,7 +318,7 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Downloader, URL, URL);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Downloader, storageLocalName, storageLocalName);
 	//
-	//	SUMMARY: HTTPƒŒƒXƒ|ƒ“ƒXŒnƒƒ\ƒbƒh
+	//	SUMMARY: HTTPãƒ¬ã‚¹ãƒãƒ³ã‚¹ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Downloader, HTTPVersion, HTTPVersion);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Downloader, statusCode, statusCode);
@@ -335,11 +335,11 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(getField);
 	//
-	//	SUMMARY: ƒR[ƒ‹ƒoƒbƒNŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT(Downloader, onFinished, getOnFinished, setOnFinished);
 	//
-	//	SUMMARY: ƒJƒXƒ^ƒ€ƒwƒbƒ_Œnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚«ã‚¹ã‚¿ãƒ ãƒ˜ãƒƒãƒ€ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(setCustomHeader)
 	{
@@ -367,7 +367,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(clearCustomHeader);
 	//
-	//	SUMMARY: ˆ—Ý’èŒnƒƒ\ƒbƒh
+	//	SUMMARY: å‡¦ç†è¨­å®šç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT(Downloader, processStatusCodeError, getProcessStatusCodeError, setProcessStatusCodeError);
 

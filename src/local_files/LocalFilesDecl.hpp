@@ -31,7 +31,7 @@ namespace ktl {
 		NativeLocalFiles();
 	public:
 		//
-		//	SUMMARY: ƒtƒ@ƒCƒ‹ƒ^ƒCƒvŒnƒtƒ‰ƒO
+		//	SUMMARY: ãƒ•ã‚¡ã‚¤ãƒ«ã‚¿ã‚¤ãƒ—ç³»ãƒ•ãƒ©ã‚°
 		//
 		static file_type_flag_type const ftfStatusError = boost::filesystem::status_error;
 		static file_type_flag_type const ftfFileNotFound = boost::filesystem::file_not_found;
@@ -45,7 +45,7 @@ namespace ktl {
 		static file_type_flag_type const ftfReparseFile = boost::filesystem::reparse_file;
 		static file_type_flag_type const ftfTypeUnknown = boost::filesystem::type_unknown;
 		//
-		//	SUMMARY: ƒp[ƒ~ƒbƒVƒ‡ƒ“Œnƒtƒ‰ƒO
+		//	SUMMARY: ãƒ‘ãƒ¼ãƒŸãƒƒã‚·ãƒ§ãƒ³ç³»ãƒ•ãƒ©ã‚°
 		//
 		static perms_flag_type const pfNoPerms = boost::filesystem::no_perms;
 		static perms_flag_type const pfOwnerRead = boost::filesystem::owner_read;
@@ -71,14 +71,14 @@ namespace ktl {
 		static perms_flag_type const pfSymlinkPerms = boost::filesystem::symlink_perms;
 	public:
 		//
-		//	SUMMARY: ƒRƒs[Œnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚³ãƒ”ãƒ¼ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static void copy(tjs_char const* from, tjs_char const* to);
 		static void copyDirectory(tjs_char const* from, tjs_char const* to);
 		static void copyFile(tjs_char const* from, tjs_char const* to);
 		static void copySymlink(tjs_char const* existing_symlink, tjs_char const* new_symlink);
 		//
-		//	SUMMARY: ì¬Œnƒƒ\ƒbƒh
+		//	SUMMARY: ä½œæˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static bool createDirectories(tjs_char const* p);
 		static bool createDirectory(tjs_char const* p);
@@ -86,7 +86,7 @@ namespace ktl {
 		static void createHardLink(tjs_char const* to, tjs_char const* new_hard_link);
 		static void createSymlink(tjs_char const* to, tjs_char const* new_symlink);
 		//
-		//	SUMMARY: î•ñŒnƒƒ\ƒbƒh
+		//	SUMMARY: æƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static bool exists(tjs_char const* p);
 		static bool equivalent(tjs_char const* p1, tjs_char const* p2);
@@ -102,17 +102,17 @@ namespace ktl {
 		static void permissions(tjs_char const* p, perms_flag_type prms);
 		static tTJSString readSymlink(tjs_char const* p);
 		//
-		//	SUMMARY: íœŒnƒƒ\ƒbƒh
+		//	SUMMARY: å‰Šé™¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static bool remove(tjs_char const* p);
 		static uint_type removeAll(tjs_char const* p);
 		//
-		//	SUMMARY: •ÏXŒnƒƒ\ƒbƒh
+		//	SUMMARY: å¤‰æ›´ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static void rename(tjs_char const* old_p, tjs_char const* new_p);
 		static void resizeFile(tjs_char const* p, uint_type new_size);
 		//
-		//	SUMMARY: ƒXƒe[ƒ^ƒXŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant space(tjs_char const* p);
 		static uint_type spaceCapacity(tjs_char const* p);
@@ -126,13 +126,13 @@ namespace ktl {
 		static file_type_flag_type symlinkStatusType(tjs_char const* p);
 		static perms_flag_type symlinkStatusPermissions(tjs_char const* p);
 		//
-		//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSString currentPath();
 		static tTJSString tempDirectoryPath();
 		static tTJSString uniquePath(tjs_char const* model = SPRIG_KRKR_TJS_W("%%%%-%%%%-%%%%-%%%%"));
 		//
-		//	SUMMARY: —ñ‹“Œnƒƒ\ƒbƒh
+		//	SUMMARY: åˆ—æŒ™ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant enumDirectoryEntry(
 			tjs_char const* p,
@@ -161,7 +161,7 @@ namespace ktl {
 		void TJS_INTF_METHOD Invalidate();
 	public:
 		//
-		//	SUMMARY: ƒtƒ@ƒCƒ‹ƒ^ƒCƒvŒnƒtƒ‰ƒO
+		//	SUMMARY: ãƒ•ã‚¡ã‚¤ãƒ«ã‚¿ã‚¤ãƒ—ç³»ãƒ•ãƒ©ã‚°
 		//
 		static tTVInteger const ftfStatusError = NativeLocalFiles::ftfStatusError;
 		static tTVInteger const ftfFileNotFound = NativeLocalFiles::ftfFileNotFound;
@@ -175,7 +175,7 @@ namespace ktl {
 		static tTVInteger const ftfReparseFile = NativeLocalFiles::ftfReparseFile;
 		static tTVInteger const ftfTypeUnknown = NativeLocalFiles::ftfTypeUnknown;
 		//
-		//	SUMMARY: ƒp[ƒ~ƒbƒVƒ‡ƒ“Œnƒtƒ‰ƒO
+		//	SUMMARY: ãƒ‘ãƒ¼ãƒŸãƒƒã‚·ãƒ§ãƒ³ç³»ãƒ•ãƒ©ã‚°
 		//
 		static tTVInteger const pfNoPerms = NativeLocalFiles::pfNoPerms;
 		static tTVInteger const pfOwnerRead = NativeLocalFiles::pfOwnerRead;
@@ -201,14 +201,14 @@ namespace ktl {
 		static tTVInteger const pfSymlinkPerms = NativeLocalFiles::pfSymlinkPerms;
 	public:
 		//
-		//	SUMMARY: ƒRƒs[Œnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚³ãƒ”ãƒ¼ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static void copy(tTJSVariantString const* from, tTJSVariantString const* to);
 		static void copyDirectory(tTJSVariantString const* from, tTJSVariantString const* to);
 		static void copyFile(tTJSVariantString const* from, tTJSVariantString const* to);
 		static void copySymlink(tTJSVariantString const* existing_symlink, tTJSVariantString const* new_symlink);
 		//
-		//	SUMMARY: ì¬Œnƒƒ\ƒbƒh
+		//	SUMMARY: ä½œæˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static bool createDirectories(tTJSVariantString const* p);
 		static bool createDirectory(tTJSVariantString const* p);
@@ -216,7 +216,7 @@ namespace ktl {
 		static void createHardLink(tTJSVariantString const* to, tTJSVariantString const* new_hard_link);
 		static void createSymlink(tTJSVariantString const* to, tTJSVariantString const* new_symlink);
 		//
-		//	SUMMARY: î•ñŒnƒƒ\ƒbƒh
+		//	SUMMARY: æƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static bool exists(tTJSVariantString const* p);
 		static bool equivalent(tTJSVariantString const* p1, tTJSVariantString const* p2);
@@ -232,17 +232,17 @@ namespace ktl {
 		static void permissions(tTJSVariantString const* p, tTVInteger prms);
 		static tTJSString readSymlink(tTJSVariantString const* p);
 		//
-		//	SUMMARY: íœŒnƒƒ\ƒbƒh
+		//	SUMMARY: å‰Šé™¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static bool remove(tTJSVariantString const* p);
 		static tTVInteger removeAll(tTJSVariantString const* p);
 		//
-		//	SUMMARY: •ÏXŒnƒƒ\ƒbƒh
+		//	SUMMARY: å¤‰æ›´ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static void rename(tTJSVariantString const* old_p, tTJSVariantString const* new_p);
 		static void resizeFile(tTJSVariantString const* p, tTVInteger new_size);
 		//
-		//	SUMMARY: ƒXƒe[ƒ^ƒXŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant space(tTJSVariantString const* p);
 		static tTVInteger spaceCapacity(tTJSVariantString const* p);
@@ -256,13 +256,13 @@ namespace ktl {
 		static tTVInteger symlinkStatusType(tTJSVariantString const* p);
 		static tTVInteger symlinkStatusPermissions(tTJSVariantString const* p);
 		//
-		//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSString currentPath();
 		static tTJSString tempDirectoryPath();
 		static tTJSString uniquePath(tTJSVariantString const* model = 0);
 		//
-		//	SUMMARY: —ñ‹“Œnƒƒ\ƒbƒh
+		//	SUMMARY: åˆ—æŒ™ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant enumDirectoryEntry(
 			tTJSVariantString const* p,

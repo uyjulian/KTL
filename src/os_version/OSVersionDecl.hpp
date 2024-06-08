@@ -62,7 +62,7 @@ namespace ktl {
 		NativeOSVersion();
 	public:
 		//
-		//	SUMMARY: ƒo[ƒWƒ‡ƒ“Œnƒtƒ‰ƒO
+		//	SUMMARY: ãƒãƒ¼ã‚¸ãƒ§ãƒ³ç³»ãƒ•ãƒ©ã‚°
 		//
 		static flag_type const vfWindows2000 = 0x500;
 		static flag_type const vfWindowsXP = 0x501;
@@ -73,7 +73,7 @@ namespace ktl {
 		static flag_type const vfWindows8_1 = 0x603;
 	public:
 		//
-		//	SUMMARY: Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static dword_type majorVersion();
 		static dword_type minorVersion();
@@ -85,11 +85,11 @@ namespace ktl {
 		static word_type suiteMask();
 		static word_type productType();
 		//
-		//	SUMMARY: Šg’£Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ‹¡å¼µå–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static flag_type versionFlag();
 		//
-		//	SUMMARY: ƒ`ƒFƒbƒNŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒã‚§ãƒƒã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static int_type checkVersion(flag_type flag);
 	};
@@ -104,7 +104,7 @@ namespace ktl {
 		boost::shared_ptr<NativeOSVersion> instance_;
 	public:
 		//
-		//	SUMMARY: ƒo[ƒWƒ‡ƒ“Œnƒtƒ‰ƒO
+		//	SUMMARY: ãƒãƒ¼ã‚¸ãƒ§ãƒ³ç³»ãƒ•ãƒ©ã‚°
 		//
 		static tTVInteger const vfWindows2000 = NativeOSVersion::vfWindows2000;
 		static tTVInteger const vfWindowsXP = NativeOSVersion::vfWindowsXP;
@@ -122,7 +122,7 @@ namespace ktl {
 		void TJS_INTF_METHOD Invalidate();
 	public:
 		//
-		//	SUMMARY: Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVInteger majorVersion();
 		static tTVInteger minorVersion();
@@ -134,11 +134,11 @@ namespace ktl {
 		static tTVInteger suiteMask();
 		static tTVInteger productType();
 		//
-		//	SUMMARY: Šg’£Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ‹¡å¼µå–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVInteger versionFlag();
 		//
-		//	SUMMARY: ƒ`ƒFƒbƒNŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒã‚§ãƒƒã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVInteger checkVersion(tTVInteger flag);
 	};

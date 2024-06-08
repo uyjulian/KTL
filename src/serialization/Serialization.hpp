@@ -46,7 +46,7 @@ namespace ktl {
 	//
 	NativeSerializationObject::NativeSerializationObject() {}
 	//
-	//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒUŠÇ—Œnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚¶ç®¡ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativeSerializationObject::insert(
 		key_type const& key,
@@ -56,13 +56,13 @@ namespace ktl {
 		if (exist(key)) {
 			KTL_WARNING(
 				KTL_WARNING_SECTION,
-				SPRIG_KRKR_TJS_W("Šù‚É“o˜^‚³‚ê‚½ƒVƒŠƒAƒ‰ƒCƒU‚ğã‘‚«‚µ‚Ü‚·:") + key
+				SPRIG_KRKR_TJS_W("æ—¢ã«ç™»éŒ²ã•ã‚ŒãŸã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚¶ã‚’ä¸Šæ›¸ãã—ã¾ã™:") + key
 				);
 		}
 		tTJSVariantClosure const& closure = v->AsObjectClosureNoAddRef();
 		ISerializer* ser = getSerializerInstance(closure);
 		if (ser) {
-			// COMMENT: ƒVƒŠƒAƒ‰ƒCƒUƒIƒuƒWƒFƒNƒg‚ğæ“¾‚Å‚«‚½ê‡
+			// COMMENT: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚¶ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å–å¾—ã§ããŸå ´åˆ
 			serializer_map_[key] = boost::make_shared<NativeSerializer>(
 				closure.Object,
 				closure.ObjThis,
@@ -70,7 +70,7 @@ namespace ktl {
 				);
 			return true;
 		} else {
-			// COMMENT: ƒVƒŠƒAƒ‰ƒCƒUƒIƒuƒWƒFƒNƒg‚ğæ“¾‚Å‚«‚È‚¢ê‡
+			// COMMENT: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚¶ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å–å¾—ã§ããªã„å ´åˆ
 			serializer_map_[key] = boost::make_shared<ScriptSerializer>(
 				closure.Object,
 				closure.ObjThis
@@ -120,7 +120,7 @@ namespace ktl {
 		return *i;
 	}
 	//
-	//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void NativeSerializationObject::save(
 		tTJSVariant const* ar_v,
@@ -141,7 +141,7 @@ namespace ktl {
 				if (TJS_FAILED(closure.Object->ClassInstanceInfo(TJS_CII_GET, 0, &ser_v))) {
 					KTL_ERROR(
 						KTL_ERROR_SECTION,
-						SPRIG_KRKR_TJS_W("ƒCƒ“ƒXƒ^ƒ“ƒXî•ñ‚ğæ“¾‚Å‚«‚Ü‚¹‚ñ"),
+						SPRIG_KRKR_TJS_W("ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹æƒ…å ±ã‚’å–å¾—ã§ãã¾ã›ã‚“"),
 						sprig::krkr::bad_argument
 						);
 				}
@@ -153,7 +153,7 @@ namespace ktl {
 				if (!value) {
 					KTL_ERROR(
 						KTL_ERROR_SECTION,
-						SPRIG_KRKR_TJS_W("‘Î‰‚·‚éƒVƒŠƒAƒ‰ƒCƒU‚ª“o˜^‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ:") + ser,
+						SPRIG_KRKR_TJS_W("å¯¾å¿œã™ã‚‹ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚¶ãŒç™»éŒ²ã•ã‚Œã¦ã„ã¾ã›ã‚“:") + ser,
 						sprig::krkr::bad_argument
 						);
 				}
@@ -198,7 +198,7 @@ namespace ktl {
 					if (!value) {
 						KTL_ERROR(
 							KTL_ERROR_SECTION,
-							SPRIG_KRKR_TJS_W("‘Î‰‚·‚éƒVƒŠƒAƒ‰ƒCƒU‚ª“o˜^‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ:") + ser,
+							SPRIG_KRKR_TJS_W("å¯¾å¿œã™ã‚‹ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚¶ãŒç™»éŒ²ã•ã‚Œã¦ã„ã¾ã›ã‚“:") + ser,
 							sprig::krkr::bad_argument
 							);
 					}
@@ -244,7 +244,7 @@ namespace ktl {
 		instance_.reset();
 	}
 	//
-	//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒUŠÇ—Œnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚¶ç®¡ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool SerializationObject::insert(
 		tTJSString const& key,
@@ -266,7 +266,7 @@ namespace ktl {
 		return instance_->exist(key);
 	}
 	//
-	//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void SerializationObject::save(
 		tTJSVariant const* ar_v,

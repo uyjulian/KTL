@@ -174,7 +174,7 @@ namespace ktl {
 	//
 	NativeOdeint::NativeOdeint() {}
 	//
-	//	SUMMARY: Ï•ªŒnƒƒ\ƒbƒh
+	//	SUMMARY: ç©åˆ†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE std::size_t NativeOdeint::integrate(
 		tTJSVariantClosure const& system, tTJSVariantClosure const& start_state, time_type start_time, time_type end_time, time_type dt
@@ -234,7 +234,7 @@ namespace ktl {
 		instance_.reset();
 	}
 	//
-	//	SUMMARY: Ï•ªŒnƒƒ\ƒbƒh
+	//	SUMMARY: ç©åˆ†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVInteger Odeint::integrate(
 		tTJSVariantClosure const& system, tTJSVariantClosure const& start_state, tTVReal start_time, tTVReal end_time, tTVReal dt

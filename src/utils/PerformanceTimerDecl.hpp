@@ -26,11 +26,11 @@ namespace ktl {
 		NativePerformanceTimer();
 	public:
 		//
-		//	SUMMARY: ‘€ìŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ“ä½œç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void restart();
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		value_type elapsed();
 	};
@@ -52,11 +52,11 @@ namespace ktl {
 			);
 		void TJS_INTF_METHOD Invalidate();
 		//
-		//	SUMMARY: ‘€ìŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ“ä½œç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void restart();
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tjs_real elapsed();
 	};

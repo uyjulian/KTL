@@ -24,12 +24,12 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME PerformanceCounterClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassPerformanceCounter, PerformanceCounter, PerformanceCounter)
 	//
-	//	SUMMARY: o—ÍŒnƒƒ\ƒbƒh
+	//	SUMMARY: å‡ºåŠ›ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_METHOD_DECL_PARAM_VOID_RES_VOID(PerformanceCounter, begin);
 	SPRIG_KRKR_NATIVE_METHOD_DECL_PARAM_VOID_RES_VOID(PerformanceCounter, end);
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT(PerformanceCounter, enable, getEnable, setEnable);
 

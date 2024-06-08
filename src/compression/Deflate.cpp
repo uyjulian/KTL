@@ -24,24 +24,24 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME DeflateClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassDeflate, Deflate, Deflate)
 	//
-	//	SUMMARY: ˆ³kƒŒƒxƒ‹Œnƒtƒ‰ƒO
+	//	SUMMARY: åœ§ç¸®ãƒ¬ãƒ™ãƒ«ç³»ãƒ•ãƒ©ã‚°
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(clfNoCompression, Deflate::clfNoCompression);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(clfBestSpeed, Deflate::clfBestSpeed);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(clfBestCompression, Deflate::clfBestCompression);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(clfDefaultCompression, Deflate::clfDefaultCompression);
 	//
-	//	SUMMARY: ˆ³kƒƒ\ƒbƒhŒnƒtƒ‰ƒO
+	//	SUMMARY: åœ§ç¸®ãƒ¡ã‚½ãƒƒãƒ‰ç³»ãƒ•ãƒ©ã‚°
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(cmfDeflated, Deflate::cmfDeflated);
 	//
-	//	SUMMARY: ˆ³kƒXƒgƒ‰ƒeƒW[Œnƒtƒ‰ƒO
+	//	SUMMARY: åœ§ç¸®ã‚¹ãƒˆãƒ©ãƒ†ã‚¸ãƒ¼ç³»ãƒ•ãƒ©ã‚°
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(csfDefaultStrategy, Deflate::csfDefaultStrategy);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(csfFiltered, Deflate::csfFiltered);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(csfHuffmanOnly, Deflate::csfHuffmanOnly);
 	//
-	//	SUMMARY: ƒZƒbƒgƒAƒbƒvŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚»ãƒƒãƒˆã‚¢ãƒƒãƒ—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_METHOD_DECL_PARAM_VOID_RES_VOID(Deflate, reset);
 	SPRIG_KRKR_NATIVE_METHOD_DECL_INVOKE_PARAM_VOID_RES_VARIANT(Deflate, setup);
@@ -49,7 +49,7 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_METHOD_DECL_INVOKE_PARAM_VOID_RES_VARIANT(Deflate, finish);
 	SPRIG_KRKR_NATIVE_METHOD_DECL_INVOKE_PARAM_VOID_RES_VARIANT(Deflate, flush);
 	//
-	//	SUMMARY: ƒpƒ‰ƒ[ƒ^Œnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT(Deflate, level, getLevel, setLevel);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT(Deflate, method, getMethod, setMethod);
@@ -59,12 +59,12 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT(Deflate, noHeader, getNoHeader, setNoHeader);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT(Deflate, calculateCRC, getCalculateCRC, setCalculateCRC);
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Deflate, CRC, CRC);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Deflate, originalSize, originalSize);
 	//
-	//	SUMMARY: ˆ—Œnƒƒ\ƒbƒh
+	//	SUMMARY: å‡¦ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(processBlock)
 	{
@@ -192,7 +192,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(processStorage);
 	//
-	//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Deflate, size, size);
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(asOctet)
@@ -217,7 +217,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(asOctet);
 	//
-	//	SUMMARY: ƒXƒgƒŒ[ƒWŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¹ãƒˆãƒ¬ãƒ¼ã‚¸ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(saveStorage)
 	{

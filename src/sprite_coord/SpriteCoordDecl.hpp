@@ -45,7 +45,7 @@ namespace ktl {
 		NativeSpriteCoord();
 	public:
 		//
-		//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		string_instance_type saveCoordTransByText() const;
 		void loadCoordTransByText(tjs_char const* data);
@@ -54,11 +54,11 @@ namespace ktl {
 		binary_instance_type saveCoordTransByBinary() const;
 		void loadCoordTransByBinary(tTJSVariantOctet const* data);
 		//
-		//	SUMMARY: XVŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ›´æ–°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void update();
 		//
-		//	SUMMARY: ƒpƒ‰ƒ[ƒ^Œnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		sprig::call_traits<scaling_type>::getter_type getScaling() const;
 		void setScaling(sprig::call_traits<scaling_type>::param_type v);
@@ -71,7 +71,7 @@ namespace ktl {
 		sprig::call_traits<coord_type>::getter_type getCenter() const;
 		void setCenter(sprig::call_traits<coord_type>::param_type v);
 		//
-		//	SUMMARY: ƒpƒ‰ƒ[ƒ^ƒvƒƒpƒeƒCŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ—ãƒ­ãƒ‘ãƒ†ã‚¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		trans_element_type getScalingX() const;
 		trans_element_type getScalingY() const;
@@ -94,7 +94,7 @@ namespace ktl {
 		void setCenterX(sprig::call_traits<coord_element_type>::param_type v);
 		void setCenterY(sprig::call_traits<coord_element_type>::param_type v);
 		//
-		//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		sprig::call_traits<size_type>::getter_type getSize() const;
 		sprig::call_traits<coords_type>::getter_type getPoints() const;
@@ -103,7 +103,7 @@ namespace ktl {
 		sprig::call_traits<rect_type>::getter_type getEnclosedRect() const;
 		sprig::call_traits<size_type>::getter_type getEnclosedSize() const;
 		//
-		//	SUMMARY: Žæ“¾ƒvƒƒpƒeƒCŒnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		coord_element_type getSizeX() const;
 		coord_element_type getSizeY() const;
@@ -167,7 +167,7 @@ namespace ktl {
 		void TJS_INTF_METHOD Invalidate();
 	public:
 		//
-		//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant saveCoordTransByText() const;
 		void loadCoordTransByText(tTJSVariantString const* data);
@@ -176,11 +176,11 @@ namespace ktl {
 		tTJSVariant saveCoordTransByBinary() const;
 		void loadCoordTransByBinary(tTJSVariantOctet const* data);
 		//
-		//	SUMMARY: XVŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ›´æ–°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void update();
 		//
-		//	SUMMARY: ƒpƒ‰ƒ[ƒ^Œnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void setScaling(tTVReal v1, tTVReal v2);
 		void setRotation(tTVReal v);
@@ -189,7 +189,7 @@ namespace ktl {
 		void setRect(tTVInteger v1, tTVInteger v2, tTVInteger v3, tTVInteger v4);
 		void setCenter(tTVInteger v1, tTVInteger v2);
 		//
-		//	SUMMARY: ƒpƒ‰ƒ[ƒ^ƒvƒƒpƒeƒCŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ—ãƒ­ãƒ‘ãƒ†ã‚¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTVReal getScalingX() const;
 		tTVReal getScalingY() const;
@@ -212,7 +212,7 @@ namespace ktl {
 		void setCenterX(tTVInteger v);
 		void setCenterY(tTVInteger v);
 		//
-		//	SUMMARY: Žæ“¾ƒvƒƒpƒeƒCŒnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTVInteger getSizeX() const;
 		tTVInteger getSizeY() const;

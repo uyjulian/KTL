@@ -90,7 +90,7 @@ namespace ktl {
 
 	NativeOSVersion::NativeOSVersion() {}
 	//
-	//	SUMMARY: Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE NativeOSVersion::dword_type NativeOSVersion::majorVersion() {
 		OSVersionInfo::get_mutable_instance().initialize();
@@ -129,13 +129,13 @@ namespace ktl {
 		return OSVersionInfo::get_const_instance().product_type();
 	}
 	//
-	//	SUMMARY: Šg’£Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ‹¡å¼µå–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE NativeOSVersion::flag_type NativeOSVersion::versionFlag() {
 		return majorVersion() * 0x100 + minorVersion();
 	}
 	//
-	//	SUMMARY: ƒ`ƒFƒbƒNŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒã‚§ãƒƒã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE NativeOSVersion::int_type NativeOSVersion::checkVersion(flag_type flag) {
 		return static_cast<int_type>(versionFlag()) - static_cast<int_type>(flag);
@@ -160,7 +160,7 @@ namespace ktl {
 		instance_.reset();
 	}
 	//
-	//	SUMMARY: Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVInteger OSVersion::majorVersion() {
 		return NativeOSVersion::majorVersion();
@@ -190,13 +190,13 @@ namespace ktl {
 		return NativeOSVersion::productType();
 	}
 	//
-	//	SUMMARY: Šg’£Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ‹¡å¼µå–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVInteger OSVersion::versionFlag() {
 		return NativeOSVersion::versionFlag();
 	}
 	//
-	//	SUMMARY: ƒ`ƒFƒbƒNŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒã‚§ãƒƒã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVInteger OSVersion::checkVersion(tTVInteger flag) {
 		return NativeOSVersion::checkVersion(

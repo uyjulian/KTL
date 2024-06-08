@@ -24,7 +24,7 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME Bzip2CompressorClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassBzip2Compressor, Bzip2Compressor, Bzip2Compressor)
 	//
-	//	SUMMARY: ƒZƒbƒgƒAƒbƒvŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚»ãƒƒãƒˆã‚¢ãƒƒãƒ—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_METHOD_DECL_PARAM_VOID_RES_VOID(Bzip2Compressor, reset);
 	SPRIG_KRKR_NATIVE_METHOD_DECL_INVOKE_PARAM_VOID_RES_VARIANT(Bzip2Compressor, setup);
@@ -32,12 +32,12 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_METHOD_DECL_INVOKE_PARAM_VOID_RES_VARIANT(Bzip2Compressor, finish);
 	SPRIG_KRKR_NATIVE_METHOD_DECL_INVOKE_PARAM_VOID_RES_VARIANT(Bzip2Compressor, flush);
 	//
-	//	SUMMARY: ƒpƒ‰ƒ[ƒ^Œnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT(Bzip2Compressor, blockSize, getBlockSize, setBlockSize);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT(Bzip2Compressor, workFactor, getWorkFactor, setWorkFactor);
 	//
-	//	SUMMARY: ˆ—Œnƒƒ\ƒbƒh
+	//	SUMMARY: å‡¦ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(processBlock)
 	{
@@ -165,7 +165,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(processStorage);
 	//
-	//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Bzip2Compressor, size, size);
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(asOctet)
@@ -190,7 +190,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(asOctet);
 	//
-	//	SUMMARY: ƒXƒgƒŒ[ƒWŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¹ãƒˆãƒ¬ãƒ¼ã‚¸ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(saveStorage)
 	{

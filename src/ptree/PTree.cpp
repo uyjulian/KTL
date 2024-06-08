@@ -25,33 +25,33 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME PTreeClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassPTree, PTree, PTree)
 	//
-	//	SUMMARY: XMLƒp[ƒXŒnƒtƒ‰ƒO
+	//	SUMMARY: XMLãƒ‘ãƒ¼ã‚¹ç³»ãƒ•ãƒ©ã‚°
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(pfXMLNoConcatText, PTree::pfXMLNoConcatText);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(pfXMLNoComments, PTree::pfXMLNoComments);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(pfXMLTrimWhitespace, PTree::pfXMLTrimWhitespace);
 	//
-	//	SUMMARY: YAMLƒp[ƒXŒnƒtƒ‰ƒO
+	//	SUMMARY: YAMLãƒ‘ãƒ¼ã‚¹ç³»ãƒ•ãƒ©ã‚°
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(pfYAMLMultiDocument, PTree::pfYAMLMultiDocument);
 	//
-	//	SUMMARY: YAMLƒGƒ~ƒbƒgŒnƒtƒ‰ƒO
+	//	SUMMARY: YAMLã‚¨ãƒŸãƒƒãƒˆç³»ãƒ•ãƒ©ã‚°
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(efYAMLMultiDocument, PTree::efYAMLMultiDocument);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(efYAMLInsertEndOfDocument, PTree::efYAMLInsertEndOfDocument);
 	//
-	//	SUMMARY: HTMLƒp[ƒXŒnƒtƒ‰ƒO
+	//	SUMMARY: HTMLãƒ‘ãƒ¼ã‚¹ç³»ãƒ•ãƒ©ã‚°
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(pfHTMLNoConcatText, PTree::pfHTMLNoConcatText);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(pfHTMLNoComments, PTree::pfHTMLNoComments);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(pfHTMLTrimWhitespace, PTree::pfHTMLTrimWhitespace);
 	//
 	//
-	//	SUMMARY: “à•”Œnƒƒ\ƒbƒh
+	//	SUMMARY: å†…éƒ¨ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(PTree, instance, getInstance);
 	//
-	//	SUMMARY: ƒAƒNƒZƒXŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¢ã‚¯ã‚»ã‚¹ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(get)
 	{
@@ -177,7 +177,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(reverse);
 	//
-	//	SUMMARY: •¡»Œnƒƒ\ƒbƒh
+	//	SUMMARY: è¤‡è£½ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(clone)
 	{
@@ -206,7 +206,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(assign);
 	//
-	//	SUMMARY: XML“Ç‚Ýž‚ÝŒnƒƒ\ƒbƒh
+	//	SUMMARY: XMLèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(readXML)
 	{
@@ -280,7 +280,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(readStorageXML);
 	//
-	//	SUMMARY: JSON“Ç‚Ýž‚ÝŒnƒƒ\ƒbƒh
+	//	SUMMARY: JSONèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(readJSON)
 	{
@@ -324,7 +324,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(readStorageJSON);
 	//
-	//	SUMMARY: INI“Ç‚Ýž‚ÝŒnƒƒ\ƒbƒh
+	//	SUMMARY: INIèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(readINI)
 	{
@@ -368,7 +368,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(readStorageINI);
 	//
-	//	SUMMARY: INFO“Ç‚Ýž‚ÝŒnƒƒ\ƒbƒh
+	//	SUMMARY: INFOèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(readINFO)
 	{
@@ -412,7 +412,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(readStorageINFO);
 	//
-	//	SUMMARY: YAML“Ç‚Ýž‚ÝŒnƒƒ\ƒbƒh
+	//	SUMMARY: YAMLèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(readYAML)
 	{
@@ -486,7 +486,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(readStorageYAML);
 	//
-	//	SUMMARY: HTML“Ç‚Ýž‚ÝŒnƒƒ\ƒbƒh
+	//	SUMMARY: HTMLèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(readHTML)
 	{
@@ -560,7 +560,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(readStorageHTML);
 	//
-	//	SUMMARY: XML‘‚«o‚µŒnƒƒ\ƒbƒh
+	//	SUMMARY: XMLæ›¸ãå‡ºã—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(writeXMLToString)
 	{
@@ -627,7 +627,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(writeStorageXML);
 	//
-	//	SUMMARY: JSON‘‚«o‚µŒnƒƒ\ƒbƒh
+	//	SUMMARY: JSONæ›¸ãå‡ºã—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(writeJSONToString)
 	{
@@ -676,7 +676,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(writeStorageJSON);
 	//
-	//	SUMMARY: INI‘‚«o‚µŒnƒƒ\ƒbƒh
+	//	SUMMARY: INIæ›¸ãå‡ºã—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(writeINIToString)
 	{
@@ -720,7 +720,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(writeStorageINI);
 	//
-	//	SUMMARY: INFO‘‚«o‚µŒnƒƒ\ƒbƒh
+	//	SUMMARY: INFOæ›¸ãå‡ºã—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(writeINFOToString)
 	{
@@ -787,7 +787,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(writeStorageINFO);
 	//
-	//	SUMMARY: YAML‘‚«o‚µŒnƒƒ\ƒbƒh
+	//	SUMMARY: YAMLæ›¸ãå‡ºã—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(writeYAMLToString)
 	{
@@ -863,7 +863,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(writeStorageYAML);
 	//
-	//	SUMMARY: ƒtƒH[ƒ}ƒbƒgŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ•ã‚©ãƒ¼ãƒžãƒƒãƒˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(trimXML)
 	{
@@ -901,7 +901,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(unstratifyINI);
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT(PTree, pathSeparator, getPathSeparator, setPathSeparator);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT(PTree, pathSharp, getPathSharp, setPathSharp);

@@ -76,7 +76,7 @@ namespace ktl {
 		if (!in) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒI[ƒvƒ“‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚ªãƒ¼ãƒ—ãƒ³ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -87,7 +87,7 @@ namespace ktl {
 		if (FAILED(in->Seek(move, TJS_BS_SEEK_END, &new_pos))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒV[ƒN‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚·ãƒ¼ã‚¯ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -101,7 +101,7 @@ namespace ktl {
 		if (FAILED(in->Seek(move, TJS_BS_SEEK_SET, &new_pos))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒV[ƒN‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚·ãƒ¼ã‚¯ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -111,7 +111,7 @@ namespace ktl {
 		if (FAILED(in->Read(&binary[0], file_size, &io_size))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹“Ç‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«èª­è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -123,7 +123,7 @@ namespace ktl {
 		if (!in) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒI[ƒvƒ“‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚ªãƒ¼ãƒ—ãƒ³ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -134,7 +134,7 @@ namespace ktl {
 		if (FAILED(in->Seek(move, TJS_BS_SEEK_END, &new_pos))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒV[ƒN‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚·ãƒ¼ã‚¯ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -148,7 +148,7 @@ namespace ktl {
 		if (FAILED(in->Seek(move, TJS_BS_SEEK_SET, &new_pos))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒV[ƒN‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚·ãƒ¼ã‚¯ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -159,7 +159,7 @@ namespace ktl {
 		if (FAILED(in->Read(&binary[0], result_size, &io_size))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹“Ç‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«èª­è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -171,7 +171,7 @@ namespace ktl {
 		if (!in) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒI[ƒvƒ“‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚ªãƒ¼ãƒ—ãƒ³ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -182,7 +182,7 @@ namespace ktl {
 		if (FAILED(in->Seek(move, TJS_BS_SEEK_END, &new_pos))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒV[ƒN‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚·ãƒ¼ã‚¯ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -196,7 +196,7 @@ namespace ktl {
 		if (FAILED(in->Seek(move, TJS_BS_SEEK_SET, &new_pos))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒV[ƒN‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚·ãƒ¼ã‚¯ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -210,7 +210,7 @@ namespace ktl {
 		if (FAILED(in->Read(&binary[0], result_size, &io_size))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹“Ç‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«èª­è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -446,7 +446,7 @@ namespace ktl {
 		if (binary_.empty()) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				SPRIG_KRKR_TJS_W("—v‘f‚ª‹ó‚Å‚·"),
+				SPRIG_KRKR_TJS_W("è¦ç´ ãŒç©ºã§ã™"),
 				sprig::krkr::bad_state
 				);
 		}
@@ -470,10 +470,10 @@ namespace ktl {
 		return binary_.end();
 	}
 	//
-	//	SUMMARY: ¶¬Œnƒƒ\ƒbƒh
+	//	SUMMARY: ç”Ÿæˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE sprig::krkr::tjs::object_type NativeOctetBuilder::fromHex(tTJSVariantString const* data) {
-		//	COMMENT: •ÏŠ·ƒe[ƒuƒ‹
+		//	COMMENT: å¤‰æ›ãƒ†ãƒ¼ãƒ–ãƒ«
 		static tjs_char const* upper_table = SPRIG_KRKR_TJS_W("0123456789ABCDEF");
 		static tjs_char const* upper_end = upper_table + 16;
 		static tjs_char const* lower_table = SPRIG_KRKR_TJS_W("0123456789abcdef");
@@ -497,22 +497,22 @@ namespace ktl {
 		std::size_t const len = data->GetLength();
 		binary_type binary;
 		for (std::size_t i = 0, last = len % 2 ? len - 1 : len; i != last; i += 2) {
-			//	COMMENT: 1•¶š–Ú
+			//	COMMENT: 1æ–‡å­—ç›®
 			int_type byte = func::to_harf_byte(str[i]);
 			if (byte < 0) {
 				return sprig::krkr::tjs::object_type();
 			}
-			//	COMMENT: 2•¶š–Ú
+			//	COMMENT: 2æ–‡å­—ç›®
 			int_type byte2 = func::to_harf_byte(str[i + 1]);
 			if (byte2 < 0) {
 				return sprig::krkr::tjs::object_type();
 			}
-			//	COMMENT: ‘ã“ü
+			//	COMMENT: ä»£å…¥
 			byte <<= 4;
 			byte |= byte2;
 			binary.push_back(static_cast<byte_type>(byte));
 		}
-		//	COMMENT: •¶š”‚ªŠï”‚È‚çÅŒã‚Ì•¶š‚¾‚¯•Ê‚Éˆ—
+		//	COMMENT: æ–‡å­—æ•°ãŒå¥‡æ•°ãªã‚‰æœ€å¾Œã®æ–‡å­—ã ã‘åˆ¥ã«å‡¦ç†
 		if (len % 2) {
 			int_type byte = func::to_harf_byte(str[len - 1]);
 			if (byte < 0) {
@@ -527,7 +527,7 @@ namespace ktl {
 		return result;
 	}
 	//
-	//	SUMMARY: ‘Œnƒƒ\ƒbƒh
+	//	SUMMARY: æ›¸è¾¼ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE NativeOctetBuilder::size_type NativeOctetBuilder::set(size_type pos, tTJSVariant* v, flag_type flag) {
 		flag_type vtf = flag & vtfMask;
@@ -562,7 +562,7 @@ namespace ktl {
 			if (v->Type() != tvtOctet) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("Œ^‚ªˆê’v‚µ‚Ü‚¹‚ñ"),
+					SPRIG_KRKR_TJS_W("å‹ãŒä¸€è‡´ã—ã¾ã›ã‚“"),
 					sprig::krkr::bad_argument
 					);
 				return 0;
@@ -575,7 +575,7 @@ namespace ktl {
 			if (v->Type() != tvtString) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("Œ^‚ªˆê’v‚µ‚Ü‚¹‚ñ"),
+					SPRIG_KRKR_TJS_W("å‹ãŒä¸€è‡´ã—ã¾ã›ã‚“"),
 					sprig::krkr::bad_argument
 					);
 				return 0;
@@ -588,7 +588,7 @@ namespace ktl {
 			if (v->Type() != tvtString) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("Œ^‚ªˆê’v‚µ‚Ü‚¹‚ñ"),
+					SPRIG_KRKR_TJS_W("å‹ãŒä¸€è‡´ã—ã¾ã›ã‚“"),
 					sprig::krkr::bad_argument
 					);
 				return 0;
@@ -603,7 +603,7 @@ namespace ktl {
 			if (v->Type() != tvtObject) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("Œ^‚ªˆê’v‚µ‚Ü‚¹‚ñ"),
+					SPRIG_KRKR_TJS_W("å‹ãŒä¸€è‡´ã—ã¾ã›ã‚“"),
 					sprig::krkr::bad_argument
 					);
 				return 0;
@@ -613,7 +613,7 @@ namespace ktl {
 				if (!obj || !sprig::krkr::tjs::IsInstanceObjectOf(obj, SPRIG_KRKR_TJS_W("OctetBuilder"))) {
 					KTL_ERROR(
 						KTL_ERROR_SECTION,
-						SPRIG_KRKR_TJS_W("Œ^‚ªˆê’v‚µ‚Ü‚¹‚ñ"),
+						SPRIG_KRKR_TJS_W("å‹ãŒä¸€è‡´ã—ã¾ã›ã‚“"),
 						sprig::krkr::bad_argument
 						);
 					return 0;
@@ -623,7 +623,7 @@ namespace ktl {
 		default:
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				SPRIG_KRKR_TJS_W("–³Œø‚Èƒtƒ‰ƒO‚Å‚·"),
+				SPRIG_KRKR_TJS_W("ç„¡åŠ¹ãªãƒ•ãƒ©ã‚°ã§ã™"),
 				sprig::krkr::bad_argument
 				);
 			return 0;
@@ -789,7 +789,7 @@ namespace ktl {
 		if (!loadStorage(binary, storage)) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹“Ç‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«èª­è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return 0;
@@ -808,7 +808,7 @@ namespace ktl {
 		if (!loadStorage(binary, storage, spos)) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹“Ç‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«èª­è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return 0;
@@ -827,7 +827,7 @@ namespace ktl {
 		if (!loadStorage(binary, storage, spos, ssize)) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹“Ç‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«èª­è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return 0;
@@ -854,7 +854,7 @@ namespace ktl {
 		return size;
 	}
 	//
-	//	SUMMARY: Š„“–Œnƒƒ\ƒbƒh
+	//	SUMMARY: å‰²å½“ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void NativeOctetBuilder::assign(tTJSVariant* v, flag_type flag) {
 		flag_type vtf = flag & vtfMask;
@@ -896,7 +896,7 @@ namespace ktl {
 			if (v->Type() != tvtOctet) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("Œ^‚ªˆê’v‚µ‚Ü‚¹‚ñ"),
+					SPRIG_KRKR_TJS_W("å‹ãŒä¸€è‡´ã—ã¾ã›ã‚“"),
 					sprig::krkr::bad_argument
 					);
 				return;
@@ -908,7 +908,7 @@ namespace ktl {
 			if (v->Type() != tvtString) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("Œ^‚ªˆê’v‚µ‚Ü‚¹‚ñ"),
+					SPRIG_KRKR_TJS_W("å‹ãŒä¸€è‡´ã—ã¾ã›ã‚“"),
 					sprig::krkr::bad_argument
 					);
 				return;
@@ -921,7 +921,7 @@ namespace ktl {
 			if (v->Type() != tvtString) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("Œ^‚ªˆê’v‚µ‚Ü‚¹‚ñ"),
+					SPRIG_KRKR_TJS_W("å‹ãŒä¸€è‡´ã—ã¾ã›ã‚“"),
 					sprig::krkr::bad_argument
 					);
 				return;
@@ -936,7 +936,7 @@ namespace ktl {
 			if (v->Type() != tvtObject) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("Œ^‚ªˆê’v‚µ‚Ü‚¹‚ñ"),
+					SPRIG_KRKR_TJS_W("å‹ãŒä¸€è‡´ã—ã¾ã›ã‚“"),
 					sprig::krkr::bad_argument
 					);
 				return;
@@ -946,7 +946,7 @@ namespace ktl {
 				if (!obj || !sprig::krkr::tjs::IsInstanceObjectOf(obj, SPRIG_KRKR_TJS_W("OctetBuilder"))) {
 					KTL_ERROR(
 						KTL_ERROR_SECTION,
-						SPRIG_KRKR_TJS_W("Œ^‚ªˆê’v‚µ‚Ü‚¹‚ñ"),
+						SPRIG_KRKR_TJS_W("å‹ãŒä¸€è‡´ã—ã¾ã›ã‚“"),
 						sprig::krkr::bad_argument
 						);
 					return;
@@ -957,7 +957,7 @@ namespace ktl {
 		default:
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				SPRIG_KRKR_TJS_W("–³Œø‚Èƒtƒ‰ƒO‚Å‚·"),
+				SPRIG_KRKR_TJS_W("ç„¡åŠ¹ãªãƒ•ãƒ©ã‚°ã§ã™"),
 				sprig::krkr::bad_argument
 				);
 			return;
@@ -1111,7 +1111,7 @@ namespace ktl {
 		if (!loadStorage(binary, storage)) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹“Ç‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«èª­è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return;
@@ -1129,7 +1129,7 @@ namespace ktl {
 		if (!loadStorage(binary, storage, spos)) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹“Ç‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«èª­è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return;
@@ -1147,7 +1147,7 @@ namespace ktl {
 		if (!loadStorage(binary, storage, spos, ssize)) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹“Ç‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«èª­è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return;
@@ -1170,7 +1170,7 @@ namespace ktl {
 		}
 	}
 	//
-	//	SUMMARY: ‘}“üŒnƒƒ\ƒbƒh
+	//	SUMMARY: æŒ¿å…¥ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void NativeOctetBuilder::insert(size_type pos, tTJSVariant* v, flag_type flag) {
 		flag_type vtf = flag & vtfMask;
@@ -1212,7 +1212,7 @@ namespace ktl {
 			if (v->Type() != tvtOctet) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("Œ^‚ªˆê’v‚µ‚Ü‚¹‚ñ"),
+					SPRIG_KRKR_TJS_W("å‹ãŒä¸€è‡´ã—ã¾ã›ã‚“"),
 					sprig::krkr::bad_argument
 					);
 				return;
@@ -1225,7 +1225,7 @@ namespace ktl {
 			if (v->Type() != tvtString) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("Œ^‚ªˆê’v‚µ‚Ü‚¹‚ñ"),
+					SPRIG_KRKR_TJS_W("å‹ãŒä¸€è‡´ã—ã¾ã›ã‚“"),
 					sprig::krkr::bad_argument
 					);
 				return;
@@ -1239,7 +1239,7 @@ namespace ktl {
 			if (v->Type() != tvtString) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("Œ^‚ªˆê’v‚µ‚Ü‚¹‚ñ"),
+					SPRIG_KRKR_TJS_W("å‹ãŒä¸€è‡´ã—ã¾ã›ã‚“"),
 					sprig::krkr::bad_argument
 					);
 				return;
@@ -1255,7 +1255,7 @@ namespace ktl {
 			if (v->Type() != tvtObject) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("Œ^‚ªˆê’v‚µ‚Ü‚¹‚ñ"),
+					SPRIG_KRKR_TJS_W("å‹ãŒä¸€è‡´ã—ã¾ã›ã‚“"),
 					sprig::krkr::bad_argument
 					);
 				return;
@@ -1265,7 +1265,7 @@ namespace ktl {
 				if (!obj || !sprig::krkr::tjs::IsInstanceObjectOf(obj, SPRIG_KRKR_TJS_W("OctetBuilder"))) {
 					KTL_ERROR(
 						KTL_ERROR_SECTION,
-						SPRIG_KRKR_TJS_W("Œ^‚ªˆê’v‚µ‚Ü‚¹‚ñ"),
+						SPRIG_KRKR_TJS_W("å‹ãŒä¸€è‡´ã—ã¾ã›ã‚“"),
 						sprig::krkr::bad_argument
 						);
 					return;
@@ -1276,7 +1276,7 @@ namespace ktl {
 		default:
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				SPRIG_KRKR_TJS_W("–³Œø‚Èƒtƒ‰ƒO‚Å‚·"),
+				SPRIG_KRKR_TJS_W("ç„¡åŠ¹ãªãƒ•ãƒ©ã‚°ã§ã™"),
 				sprig::krkr::bad_argument
 				);
 			return;
@@ -1442,7 +1442,7 @@ namespace ktl {
 		if (!loadStorage(binary, storage)) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹“Ç‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«èª­è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return;
@@ -1461,7 +1461,7 @@ namespace ktl {
 		if (!loadStorage(binary, storage, spos)) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹“Ç‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«èª­è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return;
@@ -1480,7 +1480,7 @@ namespace ktl {
 		if (!loadStorage(binary, storage, spos, ssize)) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹“Ç‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«èª­è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return;
@@ -1501,7 +1501,7 @@ namespace ktl {
 		insertBlock(pos, data, data + size);
 	}
 	//
-	//	SUMMARY: ’Ç‰ÁŒnƒƒ\ƒbƒh
+	//	SUMMARY: è¿½åŠ ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE NativeOctetBuilder::size_type NativeOctetBuilder::add(tTJSVariant* v, flag_type flag) {
 		flag_type vtf = flag & vtfMask;
@@ -1534,7 +1534,7 @@ namespace ktl {
 			if (v->Type() != tvtOctet) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("Œ^‚ªˆê’v‚µ‚Ü‚¹‚ñ"),
+					SPRIG_KRKR_TJS_W("å‹ãŒä¸€è‡´ã—ã¾ã›ã‚“"),
 					sprig::krkr::bad_argument
 					);
 				return result;
@@ -1546,7 +1546,7 @@ namespace ktl {
 			if (v->Type() != tvtString) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("Œ^‚ªˆê’v‚µ‚Ü‚¹‚ñ"),
+					SPRIG_KRKR_TJS_W("å‹ãŒä¸€è‡´ã—ã¾ã›ã‚“"),
 					sprig::krkr::bad_argument
 					);
 				return result;
@@ -1558,7 +1558,7 @@ namespace ktl {
 			if (v->Type() != tvtString) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("Œ^‚ªˆê’v‚µ‚Ü‚¹‚ñ"),
+					SPRIG_KRKR_TJS_W("å‹ãŒä¸€è‡´ã—ã¾ã›ã‚“"),
 					sprig::krkr::bad_argument
 					);
 				return result;
@@ -1572,7 +1572,7 @@ namespace ktl {
 			if (v->Type() != tvtObject) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("Œ^‚ªˆê’v‚µ‚Ü‚¹‚ñ"),
+					SPRIG_KRKR_TJS_W("å‹ãŒä¸€è‡´ã—ã¾ã›ã‚“"),
 					sprig::krkr::bad_argument
 					);
 				return result;
@@ -1582,7 +1582,7 @@ namespace ktl {
 				if (!obj || !sprig::krkr::tjs::IsInstanceObjectOf(obj, SPRIG_KRKR_TJS_W("OctetBuilder"))) {
 					KTL_ERROR(
 						KTL_ERROR_SECTION,
-						SPRIG_KRKR_TJS_W("Œ^‚ªˆê’v‚µ‚Ü‚¹‚ñ"),
+						SPRIG_KRKR_TJS_W("å‹ãŒä¸€è‡´ã—ã¾ã›ã‚“"),
 						sprig::krkr::bad_argument
 						);
 					return result;
@@ -1592,7 +1592,7 @@ namespace ktl {
 		default:
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				SPRIG_KRKR_TJS_W("–³Œø‚Èƒtƒ‰ƒO‚Å‚·"),
+				SPRIG_KRKR_TJS_W("ç„¡åŠ¹ãªãƒ•ãƒ©ã‚°ã§ã™"),
 				sprig::krkr::bad_argument
 				);
 			return result;
@@ -1748,7 +1748,7 @@ namespace ktl {
 		if (!loadStorage(binary, storage)) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹“Ç‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«èª­è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return 0;
@@ -1766,7 +1766,7 @@ namespace ktl {
 		if (!loadStorage(binary, storage, spos)) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹“Ç‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«èª­è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return 0;
@@ -1784,7 +1784,7 @@ namespace ktl {
 		if (!loadStorage(binary, storage, spos, ssize)) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹“Ç‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«èª­è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return 0;
@@ -1806,19 +1806,19 @@ namespace ktl {
 		return addBlock(data, data + size);
 	}
 	//
-	//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+	//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void NativeOctetBuilder::clear() {
 		binary_.clear();
 	}
 	//
-	//	SUMMARY: íœŒnƒƒ\ƒbƒh
+	//	SUMMARY: å‰Šé™¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void NativeOctetBuilder::erase(size_type pos) {
 		if (isOutOfRange(pos)) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				SPRIG_KRKR_TJS_W("ƒCƒ“ƒfƒbƒNƒX‚ª”ÍˆÍŠO‚Å‚·"),
+				SPRIG_KRKR_TJS_W("ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ãŒç¯„å›²å¤–ã§ã™"),
 				sprig::krkr::bad_argument
 				);
 		}
@@ -1828,14 +1828,14 @@ namespace ktl {
 		if (isOutOfRange(pos) || isOutOfRange(pos + size)) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				SPRIG_KRKR_TJS_W("ƒCƒ“ƒfƒbƒNƒX‚ª”ÍˆÍŠO‚Å‚·"),
+				SPRIG_KRKR_TJS_W("ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ãŒç¯„å›²å¤–ã§ã™"),
 				sprig::krkr::bad_argument
 				);
 		}
 		binary_.erase(getPos(pos), getPos(pos + size));
 	}
 	//
-	//	SUMMARY: ‘OŒãíœŒnƒƒ\ƒbƒh
+	//	SUMMARY: å‰å¾Œå‰Šé™¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE NativeOctetBuilder::int_type NativeOctetBuilder::pop() {
 		emptyCheck();
@@ -1872,7 +1872,7 @@ namespace ktl {
 		return result;
 	}
 	//
-	//	SUMMARY: •ÏŠ·Œnƒƒ\ƒbƒh
+	//	SUMMARY: å¤‰æ›ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant NativeOctetBuilder::as(size_type pos, flag_type flag) const {
 		flag_type vtf = flag & vtfMask;
@@ -1913,7 +1913,7 @@ namespace ktl {
 		default:
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				SPRIG_KRKR_TJS_W("–³Œø‚Èƒtƒ‰ƒO‚Å‚·"),
+				SPRIG_KRKR_TJS_W("ç„¡åŠ¹ãªãƒ•ãƒ©ã‚°ã§ã™"),
 				sprig::krkr::bad_argument
 				);
 			return tTJSVariant();
@@ -2033,14 +2033,14 @@ namespace ktl {
 		return tTJSVariant(reinterpret_cast<tjs_nchar const*>(&binary[0]));
 	}
 	//
-	//	SUMMARY: ƒXƒgƒŒ[ƒWŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¹ãƒˆãƒ¬ãƒ¼ã‚¸ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE NativeOctetBuilder::int_type NativeOctetBuilder::saveStorage(tjs_char const* storage) const {
 		sprig::com_ptr<IStream> out(::TVPCreateIStream(storage, TJS_BS_WRITE));
 		if (!out) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒI[ƒvƒ“‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚ªãƒ¼ãƒ—ãƒ³ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return -1;
@@ -2053,7 +2053,7 @@ namespace ktl {
 		if (FAILED(out->Write(&binary_[0], binary_.size(), &io_size))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹‘‚É¸”s‚µ‚Ü‚µ‚½"),
+				SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«æ›¸è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ"),
 				sprig::krkr::internal_error
 				);
 			return io_size;
@@ -2065,7 +2065,7 @@ namespace ktl {
 		if (!out) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒI[ƒvƒ“‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚ªãƒ¼ãƒ—ãƒ³ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return -1;
@@ -2078,7 +2078,7 @@ namespace ktl {
 		if (FAILED(out->Write(&binary_[pos], result_size, &io_size))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹‘‚É¸”s‚µ‚Ü‚µ‚½"),
+				SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«æ›¸è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ"),
 				sprig::krkr::internal_error
 				);
 			return io_size;
@@ -2090,7 +2090,7 @@ namespace ktl {
 		if (!out) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒI[ƒvƒ“‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚ªãƒ¼ãƒ—ãƒ³ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return -1;
@@ -2103,7 +2103,7 @@ namespace ktl {
 		if (FAILED(out->Write(&binary_[pos], result_size, &io_size))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹‘‚É¸”s‚µ‚Ü‚µ‚½"),
+				SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«æ›¸è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ"),
 				sprig::krkr::internal_error
 				);
 			return io_size;
@@ -2111,7 +2111,7 @@ namespace ktl {
 		return io_size;
 	}
 	//
-	//	SUMMARY: ‰‰ZŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ¼”ç®—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE NativeOctetBuilder::size_type NativeOctetBuilder::transformAndByte(byte_type b) {
 		BOOST_FOREACH(byte_type& e, binary_) {
@@ -2138,7 +2138,7 @@ namespace ktl {
 		return binary_.size();
 	}
 	//
-	//	SUMMARY: ŒŸõŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ¤œç´¢ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE NativeOctetBuilder::int_type NativeOctetBuilder::findByte(byte_type b) const {
 		const_iterator first = binary_.begin();
@@ -2178,20 +2178,20 @@ namespace ktl {
 			;
 	}
 	//
-	//	SUMMARY: ƒƒ‚ƒŠŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ¡ãƒ¢ãƒªç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void NativeOctetBuilder::copy(sprig::krkr::tjs::intptr_type dest, size_type pos, size_type size) const {
 		if (isOutOfRangeOff(pos) || isOutOfRangeOff(pos + size)) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				SPRIG_KRKR_TJS_W("ƒIƒtƒZƒbƒg‚ª”ÍˆÍŠO‚Å‚·"),
+				SPRIG_KRKR_TJS_W("ã‚ªãƒ•ã‚»ãƒƒãƒˆãŒç¯„å›²å¤–ã§ã™"),
 				sprig::krkr::bad_argument
 				);
 		}
 		std::memmove(reinterpret_cast<void*>(dest), &binary_[pos], size);
 	}
 	//
-	//	SUMMARY: æ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE NativeOctetBuilder::int_type NativeOctetBuilder::back() const {
 		emptyCheck();
@@ -2202,7 +2202,7 @@ namespace ktl {
 		return binary_.front();
 	}
 	//
-	//	SUMMARY: ƒ|ƒCƒ“ƒ^æ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒã‚¤ãƒ³ã‚¿å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE NativeOctetBuilder::byte_type* NativeOctetBuilder::begin() {
 		return binary_.empty()
@@ -2217,7 +2217,7 @@ namespace ktl {
 			;
 	}
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativeOctetBuilder::empty() const {
 		return binary_.empty();
@@ -2254,19 +2254,19 @@ namespace ktl {
 		return instance_->getEnd();
 	}
 	//
-	//	SUMMARY: ¶¬Œnƒƒ\ƒbƒh
+	//	SUMMARY: ç”Ÿæˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE sprig::krkr::tjs::object_type OctetBuilder::fromHex(tTJSVariantString const* data) {
 		return NativeOctetBuilder::fromHex(data);
 	}
 	//
-	//	SUMMARY: “à•”Œnƒƒ\ƒbƒh
+	//	SUMMARY: å†…éƒ¨ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE sprig::krkr::tjs::intptr_type OctetBuilder::getInstance() {
 		return reinterpret_cast<sprig::krkr::tjs::intptr_type>(this);
 	}
 	//
-	//	SUMMARY: ‘Œnƒƒ\ƒbƒh
+	//	SUMMARY: æ›¸è¾¼ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVInteger OctetBuilder::set(tTVInteger pos, tTJSVariant* v, tTVInteger flag) {
 		return instance_->set(
@@ -2420,7 +2420,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: Š„“–Œnƒƒ\ƒbƒh
+	//	SUMMARY: å‰²å½“ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void OctetBuilder::assign(tTJSVariant* v, tTVInteger flag) {
 		instance_->assign(
@@ -2541,7 +2541,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: ‘}“üŒnƒƒ\ƒbƒh
+	//	SUMMARY: æŒ¿å…¥ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void OctetBuilder::insert(tTVInteger pos, tTJSVariant* v, tTVInteger flag) {
 		instance_->insert(
@@ -2695,7 +2695,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: ’Ç‰ÁŒnƒƒ\ƒbƒh
+	//	SUMMARY: è¿½åŠ ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVInteger OctetBuilder::add(tTJSVariant* v, tTVInteger flag) {
 		return instance_->add(
@@ -2816,13 +2816,13 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+	//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void OctetBuilder::clear() {
 		instance_->clear();
 	}
 	//
-	//	SUMMARY: íœŒnƒƒ\ƒbƒh
+	//	SUMMARY: å‰Šé™¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void OctetBuilder::erase(tTVInteger pos) {
 		instance_->erase(
@@ -2836,7 +2836,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: ‘OŒãíœŒnƒƒ\ƒbƒh
+	//	SUMMARY: å‰å¾Œå‰Šé™¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVInteger OctetBuilder::pop() {
 		return instance_->pop();
@@ -2855,7 +2855,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: •ÏŠ·Œnƒƒ\ƒbƒh
+	//	SUMMARY: å¤‰æ›ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant OctetBuilder::as(tTVInteger pos, tTVInteger flag) const {
 		return instance_->as(
@@ -2920,7 +2920,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: ƒXƒgƒŒ[ƒWŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¹ãƒˆãƒ¬ãƒ¼ã‚¸ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVInteger OctetBuilder::saveStorage(tTJSVariantString const* storage) const {
 		return instance_->saveStorage(
@@ -2941,7 +2941,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: ‰‰ZŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ¼”ç®—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVInteger OctetBuilder::transformAndByte(tTVInteger b) {
 		return instance_->transformAndByte(
@@ -2962,7 +2962,7 @@ namespace ktl {
 		return instance_->transformNotByte();
 	}
 	//
-	//	SUMMARY: ŒŸõŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ¤œç´¢ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVInteger OctetBuilder::findByte(tTVInteger b) const {
 		return instance_->findByte(
@@ -2983,7 +2983,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: ƒƒ‚ƒŠŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ¡ãƒ¢ãƒªç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void OctetBuilder::copy(sprig::krkr::tjs::intptr_type dest, tTVInteger pos, tTVInteger size) const {
 		instance_->copy(
@@ -2993,7 +2993,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: æ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVInteger OctetBuilder::back() const {
 		return instance_->back();
@@ -3002,7 +3002,7 @@ namespace ktl {
 		return instance_->front();
 	}
 	//
-	//	SUMMARY: ƒ|ƒCƒ“ƒ^æ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒã‚¤ãƒ³ã‚¿å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE sprig::krkr::tjs::intptr_type OctetBuilder::begin() {
 		return reinterpret_cast<sprig::krkr::tjs::intptr_type>(instance_->begin());
@@ -3011,7 +3011,7 @@ namespace ktl {
 		return reinterpret_cast<sprig::krkr::tjs::intptr_type>(instance_->end());
 	}
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool OctetBuilder::empty() const {
 		return instance_->empty();

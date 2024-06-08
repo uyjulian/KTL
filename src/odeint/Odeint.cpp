@@ -24,7 +24,7 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME OdeintClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassOdeint, Odeint, Odeint)
 	//
-	//	SUMMARY: Ï•ªŒnƒƒ\ƒbƒh
+	//	SUMMARY: ç©åˆ†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(integrate)
 	{

@@ -24,12 +24,12 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME EncodingClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassEncoding, Encoding, Encoding)
 	//
-	//	SUMMARY: URLƒGƒ“ƒR[ƒhŒnƒtƒ‰ƒO
+	//	SUMMARY: URLã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ç³»ãƒ•ãƒ©ã‚°
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(uefSpaceToPlus, Encoding::uefSpaceToPlus);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(uefEncodeTilde, Encoding::uefEncodeTilde);
 	//
-	//	SUMMARY:  URLƒGƒ“ƒR[ƒhŒnƒƒ\ƒbƒh
+	//	SUMMARY:  URLã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(URLEncodeToAsciiOctet)
 	{
@@ -279,7 +279,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(URLDecodeToString);
 	//
-	//	SUMMARY: Base64ƒGƒ“ƒR[ƒhŒnƒƒ\ƒbƒh
+	//	SUMMARY: Base64ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(base64EncodeToAsciiOctet)
 	{
@@ -373,7 +373,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(base64DecodeToOctet);
 	//
-	//	SUMMARY: ƒGƒ“ƒR[ƒhŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(encodeToOctet)
 	{
@@ -406,7 +406,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(encodeToString);
 	//
-	//	SUMMARY: ”äŠrŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ¯”è¼ƒç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(sameCharsetAlias)
 	{
@@ -420,7 +420,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(sameCharsetAlias);
 	//
-	//	SUMMARY: ŒŸoŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ¤œå‡ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(detect)
 	{

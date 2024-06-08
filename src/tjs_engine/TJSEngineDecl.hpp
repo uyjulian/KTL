@@ -24,7 +24,7 @@ namespace ktl {
 		NativeTJSEngine();
 	public:
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		sprig::krkr::tjs::object_type global() const;
 	};
@@ -47,7 +47,7 @@ namespace ktl {
 		void TJS_INTF_METHOD Invalidate();
 	public:
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		sprig::krkr::tjs::object_type global() const;
 	};

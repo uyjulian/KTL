@@ -29,7 +29,7 @@ namespace ktl {
 		: tjs_(boost::make_shared<TJSAdapter>())
 	{}
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE sprig::krkr::tjs::object_type NativeTJSEngine::global() const {
 		sprig::krkr::tjs::object_type obj(
@@ -57,7 +57,7 @@ namespace ktl {
 		instance_.reset();
 	}
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE sprig::krkr::tjs::object_type TJSEngine::global() const {
 		return instance_->global();

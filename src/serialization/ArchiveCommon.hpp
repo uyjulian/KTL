@@ -566,7 +566,7 @@ namespace ktl {
 				if (e.first.size() < 2) {
 					KTL_ERROR(
 						KTL_ERROR_SECTION,
-						SPRIG_KRKR_TJS_W("ƒIƒuƒWƒFƒNƒgƒ}ƒbƒv‚ÌƒL[‚ª–³Œø‚ÈŒ`®‚Å‚·:") + e.first,
+						SPRIG_KRKR_TJS_W("ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãƒãƒƒãƒ—ã®ã‚­ãƒ¼ãŒç„¡åŠ¹ãªå½¢å¼ã§ã™:") + e.first,
 						sprig::krkr::bad_argument
 						);
 				}
@@ -812,7 +812,7 @@ namespace ktl {
 				if (e.first.size() < 2) {
 					KTL_ERROR(
 						KTL_ERROR_SECTION,
-						SPRIG_KRKR_TJS_W("ƒIƒuƒWƒFƒNƒgƒ}ƒbƒv‚ÌƒL[‚ª–³Œø‚ÈŒ`®‚Å‚·:") + e.first,
+						SPRIG_KRKR_TJS_W("ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãƒãƒƒãƒ—ã®ã‚­ãƒ¼ãŒç„¡åŠ¹ãªå½¢å¼ã§ã™:") + e.first,
 						sprig::krkr::bad_argument
 						);
 				}
@@ -871,58 +871,58 @@ namespace ktl {
 		instance_stack_type instance_stack_;
 		instance_map_type instance_map_;
 	private:
-		//	COMMENT: ƒIƒuƒWƒFƒNƒgID‚ğ•Ô‚·
-		//		: ƒŠ[ƒt’l‚É‘Î‚µ‚Ä‚Íí‚É0‚ğ•Ô‚·
+		//	COMMENT: ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆIDã‚’è¿”ã™
+		//		: ãƒªãƒ¼ãƒ•å€¤ã«å¯¾ã—ã¦ã¯å¸¸ã«0ã‚’è¿”ã™
 		DataElement::id_type getID(tTJSVariant const* v) {
 			return v->Type() == tvtObject
 				? reinterpret_cast<DataElement::id_type>(v->AsObjectNoAddRef())
 				: 0;
 		}
-		//	COMMENT: w’è‚³‚ê‚½ID‚ªŠù‚É“o˜^‚³‚ê‚Ä‚¢‚é‚©
+		//	COMMENT: æŒ‡å®šã•ã‚ŒãŸIDãŒæ—¢ã«ç™»éŒ²ã•ã‚Œã¦ã„ã‚‹ã‹
 		bool existObject(DataElement::id_type id) {
 			return element_map_.getObjectMap().count(id) != 0;
 		}
-		//	COMMENT: w’è‚³‚ê‚½ID‚ªŒ»İƒVƒŠƒAƒ‰ƒCƒY’†‚ÌƒNƒ‰ƒX‚Éˆê’v‚·‚é‚©
+		//	COMMENT: æŒ‡å®šã•ã‚ŒãŸIDãŒç¾åœ¨ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºä¸­ã®ã‚¯ãƒ©ã‚¹ã«ä¸€è‡´ã™ã‚‹ã‹
 		bool isCurrentInstance(DataElement::id_type id) {
 			return !instance_stack_.empty() && id == currentInstanceID();
 		}
-		//	COMMENT: w’è‚³‚ê‚½ID‚ÌAŠî’êƒNƒ‰ƒXƒŠƒXƒg‚ÌŸ‚ÌƒCƒ“ƒfƒbƒNƒX‚ğ•Ô‚·
-		//		: ID‚ªŠù‚É“o˜^‚³‚ê‚Ä‚¢‚é‚±‚Æ‚ª‘O’ñ
+		//	COMMENT: æŒ‡å®šã•ã‚ŒãŸIDã®ã€åŸºåº•ã‚¯ãƒ©ã‚¹ãƒªã‚¹ãƒˆã®æ¬¡ã®ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ã‚’è¿”ã™
+		//		: IDãŒæ—¢ã«ç™»éŒ²ã•ã‚Œã¦ã„ã‚‹ã“ã¨ãŒå‰æ
 		DataElement::index_type nextBaseListIndex(DataElement::id_type id) {
 			return element_map_.getObjectMap()[id].getBaseList().size();
 		}
-		//	COMMENT: Œ»İƒVƒŠƒAƒ‰ƒCƒY’†‚ÌƒNƒ‰ƒX‚ÌID‚ğ•Ô‚·
-		//		: ƒCƒ“ƒXƒ^ƒ“ƒXƒXƒ^ƒbƒN‚ª‹ó‚Å‚È‚¢‚±‚Æ‚ª‘O’ñ
+		//	COMMENT: ç¾åœ¨ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºä¸­ã®ã‚¯ãƒ©ã‚¹ã®IDã‚’è¿”ã™
+		//		: ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚¹ã‚¿ãƒƒã‚¯ãŒç©ºã§ãªã„ã“ã¨ãŒå‰æ
 		DataElement::id_type& currentInstanceID() {
 			return instance_stack_.back().first;
 		}
-		//	COMMENT: Œ»İƒVƒŠƒAƒ‰ƒCƒY’†‚ÌƒNƒ‰ƒX‚ÌƒCƒ“ƒfƒbƒNƒXƒXƒ^ƒbƒN‚ğ•Ô‚·
-		//		: ƒCƒ“ƒXƒ^ƒ“ƒXƒXƒ^ƒbƒN‚ª‹ó‚Å‚È‚¢‚±‚Æ‚ª‘O’ñ
+		//	COMMENT: ç¾åœ¨ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºä¸­ã®ã‚¯ãƒ©ã‚¹ã®ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ã‚¹ã‚¿ãƒƒã‚¯ã‚’è¿”ã™
+		//		: ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚¹ã‚¿ãƒƒã‚¯ãŒç©ºã§ãªã„ã“ã¨ãŒå‰æ
 		index_stack_type& currentInstanceIndexStack() {
 			return instance_stack_.back().second;
 		}
-		//	COMMENT: Œ»İƒVƒŠƒAƒ‰ƒCƒY’†‚ÌŠî’êƒNƒ‰ƒXƒŠƒXƒg‚ğ•Ô‚·
-		//		: ƒCƒ“ƒXƒ^ƒ“ƒXƒXƒ^ƒbƒN‚ª‹ó‚Å‚È‚¢‚±‚Æ‚ª‘O’ñ
+		//	COMMENT: ç¾åœ¨ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºä¸­ã®åŸºåº•ã‚¯ãƒ©ã‚¹ãƒªã‚¹ãƒˆã‚’è¿”ã™
+		//		: ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚¹ã‚¿ãƒƒã‚¯ãŒç©ºã§ãªã„ã“ã¨ãŒå‰æ
 		base_list_type& currentBaseList() {
 			DataElement::id_type cur_id = currentInstanceID();
 			return element_map_.getObjectMap()[cur_id].getBaseList();
 		}
-		//	COMMENT: Œ»İƒVƒŠƒAƒ‰ƒCƒY’†‚Ìƒf[ƒ^ƒ}ƒbƒv‚ğ•Ô‚·
+		//	COMMENT: ç¾åœ¨ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºä¸­ã®ãƒ‡ãƒ¼ã‚¿ãƒãƒƒãƒ—ã‚’è¿”ã™
 		data_map_type& currentDataMap() {
-			//	COMMENT: ƒCƒ“ƒXƒ^ƒ“ƒXƒXƒ^ƒbƒN‚ª‹ó‚©H
+			//	COMMENT: ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚¹ã‚¿ãƒƒã‚¯ãŒç©ºã‹ï¼Ÿ
 			if (instance_stack_.empty()) {
-				//	COMMENT: ƒ‹[ƒg‚Ìƒf[ƒ^ƒ}ƒbƒv‚ğ•Ô‚·
+				//	COMMENT: ãƒ«ãƒ¼ãƒˆã®ãƒ‡ãƒ¼ã‚¿ãƒãƒƒãƒ—ã‚’è¿”ã™
 				return element_map_.getDataMap();
 			} else {
 				index_stack_type& cur_index = currentInstanceIndexStack();
-				//	COMMENT: Šî’êƒNƒ‰ƒX‚ğƒVƒŠƒAƒ‰ƒCƒY’†‚Å‚ ‚é‚©H
+				//	COMMENT: åŸºåº•ã‚¯ãƒ©ã‚¹ã‚’ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºä¸­ã§ã‚ã‚‹ã‹ï¼Ÿ
 				if (!cur_index.empty()) {
-					//	COMMENT: Šî’êƒNƒ‰ƒX‚Ìƒf[ƒ^ƒ}ƒbƒv‚ğ•Ô‚·
+					//	COMMENT: åŸºåº•ã‚¯ãƒ©ã‚¹ã®ãƒ‡ãƒ¼ã‚¿ãƒãƒƒãƒ—ã‚’è¿”ã™
 					return currentBaseList()
 						.KTL_SERIALIZATION_AT(static_cast<base_list_type::size_type>(cur_index.back()))
 						.getDataMap();
 				} else {
-					//	COMMENT: ƒ‹[ƒgƒNƒ‰ƒX‚Ìƒf[ƒ^ƒ}ƒbƒv‚ğ•Ô‚·
+					//	COMMENT: ãƒ«ãƒ¼ãƒˆã‚¯ãƒ©ã‚¹ã®ãƒ‡ãƒ¼ã‚¿ãƒãƒƒãƒ—ã‚’è¿”ã™
 					return element_map_.getObjectMap()[currentInstanceID()].getDataMap();
 				}
 			}
@@ -938,30 +938,30 @@ namespace ktl {
 			if (data_map.find(key) != data_map.end()) {
 				KTL_WARNING(
 					KTL_WARNING_SECTION,
-					SPRIG_KRKR_TJS_W("ƒL[‚É‘Î‰‚·‚é—v‘f‚ğã‘‚«‚µ‚Ü‚·:") + key
+					SPRIG_KRKR_TJS_W("ã‚­ãƒ¼ã«å¯¾å¿œã™ã‚‹è¦ç´ ã‚’ä¸Šæ›¸ãã—ã¾ã™:") + key
 					);
 			}
 			DataElement::id_type id = getID(v);
-			//	COMMENT: ƒVƒŠƒAƒ‰ƒCƒUƒL[‚ª–¾¦“Iw’è‚³‚ê‚Ä‚¢‚é‚©H
+			//	COMMENT: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚¶ã‚­ãƒ¼ãŒæ˜ç¤ºçš„æŒ‡å®šã•ã‚Œã¦ã„ã‚‹ã‹ï¼Ÿ
 			if (ser) {
-				//	COMMENT: ‚±‚Ìê‡A‘ÎÛ‚Í—LŒø‚ÈƒIƒuƒWƒFƒNƒg‚Å‚È‚¯‚ê‚Î‚È‚ç‚È‚¢
-				//	COMMENT: Œ»İƒVƒŠƒAƒ‰ƒCƒY’†‚ÌƒNƒ‰ƒX‚Éˆê’v‚·‚é‚©H
+				//	COMMENT: ã“ã®å ´åˆã€å¯¾è±¡ã¯æœ‰åŠ¹ãªã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ãªã‘ã‚Œã°ãªã‚‰ãªã„
+				//	COMMENT: ç¾åœ¨ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºä¸­ã®ã‚¯ãƒ©ã‚¹ã«ä¸€è‡´ã™ã‚‹ã‹ï¼Ÿ
 				if (isCurrentInstance(id)) {
-					//	COMMENT: Šî’êƒNƒ‰ƒX‚ÌƒVƒŠƒAƒ‰ƒCƒY‚Æ‚İ‚È‚·
+					//	COMMENT: åŸºåº•ã‚¯ãƒ©ã‚¹ã®ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºã¨ã¿ãªã™
 					data_map[key] = DataElement(nextBaseListIndex(id));
 				} else {
-					//	COMMENT: ƒ_ƒbƒNƒ^ƒCƒv‚ÌƒVƒŠƒAƒ‰ƒCƒY‚Æ‚İ‚È‚·
+					//	COMMENT: ãƒ€ãƒƒã‚¯ã‚¿ã‚¤ãƒ—ã®ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºã¨ã¿ãªã™
 					data_map[key] = DataElement(*v);
 				}
-				//	COMMENT: ‚¢‚¸‚ê‚Ìê‡‚àAƒVƒŠƒAƒ‰ƒCƒU‚ÌŒÄo‚ª•K—v
+				//	COMMENT: ã„ãšã‚Œã®å ´åˆã‚‚ã€ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚¶ã®å‘¼å‡ºãŒå¿…è¦
 				return false;
 			} else {
-				//	COMMENT: —v‘f‚Ì’l‚ğİ’è‚·‚é
+				//	COMMENT: è¦ç´ ã®å€¤ã‚’è¨­å®šã™ã‚‹
 				data_map[key] = DataElement(*v);
 			}
-			//	COMMENT: ƒVƒŠƒAƒ‰ƒCƒU‚ÌŒÄo‚ª•K—v‚È‚¢‚Ì‚ÍA
-			//		: ƒŠ[ƒt’l‚Å‚ ‚éA
-			//		: ‚Ü‚½‚ÍID‚ªŠù‚É“o˜^‚³‚ê‚Ä‚¢‚éê‡
+			//	COMMENT: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚¶ã®å‘¼å‡ºãŒå¿…è¦ãªã„ã®ã¯ã€
+			//		: ãƒªãƒ¼ãƒ•å€¤ã§ã‚ã‚‹ã€
+			//		: ã¾ãŸã¯IDãŒæ—¢ã«ç™»éŒ²ã•ã‚Œã¦ã„ã‚‹å ´åˆ
 			return !id || existObject(id);
 		}
 		virtual void pushOnSave(
@@ -975,18 +975,18 @@ namespace ktl {
 			data_map_type& data_map = currentDataMap();
 			DataElement& data = data_map[key];
 			DataElement::id_type id = getID(v);
-			//	COMMENT: Œ»İƒVƒŠƒAƒ‰ƒCƒY’†‚ÌƒNƒ‰ƒX‚Éˆê’v‚·‚é‚©H
+			//	COMMENT: ç¾åœ¨ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºä¸­ã®ã‚¯ãƒ©ã‚¹ã«ä¸€è‡´ã™ã‚‹ã‹ï¼Ÿ
 			if (isCurrentInstance(id)) {
-				//	COMMENT: Šî’êƒNƒ‰ƒX‚ÌƒVƒŠƒAƒ‰ƒCƒY‚Æ‚İ‚È‚·
+				//	COMMENT: åŸºåº•ã‚¯ãƒ©ã‚¹ã®ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºã¨ã¿ãªã™
 				DataElement::index_type next_index = nextBaseListIndex(id);
 				currentBaseList().push_back(BaseElement(ser));
 				index_stack_type& cur_index = currentInstanceIndexStack();
 				cur_index.push_back(next_index);
 			} else {
-				//	COMMENT: ƒ‹[ƒgƒNƒ‰ƒX‚ÌƒVƒŠƒAƒ‰ƒCƒY‚Æ‚İ‚È‚·
+				//	COMMENT: ãƒ«ãƒ¼ãƒˆã‚¯ãƒ©ã‚¹ã®ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºã¨ã¿ãªã™
 				element_map_.getObjectMap()[id] = ObjectElement(ser);
 				instance_stack_.push_back(instance_stack_element_type(id, index_stack_type()));
-				//	COMMENT: ƒVƒŠƒAƒ‰ƒCƒUƒ}ƒbƒv‚É–¢“o˜^‚È‚ç‚Î“o˜^‚·‚é
+				//	COMMENT: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚¶ãƒãƒƒãƒ—ã«æœªç™»éŒ²ãªã‚‰ã°ç™»éŒ²ã™ã‚‹
 				if (!element_map_.getSerializerMap().count(ser)) {
 					element_map_.getSerializerMap()[ser] = SerializerElement(ver, identity);
 				}
@@ -1006,16 +1006,16 @@ namespace ktl {
 			if (i == data_map.end()) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("ƒL[‚É‘Î‰‚·‚é—v‘f‚ª‘¶İ‚µ‚Ü‚¹‚ñ:") + key,
+					SPRIG_KRKR_TJS_W("ã‚­ãƒ¼ã«å¯¾å¿œã™ã‚‹è¦ç´ ãŒå­˜åœ¨ã—ã¾ã›ã‚“:") + key,
 					sprig::krkr::bad_argument
 					);
 			}
 			DataElement& data = i->second;
 			DataElement::id_type id = data.getID();
-			//	COMMENT: ƒVƒŠƒAƒ‰ƒCƒU‚ÌŒÄo‚ª•K—v‚È‚¢‚Ì‚ÍA
-			//		: ‘ÎÛ‚ªŠî’êƒNƒ‰ƒX‚Å‚È‚¢A‚©‚Â
-			//		: ƒŠ[ƒt’l‚Å‚ ‚éA
-			//		: ‚Ü‚½‚ÍƒCƒ“ƒXƒ^ƒ“ƒX‚ªŠù‚É“o˜^‚³‚ê‚Ä‚¢‚éê‡
+			//	COMMENT: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚¶ã®å‘¼å‡ºãŒå¿…è¦ãªã„ã®ã¯ã€
+			//		: å¯¾è±¡ãŒåŸºåº•ã‚¯ãƒ©ã‚¹ã§ãªã„ã€ã‹ã¤
+			//		: ãƒªãƒ¼ãƒ•å€¤ã§ã‚ã‚‹ã€
+			//		: ã¾ãŸã¯ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãŒæ—¢ã«ç™»éŒ²ã•ã‚Œã¦ã„ã‚‹å ´åˆ
 			return !data.hasIndex()
 				&& (
 					!id
@@ -1027,12 +1027,12 @@ namespace ktl {
 				data_map_type& data_map = currentDataMap();
 				DataElement& data = data_map[key];
 				DataElement::id_type id = data.getID();
-				//	COMMENT: ƒŠ[ƒt’l‚Å‚È‚¢‚©
+				//	COMMENT: ãƒªãƒ¼ãƒ•å€¤ã§ãªã„ã‹
 				if (id) {
-					//	COMMENT: “o˜^ÏƒCƒ“ƒXƒ^ƒ“ƒX‚ÌƒfƒVƒŠƒAƒ‰ƒCƒY‚Æ‚İ‚È‚·
+					//	COMMENT: ç™»éŒ²æ¸ˆã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã®ãƒ‡ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºã¨ã¿ãªã™
 					*v = instance_map_[id];
 				} else {
-					//	COMMENT: ƒŠ[ƒt’l‚ÌƒfƒVƒŠƒAƒ‰ƒCƒY‚Æ‚İ‚È‚·
+					//	COMMENT: ãƒªãƒ¼ãƒ•å€¤ã®ãƒ‡ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºã¨ã¿ãªã™
 					data.get(*v);
 				}
 			}
@@ -1041,23 +1041,23 @@ namespace ktl {
 			data_map_type& data_map = currentDataMap();
 			DataElement& data = data_map[key];
 			if (data.hasIndex()) {
-				//	COMMENT: Šî’êƒNƒ‰ƒX‚ÌƒfƒVƒŠƒAƒ‰ƒCƒY‚Æ‚İ‚È‚·
+				//	COMMENT: åŸºåº•ã‚¯ãƒ©ã‚¹ã®ãƒ‡ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºã¨ã¿ãªã™
 				index_stack_type& cur_index = currentInstanceIndexStack();
 				cur_index.push_back(data.getIndex());
 			} else {
-				//	COMMENT: ƒ‹[ƒgƒNƒ‰ƒX‚ÌƒfƒVƒŠƒAƒ‰ƒCƒY‚Æ‚İ‚È‚·
+				//	COMMENT: ãƒ«ãƒ¼ãƒˆã‚¯ãƒ©ã‚¹ã®ãƒ‡ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºã¨ã¿ãªã™
 				DataElement::id_type id = data.getID();
 				instance_stack_.push_back(instance_stack_element_type(id, index_stack_type()));
 			}
 		}
 		virtual void popOnLoad(tTJSVariant const* v) {
 			index_stack_type& cur_index = currentInstanceIndexStack();
-			//	COMMENT: ƒJƒŒƒ“ƒgƒCƒ“ƒfƒbƒNƒX‚ªİ’è‚³‚ê‚Ä‚¢‚é‚©H
+			//	COMMENT: ã‚«ãƒ¬ãƒ³ãƒˆã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ãŒè¨­å®šã•ã‚Œã¦ã„ã‚‹ã‹ï¼Ÿ
 			if (!cur_index.empty()) {
-				//	COMMENT: Šî’êƒNƒ‰ƒX‚ÌƒfƒVƒŠƒAƒ‰ƒCƒY‚Æ‚İ‚È‚·
+				//	COMMENT: åŸºåº•ã‚¯ãƒ©ã‚¹ã®ãƒ‡ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºã¨ã¿ãªã™
 				cur_index.pop_back();
 			} else {
-				//	COMMENT: ƒ‹[ƒgƒNƒ‰ƒX‚ÌƒfƒVƒŠƒAƒ‰ƒCƒY‚Æ‚İ‚È‚·
+				//	COMMENT: ãƒ«ãƒ¼ãƒˆã‚¯ãƒ©ã‚¹ã®ãƒ‡ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºã¨ã¿ãªã™
 				DataElement::id_type cur_id = currentInstanceID();
 				instance_map_[cur_id] = *v;
 				instance_stack_.pop_back();
@@ -1067,13 +1067,13 @@ namespace ktl {
 			data_map_type& data_map = currentDataMap();
 			DataElement& data = data_map[key];
 			if (data.hasIndex()) {
-				//	COMMENT: Šî’êƒNƒ‰ƒX‚ÌƒfƒVƒŠƒAƒ‰ƒCƒY‚Æ‚İ‚È‚·
+				//	COMMENT: åŸºåº•ã‚¯ãƒ©ã‚¹ã®ãƒ‡ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºã¨ã¿ãªã™
 				return element_map_.getObjectMap()[currentInstanceID()]
 					.getBaseList()
 					.KTL_SERIALIZATION_AT(static_cast<base_list_type::size_type>(data.getIndex()))
 					.getSerializer();
 			} else {
-				//	COMMENT: ƒ‹[ƒgƒNƒ‰ƒX‚ÌƒfƒVƒŠƒAƒ‰ƒCƒY‚Æ‚İ‚È‚·
+				//	COMMENT: ãƒ«ãƒ¼ãƒˆã‚¯ãƒ©ã‚¹ã®ãƒ‡ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºã¨ã¿ãªã™
 				DataElement::id_type id = data.getID();
 				return element_map_.getObjectMap()[id]
 					.getSerializer();

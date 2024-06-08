@@ -48,7 +48,7 @@ namespace ktl {
 			} else {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("‘Î‰‚µ‚È‚¢ƒIƒuƒWƒFƒNƒg‚Ìˆø”‚Í–³Œø‚Å‚·"),
+					SPRIG_KRKR_TJS_W("å¯¾å¿œã—ãªã„ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®å¼•æ•°ã¯ç„¡åŠ¹ã§ã™"),
 					sprig::krkr::bad_argument
 					);
 				return big_int_type::zero();
@@ -83,7 +83,7 @@ namespace ktl {
 		default:
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				SPRIG_KRKR_TJS_W("•„†•t•ÏŠ·‚ÍƒIƒNƒeƒbƒg—ñ‚Ì‚İ‘Î‰‚µ‚Ü‚·"),
+				SPRIG_KRKR_TJS_W("ç¬¦å·ä»˜å¤‰æ›ã¯ã‚ªã‚¯ãƒ†ãƒƒãƒˆåˆ—ã®ã¿å¯¾å¿œã—ã¾ã™"),
 				sprig::krkr::bad_argument
 				);
 			return big_int_type::zero();
@@ -134,7 +134,7 @@ namespace ktl {
 		if (numparams < 2) { \
 			KTL_ERROR( \
 				KTL_ERROR_SECTION, \
-				SPRIG_KRKR_TJS_W("ˆø”‚ª•s‘«‚µ‚Ä‚¢‚Ü‚·"), \
+				SPRIG_KRKR_TJS_W("å¼•æ•°ãŒä¸è¶³ã—ã¦ã„ã¾ã™"), \
 				sprig::krkr::bad_argument \
 				); \
 			return 0; \
@@ -147,7 +147,7 @@ namespace ktl {
 		return result; \
 	}
 	//
-	//	SUMMARY: ‰‰ZŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ¼”ç®—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_BIG_INT_INTERIOR_OPERATION_DECL(opAdd, +=);
 	KTL_BIG_INT_INTERIOR_OPERATION_DECL(opSub, -=);
@@ -158,13 +158,13 @@ namespace ktl {
 	KTL_BIG_INT_INTERIOR_OPERATION_DECL(opAnd, &=);
 	KTL_BIG_INT_INTERIOR_OPERATION_DECL(opXor, ^=);
 	//
-	//	SUMMARY: “¯’èŒnƒƒ\ƒbƒh
+	//	SUMMARY: åŒå®šç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativeBigInt::opEq(tjs_int numparams, tTJSVariant** param) {
 		if (numparams < 2) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				SPRIG_KRKR_TJS_W("ˆø”‚ª•s‘«‚µ‚Ä‚¢‚Ü‚·"),
+				SPRIG_KRKR_TJS_W("å¼•æ•°ãŒä¸è¶³ã—ã¦ã„ã¾ã™"),
 				sprig::krkr::bad_argument
 				);
 			return 0;
@@ -182,7 +182,7 @@ namespace ktl {
 		if (numparams < 2) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				SPRIG_KRKR_TJS_W("ˆø”‚ª•s‘«‚µ‚Ä‚¢‚Ü‚·"),
+				SPRIG_KRKR_TJS_W("å¼•æ•°ãŒä¸è¶³ã—ã¦ã„ã¾ã™"),
 				sprig::krkr::bad_argument
 				);
 			return 0;
@@ -204,7 +204,7 @@ namespace ktl {
 		if (numparams < 2) { \
 			KTL_ERROR( \
 				KTL_ERROR_SECTION, \
-				SPRIG_KRKR_TJS_W("ˆø”‚ª•s‘«‚µ‚Ä‚¢‚Ü‚·"), \
+				SPRIG_KRKR_TJS_W("å¼•æ•°ãŒä¸è¶³ã—ã¦ã„ã¾ã™"), \
 				sprig::krkr::bad_argument \
 				); \
 			return 0; \
@@ -219,7 +219,7 @@ namespace ktl {
 			return boost::range::is_sorted(seq, (boost::lambda::_1 OP boost::lambda::_2)); \
 	}
 	//
-	//	SUMMARY: ”äŠrŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ¯”è¼ƒç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_BIG_INT_INTERIOR_COMPARISON_DECL(opLs, <);
 	KTL_BIG_INT_INTERIOR_COMPARISON_DECL(opLsEq, <=);
@@ -236,12 +236,12 @@ namespace ktl {
 		return result; \
 	}
 	//
-	//	SUMMARY: ’P€‰‰ZŒnƒƒ\ƒbƒh
+	//	SUMMARY: å˜é …æ¼”ç®—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_BIG_INT_INTERIOR_UNARY_OPERATION_DECL(opPlus, +);
 	KTL_BIG_INT_INTERIOR_UNARY_OPERATION_DECL(opMinus, -);
 	//
-	//	SUMMARY: ZpŒnƒƒ\ƒbƒh
+	//	SUMMARY: ç®—è¡“ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE sprig::krkr::tjs::object_type NativeBigInt::abs(tTJSVariant const& v) {
 		sprig::krkr::tjs::object_type result = createNew(0, 0);
@@ -274,7 +274,7 @@ namespace ktl {
 		return result;
 	}
 	//
-	//	SUMMARY: ‘ã“üŒnƒƒ\ƒbƒh
+	//	SUMMARY: ä»£å…¥ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE NativeBigInt& NativeBigInt::assign(tTJSVariant const& v) {
 		value_.swap(convertValue(v));
@@ -288,7 +288,7 @@ namespace ktl {
 		if (numparams < 1) { \
 			KTL_ERROR( \
 				KTL_ERROR_SECTION, \
-				SPRIG_KRKR_TJS_W("ˆø”‚ª•s‘«‚µ‚Ä‚¢‚Ü‚·"), \
+				SPRIG_KRKR_TJS_W("å¼•æ•°ãŒä¸è¶³ã—ã¦ã„ã¾ã™"), \
 				sprig::krkr::bad_argument \
 				); \
 			return *this; \
@@ -299,7 +299,7 @@ namespace ktl {
 		return *this; \
 	}
 	//
-	//	SUMMARY: ‰‰Z‘ã“üŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ¼”ç®—ä»£å…¥ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_BIG_INT_INTERIOR_ASSIGN_DECL(assignAdd, +=);
 	KTL_BIG_INT_INTERIOR_ASSIGN_DECL(assignSub, -=);
@@ -310,7 +310,7 @@ namespace ktl {
 	KTL_BIG_INT_INTERIOR_ASSIGN_DECL(assignAnd, &=);
 	KTL_BIG_INT_INTERIOR_ASSIGN_DECL(assignXor, ^=);
 	//
-	//	SUMMARY: •ÏŠ·Œnƒƒ\ƒbƒh
+	//	SUMMARY: å¤‰æ›ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVInteger NativeBigInt::asInt() const {
 		return sprig::big_int_cast<tTVInteger>(value_);
@@ -327,7 +327,7 @@ namespace ktl {
 		return tTJSVariant(bytes.empty() ? 0 : &bytes[0], bytes.size());
 	}
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE int NativeBigInt::sign() const {
 		return sprig::sign(value_);
@@ -367,13 +367,13 @@ namespace ktl {
 		return instance_->ref();
 	}
 	//
-	//	SUMMARY: “à•”Œnƒƒ\ƒbƒh
+	//	SUMMARY: å†…éƒ¨ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE sprig::krkr::tjs::intptr_type BigInt::getInstance() {
 		return reinterpret_cast<sprig::krkr::tjs::intptr_type>(this);
 	}
 	//
-	//	SUMMARY: ‰‰ZŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ¼”ç®—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE sprig::krkr::tjs::object_type BigInt::opAdd(tjs_int numparams, tTJSVariant** param) {
 		return NativeBigInt::opAdd(numparams, param);
@@ -400,7 +400,7 @@ namespace ktl {
 		return NativeBigInt::opXor(numparams, param);
 	}
 	//
-	//	SUMMARY: “¯’èŒnƒƒ\ƒbƒh
+	//	SUMMARY: åŒå®šç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool BigInt::opEq(tjs_int numparams, tTJSVariant** param) {
 		return NativeBigInt::opEq(numparams, param);
@@ -409,7 +409,7 @@ namespace ktl {
 		return NativeBigInt::opNEq(numparams, param);
 	}
 	//
-	//	SUMMARY: ”äŠrŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ¯”è¼ƒç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool BigInt::opLs(tjs_int numparams, tTJSVariant** param) {
 		return NativeBigInt::opLs(numparams, param);
@@ -424,7 +424,7 @@ namespace ktl {
 		return NativeBigInt::opGrEq(numparams, param);
 	}
 	//
-	//	SUMMARY: ’P€‰‰ZŒnƒƒ\ƒbƒh
+	//	SUMMARY: å˜é …æ¼”ç®—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE sprig::krkr::tjs::object_type BigInt::opPlus(tTJSVariant const& v) {
 		return NativeBigInt::opPlus(v);
@@ -433,7 +433,7 @@ namespace ktl {
 		return NativeBigInt::opMinus(v);
 	}
 	//
-	//	SUMMARY: ZpŒnƒƒ\ƒbƒh
+	//	SUMMARY: ç®—è¡“ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE sprig::krkr::tjs::object_type BigInt::abs(tTJSVariant const& v) {
 		return NativeBigInt::abs(v);
@@ -451,14 +451,14 @@ namespace ktl {
 		return NativeBigInt::min(v1, v2);
 	}
 	//
-	//	SUMMARY: ‘ã“üŒnƒƒ\ƒbƒh
+	//	SUMMARY: ä»£å…¥ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE BigInt& BigInt::assign(tTJSVariant const& v) {
 		instance_->assign(v);
 		return *this;
 	}
 	//
-	//	SUMMARY: ‰‰Z‘ã“üŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ¼”ç®—ä»£å…¥ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE BigInt& BigInt::assignAdd(tjs_int numparams, tTJSVariant** param) {
 		instance_->assignAdd(numparams, param);
@@ -493,7 +493,7 @@ namespace ktl {
 		return *this;
 	}
 	//
-	//	SUMMARY: •ÏŠ·Œnƒƒ\ƒbƒh
+	//	SUMMARY: å¤‰æ›ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVInteger BigInt::asInt() const {
 		return instance_->asInt();
@@ -508,7 +508,7 @@ namespace ktl {
 		return instance_->asOctet();
 	}
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVInteger BigInt::sign() const {
 		return instance_->sign();

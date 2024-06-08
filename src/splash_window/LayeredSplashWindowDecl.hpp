@@ -33,18 +33,18 @@ namespace ktl {
 		NativeLayeredSplashWindow();
 	public:
 		//
-		//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+		//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void initialize();
 		void initialize(string_type const& identity);
 		void uninitialize();
 		//
-		//	SUMMARY: “Ç‚Ýž‚ÝŒnƒƒ\ƒbƒh
+		//	SUMMARY: èª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool loadImages(tTJSString const& storage);
 		bool loadImagesFromOctet(tTJSVariantOctet const* source);
 		//
-		//	SUMMARY: XVŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ›´æ–°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool update(
 			boost::optional<int_type> left = boost::none,
@@ -55,7 +55,7 @@ namespace ktl {
 			boost::optional<byte_type> opacity = boost::none
 			);
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒCŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool getVisible() const;
 		void setVisible(bool v);
@@ -90,18 +90,18 @@ namespace ktl {
 		void TJS_INTF_METHOD Invalidate();
 	public:
 		//
-		//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+		//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void initialize();
 		void initialize(tTJSVariantString const* identity);
 		void uninitialize();
 		//
-		//	SUMMARY: “Ç‚Ýž‚ÝŒnƒƒ\ƒbƒh
+		//	SUMMARY: èª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool loadImages(tTJSVariantString const* storage);
 		bool loadImagesFromOctet(tTJSVariantOctet const* source);
 		//
-		//	SUMMARY: XVŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ›´æ–°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool update(
 			boost::optional<tTVInteger> left = boost::none,
@@ -112,7 +112,7 @@ namespace ktl {
 			boost::optional<tTVInteger> opacity = boost::none
 			);
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒCŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool getVisible() const;
 		void setVisible(bool v);

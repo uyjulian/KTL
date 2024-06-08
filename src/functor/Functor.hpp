@@ -33,11 +33,11 @@ namespace ktl {
 		tTJSVariant func_v;
 		::TVPExecuteExpression(source, &func_v);
 		if (func_v.Type() != tvtObject) {
-			::TVPThrowExceptionMessage(SPRIG_KRKR_TJS_W("•]‰¿Œ‹‰Ê‚ªƒIƒuƒWƒFƒNƒg‚Å‚Í‚ ‚è‚Ü‚¹‚ñ"));
+			::TVPThrowExceptionMessage(SPRIG_KRKR_TJS_W("è©•ä¾¡çµæœãŒã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ã¯ã‚ã‚Šã¾ã›ã‚“"));
 		}
 		tTJSVariantClosure const& func_c = func_v.AsObjectClosureNoAddRef();
 		if (!func_c.Object) {
-			::TVPThrowExceptionMessage(SPRIG_KRKR_TJS_W("•]‰¿Œ‹‰Ê‚ªnull‚Å‚·"));
+			::TVPThrowExceptionMessage(SPRIG_KRKR_TJS_W("è©•ä¾¡çµæœãŒnullã§ã™"));
 		}
 		func_.reset(func_c.Object);
 		context_.reset(func_c.ObjThis);

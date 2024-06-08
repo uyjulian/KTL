@@ -53,7 +53,7 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME SpritesClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassSprites, Sprites, Sprites)
 	//
-	//	SUMMARY: ƒuƒŒƒ“ƒhŒnƒvƒƒpƒeƒB
+	//	SUMMARY: ãƒ–ãƒ¬ãƒ³ãƒ‰ç³»ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(bmDefault, Sprites::bmDefault);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(bmAlpha, Sprites::bmAlpha);
@@ -65,13 +65,13 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(bmDarken, Sprites::bmDarken);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(bmScreen, Sprites::bmScreen);
 	//
-	//	SUMMARY: ƒqƒbƒgƒeƒXƒgŒnƒvƒƒpƒeƒB
+	//	SUMMARY: ãƒ’ãƒƒãƒˆãƒ†ã‚¹ãƒˆç³»ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(htmNone, Sprites::htmNone);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(htmRect, Sprites::htmRect);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(htmColor, Sprites::htmColor);
 	//
-	//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+	//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(initialize)
 	{
@@ -84,7 +84,7 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_METHOD_DECL_INVOKE_PARAM_VOID_RES_VARIANT(Sprites, reinitialize);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Sprites, isInitialized, isInitialized);
 	//
-	//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(saveSpriteBufferByText)
 	{
@@ -135,7 +135,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(loadSpriteBufferByBinary);
 	//
-	//	SUMMARY: ƒXƒvƒ‰ƒCƒgƒhƒ[ƒŠÇ—Œnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¹ãƒ—ãƒ©ã‚¤ãƒˆãƒ‰ãƒ­ãƒ¼ãƒ¯ç®¡ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(generateSpriteDrawer)
 	{
@@ -162,7 +162,7 @@ namespace ktl {
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(exist);
 	KTL_SPRITES_NATIVE_PROP_METHOD_DECL(getPriority, setPriority);
 	//
-	//	SUMMARY: ƒXƒvƒ‰ƒCƒgƒhƒ[ƒ‘€ìŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¹ãƒ—ãƒ©ã‚¤ãƒˆãƒ‰ãƒ­ãƒ¼ãƒ¯æ“ä½œç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_SPRITES_NATIVE_PROP_METHOD_DECL(getVisible, setVisible);
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(setScaling)
@@ -225,7 +225,7 @@ namespace ktl {
 	KTL_SPRITES_NATIVE_PROP_METHOD_DECL(getHitThreshold, setHitThreshold);
 	KTL_SPRITES_NATIVE_PROP_METHOD_DECL(getHitTestMode, setHitTestMode);
 	//
-	//	SUMMARY: Šg’£ƒXƒvƒ‰ƒCƒgƒhƒ[ƒ‘€ìŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ‹¡å¼µã‚¹ãƒ—ãƒ©ã‚¤ãƒˆãƒ‰ãƒ­ãƒ¼ãƒ¯æ“ä½œç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_SPRITES_NATIVE_SETTER_METHOD_DECL(setScalingXY);
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(setScalingSize)
@@ -300,14 +300,14 @@ namespace ktl {
 	KTL_SPRITES_NATIVE_SETTER_METHOD_DECL(setCenterXYZByRate);
 	KTL_SPRITES_NATIVE_PROP_METHOD_DECL(getRotationByDegree, setRotationByDegree)
 	//
-	//	SUMMARY: XVŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ›´æ–°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_METHOD_DECL_INVOKE_PARAM_VOID_RES_VARIANT(Sprites, onContinuous)
 	SPRIG_KRKR_NATIVE_METHOD_DECL_INVOKE_PARAM_VOID_RES_VARIANT(Sprites, update)
 	SPRIG_KRKR_NATIVE_METHOD_DECL_INVOKE_PARAM_VOID_RES_VARIANT(Sprites, requestUpdate)
 	SPRIG_KRKR_NATIVE_METHOD_DECL_PARAM_VOID_RES_VARIANT(Sprites, isRequestedUpdate)
 	//
-	//	SUMMARY: •`‰æŒnƒƒ\ƒbƒh
+	//	SUMMARY: æç”»ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_METHOD_DECL_INVOKE_PARAM_VOID_RES_VARIANT(Sprites, draw)
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(loadImageFromLayer)
@@ -327,7 +327,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(clearImage);
 	//
-	//	SUMMARY: ƒqƒbƒgƒeƒXƒgŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ’ãƒƒãƒˆãƒ†ã‚¹ãƒˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(hitTest)
 	{
@@ -376,7 +376,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(multiTPHitTest);
 	//
-	//	SUMMARY: À•WŒnƒƒ\ƒbƒh
+	//	SUMMARY: åº§æ¨™ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(toLocalCoord)
 	{
@@ -409,14 +409,14 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(toGlobalCoord);
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT(Sprites, clearColor, getClearColor, setClearColor);
 	SPRIG_KRKR_NATIVE_PROP_DECL_TJSCLASS(Sprites, layer, getLayer, setLayer);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT(Sprites, enable, getEnable, setEnable);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT(Sprites, run, getRun, setRun);
 	//
-	//	SUMMARY: ƒfƒoƒbƒOŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ‡ãƒãƒƒã‚°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_METHOD_DECL_PARAM_VOID_RES_VOID(Sprites, outputValueInfo);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT(Sprites, enablePerformanceTimer, getEnablePerformanceTimer, setEnablePerformanceTimer);
@@ -430,7 +430,7 @@ namespace ktl {
 //
 static void push_ktl_outputter_to_dg_logger() {
 	//
-	//	COMMENT: sprig::dg‚ÌƒƒK[‚Ésprig::krkr::tjs‚Ö‚Ìo—Í‚ð’Ç‰Á
+	//	COMMENT: sprig::dgã®ãƒ­ã‚¬ãƒ¼ã«sprig::krkr::tjsã¸ã®å‡ºåŠ›ã‚’è¿½åŠ 
 	//
 	struct pusher {
 		int operator()() const {

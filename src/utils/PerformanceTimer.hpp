@@ -27,13 +27,13 @@ namespace ktl {
 	//
 	NativePerformanceTimer::NativePerformanceTimer() {}
 	//
-	//	SUMMARY: ‘€ìŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ“ä½œç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void NativePerformanceTimer::restart() {
 		performance_timer_.restart();
 	}
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE NativePerformanceTimer::value_type NativePerformanceTimer::elapsed() {
 		return performance_timer_.elapsed();
@@ -58,13 +58,13 @@ namespace ktl {
 		instance_.reset();
 	}
 	//
-	//	SUMMARY: ‘€ìŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ“ä½œç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void PerformanceTimer::restart() {
 		instance_->restart();
 	}
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tjs_real PerformanceTimer::elapsed() {
 		return instance_->elapsed();

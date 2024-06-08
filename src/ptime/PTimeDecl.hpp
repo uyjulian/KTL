@@ -34,7 +34,7 @@ namespace ktl {
 		NativePTime();
 	public:
 		//
-		//	SUMMARY: Š„‚è“–‚ÄŒnƒƒ\ƒbƒh
+		//	SUMMARY: å‰²ã‚Šå½“ã¦ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool assignLocalTimeSecondClock();
 		bool assignUniversalTimeSecondClock();
@@ -69,7 +69,7 @@ namespace ktl {
 		bool assignTimeFromString(std::string const& source);
 		bool assignTimeFromISOString(std::string const& source);
 		//
-		//	SUMMARY: •¶Žš—ñ‰»Œnƒƒ\ƒbƒh
+		//	SUMMARY: æ–‡å­—åˆ—åŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant toString() const;
 		tTJSVariant toISOString() const;
@@ -80,7 +80,7 @@ namespace ktl {
 		tTJSVariant toTimeString() const;
 		tTJSVariant toTimeISOString() const;
 		//
-		//	SUMMARY: •ÏXŒnƒƒ\ƒbƒh
+		//	SUMMARY: å¤‰æ›´ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void moveYears(boost::gregorian::years t);
 		void moveMonths(boost::gregorian::months t);
@@ -91,7 +91,7 @@ namespace ktl {
 		void moveMilliseconds(boost::posix_time::milliseconds t);
 		void moveMicroseconds(boost::posix_time::microseconds t);
 		//
-		//	SUMMARY: “ú•tƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ—¥ä»˜ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		date_type::year_type year() const;
 		date_type::month_type month() const;
@@ -102,7 +102,7 @@ namespace ktl {
 		date_type::date_int_type julianDay() const;
 		date_type::date_int_type modjulianDay() const;
 		//
-		//	SUMMARY: ŽžƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ™‚åˆ»ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		time_duration_type::hour_type hours() const;
 		time_duration_type::min_type minutes() const;
@@ -133,11 +133,11 @@ namespace ktl {
 		void TJS_INTF_METHOD Invalidate();
 	public:
 		//
-		//	SUMMARY: “à•”Œnƒƒ\ƒbƒh
+		//	SUMMARY: å†…éƒ¨ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		sprig::krkr::tjs::intptr_type getInstance();
 		//
-		//	SUMMARY: Š„‚è“–‚ÄŒnƒƒ\ƒbƒh
+		//	SUMMARY: å‰²ã‚Šå½“ã¦ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool assignLocalTimeSecondClock();
 		bool assignUniversalTimeSecondClock();
@@ -172,7 +172,7 @@ namespace ktl {
 		bool assignTimeFromString(tTJSVariantString const* source);
 		bool assignTimeFromISOString(tTJSVariantString const* source);
 		//
-		//	SUMMARY: •ÏXŒnƒƒ\ƒbƒh
+		//	SUMMARY: å¤‰æ›´ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void moveYears(tTVInteger t);
 		void moveMonths(tTVInteger t);
@@ -183,7 +183,7 @@ namespace ktl {
 		void moveMilliseconds(tTVInteger t);
 		void moveMicroseconds(tTVInteger t);
 		//
-		//	SUMMARY: •¶Žš—ñ‰»Œnƒƒ\ƒbƒh
+		//	SUMMARY: æ–‡å­—åˆ—åŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant toString() const;
 		tTJSVariant toISOString() const;
@@ -194,7 +194,7 @@ namespace ktl {
 		tTJSVariant toTimeString() const;
 		tTJSVariant toTimeISOString() const;
 		//
-		//	SUMMARY: “ú•tƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ—¥ä»˜ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTVInteger year() const;
 		tTVInteger month() const;
@@ -205,7 +205,7 @@ namespace ktl {
 		tTVInteger julianDay() const;
 		tTVInteger modjulianDay() const;
 		//
-		//	SUMMARY: ŽžƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ™‚åˆ»ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTVInteger hours() const;
 		tTVInteger minutes() const;

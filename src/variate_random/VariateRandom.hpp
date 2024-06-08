@@ -53,13 +53,13 @@ namespace ktl {
 			)
 	{}
 	//
-	//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE RandomResult NativeVariateRandom::random() {
 		return generator_();
 	}
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE sprig::krkr::tjs::object_type NativeVariateRandom::engine() const {
 		return engine_;
@@ -68,7 +68,7 @@ namespace ktl {
 		return distribution_;
 	}
 	//
-	//	SUMMARY: Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE RandomResult NativeVariateRandom::min() const {
 		return generator_.min();
@@ -110,13 +110,13 @@ namespace ktl {
 		instance_.reset();
 	}
 	//
-	//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant VariateRandom::random() {
 		return instance_->random();
 	}
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant VariateRandom::engine() const {
 		sprig::krkr::tjs::object_type result = instance_->engine();
@@ -127,7 +127,7 @@ namespace ktl {
 		return sprig::krkr::tjs::as_object_closure_variant(result);
 	}
 	//
-	//	SUMMARY: Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant VariateRandom::min() const {
 		return instance_->min();

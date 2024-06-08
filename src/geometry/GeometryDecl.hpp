@@ -170,7 +170,7 @@ namespace ktl {
 		NativeGeometry();
 	public:
 		//
-		//	SUMMARY: ƒWƒIƒƒgƒŠƒ‚ƒfƒ‹Œnƒtƒ‰ƒO
+		//	SUMMARY: ã‚¸ã‚ªãƒ¡ãƒˆãƒªãƒ¢ãƒ‡ãƒ«ç³»ãƒ•ãƒ©ã‚°
 		//
 		static flag_type const gmfPoint = 0x00000001;
 		static flag_type const gmfSegment = 0x00000002;
@@ -183,7 +183,7 @@ namespace ktl {
 		static flag_type const gmfMultiPolygon = 0x00000009;
 	public:
 		//
-		//	SUMMARY: ’P€Œnƒƒ\ƒbƒh
+		//	SUMMARY: å˜é …ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static bool isEmpty(tTJSVariantClosure const& g, flag_type f);
 		static bool isValid(tTJSVariantClosure const& g, flag_type f);
@@ -205,7 +205,7 @@ namespace ktl {
 		static tTJSVariant rotate(tTJSVariantClosure const& g, flag_type f, tTJSVariant const& t, tTJSVariant const& o);
 		static tTJSVariant matrixTransform(tTJSVariantClosure const& g, flag_type f, tTJSVariant const& t);
 		//
-		//	SUMMARY: “ñ€Œnƒƒ\ƒbƒh
+		//	SUMMARY: äºŒé …ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static bool disjoint(tTJSVariantClosure const& g0, flag_type f0, tTJSVariantClosure const& g1, flag_type f1);
 		static bool intersects(tTJSVariantClosure const& g0, flag_type f0, tTJSVariantClosure const& g1, flag_type f1);
@@ -220,7 +220,7 @@ namespace ktl {
 		static tTJSVariant relation(tTJSVariantClosure const& g0, flag_type f0, tTJSVariantClosure const& g1, flag_type f1);
 		static tTJSVariant expand(tTJSVariantClosure const& g0, flag_type f0, tTJSVariantClosure const& g1, flag_type f1);
 		//
-		//	SUMMARY: IOŒnƒƒ\ƒbƒh
+		//	SUMMARY: IOç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant readWKT(tjs_char const* source, flag_type f);
 		static tTJSVariant readStorageWKT(tjs_char const* storage, flag_type f);
@@ -246,7 +246,7 @@ namespace ktl {
 		void TJS_INTF_METHOD Invalidate();
 	public:
 		//
-		//	SUMMARY: ƒWƒIƒƒgƒŠƒ‚ƒfƒ‹Œnƒtƒ‰ƒO
+		//	SUMMARY: ã‚¸ã‚ªãƒ¡ãƒˆãƒªãƒ¢ãƒ‡ãƒ«ç³»ãƒ•ãƒ©ã‚°
 		//
 		static tTVInteger const gmfPoint = NativeGeometry::gmfPoint;
 		static tTVInteger const gmfSegment = NativeGeometry::gmfSegment;
@@ -259,7 +259,7 @@ namespace ktl {
 		static tTVInteger const gmfMultiPolygon = NativeGeometry::gmfMultiPolygon;
 	public:
 		//
-		//	SUMMARY: ’P€Œnƒƒ\ƒbƒh
+		//	SUMMARY: å˜é …ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static bool isEmpty(tTJSVariantClosure const& g, tTVInteger f);
 		static bool isValid(tTJSVariantClosure const& g, tTVInteger f);
@@ -281,7 +281,7 @@ namespace ktl {
 		static tTJSVariant rotate(tTJSVariantClosure const& g, tTVInteger f, tTJSVariant const& t, tTJSVariant const& o);
 		static tTJSVariant matrixTransform(tTJSVariantClosure const& g, tTVInteger f, tTJSVariant const& t);
 		//
-		//	SUMMARY: “ñ€Œnƒƒ\ƒbƒh
+		//	SUMMARY: äºŒé …ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static bool disjoint(tTJSVariantClosure const& g0, tTVInteger f0, tTJSVariantClosure const& g1, tTVInteger f1);
 		static bool intersects(tTJSVariantClosure const& g0, tTVInteger f0, tTJSVariantClosure const& g1, tTVInteger f1);
@@ -296,7 +296,7 @@ namespace ktl {
 		static tTJSVariant relation(tTJSVariantClosure const& g0, tTVInteger f0, tTJSVariantClosure const& g1, tTVInteger f1);
 		static tTJSVariant expand(tTJSVariantClosure const& g0, tTVInteger f0, tTJSVariantClosure const& g1, tTVInteger f1);
 		//
-		//	SUMMARY: IOŒnƒƒ\ƒbƒh
+		//	SUMMARY: IOç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant readWKT(tTJSVariantString const* source, tTVInteger f);
 		static tTJSVariant readStorageWKT(tTJSVariantString const* storage, tTVInteger f);

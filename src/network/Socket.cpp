@@ -26,21 +26,21 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME SocketClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassSocket, Socket, Socket)
 	//
-	//	SUMMARY: “à•”Œnƒƒ\ƒbƒh
+	//	SUMMARY: å†…éƒ¨ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Socket, instance, getInstance);
 	//
-	//	SUMMARY: ƒvƒƒgƒRƒ‹Œnƒtƒ‰ƒO
+	//	SUMMARY: ãƒ—ãƒ­ãƒˆã‚³ãƒ«ç³»ãƒ•ãƒ©ã‚°
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(pfIPv4, Socket::pfIPv4);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(pfIPv6, Socket::pfIPv6);
 	//
-	//	SUMMARY: Š®—¹ðŒŒnƒtƒ‰ƒO
+	//	SUMMARY: å®Œäº†æ¡ä»¶ç³»ãƒ•ãƒ©ã‚°
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(ccfTransferAtLeast, Socket::ccfTransferAtLeast);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(ccfTransferExactly, Socket::ccfTransferExactly);
 	//
-	//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+	//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(reset)
 	{
@@ -52,7 +52,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(reset);
 	//
-	//	SUMMARY: §ŒäŒnƒƒ\ƒbƒh
+	//	SUMMARY: åˆ¶å¾¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(cancel)
 	{
@@ -74,7 +74,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(close);
 	//
-	//	SUMMARY: –¼‘O‰ðŒˆŒnƒƒ\ƒbƒh
+	//	SUMMARY: åå‰è§£æ±ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(resolve)
 	{
@@ -104,7 +104,7 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Socket, resolvingSucceeded, resolvingSucceeded);
 	SPRIG_KRKR_NATIVE_METHOD_DECL_PARAM_VOID_RES_VARIANT(Socket, getEndpointList);
 	//
-	//	SUMMARY: Ú‘±Œnƒƒ\ƒbƒh
+	//	SUMMARY: æŽ¥ç¶šç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(connect)
 	{
@@ -241,7 +241,7 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Socket, connectingFinished, connectingFinished);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Socket, connectingSucceeded, connectingSucceeded);
 	//
-	//	SUMMARY: Ú‘±‘Ò‚¿Œnƒƒ\ƒbƒh
+	//	SUMMARY: æŽ¥ç¶šå¾…ã¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(accept)
 	{
@@ -314,7 +314,7 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Socket, acceptingFinished, acceptingFinished);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Socket, acceptingSucceeded, acceptingSucceeded);
 	//
-	//	SUMMARY: ƒnƒ“ƒhƒVƒFƒCƒNŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒãƒ³ãƒ‰ã‚·ã‚§ã‚¤ã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(handshake)
 	{
@@ -337,7 +337,7 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Socket, handshakingFinished, handshakingFinished);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Socket, handshakingSucceeded, handshakingSucceeded);
 	//
-	//	SUMMARY: ‘—MŒnƒƒ\ƒbƒh
+	//	SUMMARY: é€ä¿¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(pushByte)
 	{
@@ -405,7 +405,7 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Socket, writingSucceeded, writingSucceeded);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Socket, writingBufferSize, writingBufferSize);
 	//
-	//	SUMMARY: ‘—Mƒoƒbƒtƒ@Žæ“¾Œnƒƒ\ƒbƒh
+	//	SUMMARY: é€ä¿¡ãƒãƒƒãƒ•ã‚¡å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(getWritingBufferAsOctet)
 	{
@@ -487,7 +487,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(consumeWritingBuffer);
 	//
-	//	SUMMARY: ŽóMŒnƒƒ\ƒbƒh
+	//	SUMMARY: å—ä¿¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(popByte)
 	{
@@ -734,7 +734,7 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Socket, eof, eof);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Socket, readingBufferSize, readingBufferSize);
 	//
-	//	SUMMARY: ŽóMƒoƒbƒtƒ@Žæ“¾Œnƒƒ\ƒbƒh
+	//	SUMMARY: å—ä¿¡ãƒãƒƒãƒ•ã‚¡å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(getReadingBufferAsOctet)
 	{
@@ -816,7 +816,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(consumeReadingBuffer);
 	//
-	//	SUMMARY: ƒ^ƒCƒ€ƒAƒEƒgŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¿ã‚¤ãƒ ã‚¢ã‚¦ãƒˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(waitTimeoutFromNow)
 	{
@@ -862,7 +862,7 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Socket, expiresTimeoutFromNow, expiresTimeoutFromNow);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Socket, expiresTimeoutAt, expiresTimeoutAt);
 	//
-	//	SUMMARY: ‘Ò‹@Œnƒƒ\ƒbƒh
+	//	SUMMARY: å¾…æ©Ÿç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(join)
 	{
@@ -874,13 +874,13 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(join)
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Socket, isProcessing, isProcessing);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Socket, isOpen, isOpen);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Socket, isSSL, isSSL);
 	//
-	//	SUMMARY: ƒR[ƒ‹ƒoƒbƒNŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT(Socket, onFinished, getOnFinished, setOnFinished);
 

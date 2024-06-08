@@ -24,7 +24,7 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME LocalFilesClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassLocalFiles, LocalFiles, LocalFiles)
 	//
-	//	SUMMARY: ƒtƒ@ƒCƒ‹ƒ^ƒCƒvŒnƒtƒ‰ƒO
+	//	SUMMARY: ãƒ•ã‚¡ã‚¤ãƒ«ã‚¿ã‚¤ãƒ—ç³»ãƒ•ãƒ©ã‚°
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(ftfStatusError, LocalFiles::ftfStatusError);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(ftfFileNotFound, LocalFiles::ftfFileNotFound);
@@ -38,7 +38,7 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(ftfReparseFile, LocalFiles::ftfReparseFile);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(ftfTypeUnknown, LocalFiles::ftfTypeUnknown);
 	//
-	//	SUMMARY: ƒp[ƒ~ƒbƒVƒ‡ƒ“Œnƒtƒ‰ƒO
+	//	SUMMARY: ãƒ‘ãƒ¼ãƒŸãƒƒã‚·ãƒ§ãƒ³ç³»ãƒ•ãƒ©ã‚°
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(pfNoPerms, LocalFiles::pfNoPerms);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(pfOwnerRead, LocalFiles::pfOwnerRead);
@@ -63,7 +63,7 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(pfRemovePerms, LocalFiles::pfRemovePerms);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(pfSymlinkPerms, LocalFiles::pfSymlinkPerms);
 	//
-	//	SUMMARY: ƒRƒs[Œnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚³ãƒ”ãƒ¼ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(copy)
 	{
@@ -102,7 +102,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(copySymlink);
 	//
-	//	SUMMARY: ì¬Œnƒƒ\ƒbƒh
+	//	SUMMARY: ä½œæˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(createDirectories)
 	{
@@ -152,7 +152,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(createSymlink);
 	//
-	//	SUMMARY: î•ñŒnƒƒ\ƒbƒh
+	//	SUMMARY: æƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(exists)
 	{
@@ -282,7 +282,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(readSymlink);
 	//
-	//	SUMMARY: íœŒnƒƒ\ƒbƒh
+	//	SUMMARY: å‰Šé™¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(remove)
 	{
@@ -305,7 +305,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(removeAll);
 	//
-	//	SUMMARY: •ÏXŒnƒƒ\ƒbƒh
+	//	SUMMARY: å¤‰æ›´ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(rename)
 	{
@@ -325,7 +325,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(resizeFile);
 	//
-	//	SUMMARY: ƒXƒe[ƒ^ƒXŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(space)
 	{
@@ -438,7 +438,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(symlinkStatusPermissions);
 	//
-	//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_STATIC_PROP_DECL_VARIANT_GETONLY(LocalFiles, currentPath, currentPath);
 	SPRIG_KRKR_NATIVE_STATIC_PROP_DECL_VARIANT_GETONLY(LocalFiles, tempDirectoryPath, tempDirectoryPath);
@@ -458,7 +458,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(uniquePath);
 	//
-	//	SUMMARY: —ñ‹“Œnƒƒ\ƒbƒh
+	//	SUMMARY: åˆ—æŒ™ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(enumDirectoryEntry)
 	{

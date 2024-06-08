@@ -226,7 +226,7 @@ namespace ktl {
 			resolvers2_.error_code() = error;
 			finishResolve(endpoint_iterator);
 		} SPRIG_KRKR_CATCH(e) {
-			KTL_THREAD_CALLBACK_POST_ERROR(KTL_ERROR_SECTION, SPRIG_KRKR_TJS_W("”ñ“¯Šúˆ—“à‚Å—áŠO‚ª“Š‚°‚ç‚ê‚Ü‚µ‚½"));
+			KTL_THREAD_CALLBACK_POST_ERROR(KTL_ERROR_SECTION, SPRIG_KRKR_TJS_W("éžåŒæœŸå‡¦ç†å†…ã§ä¾‹å¤–ãŒæŠ•ã’ã‚‰ã‚Œã¾ã—ãŸ"));
 			KTL_THREAD_CALLBACK_POST_OUTPUT_VALUE(SPRIG_KRKR_TJS_W("exception_information"), sprig::krkr::tjs::exception_information(e), SPRIG_KRKR_LOG_LEVEL_ERROR);
 			cleanupOnProcessFailed();
 			return;
@@ -242,7 +242,7 @@ namespace ktl {
 			connectors2_.error_code() = error;
 			finishConnect();
 		} SPRIG_KRKR_CATCH(e) {
-			KTL_THREAD_CALLBACK_POST_ERROR(KTL_ERROR_SECTION, SPRIG_KRKR_TJS_W("”ñ“¯Šúˆ—“à‚Å—áŠO‚ª“Š‚°‚ç‚ê‚Ü‚µ‚½"));
+			KTL_THREAD_CALLBACK_POST_ERROR(KTL_ERROR_SECTION, SPRIG_KRKR_TJS_W("éžåŒæœŸå‡¦ç†å†…ã§ä¾‹å¤–ãŒæŠ•ã’ã‚‰ã‚Œã¾ã—ãŸ"));
 			KTL_THREAD_CALLBACK_POST_OUTPUT_VALUE(SPRIG_KRKR_TJS_W("exception_information"), sprig::krkr::tjs::exception_information(e), SPRIG_KRKR_LOG_LEVEL_ERROR);
 			cleanupOnProcessFailed();
 			return;
@@ -258,7 +258,7 @@ namespace ktl {
 			connectors2_.error_code() = error;
 			finishConnectSSL();
 		} SPRIG_KRKR_CATCH(e) {
-			KTL_THREAD_CALLBACK_POST_ERROR(KTL_ERROR_SECTION, SPRIG_KRKR_TJS_W("”ñ“¯Šúˆ—“à‚Å—áŠO‚ª“Š‚°‚ç‚ê‚Ü‚µ‚½"));
+			KTL_THREAD_CALLBACK_POST_ERROR(KTL_ERROR_SECTION, SPRIG_KRKR_TJS_W("éžåŒæœŸå‡¦ç†å†…ã§ä¾‹å¤–ãŒæŠ•ã’ã‚‰ã‚Œã¾ã—ãŸ"));
 			KTL_THREAD_CALLBACK_POST_OUTPUT_VALUE(SPRIG_KRKR_TJS_W("exception_information"), sprig::krkr::tjs::exception_information(e), SPRIG_KRKR_LOG_LEVEL_ERROR);
 			cleanupOnProcessFailed();
 			return;
@@ -273,7 +273,7 @@ namespace ktl {
 			acceptors2_.error_code() = error;
 			finishAccept();
 		} SPRIG_KRKR_CATCH(e) {
-			KTL_THREAD_CALLBACK_POST_ERROR(KTL_ERROR_SECTION, SPRIG_KRKR_TJS_W("”ñ“¯Šúˆ—“à‚Å—áŠO‚ª“Š‚°‚ç‚ê‚Ü‚µ‚½"));
+			KTL_THREAD_CALLBACK_POST_ERROR(KTL_ERROR_SECTION, SPRIG_KRKR_TJS_W("éžåŒæœŸå‡¦ç†å†…ã§ä¾‹å¤–ãŒæŠ•ã’ã‚‰ã‚Œã¾ã—ãŸ"));
 			KTL_THREAD_CALLBACK_POST_OUTPUT_VALUE(SPRIG_KRKR_TJS_W("exception_information"), sprig::krkr::tjs::exception_information(e), SPRIG_KRKR_LOG_LEVEL_ERROR);
 			cleanupOnProcessFailed();
 			return;
@@ -288,7 +288,7 @@ namespace ktl {
 			acceptors2_.error_code() = error;
 			finishAcceptSSL();
 		} SPRIG_KRKR_CATCH(e) {
-			KTL_THREAD_CALLBACK_POST_ERROR(KTL_ERROR_SECTION, SPRIG_KRKR_TJS_W("”ñ“¯Šúˆ—“à‚Å—áŠO‚ª“Š‚°‚ç‚ê‚Ü‚µ‚½"));
+			KTL_THREAD_CALLBACK_POST_ERROR(KTL_ERROR_SECTION, SPRIG_KRKR_TJS_W("éžåŒæœŸå‡¦ç†å†…ã§ä¾‹å¤–ãŒæŠ•ã’ã‚‰ã‚Œã¾ã—ãŸ"));
 			KTL_THREAD_CALLBACK_POST_OUTPUT_VALUE(SPRIG_KRKR_TJS_W("exception_information"), sprig::krkr::tjs::exception_information(e), SPRIG_KRKR_LOG_LEVEL_ERROR);
 			cleanupOnProcessFailed();
 			return;
@@ -303,7 +303,7 @@ namespace ktl {
 			handshakers2_.error_code() = error;
 			finishHandshake();
 		} SPRIG_KRKR_CATCH(e) {
-			KTL_THREAD_CALLBACK_POST_ERROR(KTL_ERROR_SECTION, SPRIG_KRKR_TJS_W("”ñ“¯Šúˆ—“à‚Å—áŠO‚ª“Š‚°‚ç‚ê‚Ü‚µ‚½"));
+			KTL_THREAD_CALLBACK_POST_ERROR(KTL_ERROR_SECTION, SPRIG_KRKR_TJS_W("éžåŒæœŸå‡¦ç†å†…ã§ä¾‹å¤–ãŒæŠ•ã’ã‚‰ã‚Œã¾ã—ãŸ"));
 			KTL_THREAD_CALLBACK_POST_OUTPUT_VALUE(SPRIG_KRKR_TJS_W("exception_information"), sprig::krkr::tjs::exception_information(e), SPRIG_KRKR_LOG_LEVEL_ERROR);
 			cleanupOnProcessFailed();
 			return;
@@ -319,7 +319,7 @@ namespace ktl {
 			writers2_.error_code() = error;
 			finishWrite();
 		} SPRIG_KRKR_CATCH(e) {
-			KTL_THREAD_CALLBACK_POST_ERROR(KTL_ERROR_SECTION, SPRIG_KRKR_TJS_W("”ñ“¯Šúˆ—“à‚Å—áŠO‚ª“Š‚°‚ç‚ê‚Ü‚µ‚½"));
+			KTL_THREAD_CALLBACK_POST_ERROR(KTL_ERROR_SECTION, SPRIG_KRKR_TJS_W("éžåŒæœŸå‡¦ç†å†…ã§ä¾‹å¤–ãŒæŠ•ã’ã‚‰ã‚Œã¾ã—ãŸ"));
 			KTL_THREAD_CALLBACK_POST_OUTPUT_VALUE(SPRIG_KRKR_TJS_W("exception_information"), sprig::krkr::tjs::exception_information(e), SPRIG_KRKR_LOG_LEVEL_ERROR);
 			cleanupOnProcessFailed();
 			return;
@@ -335,7 +335,7 @@ namespace ktl {
 			readers2_.error_code() = error;
 			finishRead();
 		} SPRIG_KRKR_CATCH(e) {
-			KTL_THREAD_CALLBACK_POST_ERROR(KTL_ERROR_SECTION, SPRIG_KRKR_TJS_W("”ñ“¯Šúˆ—“à‚Å—áŠO‚ª“Š‚°‚ç‚ê‚Ü‚µ‚½"));
+			KTL_THREAD_CALLBACK_POST_ERROR(KTL_ERROR_SECTION, SPRIG_KRKR_TJS_W("éžåŒæœŸå‡¦ç†å†…ã§ä¾‹å¤–ãŒæŠ•ã’ã‚‰ã‚Œã¾ã—ãŸ"));
 			KTL_THREAD_CALLBACK_POST_OUTPUT_VALUE(SPRIG_KRKR_TJS_W("exception_information"), sprig::krkr::tjs::exception_information(e), SPRIG_KRKR_LOG_LEVEL_ERROR);
 			cleanupOnProcessFailed();
 			return;
@@ -351,7 +351,7 @@ namespace ktl {
 			readers2_.error_code() = error;
 			finishRead();
 		} SPRIG_KRKR_CATCH(e) {
-			KTL_THREAD_CALLBACK_POST_ERROR(KTL_ERROR_SECTION, SPRIG_KRKR_TJS_W("”ñ“¯Šúˆ—“à‚Å—áŠO‚ª“Š‚°‚ç‚ê‚Ü‚µ‚½"));
+			KTL_THREAD_CALLBACK_POST_ERROR(KTL_ERROR_SECTION, SPRIG_KRKR_TJS_W("éžåŒæœŸå‡¦ç†å†…ã§ä¾‹å¤–ãŒæŠ•ã’ã‚‰ã‚Œã¾ã—ãŸ"));
 			KTL_THREAD_CALLBACK_POST_OUTPUT_VALUE(SPRIG_KRKR_TJS_W("exception_information"), sprig::krkr::tjs::exception_information(e), SPRIG_KRKR_LOG_LEVEL_ERROR);
 			cleanupOnProcessFailed();
 			return;
@@ -371,7 +371,7 @@ namespace ktl {
 			cancelImpl();
 			NetworkUtils::moveComponent(timeout_timers_, timeout_timers2_);
 		} SPRIG_KRKR_CATCH(e) {
-			KTL_THREAD_CALLBACK_POST_ERROR(KTL_ERROR_SECTION, SPRIG_KRKR_TJS_W("”ñ“¯Šúˆ—“à‚Å—áŠO‚ª“Š‚°‚ç‚ê‚Ü‚µ‚½"));
+			KTL_THREAD_CALLBACK_POST_ERROR(KTL_ERROR_SECTION, SPRIG_KRKR_TJS_W("éžåŒæœŸå‡¦ç†å†…ã§ä¾‹å¤–ãŒæŠ•ã’ã‚‰ã‚Œã¾ã—ãŸ"));
 			KTL_THREAD_CALLBACK_POST_OUTPUT_VALUE(SPRIG_KRKR_TJS_W("exception_information"), sprig::krkr::tjs::exception_information(e), SPRIG_KRKR_LOG_LEVEL_ERROR);
 			cleanupOnProcessFailed();
 			return;
@@ -960,7 +960,7 @@ namespace ktl {
 		return true;
 	}
 	//
-	//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+	//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativeSocket::reset() {
 		scoped_lock_type lock(mutex_);
@@ -986,7 +986,7 @@ namespace ktl {
 		return true;
 	}
 	//
-	//	SUMMARY: §ŒäŒnƒƒ\ƒbƒh
+	//	SUMMARY: åˆ¶å¾¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativeSocket::cancel() {
 		scoped_lock_type lock(mutex_);
@@ -1022,7 +1022,7 @@ namespace ktl {
 		return true;
 	}
 	//
-	//	SUMMARY: –¼‘O‰ðŒˆŒnƒƒ\ƒbƒh
+	//	SUMMARY: åå‰è§£æ±ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativeSocket::resolve(impl_string_type const& host_name, impl_string_type const& service_name) {
 		scoped_lock_type lock(mutex_);
@@ -1100,7 +1100,7 @@ namespace ktl {
 		return sprig::krkr::tjs::as_object_closure_variant(result);
 	}
 	//
-	//	SUMMARY: Ú‘±Œnƒƒ\ƒbƒh
+	//	SUMMARY: æŽ¥ç¶šç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativeSocket::connect() {
 		scoped_lock_type lock(mutex_);
@@ -1373,7 +1373,7 @@ namespace ktl {
 		return connectors_.error_code() && !*connectors_.error_code();
 	}
 	//
-	//	SUMMARY: Ú‘±‘Ò‚¿Œnƒƒ\ƒbƒh
+	//	SUMMARY: æŽ¥ç¶šå¾…ã¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativeSocket::accept(unsigned short port, flag_type protocol_flag) {
 		scoped_lock_type lock(mutex_);
@@ -1456,7 +1456,7 @@ namespace ktl {
 		return acceptors_.error_code() && !*acceptors_.error_code();
 	}
 	//
-	//	SUMMARY: ƒnƒ“ƒhƒVƒFƒCƒNŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒãƒ³ãƒ‰ã‚·ã‚§ã‚¤ã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativeSocket::handshake() {
 		scoped_lock_type lock(mutex_);
@@ -1501,7 +1501,7 @@ namespace ktl {
 		return handshakers_.error_code() && !*handshakers_.error_code();
 	}
 	//
-	//	SUMMARY: ‘—MŒnƒƒ\ƒbƒh
+	//	SUMMARY: é€ä¿¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void NativeSocket::pushByte(byte_type source) {
 		scoped_lock_type lock(mutex_);
@@ -1604,7 +1604,7 @@ namespace ktl {
 		return writing_streambuf_->size();
 	}
 	//
-	//	SUMMARY: ‘—Mƒoƒbƒtƒ@Žæ“¾Œnƒƒ\ƒbƒh
+	//	SUMMARY: é€ä¿¡ãƒãƒƒãƒ•ã‚¡å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant NativeSocket::getWritingBufferAsOctet() const {
 		scoped_lock_type lock(mutex_);
@@ -1691,7 +1691,7 @@ namespace ktl {
 		return result_size;
 	}
 	//
-	//	SUMMARY: ŽóMŒnƒƒ\ƒbƒh
+	//	SUMMARY: å—ä¿¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	KTL_INLINE tTJSVariant NativeSocket::popByte() {
 		scoped_lock_type lock(mutex_);
 		size_type const reading_size = (std::min<size_type>)(1, reading_streambuf_->size());
@@ -2340,7 +2340,7 @@ namespace ktl {
 		return reading_streambuf_->size();
 	}
 	//
-	//	SUMMARY: ŽóMƒoƒbƒtƒ@Žæ“¾Œnƒƒ\ƒbƒh
+	//	SUMMARY: å—ä¿¡ãƒãƒƒãƒ•ã‚¡å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant NativeSocket::getReadingBufferAsOctet() const {
 		scoped_lock_type lock(mutex_);
@@ -2427,7 +2427,7 @@ namespace ktl {
 		return result_size;
 	}
 	//
-	//	SUMMARY: ƒ^ƒCƒ€ƒAƒEƒgŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¿ã‚¤ãƒ ã‚¢ã‚¦ãƒˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativeSocket::waitTimeoutFromNow(rep_type expiry_time_millisec) {
 		{
@@ -2569,7 +2569,7 @@ namespace ktl {
 		return boost::chrono::duration_cast<milliseconds_type>(timeout_timer_->expires_at().time_since_epoch()).count();
 	}
 	//
-	//	SUMMARY: ‘Ò‹@Œnƒƒ\ƒbƒh
+	//	SUMMARY: å¾…æ©Ÿç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativeSocket::join() {
 		{
@@ -2587,7 +2587,7 @@ namespace ktl {
 		return true;
 	}
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativeSocket::isProcessing() const {
 		scoped_lock_type lock(mutex_);
@@ -2604,7 +2604,7 @@ namespace ktl {
 		return ssl_socket_ && NetworkUtils::asSocket(*ssl_socket_).is_open();
 	}
 	//
-	//	SUMMARY: ƒR[ƒ‹ƒoƒbƒNŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant NativeSocket::getOnFinished() const {
 		scoped_lock_type lock(mutex_);
@@ -2674,19 +2674,19 @@ namespace ktl {
 		return instance_->resetExternalAcceptors(acceptors, ssl_socket);
 	}
 	//
-	//	SUMMARY: “à•”Œnƒƒ\ƒbƒh
+	//	SUMMARY: å†…éƒ¨ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE sprig::krkr::tjs::intptr_type Socket::getInstance() {
 		return reinterpret_cast<sprig::krkr::tjs::intptr_type>(this);
 	}
 	//
-	//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+	//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool Socket::reset() {
 		return instance_->reset();
 	}
 	//
-	//	SUMMARY: §ŒäŒnƒƒ\ƒbƒh
+	//	SUMMARY: åˆ¶å¾¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool Socket::cancel() {
 		return instance_->cancel();
@@ -2698,7 +2698,7 @@ namespace ktl {
 		return instance_->close();
 	}
 	//
-	//	SUMMARY: –¼‘O‰ðŒˆŒnƒƒ\ƒbƒh
+	//	SUMMARY: åå‰è§£æ±ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool Socket::resolve(tTJSVariantString const* host_name, tTJSVariantString const* service_name) {
 		return instance_->resolve(
@@ -2722,7 +2722,7 @@ namespace ktl {
 		return instance_->getEndpointList();
 	}
 	//
-	//	SUMMARY: Ú‘±Œnƒƒ\ƒbƒh
+	//	SUMMARY: æŽ¥ç¶šç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool Socket::connect() {
 		return instance_->connect();
@@ -2791,7 +2791,7 @@ namespace ktl {
 		return instance_->connectingSucceeded();
 	}
 	//
-	//	SUMMARY: Ú‘±‘Ò‚¿Œnƒƒ\ƒbƒh
+	//	SUMMARY: æŽ¥ç¶šå¾…ã¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool Socket::accept(tTVInteger port, tTVInteger protocol_flag) {
 		return instance_->accept(
@@ -2824,7 +2824,7 @@ namespace ktl {
 		return instance_->acceptingSucceeded();
 	}
 	//
-	//	SUMMARY: ƒnƒ“ƒhƒVƒFƒCƒNŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒãƒ³ãƒ‰ã‚·ã‚§ã‚¤ã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool Socket::handshake() {
 		return instance_->handshake();
@@ -2839,7 +2839,7 @@ namespace ktl {
 		return instance_->handshakingSucceeded();
 	}
 	//
-	//	SUMMARY: ‘—MŒnƒƒ\ƒbƒh
+	//	SUMMARY: é€ä¿¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void Socket::pushByte(tTVInteger source) {
 		instance_->pushByte(
@@ -2880,7 +2880,7 @@ namespace ktl {
 		return instance_->writingBufferSize();
 	}
 	//
-	//	SUMMARY: ‘—Mƒoƒbƒtƒ@Žæ“¾Œnƒƒ\ƒbƒh
+	//	SUMMARY: é€ä¿¡ãƒãƒƒãƒ•ã‚¡å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant Socket::getWritingBufferAsOctet() const {
 		return instance_->getWritingBufferAsOctet();
@@ -2933,7 +2933,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: ŽóMŒnƒƒ\ƒbƒh
+	//	SUMMARY: å—ä¿¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant Socket::popByte() {
 		return instance_->popByte();
@@ -3056,7 +3056,7 @@ namespace ktl {
 		return instance_->readingBufferSize();
 	}
 	//
-	//	SUMMARY: ŽóMƒoƒbƒtƒ@Žæ“¾Œnƒƒ\ƒbƒh
+	//	SUMMARY: å—ä¿¡ãƒãƒƒãƒ•ã‚¡å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant Socket::getReadingBufferAsOctet() const {
 		return instance_->getReadingBufferAsOctet();
@@ -3109,7 +3109,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: ƒ^ƒCƒ€ƒAƒEƒgŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¿ã‚¤ãƒ ã‚¢ã‚¦ãƒˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool Socket::waitTimeoutFromNow(tTVInteger expiry_time_millisec) {
 		return instance_->waitTimeoutFromNow(
@@ -3144,13 +3144,13 @@ namespace ktl {
 		return instance_->expiresTimeoutAt();
 	}
 	//
-	//	SUMMARY: ‘Ò‹@Œnƒƒ\ƒbƒh
+	//	SUMMARY: å¾…æ©Ÿç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool Socket::join() {
 		return instance_->join();
 	}
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool Socket::isProcessing() const {
 		return instance_->isProcessing();
@@ -3162,7 +3162,7 @@ namespace ktl {
 		return instance_->isSSL();
 	}
 	//
-	//	SUMMARY: ƒR[ƒ‹ƒoƒbƒNŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant Socket::getOnFinished() const {
 		return instance_->getOnFinished();

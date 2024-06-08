@@ -24,7 +24,7 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME SerializationObjectClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassSerializationObject, SerializationObject, SerializationObject)
 	//
-	//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒUŠÇ—Œnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚¶ç®¡ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(insert)
 	{
@@ -49,7 +49,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(exist);
 	//
-	//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(save)
 	{

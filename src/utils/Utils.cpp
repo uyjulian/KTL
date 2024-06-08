@@ -24,16 +24,16 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME UtilsClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassUtils, Utils, Utils)
 	//
-	//	SUMMARY: ƒZ[ƒuŒnƒtƒ‰ƒO
+	//	SUMMARY: ã‚»ãƒ¼ãƒ–ç³»ãƒ•ãƒ©ã‚°
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(sfNoConstQualifier, Utils::sfNoConstQualifier);
 	//
-	//	SUMMARY: ’è”ŒnƒvƒƒpƒeƒB
+	//	SUMMARY: å®šæ•°ç³»ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(sizeofWChar, Utils::sizeofWChar);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(sizeofNChar, Utils::sizeofNChar);
 	//
-	//	SUMMARY: ƒIƒuƒWƒFƒNƒgŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(getCii)
 	{
@@ -73,7 +73,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(getContext);
 	//
-	//	SUMMARY: ƒIƒNƒeƒbƒgŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚ªã‚¯ãƒ†ãƒƒãƒˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(getOctetData)
 	{
@@ -116,7 +116,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(endOctet);
 	//
-	//	SUMMARY: •¶Žš—ñŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ–‡å­—åˆ—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(getStringData)
 	{
@@ -159,7 +159,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(endString);
 	//
-	//	SUMMARY: •ÏŠ·Œnƒƒ\ƒbƒh
+	//	SUMMARY: å¤‰æ›ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(toString)
 	{
@@ -196,7 +196,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(toExpressionString);
 	//
-	//	SUMMARY: ƒXƒgƒŒ[ƒWŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¹ãƒˆãƒ¬ãƒ¼ã‚¸ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(loadStorageToOctet)
 	{
@@ -220,7 +220,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(saveStorageFromOctet);
 	//
-	//	SUMMARY: —ñ‹“Œnƒƒ\ƒbƒh
+	//	SUMMARY: åˆ—æŒ™ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(enumMembers)
 	{
@@ -243,7 +243,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(enumMembersName);
 	//
-	//	SUMMARY: ƒZ[ƒuŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚»ãƒ¼ãƒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(saveStructString)
 	{

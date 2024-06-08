@@ -53,7 +53,7 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME ContinuousHandlerManagerClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassContinuousHandlerManager, ContinuousHandlerManager, ContinuousHandlerManager)
 	//
-	//	SUMMARY: ƒnƒ“ƒhƒ‰ŠÇ—Œnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒãƒ³ãƒ‰ãƒ©ç®¡ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(insert)
 	{
@@ -88,11 +88,11 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(find);
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT(ContinuousHandlerManager, run, getRun, setRun);
 	//
-	//	SUMMARY: ƒfƒoƒbƒOŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ‡ãƒãƒƒã‚°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT(ContinuousHandlerManager, enablePerformanceTimer, getEnablePerformanceTimer, setEnablePerformanceTimer);
 

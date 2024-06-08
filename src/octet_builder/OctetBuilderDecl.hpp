@@ -74,7 +74,7 @@ namespace ktl {
 		}
 	public:
 		//
-		//	SUMMARY: ƒ^ƒCƒvŒnƒtƒ‰ƒO
+		//	SUMMARY: ã‚¿ã‚¤ãƒ—ç³»ãƒ•ãƒ©ã‚°
 		//
 		static flag_type const vtfMask = 0x0000FFFF;
 		static flag_type const vtfByte = 0x00000001;
@@ -93,19 +93,19 @@ namespace ktl {
 		static flag_type const vtfNarrowString = 0x00003000;
 		static flag_type const vtfBuilder = 0x00004000;
 		//
-		//	SUMMARY: ƒGƒ“ƒfƒBƒAƒ“Œnƒtƒ‰ƒO
+		//	SUMMARY: ã‚¨ãƒ³ãƒ‡ã‚£ã‚¢ãƒ³ç³»ãƒ•ãƒ©ã‚°
 		//
 		static flag_type const vefMask = 0x000F0000;
 		static flag_type const vefBigEndian = 0x00010000;
 		static flag_type const vefLittleEndian = 0x00020000;
 	public:
 		//
-		//	SUMMARY: ¶¬Œnƒƒ\ƒbƒh
+		//	SUMMARY: ç”Ÿæˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static sprig::krkr::tjs::object_type fromHex(tTJSVariantString const* data);
 	public:
 		//
-		//	SUMMARY: ‘žŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ›¸è¾¼ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		size_type set(size_type pos, tTJSVariant* v, flag_type flag = vtfByte);
 		size_type setByte(size_type pos, size_type size, byte_type b);
@@ -127,7 +127,7 @@ namespace ktl {
 		size_type setBlock(size_type pos, byte_type const* first, byte_type const* last);
 		size_type setBytes(size_type pos, byte_type const* data, size_type size);
 		//
-		//	SUMMARY: Š„“–Œnƒƒ\ƒbƒh
+		//	SUMMARY: å‰²å½“ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void assign(tTJSVariant* v, flag_type flag = vtfByte);
 		void assignByte(size_type size, byte_type b);
@@ -149,7 +149,7 @@ namespace ktl {
 		void assignBlock(byte_type const* first, byte_type const* last);
 		void assignBytes(byte_type const* data, size_type size);
 		//
-		//	SUMMARY: ‘}“üŒnƒƒ\ƒbƒh
+		//	SUMMARY: æŒ¿å…¥ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void insert(size_type pos, tTJSVariant* v, flag_type flag = vtfByte);
 		void insertByte(size_type pos, size_type size, byte_type b);
@@ -171,7 +171,7 @@ namespace ktl {
 		void insertBlock(size_type pos, byte_type const* first, byte_type const* last);
 		void insertBytes(size_type pos, byte_type const* data, size_type size);
 		//
-		//	SUMMARY: ’Ç‰ÁŒnƒƒ\ƒbƒh
+		//	SUMMARY: è¿½åŠ ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		size_type add(tTJSVariant* v, flag_type flag = vtfByte);
 		size_type addByte(size_type size, byte_type b);
@@ -193,23 +193,23 @@ namespace ktl {
 		size_type addBlock(byte_type const* first, byte_type const* last);
 		size_type addBytes(byte_type const* data, size_type size);
 		//
-		//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+		//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void clear();
 		//
-		//	SUMMARY: íœŒnƒƒ\ƒbƒh
+		//	SUMMARY: å‰Šé™¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void erase(size_type pos);
 		void erase(size_type pos, size_type size);
 		//
-		//	SUMMARY: ‘OŒãíœŒnƒƒ\ƒbƒh
+		//	SUMMARY: å‰å¾Œå‰Šé™¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		int_type pop();
 		size_type pop(size_type size);
 		int_type shift();
 		size_type shift(size_type size);
 		//
-		//	SUMMARY: •ÏŠ·Œnƒƒ\ƒbƒh
+		//	SUMMARY: å¤‰æ›ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant as(size_type pos, flag_type flag = vtfByte) const;
 		tTJSVariant asBuilder() const;
@@ -225,40 +225,40 @@ namespace ktl {
 		tTJSVariant asNarrowString(size_type pos) const;
 		tTJSVariant asNarrowString(size_type pos, size_type size) const;
 		//
-		//	SUMMARY: ƒXƒgƒŒ[ƒWŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¹ãƒˆãƒ¬ãƒ¼ã‚¸ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		int_type saveStorage(tjs_char const* storage) const;
 		int_type saveStorage(tjs_char const* storage, size_type pos) const;
 		int_type saveStorage(tjs_char const* storage, size_type pos, size_type size) const;
 		//
-		//	SUMMARY: ‰‰ŽZŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ¼”ç®—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		size_type transformAndByte(byte_type b);
 		size_type transformOrByte(byte_type b);
 		size_type transformXorByte(byte_type b);
 		size_type transformNotByte();
 		//
-		//	SUMMARY: ŒŸõŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ¤œç´¢ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		int_type findByte(byte_type b) const;
 		int_type findByte(byte_type b, size_type pos) const;
 		int_type findByte(byte_type b, size_type pos, size_type size) const;
 		//
-		//	SUMMARY: ƒƒ‚ƒŠŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ¡ãƒ¢ãƒªç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void copy(sprig::krkr::tjs::intptr_type dest, size_type pos, size_type size) const;
 		//
-		//	SUMMARY: Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		int_type back() const;
 		int_type front() const;
 		//
-		//	SUMMARY: ƒ|ƒCƒ“ƒ^Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒã‚¤ãƒ³ã‚¿å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		byte_type* begin();
 		byte_type* end();
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool empty() const;
 		size_type size() const;
@@ -291,7 +291,7 @@ namespace ktl {
 		}
 	public:
 		//
-		//	SUMMARY: ƒ^ƒCƒvŒnƒtƒ‰ƒO
+		//	SUMMARY: ã‚¿ã‚¤ãƒ—ç³»ãƒ•ãƒ©ã‚°
 		//
 		static tTVInteger const vtfMask = NativeOctetBuilder::vtfMask;
 		static tTVInteger const vtfByte = NativeOctetBuilder::vtfByte;
@@ -310,23 +310,23 @@ namespace ktl {
 		static tTVInteger const vtfNarrowString = NativeOctetBuilder::vtfNarrowString;
 		static tTVInteger const vtfBuilder = NativeOctetBuilder::vtfBuilder;
 		//
-		//	SUMMARY: ƒGƒ“ƒfƒBƒAƒ“Œnƒtƒ‰ƒO
+		//	SUMMARY: ã‚¨ãƒ³ãƒ‡ã‚£ã‚¢ãƒ³ç³»ãƒ•ãƒ©ã‚°
 		//
 		static tTVInteger const vefMask = NativeOctetBuilder::vefMask;
 		static tTVInteger const vefBigEndian = NativeOctetBuilder::vefBigEndian;
 		static tTVInteger const vefLittleEndian = NativeOctetBuilder::vefLittleEndian;
 	public:
 		//
-		//	SUMMARY: ¶¬Œnƒƒ\ƒbƒh
+		//	SUMMARY: ç”Ÿæˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static sprig::krkr::tjs::object_type fromHex(tTJSVariantString const* data);
 	public:
 		//
-		//	SUMMARY: “à•”Œnƒƒ\ƒbƒh
+		//	SUMMARY: å†…éƒ¨ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		sprig::krkr::tjs::intptr_type getInstance();
 		//
-		//	SUMMARY: ‘žŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ›¸è¾¼ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTVInteger set(tTVInteger pos, tTJSVariant* v, tTVInteger flag = vtfByte);
 		tTVInteger setByte(tTVInteger pos, tTVInteger size, tTVInteger b);
@@ -348,7 +348,7 @@ namespace ktl {
 		tTVInteger setBlock(tTVInteger pos, sprig::krkr::tjs::intptr_type first, sprig::krkr::tjs::intptr_type last);
 		tTVInteger setBytes(tTVInteger pos, sprig::krkr::tjs::intptr_type data, tTVInteger size);
 		//
-		//	SUMMARY: Š„“–Œnƒƒ\ƒbƒh
+		//	SUMMARY: å‰²å½“ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void assign(tTJSVariant* v, tTVInteger flag = vtfByte);
 		void assignByte(tTVInteger size, tTVInteger b);
@@ -370,7 +370,7 @@ namespace ktl {
 		void assignBlock(sprig::krkr::tjs::intptr_type first, sprig::krkr::tjs::intptr_type last);
 		void assignBytes(sprig::krkr::tjs::intptr_type data, tTVInteger size);
 		//
-		//	SUMMARY: ‘}“üŒnƒƒ\ƒbƒh
+		//	SUMMARY: æŒ¿å…¥ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void insert(tTVInteger pos, tTJSVariant* v, tTVInteger flag = vtfByte);
 		void insertByte(tTVInteger pos, tTVInteger size, tTVInteger b);
@@ -392,7 +392,7 @@ namespace ktl {
 		void insertBlock(tTVInteger pos, sprig::krkr::tjs::intptr_type first, sprig::krkr::tjs::intptr_type last);
 		void insertBytes(tTVInteger pos, sprig::krkr::tjs::intptr_type data, tTVInteger size);
 		//
-		//	SUMMARY: ’Ç‰ÁŒnƒƒ\ƒbƒh
+		//	SUMMARY: è¿½åŠ ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTVInteger add(tTJSVariant* v, tTVInteger flag = vtfByte);
 		tTVInteger addByte(tTVInteger size, tTVInteger b);
@@ -414,23 +414,23 @@ namespace ktl {
 		tTVInteger addBlock(sprig::krkr::tjs::intptr_type first, sprig::krkr::tjs::intptr_type last);
 		tTVInteger addBytes(sprig::krkr::tjs::intptr_type data, tTVInteger size);
 		//
-		//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+		//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void clear();
 		//
-		//	SUMMARY: íœŒnƒƒ\ƒbƒh
+		//	SUMMARY: å‰Šé™¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void erase(tTVInteger pos);
 		void erase(tTVInteger pos, tTVInteger size);
 		//
-		//	SUMMARY: ‘OŒãíœŒnƒƒ\ƒbƒh
+		//	SUMMARY: å‰å¾Œå‰Šé™¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTVInteger pop();
 		tTVInteger pop(tTVInteger size);
 		tTVInteger shift();
 		tTVInteger shift(tTVInteger size);
 		//
-		//	SUMMARY: •ÏŠ·Œnƒƒ\ƒbƒh
+		//	SUMMARY: å¤‰æ›ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant as(tTVInteger pos, tTVInteger flag = vtfByte) const;
 		tTJSVariant asBuilder() const;
@@ -446,40 +446,40 @@ namespace ktl {
 		tTJSVariant asNarrowString(tTVInteger pos) const;
 		tTJSVariant asNarrowString(tTVInteger pos, tTVInteger size) const;
 		//
-		//	SUMMARY: ƒXƒgƒŒ[ƒWŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¹ãƒˆãƒ¬ãƒ¼ã‚¸ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTVInteger saveStorage(tTJSVariantString const* storage) const;
 		tTVInteger saveStorage(tTJSVariantString const* storage, tTVInteger pos) const;
 		tTVInteger saveStorage(tTJSVariantString const* storage, tTVInteger pos, tTVInteger size) const;
 		//
-		//	SUMMARY: ‰‰ŽZŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ¼”ç®—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTVInteger transformAndByte(tTVInteger b);
 		tTVInteger transformOrByte(tTVInteger b);
 		tTVInteger transformXorByte(tTVInteger b);
 		tTVInteger transformNotByte();
 		//
-		//	SUMMARY: ŒŸõŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ¤œç´¢ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTVInteger findByte(tTVInteger b) const;
 		tTVInteger findByte(tTVInteger b, tTVInteger pos) const;
 		tTVInteger findByte(tTVInteger b, tTVInteger pos, tTVInteger size) const;
 		//
-		//	SUMMARY: ƒƒ‚ƒŠŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ¡ãƒ¢ãƒªç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void copy(sprig::krkr::tjs::intptr_type dest, tTVInteger pos, tTVInteger size) const;
 		//
-		//	SUMMARY: Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTVInteger back() const;
 		tTVInteger front() const;
 		//
-		//	SUMMARY: ƒ|ƒCƒ“ƒ^Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒã‚¤ãƒ³ã‚¿å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		sprig::krkr::tjs::intptr_type begin();
 		sprig::krkr::tjs::intptr_type end();
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool empty() const;
 		tTVInteger size() const;

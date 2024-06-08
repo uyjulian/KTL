@@ -579,7 +579,7 @@ namespace ktl {
 	//
 	NativeDefinition::NativeDefinition() {}
 	//
-	//	SUMMARY: ’è‹`Œnƒƒ\ƒbƒh
+	//	SUMMARY: å®šç¾©ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant NativeDefinition::class_() {
 		return sprig::krkr::tjs::as_object_closure_variant(
@@ -597,13 +597,13 @@ namespace ktl {
 		: def_(new DefinitionClass(), false)
 	{}
 	//
-	//	SUMMARY: ’è‹`Œnƒƒ\ƒbƒh
+	//	SUMMARY: å®šç¾©ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant NativeClassDefinition::endDefinition() {
 		return sprig::krkr::tjs::as_object_closure_variant(def_);
 	}
 	//
-	//	SUMMARY: ƒNƒ‰ƒX’è‹`Œnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¯ãƒ©ã‚¹å®šç¾©ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void NativeClassDefinition::name(tjs_char const* s) {
 		def_->name(s);
@@ -640,7 +640,7 @@ namespace ktl {
 		instance_.reset();
 	}
 	//
-	//	SUMMARY: ’è‹`Œnƒƒ\ƒbƒh
+	//	SUMMARY: å®šç¾©ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant Definition::class_() {
 		return NativeDefinition::class_();
@@ -665,13 +665,13 @@ namespace ktl {
 		instance_.reset();
 	}
 	//
-	//	SUMMARY: ’è‹`Œnƒƒ\ƒbƒh
+	//	SUMMARY: å®šç¾©ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant ClassDefinition::endDefinition() {
 		return instance_->endDefinition();
 	}
 	//
-	//	SUMMARY: ƒNƒ‰ƒX’è‹`Œnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¯ãƒ©ã‚¹å®šç¾©ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void ClassDefinition::name(tTJSVariantString const* s) {
 		instance_->name(sprig::krkr::tjs::as_c_str(s));

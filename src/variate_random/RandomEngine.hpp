@@ -34,14 +34,14 @@ namespace ktl {
 	// NativeStaticRandomEngine
 	//
 	//
-	//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	SPRIG_INLINE RandomResult NativeStaticRandomEngine<Impl, typename RandomUtils::enable_static_random_engine<Impl>::type>::static_random() {
 		return impl_type::static_random();
 	}
 	//
-	//	SUMMARY: ƒV[ƒhŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	SPRIG_INLINE void NativeStaticRandomEngine<Impl, typename RandomUtils::enable_static_random_engine<Impl>::type>::static_seed(
@@ -50,7 +50,7 @@ namespace ktl {
 		)
 	{}
 	//
-	//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	SPRIG_INLINE tTJSVariant NativeStaticRandomEngine<Impl, typename RandomUtils::enable_static_random_engine<Impl>::type>::static_serialize() {
@@ -64,7 +64,7 @@ namespace ktl {
 		impl_type::static_in(iss);
 	}
 	//
-	//	SUMMARY: Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	SPRIG_INLINE RandomResult NativeStaticRandomEngine<Impl, typename RandomUtils::enable_static_random_engine<Impl>::type>::static_min() {
@@ -452,14 +452,14 @@ namespace ktl {
 		return variant_type(impl_);
 	}
 	//
-	//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	KTL_INLINE RandomResult NativeRandomEngine<Impl>::random() {
 		return impl_();
 	}
 	//
-	//	SUMMARY: ƒV[ƒhŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	KTL_INLINE void NativeRandomEngine<Impl>::seed(
@@ -470,7 +470,7 @@ namespace ktl {
 		initialize(numparams, param);
 	}
 	//
-	//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	KTL_INLINE tTJSVariant NativeRandomEngine<Impl>::serialize() const {
@@ -484,7 +484,7 @@ namespace ktl {
 		iss >> impl_;
 	}
 	//
-	//	SUMMARY: Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	KTL_INLINE RandomResult NativeRandomEngine<Impl>::min() const {
@@ -499,14 +499,14 @@ namespace ktl {
 	// StaticRandomEngine
 	//
 	//
-	//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	SPRIG_INLINE tTJSVariant StaticRandomEngine<Impl, typename RandomUtils::enable_static_random_engine<Impl>::type>::static_random() {
 		return NativeRandomEngine<impl_type>::static_random();
 	}
 	//
-	//	SUMMARY: ƒV[ƒhŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	SPRIG_INLINE void StaticRandomEngine<Impl, typename RandomUtils::enable_static_random_engine<Impl>::type>::static_seed(
@@ -517,7 +517,7 @@ namespace ktl {
 		NativeRandomEngine<impl_type>::static_seed(numparams, param);
 	}
 	//
-	//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	SPRIG_INLINE tTJSVariant StaticRandomEngine<Impl, typename RandomUtils::enable_static_random_engine<Impl>::type>::static_serialize() {
@@ -528,7 +528,7 @@ namespace ktl {
 		NativeRandomEngine<impl_type>::static_deserialize(sprig::krkr::tjs::as_c_str(data));
 	}
 	//
-	//	SUMMARY: Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	SPRIG_INLINE tTJSVariant StaticRandomEngine<Impl, typename RandomUtils::enable_static_random_engine<Impl>::type>::static_min() {
@@ -560,7 +560,7 @@ namespace ktl {
 		instance_.reset();
 	}
 	//
-	//	SUMMARY: “à•”Œnƒƒ\ƒbƒh
+	//	SUMMARY: å†…éƒ¨ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	KTL_INLINE sprig::krkr::tjs::intptr_type RandomEngine<Impl>::getBase() {
@@ -569,14 +569,14 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	KTL_INLINE tTJSVariant RandomEngine<Impl>::random() {
 		return instance_->random();
 	}
 	//
-	//	SUMMARY: ƒV[ƒhŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	KTL_INLINE void RandomEngine<Impl>::seed(
@@ -587,7 +587,7 @@ namespace ktl {
 		instance_->seed(numparams, param);
 	}
 	//
-	//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	KTL_INLINE tTJSVariant RandomEngine<Impl>::serialize() const {
@@ -598,7 +598,7 @@ namespace ktl {
 		instance_->deserialize(sprig::krkr::tjs::as_c_str(data));
 	}
 	//
-	//	SUMMARY: Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	KTL_INLINE tTJSVariant RandomEngine<Impl>::min() const {

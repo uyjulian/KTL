@@ -207,7 +207,7 @@ namespace ktl {
 		NativeDefinition();
 	public:
 		//
-		//	SUMMARY: ’è‹`Œnƒƒ\ƒbƒh
+		//	SUMMARY: å®šç¾©ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant class_();
 	};
@@ -222,11 +222,11 @@ namespace ktl {
 		NativeClassDefinition();
 	public:
 		//
-		//	SUMMARY: ’è‹`Œnƒƒ\ƒbƒh
+		//	SUMMARY: å®šç¾©ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant endDefinition();
 		//
-		//	SUMMARY: ƒNƒ‰ƒX’è‹`Œnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¯ãƒ©ã‚¹å®šç¾©ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void name(tjs_char const* s);
 		void extends_(iTJSDispatch2* obj);
@@ -253,7 +253,7 @@ namespace ktl {
 		void TJS_INTF_METHOD Invalidate();
 	public:
 		//
-		//	SUMMARY: ’è‹`Œnƒƒ\ƒbƒh
+		//	SUMMARY: å®šç¾©ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant class_();
 	};
@@ -276,11 +276,11 @@ namespace ktl {
 		void TJS_INTF_METHOD Invalidate();
 	public:
 		//
-		//	SUMMARY: ’è‹`Œnƒƒ\ƒbƒh
+		//	SUMMARY: å®šç¾©ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant endDefinition();
 		//
-		//	SUMMARY: ƒNƒ‰ƒX’è‹`Œnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¯ãƒ©ã‚¹å®šç¾©ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void name(tTJSVariantString const* s);
 		void extends_(iTJSDispatch2* obj);

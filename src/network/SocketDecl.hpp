@@ -211,28 +211,28 @@ namespace ktl {
 			);
 	public:
 		//
-		//	SUMMARY: ƒvƒƒgƒRƒ‹Œnƒtƒ‰ƒO
+		//	SUMMARY: ãƒ—ãƒ­ãƒˆã‚³ãƒ«ç³»ãƒ•ãƒ©ã‚°
 		//
 		static flag_type const pfIPv4 = NetworkUtils::pfIPv4;
 		static flag_type const pfIPv6 = NetworkUtils::pfIPv6;
 		//
-		//	SUMMARY: Š®—¹ðŒŒnƒtƒ‰ƒO
+		//	SUMMARY: å®Œäº†æ¡ä»¶ç³»ãƒ•ãƒ©ã‚°
 		//
 		static flag_type const ccfTransferAtLeast = NetworkUtils::ccfTransferAtLeast;
 		static flag_type const ccfTransferExactly = NetworkUtils::ccfTransferExactly;
 	public:
 		//
-		//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+		//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool reset();
 		//
-		//	SUMMARY: §ŒäŒnƒƒ\ƒbƒh
+		//	SUMMARY: åˆ¶å¾¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool cancel();
 		bool cancelled() const;
 		bool close();
 		//
-		//	SUMMARY: –¼‘O‰ðŒˆŒnƒƒ\ƒbƒh
+		//	SUMMARY: åå‰è§£æ±ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool resolve(impl_string_type const& host_name, impl_string_type const& service_name);
 		bool asyncResolve(impl_string_type const& host_name, impl_string_type const& service_name);
@@ -240,7 +240,7 @@ namespace ktl {
 		bool resolvingSucceeded() const;
 		tTJSVariant getEndpointList() const;
 		//
-		//	SUMMARY: Ú‘±Œnƒƒ\ƒbƒh
+		//	SUMMARY: æŽ¥ç¶šç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool connect();
 		bool connect(tTJSVariant* address, unsigned short port);
@@ -257,7 +257,7 @@ namespace ktl {
 		bool connectingFinished() const;
 		bool connectingSucceeded() const;
 		//
-		//	SUMMARY: Ú‘±‘Ò‚¿Œnƒƒ\ƒbƒh
+		//	SUMMARY: æŽ¥ç¶šå¾…ã¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool accept(unsigned short port, flag_type protocol_flag = pfIPv4);
 		bool acceptSSL(unsigned short port, flag_type protocol_flag = pfIPv4);
@@ -266,14 +266,14 @@ namespace ktl {
 		bool acceptingFinished() const;
 		bool acceptingSucceeded() const;
 		//
-		//	SUMMARY: ƒnƒ“ƒhƒVƒFƒCƒNŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒãƒ³ãƒ‰ã‚·ã‚§ã‚¤ã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool handshake();
 		bool asyncHandshake();
 		bool handshakingFinished() const;
 		bool handshakingSucceeded() const;
 		//
-		//	SUMMARY: ‘—MŒnƒƒ\ƒbƒh
+		//	SUMMARY: é€ä¿¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void pushByte(byte_type source);
 		void pushString(tjs_char const* source);
@@ -286,7 +286,7 @@ namespace ktl {
 		bool writingSucceeded() const;
 		size_type writingBufferSize() const;
 		//
-		//	SUMMARY: ‘—Mƒoƒbƒtƒ@Žæ“¾Œnƒƒ\ƒbƒh
+		//	SUMMARY: é€ä¿¡ãƒãƒƒãƒ•ã‚¡å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant getWritingBufferAsOctet() const;
 		tTJSVariant getWritingBufferAsOctet(size_type pos) const;
@@ -300,7 +300,7 @@ namespace ktl {
 		int_type consumeWritingBuffer();
 		int_type consumeWritingBuffer(size_type size);
 		//
-		//	SUMMARY: ŽóMŒnƒƒ\ƒbƒh
+		//	SUMMARY: å—ä¿¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant popByte();
 		tTJSVariant popString();
@@ -331,7 +331,7 @@ namespace ktl {
 		bool eof() const;
 		size_type readingBufferSize() const;
 		//
-		//	SUMMARY: ŽóMƒoƒbƒtƒ@Žæ“¾Œnƒƒ\ƒbƒh
+		//	SUMMARY: å—ä¿¡ãƒãƒƒãƒ•ã‚¡å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant getReadingBufferAsOctet() const;
 		tTJSVariant getReadingBufferAsOctet(size_type pos) const;
@@ -345,7 +345,7 @@ namespace ktl {
 		int_type consumeReadingBuffer();
 		int_type consumeReadingBuffer(size_type size);
 		//
-		//	SUMMARY: ƒ^ƒCƒ€ƒAƒEƒgŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¿ã‚¤ãƒ ã‚¢ã‚¦ãƒˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool waitTimeoutFromNow(rep_type expiry_time_millisec);
 		bool waitTimeoutAt(rep_type expiry_time_millisec);
@@ -356,17 +356,17 @@ namespace ktl {
 		rep_type expiresTimeoutFromNow() const;
 		rep_type expiresTimeoutAt() const;
 		//
-		//	SUMMARY: ‘Ò‹@Œnƒƒ\ƒbƒh
+		//	SUMMARY: å¾…æ©Ÿç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool join();
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool isProcessing() const;
 		bool isOpen() const;
 		bool isSSL() const;
 		//
-		//	SUMMARY: ƒR[ƒ‹ƒoƒbƒNŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant getOnFinished() const;
 		void setOnFinished(tTJSVariant const& func);
@@ -411,32 +411,32 @@ namespace ktl {
 			);
 	public:
 		//
-		//	SUMMARY: ƒvƒƒgƒRƒ‹Œnƒtƒ‰ƒO
+		//	SUMMARY: ãƒ—ãƒ­ãƒˆã‚³ãƒ«ç³»ãƒ•ãƒ©ã‚°
 		//
 		static tTVInteger const pfIPv4 = NativeSocket::pfIPv4;
 		static tTVInteger const pfIPv6 = NativeSocket::pfIPv6;
 		//
-		//	SUMMARY: Š®—¹ðŒŒnƒtƒ‰ƒO
+		//	SUMMARY: å®Œäº†æ¡ä»¶ç³»ãƒ•ãƒ©ã‚°
 		//
 		static tTVInteger const ccfTransferAtLeast = NativeSocket::ccfTransferAtLeast;
 		static tTVInteger const ccfTransferExactly = NativeSocket::ccfTransferExactly;
 	public:
 		//
-		//	SUMMARY: “à•”Œnƒƒ\ƒbƒh
+		//	SUMMARY: å†…éƒ¨ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		sprig::krkr::tjs::intptr_type getInstance();
 		//
-		//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+		//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool reset();
 		//
-		//	SUMMARY: §ŒäŒnƒƒ\ƒbƒh
+		//	SUMMARY: åˆ¶å¾¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool cancel();
 		bool cancelled() const;
 		bool close();
 		//
-		//	SUMMARY: –¼‘O‰ðŒˆŒnƒƒ\ƒbƒh
+		//	SUMMARY: åå‰è§£æ±ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool resolve(tTJSVariantString const* host_name, tTJSVariantString const* service_name);
 		bool asyncResolve(tTJSVariantString const* host_name, tTJSVariantString const* service_name);
@@ -444,7 +444,7 @@ namespace ktl {
 		bool resolvingSucceeded() const;
 		tTJSVariant getEndpointList() const;
 		//
-		//	SUMMARY: Ú‘±Œnƒƒ\ƒbƒh
+		//	SUMMARY: æŽ¥ç¶šç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool connect();
 		bool connect(tTJSVariant* address, tTVInteger port);
@@ -461,7 +461,7 @@ namespace ktl {
 		bool connectingFinished() const;
 		bool connectingSucceeded() const;
 		//
-		//	SUMMARY: Ú‘±‘Ò‚¿Œnƒƒ\ƒbƒh
+		//	SUMMARY: æŽ¥ç¶šå¾…ã¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool accept(tTVInteger port, tTVInteger protocol_flag = pfIPv4);
 		bool acceptSSL(tTVInteger port, tTVInteger protocol_flag = pfIPv4);
@@ -470,14 +470,14 @@ namespace ktl {
 		bool acceptingFinished() const;
 		bool acceptingSucceeded() const;
 		//
-		//	SUMMARY: ƒnƒ“ƒhƒVƒFƒCƒNŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒãƒ³ãƒ‰ã‚·ã‚§ã‚¤ã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool handshake();
 		bool asyncHandshake();
 		bool handshakingFinished() const;
 		bool handshakingSucceeded() const;
 		//
-		//	SUMMARY: ‘—MŒnƒƒ\ƒbƒh
+		//	SUMMARY: é€ä¿¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void pushByte(tTVInteger source);
 		void pushString(tTJSVariantString const* source);
@@ -490,7 +490,7 @@ namespace ktl {
 		bool writingSucceeded() const;
 		tTVInteger writingBufferSize() const;
 		//
-		//	SUMMARY: ‘—Mƒoƒbƒtƒ@Žæ“¾Œnƒƒ\ƒbƒh
+		//	SUMMARY: é€ä¿¡ãƒãƒƒãƒ•ã‚¡å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant getWritingBufferAsOctet() const;
 		tTJSVariant getWritingBufferAsOctet(tTVInteger pos) const;
@@ -504,7 +504,7 @@ namespace ktl {
 		tTVInteger consumeWritingBuffer();
 		tTVInteger consumeWritingBuffer(tTVInteger size);
 		//
-		//	SUMMARY: ŽóMŒnƒƒ\ƒbƒh
+		//	SUMMARY: å—ä¿¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant popByte();
 		tTJSVariant popString();
@@ -535,7 +535,7 @@ namespace ktl {
 		bool eof() const;
 		tTVInteger readingBufferSize() const;
 		//
-		//	SUMMARY: ŽóMƒoƒbƒtƒ@Žæ“¾Œnƒƒ\ƒbƒh
+		//	SUMMARY: å—ä¿¡ãƒãƒƒãƒ•ã‚¡å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant getReadingBufferAsOctet() const;
 		tTJSVariant getReadingBufferAsOctet(tTVInteger pos) const;
@@ -549,7 +549,7 @@ namespace ktl {
 		tTVInteger consumeReadingBuffer();
 		tTVInteger consumeReadingBuffer(tTVInteger size);
 		//
-		//	SUMMARY: ƒ^ƒCƒ€ƒAƒEƒgŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¿ã‚¤ãƒ ã‚¢ã‚¦ãƒˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool waitTimeoutFromNow(tTVInteger expiry_time_millisec);
 		bool waitTimeoutAt(tTVInteger expiry_time_millisec);
@@ -560,17 +560,17 @@ namespace ktl {
 		tTVInteger expiresTimeoutFromNow() const;
 		tTVInteger expiresTimeoutAt() const;
 		//
-		//	SUMMARY: ‘Ò‹@Œnƒƒ\ƒbƒh
+		//	SUMMARY: å¾…æ©Ÿç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool join();
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool isProcessing() const;
 		bool isOpen() const;
 		bool isSSL() const;
 		//
-		//	SUMMARY: ƒR[ƒ‹ƒoƒbƒNŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant getOnFinished() const;
 		void setOnFinished(tTJSVariant const& func);

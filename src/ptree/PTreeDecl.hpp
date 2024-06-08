@@ -131,29 +131,29 @@ namespace ktl {
 		pt_ptree_type const& getValue() const;
 	public:
 		//
-		//	SUMMARY: XMLƒp[ƒXŒnƒtƒ‰ƒO
+		//	SUMMARY: XMLãƒ‘ãƒ¼ã‚¹ç³»ãƒ•ãƒ©ã‚°
 		//
 		static flag_type const pfXMLNoConcatText = boost::property_tree::xml_parser::no_concat_text;
 		static flag_type const pfXMLNoComments = boost::property_tree::xml_parser::no_comments;
 		static flag_type const pfXMLTrimWhitespace = boost::property_tree::xml_parser::trim_whitespace;
 		//
-		//	SUMMARY: YAMLƒp[ƒXŒnƒtƒ‰ƒO
+		//	SUMMARY: YAMLãƒ‘ãƒ¼ã‚¹ç³»ãƒ•ãƒ©ã‚°
 		//
 		static flag_type const pfYAMLMultiDocument = sprig::property_tree::yaml_parser::reader_flags::multi_document;
 		//
-		//	SUMMARY: YAMLƒGƒ~ƒbƒgŒnƒtƒ‰ƒO
+		//	SUMMARY: YAMLã‚¨ãƒŸãƒƒãƒˆç³»ãƒ•ãƒ©ã‚°
 		//
 		static flag_type const efYAMLMultiDocument = sprig::property_tree::yaml_parser::writer_flags::multi_document;
 		static flag_type const efYAMLInsertEndOfDocument = sprig::property_tree::yaml_parser::writer_flags::insert_end_of_document;
 		//
-		//	SUMMARY: HTMLƒp[ƒXŒnƒtƒ‰ƒO
+		//	SUMMARY: HTMLãƒ‘ãƒ¼ã‚¹ç³»ãƒ•ãƒ©ã‚°
 		//
 		static flag_type const pfHTMLNoConcatText = sprig::property_tree::html_parser::reader_flags::no_concat_text;
 		static flag_type const pfHTMLNoComments = sprig::property_tree::html_parser::reader_flags::no_comments;
 		static flag_type const pfHTMLTrimWhitespace = sprig::property_tree::html_parser::reader_flags::trim_whitespace;
 	public:
 		//
-		//	SUMMARY: ƒAƒNƒZƒXŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¢ã‚¯ã‚»ã‚¹ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant get(tjs_char const* path_exists) const;
 		tTJSVariant getKey(tjs_char const* path_exists) const;
@@ -167,12 +167,12 @@ namespace ktl {
 		bool sort(tjs_char const* path_exists, tTJSVariant const* comp = 0, bool stable = false);
 		bool reverse(tjs_char const* path_exists);
 		//
-		//	SUMMARY: •¡»Œnƒƒ\ƒbƒh
+		//	SUMMARY: è¤‡è£½ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		sprig::krkr::tjs::object_type clone(tjs_char const* path_exists) const;
 		bool assign(tjs_char const* path_insertable, iTJSDispatch2* obj);
 		//
-		//	SUMMARY: XML“Ç‚Ýž‚ÝŒnƒƒ\ƒbƒh
+		//	SUMMARY: XMLèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool readXML(
 			tjs_char const* source,
@@ -193,7 +193,7 @@ namespace ktl {
 			flag_type flag = 0x00000000
 			);
 		//
-		//	SUMMARY: JSON“Ç‚Ýž‚ÝŒnƒƒ\ƒbƒh
+		//	SUMMARY: JSONèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool readJSON(
 			tjs_char const* source
@@ -210,7 +210,7 @@ namespace ktl {
 			tjs_char const* code
 			);
 		//
-		//	SUMMARY: INI“Ç‚Ýž‚ÝŒnƒƒ\ƒbƒh
+		//	SUMMARY: INIèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool readINI(
 			tjs_char const* source
@@ -227,7 +227,7 @@ namespace ktl {
 			tjs_char const* code
 			);
 		//
-		//	SUMMARY: INFO“Ç‚Ýž‚ÝŒnƒƒ\ƒbƒh
+		//	SUMMARY: INFOèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool readINFO(
 			tjs_char const* source
@@ -244,7 +244,7 @@ namespace ktl {
 			tjs_char const* code
 			);
 		//
-		//	SUMMARY: YAML“Ç‚Ýž‚ÝŒnƒƒ\ƒbƒh
+		//	SUMMARY: YAMLèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool readYAML(
 			tjs_char const* source,
@@ -265,7 +265,7 @@ namespace ktl {
 			flag_type flag = 0x00000000
 			);
 		//
-		//	SUMMARY: HTML“Ç‚Ýž‚ÝŒnƒƒ\ƒbƒh
+		//	SUMMARY: HTMLèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool readHTML(
 			tjs_char const* source,
@@ -286,7 +286,7 @@ namespace ktl {
 			flag_type flag = 0x00000000
 			);
 		//
-		//	SUMMARY: XML‘‚«o‚µŒnƒƒ\ƒbƒh
+		//	SUMMARY: XMLæ›¸ãå‡ºã—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant writeXMLToString(
 			boost::optional<tjs_char> indent_char = boost::none,
@@ -304,7 +304,7 @@ namespace ktl {
 			boost::optional<size_type> indent_count = boost::none
 			) const;
 		//
-		//	SUMMARY: JSON‘‚«o‚µŒnƒƒ\ƒbƒh
+		//	SUMMARY: JSONæ›¸ãå‡ºã—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant writeJSONToString(
 			bool pretty = true
@@ -319,7 +319,7 @@ namespace ktl {
 			bool pretty = true
 			) const;
 		//
-		//	SUMMARY: INI‘‚«o‚µŒnƒƒ\ƒbƒh
+		//	SUMMARY: INIæ›¸ãå‡ºã—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant writeINIToString() const;
 		tTJSVariant writeINIToOctet(
@@ -330,7 +330,7 @@ namespace ktl {
 			tjs_char const* code = 0
 			) const;
 		//
-		//	SUMMARY: INFO‘‚«o‚µŒnƒƒ\ƒbƒh
+		//	SUMMARY: INFOæ›¸ãå‡ºã—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant writeINFOToString(
 			boost::optional<tjs_char> indent_char = boost::none,
@@ -348,7 +348,7 @@ namespace ktl {
 			boost::optional<size_type> indent_count = boost::none
 			) const;
 		//
-		//	SUMMARY: YAML‘‚«o‚µŒnƒƒ\ƒbƒh
+		//	SUMMARY: YAMLæ›¸ãå‡ºã—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant writeYAMLToString(
 			flag_type flag = 0x00000000
@@ -363,13 +363,13 @@ namespace ktl {
 			flag_type flag = 0x00000000
 			) const;
 		//
-		//	SUMMARY: ƒtƒH[ƒ}ƒbƒgŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ•ã‚©ãƒ¼ãƒžãƒƒãƒˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool trimXML();
 		bool stratifyINI(boost::optional<tjs_char> path_separator = boost::none);
 		bool unstratifyINI(boost::optional<tjs_char> path_separator = boost::none);
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tjs_char getPathSeparator() const;
 		void setPathSeparator(tjs_char path_separator);
@@ -398,33 +398,33 @@ namespace ktl {
 		NativePTree::pt_ptree_type const& getValue() const;
 	public:
 		//
-		//	SUMMARY: XMLƒp[ƒXŒnƒtƒ‰ƒO
+		//	SUMMARY: XMLãƒ‘ãƒ¼ã‚¹ç³»ãƒ•ãƒ©ã‚°
 		//
 		static tTVInteger const pfXMLNoConcatText = NativePTree::pfXMLNoConcatText;
 		static tTVInteger const pfXMLNoComments = NativePTree::pfXMLNoComments;
 		static tTVInteger const pfXMLTrimWhitespace = NativePTree::pfXMLTrimWhitespace;
 		//
-		//	SUMMARY: YAMLƒp[ƒXŒnƒtƒ‰ƒO
+		//	SUMMARY: YAMLãƒ‘ãƒ¼ã‚¹ç³»ãƒ•ãƒ©ã‚°
 		//
 		static tTVInteger const pfYAMLMultiDocument = NativePTree::pfYAMLMultiDocument;
 		//
-		//	SUMMARY: YAMLƒGƒ~ƒbƒgŒnƒtƒ‰ƒO
+		//	SUMMARY: YAMLã‚¨ãƒŸãƒƒãƒˆç³»ãƒ•ãƒ©ã‚°
 		//
 		static tTVInteger const efYAMLMultiDocument = NativePTree::efYAMLMultiDocument;
 		static tTVInteger const efYAMLInsertEndOfDocument = NativePTree::efYAMLInsertEndOfDocument;
 		//
-		//	SUMMARY: HTMLƒp[ƒXŒnƒtƒ‰ƒO
+		//	SUMMARY: HTMLãƒ‘ãƒ¼ã‚¹ç³»ãƒ•ãƒ©ã‚°
 		//
 		static tTVInteger const pfHTMLNoConcatText = NativePTree::pfHTMLNoConcatText;
 		static tTVInteger const pfHTMLNoComments = NativePTree::pfHTMLNoComments;
 		static tTVInteger const pfHTMLTrimWhitespace = NativePTree::pfHTMLTrimWhitespace;
 	public:
 		//
-		//	SUMMARY: “à•”Œnƒƒ\ƒbƒh
+		//	SUMMARY: å†…éƒ¨ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		sprig::krkr::tjs::intptr_type getInstance();
 		//
-		//	SUMMARY: ƒAƒNƒZƒXŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¢ã‚¯ã‚»ã‚¹ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant get(tTJSVariantString const* path_exists) const;
 		tTJSVariant getKey(tTJSVariantString const* path_exists) const;
@@ -438,12 +438,12 @@ namespace ktl {
 		bool sort(tTJSVariantString const* path_exists, tTJSVariant const* comp = 0, bool stable = false);
 		bool reverse(tTJSVariantString const* path_exists);
 		//
-		//	SUMMARY: •¡»Œnƒƒ\ƒbƒh
+		//	SUMMARY: è¤‡è£½ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		sprig::krkr::tjs::object_type clone(tTJSVariantString const* path_exists) const;
 		bool assign(tTJSVariantString const* path_insertable, iTJSDispatch2* obj);
 		//
-		//	SUMMARY: XML“Ç‚Ýž‚ÝŒnƒƒ\ƒbƒh
+		//	SUMMARY: XMLèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool readXML(
 			tTJSVariantString const* source,
@@ -464,7 +464,7 @@ namespace ktl {
 			tTVInteger flag = 0x00000000
 			);
 		//
-		//	SUMMARY: JSON“Ç‚Ýž‚ÝŒnƒƒ\ƒbƒh
+		//	SUMMARY: JSONèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool readJSON(
 			tTJSVariantString const* source
@@ -481,7 +481,7 @@ namespace ktl {
 			tTJSVariantString const* code
 			);
 		//
-		//	SUMMARY: INI“Ç‚Ýž‚ÝŒnƒƒ\ƒbƒh
+		//	SUMMARY: INIèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool readINI(
 			tTJSVariantString const* source
@@ -498,7 +498,7 @@ namespace ktl {
 			tTJSVariantString const* code
 			);
 		//
-		//	SUMMARY: INFO“Ç‚Ýž‚ÝŒnƒƒ\ƒbƒh
+		//	SUMMARY: INFOèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool readINFO(
 			tTJSVariantString const* source
@@ -515,7 +515,7 @@ namespace ktl {
 			tTJSVariantString const* code
 			);
 		//
-		//	SUMMARY: YAML“Ç‚Ýž‚ÝŒnƒƒ\ƒbƒh
+		//	SUMMARY: YAMLèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool readYAML(
 			tTJSVariantString const* source,
@@ -536,7 +536,7 @@ namespace ktl {
 			tTVInteger flag = 0x00000000
 			);
 		//
-		//	SUMMARY: HTML“Ç‚Ýž‚ÝŒnƒƒ\ƒbƒh
+		//	SUMMARY: HTMLèª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool readHTML(
 			tTJSVariantString const* source,
@@ -557,7 +557,7 @@ namespace ktl {
 			tTVInteger flag = 0x00000000
 			);
 		//
-		//	SUMMARY: XML‘‚«o‚µŒnƒƒ\ƒbƒh
+		//	SUMMARY: XMLæ›¸ãå‡ºã—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant writeXMLToString(
 			boost::optional<tTVInteger> indent_char = boost::none,
@@ -575,7 +575,7 @@ namespace ktl {
 			boost::optional<tTVInteger> indent_count = boost::none
 			) const;
 		//
-		//	SUMMARY: JSON‘‚«o‚µŒnƒƒ\ƒbƒh
+		//	SUMMARY: JSONæ›¸ãå‡ºã—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant writeJSONToString(
 			bool pretty = true
@@ -590,7 +590,7 @@ namespace ktl {
 			bool pretty = true
 			) const;
 		//
-		//	SUMMARY: INI‘‚«o‚µŒnƒƒ\ƒbƒh
+		//	SUMMARY: INIæ›¸ãå‡ºã—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant writeINIToString() const;
 		tTJSVariant writeINIToOctet(
@@ -601,7 +601,7 @@ namespace ktl {
 			tTJSVariantString const* code = 0
 			) const;
 		//
-		//	SUMMARY: INFO‘‚«o‚µŒnƒƒ\ƒbƒh
+		//	SUMMARY: INFOæ›¸ãå‡ºã—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant writeINFOToString(
 			boost::optional<tTVInteger> indent_char = boost::none,
@@ -619,7 +619,7 @@ namespace ktl {
 			boost::optional<tTVInteger> indent_count = boost::none
 			) const;
 		//
-		//	SUMMARY: YAML‘‚«o‚µŒnƒƒ\ƒbƒh
+		//	SUMMARY: YAMLæ›¸ãå‡ºã—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant writeYAMLToString(
 			tTVInteger flag = 0x00000000
@@ -634,13 +634,13 @@ namespace ktl {
 			tTVInteger flag = 0x00000000
 			) const;
 		//
-		//	SUMMARY: ƒtƒH[ƒ}ƒbƒgŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ•ã‚©ãƒ¼ãƒžãƒƒãƒˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool trimXML();
 		bool stratifyINI(boost::optional<tTVInteger> path_separator = boost::none);
 		bool unstratifyINI(boost::optional<tTVInteger> path_separator = boost::none);
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTVInteger getPathSeparator() const;
 		void setPathSeparator(tTVInteger path_separator);

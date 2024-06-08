@@ -27,23 +27,23 @@ namespace ktl {
 		typedef Impl impl_type;
 	public:
 		//
-		//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static RandomResult static_random();
 		//
-		//	SUMMARY: ƒV[ƒhŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚·ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static void static_seed(
 			tjs_int numparams,
 			tTJSVariant** param
 			);
 		//
-		//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant static_serialize();
 		static void static_deserialize(tjs_char const* data);
 		//
-		//	SUMMARY: Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static RandomResult static_min();
 		static RandomResult static_max();
@@ -139,23 +139,23 @@ namespace ktl {
 		variant_type variant() const;
 	public:
 		//
-		//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		RandomResult random();
 		//
-		//	SUMMARY: ƒV[ƒhŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚·ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void seed(
 			tjs_int numparams,
 			tTJSVariant** param
 			);
 		//
-		//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant serialize() const;
 		void deserialize(tjs_char const* data);
 		//
-		//	SUMMARY: Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		RandomResult min() const;
 		RandomResult max() const;
@@ -172,23 +172,23 @@ namespace ktl {
 		typedef Impl impl_type;
 	public:
 		//
-		//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant static_random();
 		//
-		//	SUMMARY: ƒV[ƒhŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚·ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static void static_seed(
 			tjs_int numparams,
 			tTJSVariant** param
 			);
 		//
-		//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant static_serialize();
 		static void static_deserialize(tTJSVariantString const* data);
 		//
-		//	SUMMARY: Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant static_min();
 		static tTJSVariant static_max();
@@ -216,27 +216,27 @@ namespace ktl {
 		void TJS_INTF_METHOD Invalidate();
 	public:
 		//
-		//	SUMMARY: “à•”Œnƒƒ\ƒbƒh
+		//	SUMMARY: å†…éƒ¨ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		sprig::krkr::tjs::intptr_type getBase();
 		//
-		//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant random();
 		//
-		//	SUMMARY: ƒV[ƒhŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚·ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void seed(
 			tjs_int numparams,
 			tTJSVariant** param
 			);
 		//
-		//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant serialize() const;
 		void deserialize(tTJSVariantString const* data);
 		//
-		//	SUMMARY: Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant min() const;
 		tTJSVariant max() const;

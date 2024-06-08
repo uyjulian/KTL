@@ -24,7 +24,7 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME SystemInfoClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassSystemInfo, SystemInfo, SystemInfo)
 	//
-	//	SUMMARY: ƒhƒ‰ƒCƒuŒnƒtƒ‰ƒO
+	//	SUMMARY: ãƒ‰ãƒ©ã‚¤ãƒ–ç³»ãƒ•ãƒ©ã‚°
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(dfUnknown, SystemInfo::dfUnknown);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(dfNoRootDir, SystemInfo::dfNoRootDir);
@@ -34,7 +34,7 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(dfCDROM, SystemInfo::dfCDROM);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(dfRAMDisk, SystemInfo::dfRAMDisk);
 	//
-	//	SUMMARY: ƒtƒ@ƒCƒ‹ƒVƒXƒeƒ€Œnƒtƒ‰ƒO
+	//	SUMMARY: ãƒ•ã‚¡ã‚¤ãƒ«ã‚·ã‚¹ãƒ†ãƒ ç³»ãƒ•ãƒ©ã‚°
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(fsfCaseIsPreserved, SystemInfo::fsfCaseIsPreserved);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(fsfCaseSensitive, SystemInfo::fsfCaseSensitive);
@@ -49,7 +49,7 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(fsfSupportsSparseFiles, SystemInfo::fsfSupportsSparseFiles);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(fsfVolumeQuotas, SystemInfo::fsfVolumeQuotas);
 	//
-	//	SUMMARY: CPU‹@”\Œnƒtƒ‰ƒO
+	//	SUMMARY: CPUæ©Ÿèƒ½ç³»ãƒ•ãƒ©ã‚°
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(cffFPU, SystemInfo::cffFPU);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(cffMMX, SystemInfo::cffMMX);
@@ -62,7 +62,7 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(cffTSC, SystemInfo::cffTSC);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(cffMask, SystemInfo::cffMask);
 	//
-	//	SUMMARY: CPUƒxƒ“ƒ_Œnƒtƒ‰ƒO
+	//	SUMMARY: CPUãƒ™ãƒ³ãƒ€ç³»ãƒ•ãƒ©ã‚°
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(cvfIntel, SystemInfo::cvfIntel);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(cvfAMD, SystemInfo::cvfAMD);
@@ -75,21 +75,21 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(cvfUnknown, SystemInfo::cvfUnknown);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(cvfMask, SystemInfo::cvfMask);
 	//
-	// ƒRƒ“ƒsƒ…[ƒ^–¼Œnƒƒ\ƒbƒh
+	// ã‚³ãƒ³ãƒ”ãƒ¥ãƒ¼ã‚¿åç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_STATIC_PROP_DECL_VARIANT_GETONLY(SystemInfo, computerName, computerName);
 	//
-	// ƒVƒXƒeƒ€ƒfƒBƒŒƒNƒgƒŠî•ñŒnƒƒ\ƒbƒh 
+	// ã‚·ã‚¹ãƒ†ãƒ ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªæƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰ 
 	//
 	SPRIG_KRKR_NATIVE_STATIC_PROP_DECL_VARIANT_GETONLY(SystemInfo, windowsDirectory, windowsDirectory);
 	SPRIG_KRKR_NATIVE_STATIC_PROP_DECL_VARIANT_GETONLY(SystemInfo, systemWindowsDirectory, systemWindowsDirectory);
 	SPRIG_KRKR_NATIVE_STATIC_PROP_DECL_VARIANT_GETONLY(SystemInfo, systemDirectory, systemDirectory);
 	//
-	// ƒƒ‚ƒŠî•ñŒnƒƒ\ƒbƒh
+	// ãƒ¡ãƒ¢ãƒªæƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_STATIC_PROP_DECL_VARIANT_GETONLY(SystemInfo, globalMemoryStatus, globalMemoryStatus);
 	//
-	// ƒfƒBƒXƒNƒhƒ‰ƒCƒuî•ñŒnƒƒ\ƒbƒh
+	// ãƒ‡ã‚£ã‚¹ã‚¯ãƒ‰ãƒ©ã‚¤ãƒ–æƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_STATIC_PROP_DECL_VARIANT_GETONLY(SystemInfo, logicalDriveStrings, logicalDriveStrings);
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(getDriveType)
@@ -123,13 +123,13 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(getVolumeInformation);
 	//
-	// ƒVƒXƒeƒ€ƒƒgƒŠƒbƒNî•ñŒnƒƒ\ƒbƒh
+	// ã‚·ã‚¹ãƒ†ãƒ ãƒ¡ãƒˆãƒªãƒƒã‚¯æƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_STATIC_PROP_DECL_VARIANT_GETONLY(SystemInfo, cleanBoot, cleanBoot);
 	SPRIG_KRKR_NATIVE_STATIC_PROP_DECL_VARIANT_GETONLY(SystemInfo, monitors, monitors);
 	SPRIG_KRKR_NATIVE_STATIC_PROP_DECL_VARIANT_GETONLY(SystemInfo, mouseButtons, mouseButtons);
 	//
-	// CPU‹@”\Œnƒƒ\ƒbƒh
+	// CPUæ©Ÿèƒ½ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_STATIC_PROP_DECL_VARIANT_GETONLY(SystemInfo, CPUType, CPUType);
 

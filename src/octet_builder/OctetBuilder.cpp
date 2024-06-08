@@ -24,7 +24,7 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME OctetBuilderClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassOctetBuilder, OctetBuilder, OctetBuilder)
 	//
-	//	SUMMARY: ƒ^ƒCƒvŒnƒtƒ‰ƒO
+	//	SUMMARY: ã‚¿ã‚¤ãƒ—ç³»ãƒ•ãƒ©ã‚°
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(vtfMask, OctetBuilder::vtfMask);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(vtfByte, OctetBuilder::vtfByte);
@@ -43,13 +43,13 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(vtfNarrowString, OctetBuilder::vtfNarrowString);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(vtfBuilder, OctetBuilder::vtfBuilder);
 	//
-	//	SUMMARY: ƒGƒ“ƒfƒBƒAƒ“Œnƒtƒ‰ƒO
+	//	SUMMARY: ã‚¨ãƒ³ãƒ‡ã‚£ã‚¢ãƒ³ç³»ãƒ•ãƒ©ã‚°
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(vefMask, OctetBuilder::vefMask);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(vefBigEndian, OctetBuilder::vefBigEndian);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(vefLittleEndian, OctetBuilder::vefLittleEndian);
 	//
-	//	SUMMARY: ¶¬Œnƒƒ\ƒbƒh
+	//	SUMMARY: ç”Ÿæˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(fromHex)
 	{
@@ -63,11 +63,11 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(fromHex);
 	//
-	//	SUMMARY: “à•”Œnƒƒ\ƒbƒh
+	//	SUMMARY: å†…éƒ¨ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(OctetBuilder, instance, getInstance);
 	//
-	//	SUMMARY: ‘žŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ›¸è¾¼ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(set)
 	{
@@ -235,7 +235,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(setBytes);
 	//
-	//	SUMMARY: Š„“–Œnƒƒ\ƒbƒh
+	//	SUMMARY: å‰²å½“ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(assign)
 	{
@@ -363,7 +363,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(assignBytes);
 	//
-	//	SUMMARY: ‘}“üŒnƒƒ\ƒbƒh
+	//	SUMMARY: æŒ¿å…¥ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(insert)
 	{
@@ -491,7 +491,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(insertBytes);
 	//
-	//	SUMMARY: ’Ç‰ÁŒnƒƒ\ƒbƒh
+	//	SUMMARY: è¿½åŠ ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(add)
 	{
@@ -655,11 +655,11 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(addBytes);
 	//
-	//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+	//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_METHOD_DECL_PARAM_VOID_RES_VOID(OctetBuilder, clear);
 	//
-	//	SUMMARY: íœŒnƒƒ\ƒbƒh
+	//	SUMMARY: å‰Šé™¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(erase)
 	{
@@ -675,7 +675,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(erase);
 	//
-	//	SUMMARY: ‘OŒãíœŒnƒƒ\ƒbƒh
+	//	SUMMARY: å‰å¾Œå‰Šé™¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(pop)
 	{
@@ -710,7 +710,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(shift);
 	//
-	//	SUMMARY: •ÏŠ·Œnƒƒ\ƒbƒh
+	//	SUMMARY: å¤‰æ›ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(as)
 	{
@@ -814,7 +814,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(asNarrowString);
 	//
-	//	SUMMARY: ƒXƒgƒŒ[ƒWŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¹ãƒˆãƒ¬ãƒ¼ã‚¸ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(saveStorage)
 	{
@@ -840,7 +840,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(saveStorage);
 	//
-	//	SUMMARY: ‰‰ŽZŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ¼”ç®—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(transformAndByte)
 	{
@@ -882,7 +882,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(transformNotByte);
 	//
-	//	SUMMARY: ŒŸõŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ¤œç´¢ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(findByte)
 	{
@@ -907,7 +907,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(findByte);
 	//
-	//	SUMMARY: ƒƒ‚ƒŠŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ¡ãƒ¢ãƒªç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(copy)
 	{
@@ -918,18 +918,18 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(copy);
 	//
-	//	SUMMARY: Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(OctetBuilder, back, back);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(OctetBuilder, front, front);
 	//
-	//	SUMMARY: ƒ|ƒCƒ“ƒ^Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒã‚¤ãƒ³ã‚¿å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(OctetBuilder, data, begin);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(OctetBuilder, begin, begin);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(OctetBuilder, end, end);
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(OctetBuilder, empty, empty);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT(OctetBuilder, size, size, resize);

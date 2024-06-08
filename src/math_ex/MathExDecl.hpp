@@ -35,13 +35,13 @@ namespace ktl {
 		NativeMathEx();
 	public:
 		//
-		//	SUMMARY: ”’lŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ•°å€¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal bernoulliB2n(int i);
 		static tTVReal tangentT2n(int i);
 		static boost::uint32_t prime(unsigned n);
 		//
-		//	SUMMARY: ŽZpŒnƒƒ\ƒbƒh
+		//	SUMMARY: ç®—è¡“ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal abs(tTVReal x);
 		static tTVReal ceil(tTVReal x);
@@ -51,7 +51,7 @@ namespace ktl {
 		static tTVReal sqrt1Pm1(tTVReal x);
 		static tTVReal hypot(tTVReal x, tTVReal y);
 		//
-		//	SUMMARY: •‚“®¬”“_”Œnƒƒ\ƒbƒh
+		//	SUMMARY: æµ®å‹•å°æ•°ç‚¹æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal round(tTVReal x);
 		static tTVReal trunc(tTVReal x);
@@ -60,7 +60,7 @@ namespace ktl {
 		static tTVReal ldexp(tTVReal x, int exponent);
 		static tTJSVariant frexp(tTVReal x);
 		//
-		//	SUMMARY: •‚“®¬”“_””äŠrŒnƒƒ\ƒbƒh
+		//	SUMMARY: æµ®å‹•å°æ•°ç‚¹æ•°æ¯”è¼ƒç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static bool equals(tTVReal a, tTVReal b);
 		static bool notEquals(tTVReal a, tTVReal b);
@@ -70,7 +70,7 @@ namespace ktl {
 		static bool greaterEqual(tTVReal a, tTVReal b);
 		static int compare(tTVReal a, tTVReal b);
 		//
-		//	SUMMARY: ŽOŠpŠÖ”Œnƒƒ\ƒbƒh
+		//	SUMMARY: ä¸‰è§’é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal sin(tTVReal x);
 		static tTVReal cos(tTVReal x);
@@ -80,7 +80,7 @@ namespace ktl {
 		static tTVReal atan(tTVReal x);
 		static tTVReal atan2(tTVReal y, tTVReal x);
 		//
-		//	SUMMARY: ‘o‹ÈüŠÖ”Œnƒƒ\ƒbƒh
+		//	SUMMARY: åŒæ›²ç·šé–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal sinh(tTVReal x);
 		static tTVReal cosh(tTVReal x);
@@ -89,7 +89,7 @@ namespace ktl {
 		static tTVReal acosh(tTVReal x);
 		static tTVReal atanh(tTVReal x);
 		//
-		//	SUMMARY: Žw”‘Î”Œnƒƒ\ƒbƒh
+		//	SUMMARY: æŒ‡æ•°å¯¾æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal pow(tTVReal base, tTVReal exponent);
 		static tTVReal pow10(tTVReal x);
@@ -103,7 +103,7 @@ namespace ktl {
 		static tTVReal expm1(tTVReal x);
 		static tTVReal log1P(tTVReal x);
 		//
-		//	SUMMARY: ƒKƒ“ƒ}ŠÖ”Œnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¬ãƒ³ãƒžé–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal tgamma(tTVReal x);
 		static tTVReal tgamma1Pm1(tTVReal x);
@@ -123,7 +123,7 @@ namespace ktl {
 		static tTVReal gammaQInva(tTVReal a, tTVReal q);
 		static tTVReal gammaPDerivative(tTVReal a, tTVReal x);
 		//
-		//	SUMMARY: ƒx[ƒ^ŠÖ”Œnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ™ãƒ¼ã‚¿é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal beta(tTVReal a, tTVReal b);
 		static tTVReal ibeta(tTVReal a, tTVReal b, tTVReal x);
@@ -138,14 +138,14 @@ namespace ktl {
 		static tTVReal ibetacInvb(tTVReal a, tTVReal b, tTVReal q);
 		static tTVReal ibetaDerivative(tTVReal a, tTVReal b, tTVReal x);
 		//
-		//	SUMMARY:Œë·ŠÖ”Œnƒƒ\ƒbƒh
+		//	SUMMARY:èª¤å·®é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal erf(tTVReal x);
 		static tTVReal erfc(tTVReal x);
 		static tTVReal erfInv(tTVReal p);
 		static tTVReal erfcInv(tTVReal p);
 		//
-		//	SUMMARY:ƒ‹ƒWƒƒƒ“ƒhƒ‹‘½€Ž®Œnƒƒ\ƒbƒh
+		//	SUMMARY:ãƒ«ã‚¸ãƒ£ãƒ³ãƒ‰ãƒ«å¤šé …å¼ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal legendreP(int l, tTVReal x);
 		static tTVReal legendreP(int l, int m, tTVReal x);
@@ -162,7 +162,7 @@ namespace ktl {
 		static tTVReal sphericalHarmonicR(unsigned n, int m, tTVReal theta, tTVReal phi);
 		static tTVReal sphericalHarmonicI(unsigned n, int m, tTVReal theta, tTVReal phi);
 		//
-		//	SUMMARY: ƒxƒbƒZƒ‹ŠÖ”Œnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ™ãƒƒã‚»ãƒ«é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal cylBesselJ(tTVReal v, tTVReal x);
 		static tTVReal cylNeumann(tTVReal v, tTVReal x);
@@ -179,34 +179,34 @@ namespace ktl {
 		static tTVReal sphBesselPrime(unsigned v, tTVReal x);
 		static tTVReal sphNeumannPrime(unsigned v, tTVReal x);
 		//
-		//	SUMMARY: ƒnƒ“ƒPƒ‹ŠÖ”Œnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒãƒ³ã‚±ãƒ«é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static std::complex<tTVReal> cylHankel1(tTVReal v, tTVReal x);
 		static std::complex<tTVReal> cylHankel2(tTVReal v, tTVReal x);
 		static std::complex<tTVReal> sphHankel1(tTVReal v, tTVReal x);
 		static std::complex<tTVReal> sphHankel2(tTVReal v, tTVReal x);
 		//
-		//	SUMMARY: ƒGƒAƒŠ[ŠÖ”Œnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¨ã‚¢ãƒªãƒ¼é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal airyAi(tTVReal x);
 		static tTVReal airyBi(tTVReal x);
 		static tTVReal airyAiPrime(tTVReal x);
 		static tTVReal airyBiPrime(tTVReal x);
 		//
-		//	SUMMARY: ƒ[[ƒ^ŠÖ”Œnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¼ãƒ¼ã‚¿é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal zeta(tTVReal z);
 		//
-		//	SUMMARY: ƒVƒ“ƒNŠÖ”Œnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚·ãƒ³ã‚¯é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal sincPi(tTVReal x);
 		static tTVReal sinhcPi(tTVReal x);
 		//
-		//	SUMMARY: ƒI[ƒEƒFƒ“‚ÌTŠÖ”Œnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚ªãƒ¼ã‚¦ã‚§ãƒ³ã®Té–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal owensT(tTVReal h, tTVReal a);
 		//
-		//	SUMMARY: ‘È‰~Ï•ªŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ¥•å††ç©åˆ†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal ellintRf(tTVReal x, tTVReal y, tTVReal z);
 		static tTVReal ellintRd(tTVReal x, tTVReal y, tTVReal z);
@@ -223,7 +223,7 @@ namespace ktl {
 		static tTVReal jacobiZeta(tTVReal k, tTVReal phi);
 		static tTVReal heumanLambda(tTVReal k, tTVReal phi);
 		//
-		//	SUMMARY: ƒ„ƒRƒr‚Ì‘È‰~ŠÖ”Œnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ¤ã‚³ãƒ“ã®æ¥•å††é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static boost::array<tTVReal, 3> jacobiElliptic(tTVReal k, tTVReal u);
 		static tTVReal jacobiCd(tTVReal k, tTVReal u);
@@ -239,12 +239,12 @@ namespace ktl {
 		static tTVReal jacobiSd(tTVReal k, tTVReal u);
 		static tTVReal jacobiSn(tTVReal k, tTVReal u);
 		//
-		//	SUMMARY: Žw”Ï•ªŒnƒƒ\ƒbƒh
+		//	SUMMARY: æŒ‡æ•°ç©åˆ†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal expint(unsigned n, tTVReal z);
 		static tTVReal expint(tTVReal z);
 		//
-		//	SUMMARY: ŠKæŒnƒƒ\ƒbƒh
+		//	SUMMARY: éšŽä¹—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal factorial(unsigned i);
 		static tTVReal doubleFactorial(unsigned i);
@@ -252,22 +252,22 @@ namespace ktl {
 		static tTVReal fallingFactorial(tTVReal x, unsigned i);
 		static tTVReal binomialCoefficient(unsigned n, unsigned k);
 		//
-		//	SUMMARY: Œö”{Œö–ñŒnƒƒ\ƒbƒh
+		//	SUMMARY: å…¬å€å…¬ç´„ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVInteger gcd(tTVInteger a, tTVInteger b);
 		static tTVInteger lcm(tTVInteger a, tTVInteger b);
 		//
-		//	SUMMARY: ”äŠrŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ¯”è¼ƒç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal min(tjs_int numparams, tTJSVariant** param);
 		static tTVReal max(tjs_int numparams, tTJSVariant** param);
 		//
-		//	SUMMARY: ƒ‰ƒ“ƒ_ƒ€Œnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ©ãƒ³ãƒ€ãƒ ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal random();
 		static tTVReal randomDevice();
 		//
-		//	SUMMARY: ’è”ŒnƒvƒƒpƒeƒB
+		//	SUMMARY: å®šæ•°ç³»ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£
 		//
 		static tTVReal pi();
 		static tTVReal e();
@@ -297,13 +297,13 @@ namespace ktl {
 		void TJS_INTF_METHOD Invalidate();
 	public:
 		//
-		//	SUMMARY: ”’lŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ•°å€¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal bernoulliB2n(tTVInteger i);
 		static tTVReal tangentT2n(tTVInteger i);
 		static tTVInteger prime(tTVInteger n);
 		//
-		//	SUMMARY: ŽZpŒnƒƒ\ƒbƒh
+		//	SUMMARY: ç®—è¡“ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal abs(tTVReal x);
 		static tTVReal ceil(tTVReal x);
@@ -313,7 +313,7 @@ namespace ktl {
 		static tTVReal sqrt1Pm1(tTVReal x);
 		static tTVReal hypot(tTVReal x, tTVReal y);
 		//
-		//	SUMMARY: •‚“®¬”“_”Œnƒƒ\ƒbƒh
+		//	SUMMARY: æµ®å‹•å°æ•°ç‚¹æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal round(tTVReal x);
 		static tTVReal trunc(tTVReal x);
@@ -322,7 +322,7 @@ namespace ktl {
 		static tTVReal ldexp(tTVReal x, tTVInteger exponent);
 		static tTJSVariant frexp(tTVReal x);
 		//
-		//	SUMMARY: •‚“®¬”“_””äŠrŒnƒƒ\ƒbƒh
+		//	SUMMARY: æµ®å‹•å°æ•°ç‚¹æ•°æ¯”è¼ƒç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static bool equals(tTVReal a, tTVReal b);
 		static bool notEquals(tTVReal a, tTVReal b);
@@ -332,7 +332,7 @@ namespace ktl {
 		static bool greaterEqual(tTVReal a, tTVReal b);
 		static tTVInteger compare(tTVReal a, tTVReal b);
 		//
-		//	SUMMARY: ŽOŠpŠÖ”Œnƒƒ\ƒbƒh
+		//	SUMMARY: ä¸‰è§’é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal sin(tTVReal x);
 		static tTVReal cos(tTVReal x);
@@ -342,7 +342,7 @@ namespace ktl {
 		static tTVReal atan(tTVReal x);
 		static tTVReal atan2(tTVReal y, tTVReal x);
 		//
-		//	SUMMARY: ‘o‹ÈüŠÖ”Œnƒƒ\ƒbƒh
+		//	SUMMARY: åŒæ›²ç·šé–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal sinh(tTVReal x);
 		static tTVReal cosh(tTVReal x);
@@ -351,7 +351,7 @@ namespace ktl {
 		static tTVReal acosh(tTVReal x);
 		static tTVReal atanh(tTVReal x);
 		//
-		//	SUMMARY: Žw”‘Î”Œnƒƒ\ƒbƒh
+		//	SUMMARY: æŒ‡æ•°å¯¾æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal pow(tTVReal base, tTVReal exponent);
 		static tTVReal exp(tTVReal x);
@@ -365,7 +365,7 @@ namespace ktl {
 		static tTVReal expm1(tTVReal x);
 		static tTVReal log1P(tTVReal x);
 		//
-		//	SUMMARY: ƒKƒ“ƒ}ŠÖ”Œnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¬ãƒ³ãƒžé–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal tgamma(tTVReal x);
 		static tTVReal tgamma1Pm1(tTVReal x);
@@ -385,7 +385,7 @@ namespace ktl {
 		static tTVReal gammaQInva(tTVReal a, tTVReal q);
 		static tTVReal gammaPDerivative(tTVReal a, tTVReal x);
 		//
-		//	SUMMARY: ƒx[ƒ^ŠÖ”Œnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ™ãƒ¼ã‚¿é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal beta(tTVReal a, tTVReal b);
 		static tTVReal ibeta(tTVReal a, tTVReal b, tTVReal x);
@@ -400,14 +400,14 @@ namespace ktl {
 		static tTVReal ibetacInvb(tTVReal a, tTVReal b, tTVReal q);
 		static tTVReal ibetaDerivative(tTVReal a, tTVReal b, tTVReal x);
 		//
-		//	SUMMARY:Œë·ŠÖ”Œnƒƒ\ƒbƒh
+		//	SUMMARY:èª¤å·®é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal erf(tTVReal x);
 		static tTVReal erfc(tTVReal x);
 		static tTVReal erfInv(tTVReal p);
 		static tTVReal erfcInv(tTVReal p);
 		//
-		//	SUMMARY:ƒ‹ƒWƒƒƒ“ƒhƒ‹‘½€Ž®Œnƒƒ\ƒbƒh
+		//	SUMMARY:ãƒ«ã‚¸ãƒ£ãƒ³ãƒ‰ãƒ«å¤šé …å¼ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal legendreP(tTVInteger l, tTVReal x);
 		static tTVReal legendreP(tTVInteger l, tTVInteger m, tTVReal x);
@@ -424,7 +424,7 @@ namespace ktl {
 		static tTVReal sphericalHarmonicR(tTVInteger n, tTVInteger m, tTVReal theta, tTVReal phi);
 		static tTVReal sphericalHarmonicI(tTVInteger n, tTVInteger m, tTVReal theta, tTVReal phi);
 		//
-		//	SUMMARY: ƒxƒbƒZƒ‹ŠÖ”Œnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ™ãƒƒã‚»ãƒ«é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal cylBesselJ(tTVReal v, tTVReal x);
 		static tTVReal cylNeumann(tTVReal v, tTVReal x);
@@ -441,34 +441,34 @@ namespace ktl {
 		static tTVReal sphBesselPrime(tTVInteger v, tTVReal x);
 		static tTVReal sphNeumannPrime(tTVInteger v, tTVReal x);
 		//
-		//	SUMMARY: ƒnƒ“ƒPƒ‹ŠÖ”Œnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒãƒ³ã‚±ãƒ«é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant cylHankel1(tTVReal v, tTVReal x);
 		static tTJSVariant cylHankel2(tTVReal v, tTVReal x);
 		static tTJSVariant sphHankel1(tTVReal v, tTVReal x);
 		static tTJSVariant sphHankel2(tTVReal v, tTVReal x);
 		//
-		//	SUMMARY: ƒGƒAƒŠ[ŠÖ”Œnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¨ã‚¢ãƒªãƒ¼é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal airyAi(tTVReal x);
 		static tTVReal airyBi(tTVReal x);
 		static tTVReal airyAiPrime(tTVReal x);
 		static tTVReal airyBiPrime(tTVReal x);
 		//
-		//	SUMMARY: ƒ[[ƒ^ŠÖ”Œnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¼ãƒ¼ã‚¿é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal zeta(tTVReal z);
 		//
-		//	SUMMARY: ƒVƒ“ƒNŠÖ”Œnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚·ãƒ³ã‚¯é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal sincPi(tTVReal x);
 		static tTVReal sinhcPi(tTVReal x);
 		//
-		//	SUMMARY: ƒI[ƒEƒFƒ“‚ÌTŠÖ”Œnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚ªãƒ¼ã‚¦ã‚§ãƒ³ã®Té–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal owensT(tTVReal h, tTVReal a);
 		//
-		//	SUMMARY: ‘È‰~Ï•ªŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ¥•å††ç©åˆ†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal ellintRf(tTVReal x, tTVReal y, tTVReal z);
 		static tTVReal ellintRd(tTVReal x, tTVReal y, tTVReal z);
@@ -485,7 +485,7 @@ namespace ktl {
 		static tTVReal jacobiZeta(tTVReal k, tTVReal phi);
 		static tTVReal heumanLambda(tTVReal k, tTVReal phi);
 		//
-		//	SUMMARY: ƒ„ƒRƒr‚Ì‘È‰~ŠÖ”Œnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ¤ã‚³ãƒ“ã®æ¥•å††é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant jacobiElliptic(tTVReal k, tTVReal u);
 		static tTVReal jacobiCd(tTVReal k, tTVReal u);
@@ -501,12 +501,12 @@ namespace ktl {
 		static tTVReal jacobiSd(tTVReal k, tTVReal u);
 		static tTVReal jacobiSn(tTVReal k, tTVReal u);
 		//
-		//	SUMMARY: Žw”Ï•ªŒnƒƒ\ƒbƒh
+		//	SUMMARY: æŒ‡æ•°ç©åˆ†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal expint(tTVInteger n, tTVReal z);
 		static tTVReal expint(tTVReal z);
 		//
-		//	SUMMARY: ŠKæŒnƒƒ\ƒbƒh
+		//	SUMMARY: éšŽä¹—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal factorial(tTVInteger i);
 		static tTVReal doubleFactorial(tTVInteger i);
@@ -514,22 +514,22 @@ namespace ktl {
 		static tTVReal fallingFactorial(tTVReal x, tTVInteger i);
 		static tTVReal binomialCoefficient(tTVInteger n, tTVInteger k);
 		//
-		//	SUMMARY: Œö”{Œö–ñŒnƒƒ\ƒbƒh
+		//	SUMMARY: å…¬å€å…¬ç´„ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVInteger gcd(tTVInteger a, tTVInteger b);
 		static tTVInteger lcm(tTVInteger a, tTVInteger b);
 		//
-		//	SUMMARY: ”äŠrŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ¯”è¼ƒç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal min(tjs_int numparams, tTJSVariant** param);
 		static tTVReal max(tjs_int numparams, tTJSVariant** param);
 		//
-		//	SUMMARY: ƒ‰ƒ“ƒ_ƒ€Œnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ©ãƒ³ãƒ€ãƒ ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVReal random();
 		static tTVReal randomDevice();
 		//
-		//	SUMMARY: ’è”ŒnƒvƒƒpƒeƒB
+		//	SUMMARY: å®šæ•°ç³»ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£
 		//
 		static tTVReal pi();
 		static tTVReal e();

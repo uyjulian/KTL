@@ -73,7 +73,7 @@ namespace ktl {
 		if (i == sprite_buffer_->end()) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				SPRIG_KRKR_TJS_W("–³Œø‚ÈƒL[‚ªw’è‚³‚ê‚Ü‚µ‚½:") + key,
+				SPRIG_KRKR_TJS_W("ç„¡åŠ¹ãªã‚­ãƒ¼ãŒæŒ‡å®šã•ã‚Œã¾ã—ãŸ:") + key,
 				sprig::dg::bad_process
 				);
 			return boost::none;
@@ -114,7 +114,7 @@ namespace ktl {
 		}
 	}
 	//
-	//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+	//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE HRESULT NativeSprites::initialize(sprig::call_traits<NativeSprites::init_params_type>::param_type params) {
 		return sprite_buffer_->initialize(params);
@@ -130,13 +130,13 @@ namespace ktl {
 		if (!isInitialized()) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				SPRIG_KRKR_TJS_W("NativeSprites‚Í‰Šú‰»‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ"),
+				SPRIG_KRKR_TJS_W("NativeSpritesã¯åˆæœŸåŒ–ã•ã‚Œã¦ã„ã¾ã›ã‚“"),
 				sprig::dg::bad_process
 				);
 		}
 	}
 	//
-	//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE NativeSprites::string_instance_type NativeSprites::saveSpriteBufferByText() const {
 		std::basic_ostringstream<tjs_char> os;
@@ -198,7 +198,7 @@ namespace ktl {
 		}
 	}
 	//
-	//	SUMMARY: ƒXƒvƒ‰ƒCƒgƒhƒ[ƒŠÇ—Œnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¹ãƒ—ãƒ©ã‚¤ãƒˆãƒ‰ãƒ­ãƒ¼ãƒ¯ç®¡ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativeSprites::generateSpriteDrawer(
 		sprig::call_traits<NativeSprites::key_type>::param_type key,
@@ -256,7 +256,7 @@ namespace ktl {
 		if (!(result = sprite_buffer_->modify_priority(key, v))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				SPRIG_KRKR_TJS_W("–³Œø‚ÈƒL[‚ªw’è‚³‚ê‚Ü‚µ‚½:") + key,
+				SPRIG_KRKR_TJS_W("ç„¡åŠ¹ãªã‚­ãƒ¼ãŒæŒ‡å®šã•ã‚Œã¾ã—ãŸ:") + key,
 				sprig::dg::bad_process
 				);
 			return result;
@@ -287,7 +287,7 @@ namespace ktl {
 		return sprite_drawer ? (sprite_drawer->drawer_setter_name(v), true) : false; \
 	}
 	//
-	//	SUMMARY: ƒXƒvƒ‰ƒCƒgƒhƒ[ƒ‘€ìŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¹ãƒ—ãƒ©ã‚¤ãƒˆãƒ‰ãƒ­ãƒ¼ãƒ¯æ“ä½œç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE boost::optional<bool> NativeSprites::getVisible(sprig::call_traits<NativeSprites::key_type>::param_type key) const {
 		sprite_drawer_concrete_type sprite_drawer = FindSpriteDrawer(key);
@@ -390,7 +390,7 @@ namespace ktl {
 		return sprite_drawer ? (sprite_drawer->set_hit_threshold(v), true) : false;
 	}
 	//
-	//	SUMMARY: XVŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ›´æ–°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE HRESULT NativeSprites::onContinuous() {
 		HRESULT result = D3D_OK;
@@ -443,7 +443,7 @@ namespace ktl {
 		return requested_update_;
 	}
 	//
-	//	SUMMARY: •`‰æŒnƒƒ\ƒbƒh
+	//	SUMMARY: æç”»ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE HRESULT NativeSprites::draw() {
 		HRESULT result = D3D_OK;
@@ -524,7 +524,7 @@ namespace ktl {
 		} else {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				SPRIG_KRKR_TJS_W("LayerƒIƒuƒWƒFƒNƒg‚Å‚àvoid‚Å‚à‚È‚¢’l‚ª“n‚³‚ê‚Ü‚µ‚½"),
+				SPRIG_KRKR_TJS_W("Layerã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ã‚‚voidã§ã‚‚ãªã„å€¤ãŒæ¸¡ã•ã‚Œã¾ã—ãŸ"),
 				sprig::dg::bad_process
 				);
 			result = E_FAIL;
@@ -552,7 +552,7 @@ namespace ktl {
 		return result;
 	}
 	//
-	//	SUMMARY: ƒqƒbƒgƒeƒXƒgŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ’ãƒƒãƒˆãƒ†ã‚¹ãƒˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE boost::shared_ptr<NativeSprites::key_type> NativeSprites::hitTest(sprig::call_traits<coord_type>::param_type point) {
 		typedef boost::shared_ptr<NativeSprites::key_type> result_type;
@@ -564,7 +564,7 @@ namespace ktl {
 		if (FAILED(sprite_buffer_->hit_test_period(hit, key, point))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				SPRIG_KRKR_TJS_W("ƒqƒbƒgƒeƒXƒg‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½"),
+				SPRIG_KRKR_TJS_W("ãƒ’ãƒƒãƒˆãƒ†ã‚¹ãƒˆã§ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ"),
 				sprig::dg::bad_process
 				);
 			return result_type();
@@ -585,7 +585,7 @@ namespace ktl {
 		if (FAILED(sprite_buffer_->multi_hit_test_period(hit, key.begin(), point))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				SPRIG_KRKR_TJS_W("ƒqƒbƒgƒeƒXƒg‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½"),
+				SPRIG_KRKR_TJS_W("ãƒ’ãƒƒãƒˆãƒ†ã‚¹ãƒˆã§ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ"),
 				sprig::dg::bad_process
 				);
 			return result;
@@ -615,7 +615,7 @@ namespace ktl {
 			if (param[i]->Type() != tvtObject) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("ƒIƒuƒWƒFƒNƒg‚Å‚È‚¢ˆø”‚Å‚·"),
+					SPRIG_KRKR_TJS_W("ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ãªã„å¼•æ•°ã§ã™"),
 					sprig::dg::bad_process
 					);
 				return result;
@@ -630,7 +630,7 @@ namespace ktl {
 		if (FAILED(sprite_buffer_->hit_test_period(hit.begin(), key.begin(), point.begin(), point.end()))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				SPRIG_KRKR_TJS_W("ƒqƒbƒgƒeƒXƒg‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½"),
+				SPRIG_KRKR_TJS_W("ãƒ’ãƒƒãƒˆãƒ†ã‚¹ãƒˆã§ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ"),
 				sprig::dg::bad_process
 				);
 			return result;
@@ -661,7 +661,7 @@ namespace ktl {
 			if (param[i]->Type() != tvtObject) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("ƒIƒuƒWƒFƒNƒg‚Å‚È‚¢ˆø”‚Å‚·"),
+					SPRIG_KRKR_TJS_W("ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ãªã„å¼•æ•°ã§ã™"),
 					sprig::dg::bad_process
 					);
 				return result;
@@ -681,7 +681,7 @@ namespace ktl {
 			if (FAILED(sprite_buffer_->multi_hit_test_period(hit.begin(), key.begin(), point.begin(), point.end()))) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("ƒqƒbƒgƒeƒXƒg‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½"),
+					SPRIG_KRKR_TJS_W("ãƒ’ãƒƒãƒˆãƒ†ã‚¹ãƒˆã§ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ"),
 					sprig::dg::bad_process
 					);
 				return result;
@@ -710,7 +710,7 @@ namespace ktl {
 		return result;
 	}
 	//
-	//	SUMMARY: À•WŒnƒƒ\ƒbƒh
+	//	SUMMARY: åº§æ¨™ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE sprig::krkr::tjs::object_type NativeSprites::toLocalCoord(
 		sprig::call_traits<key_type>::param_type key,
@@ -753,7 +753,7 @@ namespace ktl {
 		return result;
 	}
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE NativeSprites::color_type NativeSprites::getClearColor() const {
 		return clear_color_;
@@ -776,7 +776,7 @@ namespace ktl {
 		} else {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				SPRIG_KRKR_TJS_W("LayerƒIƒuƒWƒFƒNƒg‚Å‚àvoid‚Å‚à‚È‚¢’l‚ª“n‚³‚ê‚Ü‚µ‚½"),
+				SPRIG_KRKR_TJS_W("Layerã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ã‚‚voidã§ã‚‚ãªã„å€¤ãŒæ¸¡ã•ã‚Œã¾ã—ãŸ"),
 				sprig::dg::bad_process
 				);
 		}
@@ -802,7 +802,7 @@ namespace ktl {
 		requestUpdate();
 	}
 	//
-	//	SUMMARY: ƒfƒoƒbƒOŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ‡ãƒãƒƒã‚°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void NativeSprites::outputValueInfo() const {
 		SPRIG_DG_OUTPUT_VALUE_INFO(TEXT("NativeSprites::outputValueInfo"), sprite_buffer_);
@@ -833,7 +833,7 @@ namespace ktl {
 		instance_.reset();
 	}
 	//
-	//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+	//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool Sprites::initialize(tTJSVariant const* params) {
 		SPRIG_KRKR_SECTION(SPRIG_KRKR_TJS_W("Sprites::initialize"), SPRIG_KRKR_LOG_LEVEL_NORMAL);
@@ -864,7 +864,7 @@ namespace ktl {
 		} else {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				SPRIG_KRKR_TJS_W("—LŒø‚ÈƒIƒuƒWƒFƒNƒg‚Å‚È‚¢’l‚ª“n‚³‚ê‚Ü‚µ‚½"),
+				SPRIG_KRKR_TJS_W("æœ‰åŠ¹ãªã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ãªã„å€¤ãŒæ¸¡ã•ã‚Œã¾ã—ãŸ"),
 				sprig::dg::bad_process
 				);
 			result = false;
@@ -880,7 +880,7 @@ namespace ktl {
 		return instance_->isInitialized();
 	}
 	//
-	//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant Sprites::saveSpriteBufferByText() const {
 		return tTJSVariant(instance_->saveSpriteBufferByText()->c_str());
@@ -902,7 +902,7 @@ namespace ktl {
 		instance_->loadSpriteBufferByBinary(data);
 	}
 	//
-	//	SUMMARY: ƒXƒvƒ‰ƒCƒgƒhƒ[ƒŠÇ—Œnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¹ãƒ—ãƒ©ã‚¤ãƒˆãƒ‰ãƒ­ãƒ¼ãƒ¯ç®¡ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool Sprites::generateSpriteDrawer(
 		tTJSString const& key,
@@ -931,7 +931,7 @@ namespace ktl {
 		} else {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				SPRIG_KRKR_TJS_W("—LŒø‚ÈƒIƒuƒWƒFƒNƒg‚Å‚È‚¢’l‚ª“n‚³‚ê‚Ü‚µ‚½"),
+				SPRIG_KRKR_TJS_W("æœ‰åŠ¹ãªã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ãªã„å€¤ãŒæ¸¡ã•ã‚Œã¾ã—ãŸ"),
 				sprig::dg::bad_process
 				);
 			result = false;
@@ -958,7 +958,7 @@ namespace ktl {
 		return instance_->setPriority(key, v);
 	}
 	//
-	//	SUMMARY: ƒXƒvƒ‰ƒCƒgƒhƒ[ƒ‘€ìŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¹ãƒ—ãƒ©ã‚¤ãƒˆãƒ‰ãƒ­ãƒ¼ãƒ¯æ“ä½œç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE boost::optional<tTVInteger> Sprites::getVisible(tTJSString const& key) const {
 		return boost::optional<tTVInteger>(instance_->getVisible(key));
@@ -1104,7 +1104,7 @@ namespace ktl {
 		return instance_->setHitThreshold(key, boost::numeric_cast<NativeSprites::sprite_drawer_type::hit_threshold_type>(v));
 	}
 	//
-	//	SUMMARY: Šg’£ƒXƒvƒ‰ƒCƒgƒhƒ[ƒ‘€ìŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ‹¡å¼µã‚¹ãƒ—ãƒ©ã‚¤ãƒˆãƒ‰ãƒ­ãƒ¼ãƒ¯æ“ä½œç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool Sprites::setScalingXY(tTJSString const& key, tTVReal v) {
 		return setScaling(key, v, v);
@@ -1271,7 +1271,7 @@ namespace ktl {
 		return instance_->setRotation(key, D3DXToRadian(static_cast<FLOAT>(v)));
 	}
 	//
-	//	SUMMARY: XVŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ›´æ–°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool Sprites::onContinuous() {
 		return SUCCEEDED(instance_->onContinuous());
@@ -1286,7 +1286,7 @@ namespace ktl {
 		return instance_->isRequestedUpdate();
 	}
 	//
-	//	SUMMARY: •`‰æŒnƒƒ\ƒbƒh
+	//	SUMMARY: æç”»ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool Sprites::draw() {
 		return SUCCEEDED(instance_->draw());
@@ -1298,7 +1298,7 @@ namespace ktl {
 		return SUCCEEDED(instance_->clearImage(key));
 	}
 	//
-	//	SUMMARY: ƒqƒbƒgƒeƒXƒgŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ’ãƒƒãƒˆãƒ†ã‚¹ãƒˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE boost::shared_ptr<tTJSString> Sprites::hitTest(tTVInteger v1, tTVInteger v2) {
 		return instance_->hitTest(NativeSprites::coord_type(static_cast<FLOAT>(v1), static_cast<FLOAT>(v2), 0.0f));
@@ -1313,7 +1313,7 @@ namespace ktl {
 		return instance_->multiTPHitTest(numparams, param);
 	}
 	//
-	//	SUMMARY: À•WŒnƒƒ\ƒbƒh
+	//	SUMMARY: åº§æ¨™ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE sprig::krkr::tjs::object_type Sprites::toLocalCoord(tTJSString const& key, tTVInteger v1, tTVInteger v2) const {
 		return instance_->toLocalCoord(key, NativeSprites::coord_type(static_cast<FLOAT>(v1), static_cast<FLOAT>(v2), 0.0f));
@@ -1322,7 +1322,7 @@ namespace ktl {
 		return instance_->toGlobalCoord(key, NativeSprites::coord_type(static_cast<FLOAT>(v1), static_cast<FLOAT>(v2), 0.0f));
 	}
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVInteger Sprites::getClearColor() const {
 		return instance_->getClearColor();
@@ -1349,7 +1349,7 @@ namespace ktl {
 		instance_->setRun(v);
 	}
 	//
-	//	SUMMARY: ƒfƒoƒbƒOŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ‡ãƒãƒƒã‚°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void Sprites::outputValueInfo() const {
 		instance_->outputValueInfo();

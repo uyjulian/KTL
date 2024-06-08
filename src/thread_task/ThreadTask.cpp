@@ -24,7 +24,7 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME ThreadTaskClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassThreadTask, ThreadTask, ThreadTask)
 	//
-	//	SUMMARY: §ŒäŒnƒƒ\ƒbƒh
+	//	SUMMARY: åˆ¶å¾¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(start)
 	{
@@ -47,7 +47,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(cancel);
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(ThreadTask, result, result);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(ThreadTask, isProcessing, isProcessing);
@@ -61,11 +61,11 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME ThreadControlClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassThreadControl, ThreadControl, ThreadControl)
 	//
-	//	SUMMARY: “à•”Œnƒƒ\ƒbƒh
+	//	SUMMARY: å†…éƒ¨ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(ThreadControl, instance, getInstance);
 	//
-	//	SUMMARY: §ŒäŒnƒƒ\ƒbƒh
+	//	SUMMARY: åˆ¶å¾¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(yield)
 	{
@@ -83,7 +83,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(sleep);
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(ThreadControl, cancelled, cancelled);
 

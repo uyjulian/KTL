@@ -119,29 +119,29 @@ namespace ktl {
 			if (!(atom_ = ::RegisterClassEx(&window_class_))) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("ƒEƒCƒ“ƒhƒEƒNƒ‰ƒX‚Ì“o˜^‚É¸”s‚µ‚Ü‚µ‚½"),
+					SPRIG_KRKR_TJS_W("ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã‚¯ãƒ©ã‚¹ã®ç™»éŒ²ã«å¤±æ•—ã—ã¾ã—ãŸ"),
 					sprig::krkr::win32_error
 					);
 				return;
 			}
 			window_handle_ = ::CreateWindowEx(
-				0,												// Šg’£ƒEƒBƒ“ƒhƒEƒXƒ^ƒCƒ‹
-				reinterpret_cast<LPCTSTR>(MAKELONG(atom_, 0)),	// ƒNƒ‰ƒX–¼
-				window_class_.lpszClassName,					// ƒEƒBƒ“ƒhƒEƒ^ƒCƒgƒ‹
-				0,												// ƒEƒBƒ“ƒhƒEƒXƒ^ƒCƒ‹
-				CW_USEDEFAULT,									// ƒEƒBƒ“ƒhƒEˆÊ’u
-				0,												// ƒEƒBƒ“ƒhƒEˆÊ’u
-				CW_USEDEFAULT,									// ƒEƒBƒ“ƒhƒEƒTƒCƒY
-				0,												// ƒEƒBƒ“ƒhƒEƒTƒCƒY
-				HWND_MESSAGE,									// eƒEƒBƒ“ƒhƒE
-				0,												// ƒƒjƒ…[
-				window_class_.hInstance,						// ƒCƒ“ƒXƒ^ƒ“ƒX
-				0												// ƒEƒBƒ“ƒhƒEì¬ƒf[ƒ^‚ÌƒAƒhƒŒƒX
+				0,												// æ‹¡å¼µã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚¹ã‚¿ã‚¤ãƒ«
+				reinterpret_cast<LPCTSTR>(MAKELONG(atom_, 0)),	// ã‚¯ãƒ©ã‚¹å
+				window_class_.lpszClassName,					// ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚¿ã‚¤ãƒˆãƒ«
+				0,												// ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚¹ã‚¿ã‚¤ãƒ«
+				CW_USEDEFAULT,									// ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ä½ç½®
+				0,												// ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ä½ç½®
+				CW_USEDEFAULT,									// ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚µã‚¤ã‚º
+				0,												// ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚µã‚¤ã‚º
+				HWND_MESSAGE,									// è¦ªã‚¦ã‚£ãƒ³ãƒ‰ã‚¦
+				0,												// ãƒ¡ãƒ‹ãƒ¥ãƒ¼
+				window_class_.hInstance,						// ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹
+				0												// ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ä½œæˆãƒ‡ãƒ¼ã‚¿ã®ã‚¢ãƒ‰ãƒ¬ã‚¹
 				);
 			if (!window_handle_) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("ƒEƒCƒ“ƒhƒE‚Ìì¬‚É¸”s‚µ‚Ü‚µ‚½"),
+					SPRIG_KRKR_TJS_W("ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã®ä½œæˆã«å¤±æ•—ã—ã¾ã—ãŸ"),
 					sprig::krkr::win32_error
 					);
 				return;
@@ -152,7 +152,7 @@ namespace ktl {
 				if (!::DestroyWindow(window_handle_)) {
 					KTL_ERROR_NOTHROW(
 						KTL_ERROR_SECTION,
-						SPRIG_KRKR_TJS_W("ƒEƒCƒ“ƒhƒE‚Ì”jŠü‚É¸”s‚µ‚Ü‚µ‚½")
+						SPRIG_KRKR_TJS_W("ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã®ç ´æ£„ã«å¤±æ•—ã—ã¾ã—ãŸ")
 						);
 				}
 				window_handle_ = 0;
@@ -161,7 +161,7 @@ namespace ktl {
 				if (!::UnregisterClass(reinterpret_cast<LPCTSTR>(MAKELONG(atom_, 0)), 0)) {
 					KTL_ERROR_NOTHROW(
 						KTL_ERROR_SECTION,
-						SPRIG_KRKR_TJS_W("ƒEƒCƒ“ƒhƒEƒNƒ‰ƒX‚Ì“o˜^‰ğœ‚É¸”s‚µ‚Ü‚µ‚½")
+						SPRIG_KRKR_TJS_W("ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã‚¯ãƒ©ã‚¹ã®ç™»éŒ²è§£é™¤ã«å¤±æ•—ã—ã¾ã—ãŸ")
 						);
 				}
 				atom_ = 0;
@@ -173,18 +173,18 @@ namespace ktl {
 			, atom_(0)
 			, identity_(sprig::str_cast<string_type>(boost::uuids::random_generator()()))
 		{
-			window_class_.cbSize = sizeof(WNDCLASSEX);							// \‘¢‘Ì‚ÌƒTƒCƒY
-			window_class_.style = 0;											// ƒNƒ‰ƒXƒXƒ^ƒCƒ‹
-			window_class_.lpfnWndProc = static_cast<WNDPROC>(&windowProcedure);	// ƒEƒBƒ“ƒhƒEƒvƒƒV[ƒWƒƒ
-			window_class_.cbClsExtra = 0;										// •â‘«ƒƒ‚ƒŠƒuƒƒbƒN‚ÌƒTƒCƒY
-			window_class_.cbWndExtra = 0;										// •â‘«ƒƒ‚ƒŠƒuƒƒbƒN‚ÌƒTƒCƒY
-			window_class_.hInstance = ::GetModuleHandle(0);						// ƒCƒ“ƒXƒ^ƒ“ƒX
-			window_class_.hIcon = 0;											// ƒAƒCƒRƒ“
-			window_class_.hCursor = 0;											// ƒJ[ƒ\ƒ‹
-			window_class_.hbrBackground = 0;									// ”wŒiF
-			window_class_.lpszMenuName = 0;										// ƒƒjƒ…[–¼
-			window_class_.lpszClassName = identity_.c_str();					// ƒNƒ‰ƒX–¼
-			window_class_.hIconSm = 0;											// ¬‚³‚¢ƒAƒCƒRƒ“
+			window_class_.cbSize = sizeof(WNDCLASSEX);							// æ§‹é€ ä½“ã®ã‚µã‚¤ã‚º
+			window_class_.style = 0;											// ã‚¯ãƒ©ã‚¹ã‚¹ã‚¿ã‚¤ãƒ«
+			window_class_.lpfnWndProc = static_cast<WNDPROC>(&windowProcedure);	// ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ãƒ—ãƒ­ã‚·ãƒ¼ã‚¸ãƒ£
+			window_class_.cbClsExtra = 0;										// è£œè¶³ãƒ¡ãƒ¢ãƒªãƒ–ãƒ­ãƒƒã‚¯ã®ã‚µã‚¤ã‚º
+			window_class_.cbWndExtra = 0;										// è£œè¶³ãƒ¡ãƒ¢ãƒªãƒ–ãƒ­ãƒƒã‚¯ã®ã‚µã‚¤ã‚º
+			window_class_.hInstance = ::GetModuleHandle(0);						// ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹
+			window_class_.hIcon = 0;											// ã‚¢ã‚¤ã‚³ãƒ³
+			window_class_.hCursor = 0;											// ã‚«ãƒ¼ã‚½ãƒ«
+			window_class_.hbrBackground = 0;									// èƒŒæ™¯è‰²
+			window_class_.lpszMenuName = 0;										// ãƒ¡ãƒ‹ãƒ¥ãƒ¼å
+			window_class_.lpszClassName = identity_.c_str();					// ã‚¯ãƒ©ã‚¹å
+			window_class_.hIconSm = 0;											// å°ã•ã„ã‚¢ã‚¤ã‚³ãƒ³
 		}
 		~thread_callback() throw() {
 			dispose();

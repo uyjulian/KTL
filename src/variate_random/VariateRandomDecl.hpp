@@ -33,16 +33,16 @@ namespace ktl {
 		NativeVariateRandom(iTJSDispatch2* eng_obj, iTJSDispatch2* dis_obj);
 	public:
 		//
-		//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		RandomResult random();
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		sprig::krkr::tjs::object_type engine() const;
 		sprig::krkr::tjs::object_type distribution() const;
 		//
-		//	SUMMARY: Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		RandomResult min() const;
 		RandomResult max() const;
@@ -66,16 +66,16 @@ namespace ktl {
 		void TJS_INTF_METHOD Invalidate();
 	public:
 		//
-		//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant random();
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant engine() const;
 		tTJSVariant distribution() const;
 		//
-		//	SUMMARY: Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant min() const;
 		tTJSVariant max() const;

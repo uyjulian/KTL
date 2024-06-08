@@ -32,18 +32,18 @@ namespace ktl {
 		NativeSplashWindow();
 	public:
 		//
-		//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+		//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void initialize(size_type width, size_type height);
 		void initialize(size_type width, size_type height, string_type const& identity);
 		void uninitialize();
 		//
-		//	SUMMARY: “Ç‚Ýž‚ÝŒnƒƒ\ƒbƒh
+		//	SUMMARY: èª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool loadImages(tTJSString const& storage);
 		bool loadImagesFromOctet(tTJSVariantOctet const* source);
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒCŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool getVisible() const;
 		void setVisible(bool v);
@@ -77,18 +77,18 @@ namespace ktl {
 		void TJS_INTF_METHOD Invalidate();
 	public:
 		//
-		//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+		//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void initialize(tTVInteger width, tTVInteger height);
 		void initialize(tTVInteger width, tTVInteger height, tTJSVariantString const* identity);
 		void uninitialize();
 		//
-		//	SUMMARY: “Ç‚Ýž‚ÝŒnƒƒ\ƒbƒh
+		//	SUMMARY: èª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool loadImages(tTJSVariantString const* storage);
 		bool loadImagesFromOctet(tTJSVariantOctet const* source);
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒCŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool getVisible() const;
 		void setVisible(bool v);

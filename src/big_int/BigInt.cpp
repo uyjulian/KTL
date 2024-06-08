@@ -25,7 +25,7 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME BigIntClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassBigInt, BigInt, BigInt)
 	//
-	//	SUMMARY: “à•”Œnƒƒ\ƒbƒh
+	//	SUMMARY: å†…éƒ¨ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(BigInt, instance, getInstance);
 	//
@@ -42,7 +42,7 @@ namespace ktl {
 	} \
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(FUNC_NAME);
 	//
-	//	SUMMARY: ‰‰ŽZŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ¼”ç®—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_BIG_INT_NATIVE_METHOD_OPERATION_DECL(opAdd);
 	KTL_BIG_INT_NATIVE_METHOD_OPERATION_DECL(opSub);
@@ -66,12 +66,12 @@ namespace ktl {
 	} \
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(FUNC_NAME);
 	//
-	//	SUMMARY: “¯’èŒnƒƒ\ƒbƒh
+	//	SUMMARY: åŒå®šç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_BIG_INT_NATIVE_METHOD_COMPARISON_DECL(opEq);
 	KTL_BIG_INT_NATIVE_METHOD_COMPARISON_DECL(opNEq);
 	//
-	//	SUMMARY: ”äŠrŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ¯”è¼ƒç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_BIG_INT_NATIVE_METHOD_COMPARISON_DECL(opLs);
 	KTL_BIG_INT_NATIVE_METHOD_COMPARISON_DECL(opLsEq);
@@ -109,12 +109,12 @@ namespace ktl {
 	} \
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(FUNC_NAME);
 	//
-	//	SUMMARY: ’P€‰‰ŽZŒnƒƒ\ƒbƒh
+	//	SUMMARY: å˜é …æ¼”ç®—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_BIG_INT_NATIVE_METHOD_UNARY_OPERATION_DECL(opPlus);
 	KTL_BIG_INT_NATIVE_METHOD_UNARY_OPERATION_DECL(opMinus);
 	//
-	//	SUMMARY: ŽZpŒnƒƒ\ƒbƒh
+	//	SUMMARY: ç®—è¡“ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_BIG_INT_NATIVE_METHOD_UNARY_OPERATION_DECL(abs);
 	KTL_BIG_INT_NATIVE_METHOD_BINARY_OPERATION_DECL(pow);
@@ -122,7 +122,7 @@ namespace ktl {
 	KTL_BIG_INT_NATIVE_METHOD_BINARY_OPERATION_DECL(max);
 	KTL_BIG_INT_NATIVE_METHOD_BINARY_OPERATION_DECL(min);
 	//
-	//	SUMMARY: ‘ã“üŒnƒƒ\ƒbƒh
+	//	SUMMARY: ä»£å…¥ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(assign)
 	{
@@ -151,7 +151,7 @@ namespace ktl {
 	} \
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(FUNC_NAME);
 	//
-	//	SUMMARY: ‰‰ŽZ‘ã“üŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ¼”ç®—ä»£å…¥ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_BIG_INT_NATIVE_METHOD_ASSIGN_DECL(assignAdd);
 	KTL_BIG_INT_NATIVE_METHOD_ASSIGN_DECL(assignSub);
@@ -162,14 +162,14 @@ namespace ktl {
 	KTL_BIG_INT_NATIVE_METHOD_ASSIGN_DECL(assignAnd);
 	KTL_BIG_INT_NATIVE_METHOD_ASSIGN_DECL(assignXor);
 	//
-	//	SUMMARY: •ÏŠ·Œnƒƒ\ƒbƒh
+	//	SUMMARY: å¤‰æ›ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(BigInt, asInt, asInt);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(BigInt, asReal, asReal);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(BigInt, asString, asString);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(BigInt, asOctet, asOctet);
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(BigInt, sign, sign);
 

@@ -70,7 +70,7 @@ namespace ktl {
 			static result_type call(G const&) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("‚±‚ÌƒWƒIƒƒgƒŠ‚É‘Î‚·‚é‘€ì‚ÍŽÀ‘•‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ"),
+					SPRIG_KRKR_TJS_W("ã“ã®ã‚¸ã‚ªãƒ¡ãƒˆãƒªã«å¯¾ã™ã‚‹æ“ä½œã¯å®Ÿè£…ã•ã‚Œã¦ã„ã¾ã›ã‚“"),
 					sprig::krkr::bad_argument
 					);
 				return result_type();
@@ -101,7 +101,7 @@ namespace ktl {
 			static result_type call(G0 const&, G1 const&) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("‚±‚ÌƒWƒIƒƒgƒŠ‚É‘Î‚·‚é‘€ì‚ÍŽÀ‘•‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ"),
+					SPRIG_KRKR_TJS_W("ã“ã®ã‚¸ã‚ªãƒ¡ãƒˆãƒªã«å¯¾ã™ã‚‹æ“ä½œã¯å®Ÿè£…ã•ã‚Œã¦ã„ã¾ã›ã‚“"),
 					sprig::krkr::bad_argument
 					);
 				return result_type();
@@ -1418,7 +1418,7 @@ namespace ktl {
 		if (!in) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒI[ƒvƒ“‚ÉŽ¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚ªãƒ¼ãƒ—ãƒ³ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -1429,7 +1429,7 @@ namespace ktl {
 		if (FAILED(in->Seek(move, TJS_BS_SEEK_END, &new_pos))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒV[ƒN‚ÉŽ¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚·ãƒ¼ã‚¯ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -1443,7 +1443,7 @@ namespace ktl {
 		if (FAILED(in->Seek(move, TJS_BS_SEEK_SET, &new_pos))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒV[ƒN‚ÉŽ¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚·ãƒ¼ã‚¯ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -1453,7 +1453,7 @@ namespace ktl {
 		if (FAILED(in->Read(&binary[0], file_size, &io_size))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹“Çž‚ÉŽ¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«èª­è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -1470,7 +1470,7 @@ namespace ktl {
 		if (!out) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒI[ƒvƒ“‚ÉŽ¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚ªãƒ¼ãƒ—ãƒ³ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return -1;
@@ -1482,7 +1482,7 @@ namespace ktl {
 		if (FAILED(out->Write(data, length, &io_size))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹‘ž‚ÉŽ¸”s‚µ‚Ü‚µ‚½"),
+				SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«æ›¸è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ"),
 				sprig::krkr::internal_error
 				);
 			return io_size;
@@ -1494,7 +1494,7 @@ namespace ktl {
 	//
 	NativeGeometry::NativeGeometry() {}
 	//
-	//	SUMMARY: ’P€Œnƒƒ\ƒbƒh
+	//	SUMMARY: å˜é …ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativeGeometry::isEmpty(tTJSVariantClosure const& g, flag_type f) {
 		return dispatch(IsEmptyFunc(), g, f);
@@ -1554,7 +1554,7 @@ namespace ktl {
 		return transform(g, f, to_matrix(t));
 	}
 	//
-	//	SUMMARY: “ñ€Œnƒƒ\ƒbƒh
+	//	SUMMARY: äºŒé …ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativeGeometry::disjoint(tTJSVariantClosure const& g0, flag_type f0, tTJSVariantClosure const& g1, flag_type f1) {
 		return dispatch(DisjointFunc(), g0, f0, g1, f1);
@@ -1593,7 +1593,7 @@ namespace ktl {
 		return to_variant(dispatch(ExpandFunc(), g0, f0, g1, f1));
 	}
 	//
-	//	SUMMARY: IOŒnƒƒ\ƒbƒh
+	//	SUMMARY: IOç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant NativeGeometry::readWKT(tjs_char const* source, flag_type f) {
 		std::string s = sprig::str_cast<std::string>(source);
@@ -1692,7 +1692,7 @@ namespace ktl {
 		instance_.reset();
 	}
 	//
-	//	SUMMARY: ’P€Œnƒƒ\ƒbƒh
+	//	SUMMARY: å˜é …ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool Geometry::isEmpty(tTJSVariantClosure const& g, tTVInteger f) {
 		return NativeGeometry::isEmpty(
@@ -1797,7 +1797,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: “ñ€Œnƒƒ\ƒbƒh
+	//	SUMMARY: äºŒé …ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool Geometry::disjoint(tTJSVariantClosure const& g0, tTVInteger f0, tTJSVariantClosure const& g1, tTVInteger f1) {
 		return NativeGeometry::disjoint(
@@ -1873,7 +1873,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: IOŒnƒƒ\ƒbƒh
+	//	SUMMARY: IOç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant Geometry::readWKT(tTJSVariantString const* source, tTVInteger f) {
 		return NativeGeometry::readWKT(

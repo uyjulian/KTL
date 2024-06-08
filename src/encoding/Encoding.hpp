@@ -49,7 +49,7 @@ namespace ktl {
 		tjs_char const* source
 		)
 	{
-		//	COMMENT: ƒRƒ“ƒo[ƒ^ì¬
+		//	COMMENT: ã‚³ãƒ³ãƒãƒ¼ã‚¿ä½œæˆ
 		UErrorCode error = U_ZERO_ERROR;
 		boost::shared_ptr<UConverter> converter(
 			::ucnv_openU(charset, &error),
@@ -68,7 +68,7 @@ namespace ktl {
 			buffer.clear();
 			return true;
 		}
-		//	COMMENT: •ÏŠ·
+		//	COMMENT: å¤‰æ›
 		error = U_ZERO_ERROR;
 		int32_t length = ::ucnv_fromUChars(
 			converter.get(),
@@ -123,7 +123,7 @@ namespace ktl {
 				);
 			return true;
 		}
-		//	COMMENT: Unicode‚Ö‚ÌƒRƒ“ƒo[ƒ^ì¬
+		//	COMMENT: Unicodeã¸ã®ã‚³ãƒ³ãƒãƒ¼ã‚¿ä½œæˆ
 		UErrorCode error = U_ZERO_ERROR;
 		boost::shared_ptr<UConverter> from_converter(
 			::ucnv_openU(source_charset, &error),
@@ -141,7 +141,7 @@ namespace ktl {
 			buffer.clear();
 			return true;
 		}
-		//	COMMENT: Unicode‚Ö‚Ì•ÏŠ·
+		//	COMMENT: Unicodeã¸ã®å¤‰æ›
 		error = U_ZERO_ERROR;
 		int32_t uchars_length = ::ucnv_toUChars(
 			from_converter.get(),
@@ -177,7 +177,7 @@ namespace ktl {
 				);
 			return false;
 		}
-		//	COMMENT: Unicode‚©‚ç‚ÌƒRƒ“ƒo[ƒ^ì¬
+		//	COMMENT: Unicodeã‹ã‚‰ã®ã‚³ãƒ³ãƒãƒ¼ã‚¿ä½œæˆ
 		error = U_ZERO_ERROR;
 		boost::shared_ptr<UConverter> to_converter(
 			::ucnv_openU(charset, &error),
@@ -191,7 +191,7 @@ namespace ktl {
 				);
 			return false;
 		}
-		//	COMMENT: Unicode‚©‚ç‚Ì•ÏŠ·
+		//	COMMENT: Unicodeã‹ã‚‰ã®å¤‰æ›
 		error = U_ZERO_ERROR;
 		int32_t length = ::ucnv_fromUChars(
 			to_converter.get(),
@@ -236,7 +236,7 @@ namespace ktl {
 		tjs_char const* source_charset
 		)
 	{
-		//	COMMENT: ƒRƒ“ƒo[ƒ^ì¬
+		//	COMMENT: ã‚³ãƒ³ãƒãƒ¼ã‚¿ä½œæˆ
 		UErrorCode error = U_ZERO_ERROR;
 		boost::shared_ptr<UConverter> converter(
 			::ucnv_openU(source_charset, &error),
@@ -254,7 +254,7 @@ namespace ktl {
 			string.clear();
 			return true;
 		}
-		//	COMMENT: •ÏŠ·
+		//	COMMENT: å¤‰æ›
 		error = U_ZERO_ERROR;
 		int32_t length = ::ucnv_toUChars(
 			converter.get(),
@@ -378,7 +378,7 @@ namespace ktl {
 		)
 	{
 		UErrorCode error = U_ZERO_ERROR;
-		//	COMMENT: ƒfƒBƒeƒNƒ^ì¬
+		//	COMMENT: ãƒ‡ã‚£ãƒ†ã‚¯ã‚¿ä½œæˆ
 		boost::shared_ptr<UCharsetDetector> detector(
 			::ucsdet_open(&error),
 			&::ucsdet_close
@@ -391,7 +391,7 @@ namespace ktl {
 				);
 			return boost::shared_ptr<UCharsetDetector>();
 		}
-		//	COMMENT: ƒ\[ƒXİ’è
+		//	COMMENT: ã‚½ãƒ¼ã‚¹è¨­å®š
 		::ucsdet_setText(
 			detector.get(),
 			reinterpret_cast<char const*>(source_data),
@@ -414,7 +414,7 @@ namespace ktl {
 		)
 	{
 		UErrorCode error = U_ZERO_ERROR;
-		//	COMMENT: ƒRƒ“ƒtƒBƒfƒ“ƒX
+		//	COMMENT: ã‚³ãƒ³ãƒ•ã‚£ãƒ‡ãƒ³ã‚¹
 		int32_t confidence = ::ucsdet_getConfidence(matcher, &error);
 		if (U_FAILURE(error)) {
 			KTL_ERROR(
@@ -427,7 +427,7 @@ namespace ktl {
 		if (confidence < confidence_threshold) {
 			return tTJSVariant();
 		}
-		//	COMMENT: –¼‘O
+		//	COMMENT: åå‰
 		char const* name = ::ucsdet_getName(matcher, &error);
 		if (U_FAILURE(error)) {
 			KTL_ERROR(
@@ -437,7 +437,7 @@ namespace ktl {
 				);
 			return tTJSVariant();
 		}
-		//	COMMENT: Œ¾Œê
+		//	COMMENT: è¨€èª
 		char const* language = ::ucsdet_getLanguage(matcher, &error);
 		if (U_FAILURE(error)) {
 			KTL_ERROR(
@@ -447,7 +447,7 @@ namespace ktl {
 				);
 			return tTJSVariant();
 		}
-		//	COMMENT: Œ‹‰Ê¶¬
+		//	COMMENT: çµæœç”Ÿæˆ
 		sprig::krkr::tjs::object_type result = sprig::krkr::tjs::CreateNewObject(
 			sprig::krkr::tjs::GetTJSClassNoAddRef(SPRIG_KRKR_TJS_W("Dictionary")),
 			0, 0, 0
@@ -459,7 +459,7 @@ namespace ktl {
 	}
 	NativeEncoding::NativeEncoding() {}
 	//
-	//	SUMMARY: URLƒGƒ“ƒR[ƒhŒnƒƒ\ƒbƒh
+	//	SUMMARY: URLã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant NativeEncoding::URLEncodeToAsciiOctet(
 		tjs_char const* charset,
@@ -687,7 +687,7 @@ namespace ktl {
 		return tTJSVariant(string.c_str());
 	}
 	//
-	//	SUMMARY: Base64ƒGƒ“ƒR[ƒhŒnƒƒ\ƒbƒh
+	//	SUMMARY: Base64ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant NativeEncoding::base64EncodeToAsciiOctet(
 		tTJSVariantOctet const* source,
@@ -778,7 +778,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: ƒGƒ“ƒR[ƒhŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant NativeEncoding::encodeToOctet(
 		tjs_char const* charset,
@@ -827,7 +827,7 @@ namespace ktl {
 			;
 	}
 	//
-	//	SUMMARY: ”äŠrŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ¯”è¼ƒç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativeEncoding::sameCharsetAlias(
 		tjs_char const* name1,
@@ -844,7 +844,7 @@ namespace ktl {
 			;
 	}
 	//
-	//	SUMMARY: ŒŸoŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ¤œå‡ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant NativeEncoding::detect(
 		tTJSVariantOctet const* source,
@@ -866,7 +866,7 @@ namespace ktl {
 		if (!detector) {
 			return tTJSVariant();
 		}
-		//	COMMENT: ŒŸo
+		//	COMMENT: æ¤œå‡º
 		UErrorCode error = U_ZERO_ERROR;
 		UCharsetMatch const* matcher = ::ucsdet_detect(detector.get(), &error);
 		if (U_FAILURE(error)) {
@@ -899,7 +899,7 @@ namespace ktl {
 		if (!detector) {
 			return tTJSVariant();
 		}
-		//	COMMENT: ŒŸo
+		//	COMMENT: æ¤œå‡º
 		UErrorCode error = U_ZERO_ERROR;
 		int32_t num_found = 0;
 		UCharsetMatch const** matchers = ::ucsdet_detectAll(detector.get(), &num_found, &error);
@@ -945,7 +945,7 @@ namespace ktl {
 		if (!detector) {
 			return false;
 		}
-		//	COMMENT: ŒŸo
+		//	COMMENT: æ¤œå‡º
 		UErrorCode error = U_ZERO_ERROR;
 		int32_t num_found = 0;
 		UCharsetMatch const** matchers = ::ucsdet_detectAll(detector.get(), &num_found, &error);
@@ -961,7 +961,7 @@ namespace ktl {
 		char const* charset_str = charset.c_str();
 		for (int32_t i = 0; i < num_found; ++i) {
 			if (confidence_threshold) {
-				//	COMMENT: ƒRƒ“ƒtƒBƒfƒ“ƒX
+				//	COMMENT: ã‚³ãƒ³ãƒ•ã‚£ãƒ‡ãƒ³ã‚¹
 				int32_t confidence = ::ucsdet_getConfidence(matchers[i], &error);
 				if (U_FAILURE(error)) {
 					KTL_ERROR(
@@ -975,7 +975,7 @@ namespace ktl {
 					break;
 				}
 			}
-			//	COMMENT: –¼‘O
+			//	COMMENT: åå‰
 			char const* name = ::ucsdet_getName(matchers[i], &error);
 			if (U_FAILURE(error)) {
 				KTL_ERROR(
@@ -1011,7 +1011,7 @@ namespace ktl {
 		instance_.reset();
 	}
 	//
-	//	SUMMARY: URLƒGƒ“ƒR[ƒhŒnƒƒ\ƒbƒh
+	//	SUMMARY: URLã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant Encoding::URLEncodeToAsciiOctet(
 		tTJSVariantString const* charset,
@@ -1144,7 +1144,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: Base64ƒGƒ“ƒR[ƒhŒnƒƒ\ƒbƒh
+	//	SUMMARY: Base64ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant Encoding::base64EncodeToAsciiOctet(
 		tTJSVariantOctet const* source,
@@ -1183,7 +1183,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: ƒGƒ“ƒR[ƒhŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant Encoding::encodeToOctet(
 		tTJSVariantString const* charset,
@@ -1218,7 +1218,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: ”äŠrŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ¯”è¼ƒç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool Encoding::sameCharsetAlias(
 		tTJSVariantString const* name1,
@@ -1231,7 +1231,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: ŒŸoŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ¤œå‡ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant Encoding::detect(
 		tTJSVariantOctet const* source,

@@ -26,7 +26,7 @@ namespace ktl {
 		NativeSystemInfo();
 	public:
 		//
-		//	SUMMARY: ƒhƒ‰ƒCƒuŒnƒtƒ‰ƒO
+		//	SUMMARY: ãƒ‰ãƒ©ã‚¤ãƒ–ç³»ãƒ•ãƒ©ã‚°
 		//
 		static flag_type const dfUnknown = DRIVE_UNKNOWN;
 		static flag_type const dfNoRootDir = DRIVE_NO_ROOT_DIR;
@@ -36,7 +36,7 @@ namespace ktl {
 		static flag_type const dfCDROM = DRIVE_CDROM;
 		static flag_type const dfRAMDisk = DRIVE_RAMDISK;
 		//
-		//	SUMMARY: ƒtƒ@ƒCƒ‹ƒVƒXƒeƒ€Œnƒtƒ‰ƒO
+		//	SUMMARY: ãƒ•ã‚¡ã‚¤ãƒ«ã‚·ã‚¹ãƒ†ãƒ ç³»ãƒ•ãƒ©ã‚°
 		//
 		static flag_type const fsfCaseIsPreserved = FS_CASE_IS_PRESERVED;
 		static flag_type const fsfCaseSensitive = FS_CASE_SENSITIVE;
@@ -51,7 +51,7 @@ namespace ktl {
 		static flag_type const fsfSupportsSparseFiles = FILE_SUPPORTS_SPARSE_FILES;
 		static flag_type const fsfVolumeQuotas = FILE_VOLUME_QUOTAS;
 		//
-		//	SUMMARY: CPU‹@”\Œnƒtƒ‰ƒO
+		//	SUMMARY: CPUæ©Ÿèƒ½ç³»ãƒ•ãƒ©ã‚°
 		//
 		static flag_type const cffFPU = TVP_CPU_HAS_FPU;
 		static flag_type const cffMMX = TVP_CPU_HAS_MMX;
@@ -64,7 +64,7 @@ namespace ktl {
 		static flag_type const cffTSC = TVP_CPU_HAS_TSC;
 		static flag_type const cffMask = TVP_CPU_FEATURE_MASK;
 		//
-		//	SUMMARY: CPUƒxƒ“ƒ_Œnƒtƒ‰ƒO
+		//	SUMMARY: CPUãƒ™ãƒ³ãƒ€ç³»ãƒ•ãƒ©ã‚°
 		//
 		static flag_type const cvfIntel = TVP_CPU_IS_INTEL;
 		static flag_type const cvfAMD = TVP_CPU_IS_AMD;
@@ -78,34 +78,34 @@ namespace ktl {
 		static flag_type const cvfMask = TVP_CPU_VENDOR_MASK;
 	public:
 		//
-		// ƒRƒ“ƒsƒ…[ƒ^–¼Œnƒƒ\ƒbƒh
+		// ã‚³ãƒ³ãƒ”ãƒ¥ãƒ¼ã‚¿åç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSString computerName();
 		//
-		// ƒVƒXƒeƒ€ƒfƒBƒŒƒNƒgƒŠî•ñŒnƒƒ\ƒbƒh 
+		// ã‚·ã‚¹ãƒ†ãƒ ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªæƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰ 
 		//
 		static tTJSString windowsDirectory();
 		static tTJSString systemWindowsDirectory();
 		static tTJSString systemDirectory();
 		//
-		// ƒƒ‚ƒŠî•ñŒnƒƒ\ƒbƒh
+		// ãƒ¡ãƒ¢ãƒªæƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant globalMemoryStatus();
 		//
-		// ƒfƒBƒXƒNƒhƒ‰ƒCƒuî•ñŒnƒƒ\ƒbƒh
+		// ãƒ‡ã‚£ã‚¹ã‚¯ãƒ‰ãƒ©ã‚¤ãƒ–æƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant logicalDriveStrings();
 		static flag_type getDriveType(tjs_char const* root_path_name);
 		static tTJSString getDriveTypeString(tjs_char const* root_path_name);
 		static tTJSVariant getVolumeInformation(tjs_char const* root_path_name);
 		//
-		// ƒVƒXƒeƒ€ƒƒgƒŠƒbƒNî•ñŒnƒƒ\ƒbƒh
+		// ã‚·ã‚¹ãƒ†ãƒ ãƒ¡ãƒˆãƒªãƒƒã‚¯æƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static int cleanBoot();
 		static int monitors();
 		static int mouseButtons();
 		//
-		// CPU‹@”\Œnƒƒ\ƒbƒh
+		// CPUæ©Ÿèƒ½ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static flag_type CPUType();
 	};
@@ -128,7 +128,7 @@ namespace ktl {
 		void TJS_INTF_METHOD Invalidate();
 	public:
 		//
-		//	SUMMARY: ƒhƒ‰ƒCƒuŒnƒtƒ‰ƒO
+		//	SUMMARY: ãƒ‰ãƒ©ã‚¤ãƒ–ç³»ãƒ•ãƒ©ã‚°
 		//
 		static tTVInteger const dfUnknown = NativeSystemInfo::dfUnknown;
 		static tTVInteger const dfNoRootDir = NativeSystemInfo::dfNoRootDir;
@@ -138,7 +138,7 @@ namespace ktl {
 		static tTVInteger const dfCDROM = NativeSystemInfo::dfCDROM;
 		static tTVInteger const dfRAMDisk = NativeSystemInfo::dfRAMDisk;
 		//
-		//	SUMMARY: ƒtƒ@ƒCƒ‹ƒVƒXƒeƒ€Œnƒtƒ‰ƒO
+		//	SUMMARY: ãƒ•ã‚¡ã‚¤ãƒ«ã‚·ã‚¹ãƒ†ãƒ ç³»ãƒ•ãƒ©ã‚°
 		//
 		static tTVInteger const fsfCaseIsPreserved = NativeSystemInfo::fsfCaseIsPreserved;
 		static tTVInteger const fsfCaseSensitive = NativeSystemInfo::fsfCaseSensitive;
@@ -153,7 +153,7 @@ namespace ktl {
 		static tTVInteger const fsfSupportsSparseFiles = NativeSystemInfo::fsfSupportsSparseFiles;
 		static tTVInteger const fsfVolumeQuotas = NativeSystemInfo::fsfVolumeQuotas;
 		//
-		//	SUMMARY: CPU‹@”\Œnƒtƒ‰ƒO
+		//	SUMMARY: CPUæ©Ÿèƒ½ç³»ãƒ•ãƒ©ã‚°
 		//
 		static tTVInteger const cffFPU = NativeSystemInfo::cffFPU;
 		static tTVInteger const cffMMX = NativeSystemInfo::cffMMX;
@@ -166,7 +166,7 @@ namespace ktl {
 		static tTVInteger const cffTSC = NativeSystemInfo::cffTSC;
 		static tTVInteger const cffMask = NativeSystemInfo::cffMask;
 		//
-		//	SUMMARY: CPUƒxƒ“ƒ_Œnƒtƒ‰ƒO
+		//	SUMMARY: CPUãƒ™ãƒ³ãƒ€ç³»ãƒ•ãƒ©ã‚°
 		//
 		static tTVInteger const cvfIntel = NativeSystemInfo::cvfIntel;
 		static tTVInteger const cvfAMD = NativeSystemInfo::cvfAMD;
@@ -180,34 +180,34 @@ namespace ktl {
 		static tTVInteger const cvfMask = NativeSystemInfo::cvfMask;
 	public:
 		//
-		// ƒRƒ“ƒsƒ…[ƒ^–¼Œnƒƒ\ƒbƒh
+		// ã‚³ãƒ³ãƒ”ãƒ¥ãƒ¼ã‚¿åç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSString computerName();
 		//
-		// ƒVƒXƒeƒ€ƒfƒBƒŒƒNƒgƒŠî•ñŒnƒƒ\ƒbƒh 
+		// ã‚·ã‚¹ãƒ†ãƒ ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªæƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰ 
 		//
 		static tTJSString windowsDirectory();
 		static tTJSString systemWindowsDirectory();
 		static tTJSString systemDirectory();
 		//
-		// ƒƒ‚ƒŠî•ñŒnƒƒ\ƒbƒh
+		// ãƒ¡ãƒ¢ãƒªæƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant globalMemoryStatus();
 		//
-		// ƒfƒBƒXƒNƒhƒ‰ƒCƒuî•ñŒnƒƒ\ƒbƒh
+		// ãƒ‡ã‚£ã‚¹ã‚¯ãƒ‰ãƒ©ã‚¤ãƒ–æƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant logicalDriveStrings();
 		static tTVInteger getDriveType(tTJSVariantString const* root_path_name);
 		static tTJSString getDriveTypeString(tTJSVariantString const* root_path_name);
 		static tTJSVariant getVolumeInformation(tTJSVariantString const* root_path_name);
 		//
-		// ƒVƒXƒeƒ€ƒƒgƒŠƒbƒNî•ñŒnƒƒ\ƒbƒh
+		// ã‚·ã‚¹ãƒ†ãƒ ãƒ¡ãƒˆãƒªãƒƒã‚¯æƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVInteger cleanBoot();
 		static tTVInteger monitors();
 		static tTVInteger mouseButtons();
 		//
-		// CPU‹@”\Œnƒƒ\ƒbƒh
+		// CPUæ©Ÿèƒ½ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVInteger CPUType();
 	};

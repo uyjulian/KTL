@@ -37,7 +37,7 @@ namespace ktl {
 		NativeArchive();
 	public:
 		//
-		//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		string_instance_type saveText() const;
 		void loadText(tjs_char const* data);
@@ -46,7 +46,7 @@ namespace ktl {
 		binary_instance_type saveBinary() const;
 		void loadBinary(tTJSVariantOctet const* data);
 		//
-		//	SUMMARY: PtƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+		//	SUMMARY: Ptã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		string_instance_type savePtXML(
 			boost::optional<tjs_char> indent_char = boost::none,
@@ -62,11 +62,11 @@ namespace ktl {
 			) const;
 		void loadPtINFO(tjs_char const* data);
 		//
-		//	SUMMARY: ‘€ìŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ“ä½œç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void clear();
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		size_type size() const;
 	};
@@ -91,11 +91,11 @@ namespace ktl {
 			);
 		void TJS_INTF_METHOD Invalidate();
 		//
-		//	SUMMARY: “à•”Œnƒƒ\ƒbƒh
+		//	SUMMARY: å†…éƒ¨ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		sprig::krkr::tjs::intptr_type getStack();
 		//
-		//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant saveText() const;
 		void loadText(tTJSVariantString const* data);
@@ -104,7 +104,7 @@ namespace ktl {
 		tTJSVariant saveBinary() const;
 		void loadBinary(tTJSVariantOctet const* data);
 		//
-		//	SUMMARY: PtƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+		//	SUMMARY: Ptã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant savePtXML(
 			boost::optional<tTVInteger> indent_char = boost::none,
@@ -120,11 +120,11 @@ namespace ktl {
 			) const;
 		void loadPtINFO(tTJSVariantString const* data);
 		//
-		//	SUMMARY: ‘€ìŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ“ä½œç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void clear();
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTVInteger size() const;
 	};

@@ -37,7 +37,7 @@ namespace ktl {
 	}
 	NativeSystemInfo::NativeSystemInfo() {}
 	//
-	// ƒRƒ“ƒsƒ…[ƒ^–¼Œnƒƒ\ƒbƒh
+	// ã‚³ãƒ³ãƒ”ãƒ¥ãƒ¼ã‚¿åç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSString NativeSystemInfo::computerName() {
 		DWORD size = 0;
@@ -53,7 +53,7 @@ namespace ktl {
 		return &buffer[0];
 	}
 	//
-	// ƒVƒXƒeƒ€ƒfƒBƒŒƒNƒgƒŠî•ñŒnƒƒ\ƒbƒh
+	// ã‚·ã‚¹ãƒ†ãƒ ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªæƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSString NativeSystemInfo::windowsDirectory() {
 		UINT const default_size = MAX_PATH;
@@ -125,7 +125,7 @@ namespace ktl {
 		return &buffer[0];
 	}
 	//
-	// ƒƒ‚ƒŠî•ñŒnƒƒ\ƒbƒh
+	// ãƒ¡ãƒ¢ãƒªæƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant NativeSystemInfo::globalMemoryStatus() {
 		MEMORYSTATUSEX status;
@@ -153,7 +153,7 @@ namespace ktl {
 		return sprig::krkr::tjs::as_object_closure_variant(result);
 	}
 	//
-	// ƒfƒBƒXƒNƒhƒ‰ƒCƒuî•ñŒnƒƒ\ƒbƒh
+	// ãƒ‡ã‚£ã‚¹ã‚¯ãƒ‰ãƒ©ã‚¤ãƒ–æƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant NativeSystemInfo::logicalDriveStrings() {
 		DWORD const default_size = 4 * 16 + 1;
@@ -242,7 +242,7 @@ namespace ktl {
 		return sprig::krkr::tjs::as_object_closure_variant(result);
 	}
 	//
-	// ƒVƒXƒeƒ€ƒƒgƒŠƒbƒNî•ñŒnƒƒ\ƒbƒh
+	// ã‚·ã‚¹ãƒ†ãƒ ãƒ¡ãƒˆãƒªãƒƒã‚¯æƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE int NativeSystemInfo::cleanBoot() {
 		int val = ::GetSystemMetrics(SM_CLEANBOOT);
@@ -257,7 +257,7 @@ namespace ktl {
 		return tTJSVariant(val);
 	}
 	//
-	// CPU‹@”\Œnƒƒ\ƒbƒh
+	// CPUæ©Ÿèƒ½ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE NativeSystemInfo::flag_type NativeSystemInfo::CPUType() {
 		return ::TVPGetCPUType();
@@ -282,13 +282,13 @@ namespace ktl {
 		instance_.reset();
 	}
 	//
-	// ƒRƒ“ƒsƒ…[ƒ^–¼Œnƒƒ\ƒbƒh
+	// ã‚³ãƒ³ãƒ”ãƒ¥ãƒ¼ã‚¿åç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSString SystemInfo::computerName() {
 		return NativeSystemInfo::computerName();
 	}
 	//
-	// ƒVƒXƒeƒ€ƒfƒBƒŒƒNƒgƒŠî•ñŒnƒƒ\ƒbƒh 
+	// ã‚·ã‚¹ãƒ†ãƒ ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªæƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰ 
 	//
 	KTL_INLINE tTJSString SystemInfo::windowsDirectory() {
 		return NativeSystemInfo::windowsDirectory();
@@ -300,13 +300,13 @@ namespace ktl {
 		return NativeSystemInfo::systemDirectory();
 	}
 	//
-	// ƒƒ‚ƒŠî•ñŒnƒƒ\ƒbƒh
+	// ãƒ¡ãƒ¢ãƒªæƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant SystemInfo::globalMemoryStatus() {
 		return NativeSystemInfo::globalMemoryStatus();
 	}
 	//
-	// ƒfƒBƒXƒNƒhƒ‰ƒCƒuî•ñŒnƒƒ\ƒbƒh
+	// ãƒ‡ã‚£ã‚¹ã‚¯ãƒ‰ãƒ©ã‚¤ãƒ–æƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant SystemInfo::logicalDriveStrings() {
 		return NativeSystemInfo::logicalDriveStrings();
@@ -327,7 +327,7 @@ namespace ktl {
 			);
 	}
 	//
-	// ƒVƒXƒeƒ€ƒƒgƒŠƒbƒNî•ñŒnƒƒ\ƒbƒh
+	// ã‚·ã‚¹ãƒ†ãƒ ãƒ¡ãƒˆãƒªãƒƒã‚¯æƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVInteger SystemInfo::cleanBoot() {
 		return NativeSystemInfo::cleanBoot();
@@ -339,7 +339,7 @@ namespace ktl {
 		return NativeSystemInfo::mouseButtons();
 	}
 	//
-	// CPU‹@”\Œnƒƒ\ƒbƒh
+	// CPUæ©Ÿèƒ½ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVInteger SystemInfo::CPUType() {
 		return NativeSystemInfo::CPUType();

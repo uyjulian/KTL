@@ -2,7 +2,7 @@
 KTL (KiriKiri Trivial Library) DLL
 ###############################################################################
 
-| ‹g—¢‹g—¢2/‹g—¢‹g—¢Z ‚Ì‚½‚ß‚ÌŠg’£‹@”\ƒ‰ƒCƒuƒ‰ƒŠ KTL ‚Ì DLL ƒvƒƒWƒFƒNƒg
+| å‰é‡Œå‰é‡Œ2/å‰é‡Œå‰é‡ŒZ ã®ãŸã‚ã®æ‹¡å¼µæ©Ÿèƒ½ãƒ©ã‚¤ãƒ–ãƒ©ãƒª KTL ã® DLL ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆ
 
 *******************************************************************************
 Documentation
@@ -14,14 +14,14 @@ Documentation
 Acknowledgment
 *******************************************************************************
 
-| KTL ‚Í‰º‹LƒT[ƒhƒp[ƒeƒBƒ‰ƒCƒuƒ‰ƒŠ‚ğ—˜—p‚µ‚Ä‚¢‚Ü‚·B
-| —L—p‚Èƒ‰ƒCƒuƒ‰ƒŠ‚ğŒöŠJ‚³‚ê‚Ä‚¢‚é•ûX‚ÉŠ´Ó‚¢‚½‚µ‚Ü‚·B
+| KTL ã¯ä¸‹è¨˜ã‚µãƒ¼ãƒ‰ãƒ‘ãƒ¼ãƒ†ã‚£ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã‚’åˆ©ç”¨ã—ã¦ã„ã¾ã™ã€‚
+| æœ‰ç”¨ãªãƒ©ã‚¤ãƒ–ãƒ©ãƒªã‚’å…¬é–‹ã•ã‚Œã¦ã„ã‚‹æ–¹ã€…ã«æ„Ÿè¬ã„ãŸã—ã¾ã™ã€‚
 | 
 | tp_stub - TVP2 ( T Visual Presenter 2 )A script authoring tool
 * https://sv.kikyou.info/trac/kirikiri/browser/kirikiri2/trunk/kirikiri2/src/plugins/win32
 * Copyright (C) 2000-2009 W.Dee <dee@kikyou.info> and contributors
 | 
-| ncbind - ‹g—¢‹g—¢ƒvƒ‰ƒOƒCƒ“Œü‚¯ƒlƒCƒeƒBƒuƒNƒ‰ƒXƒoƒCƒ“ƒ_
+| ncbind - å‰é‡Œå‰é‡Œãƒ—ãƒ©ã‚°ã‚¤ãƒ³å‘ã‘ãƒã‚¤ãƒ†ã‚£ãƒ–ã‚¯ãƒ©ã‚¹ãƒã‚¤ãƒ³ãƒ€
 * https://sv.kikyou.info/trac/kirikiri/browser/kirikiri2/trunk/kirikiri2/src/plugins/win32/ncbind
 * Author: miahmie
 | 
@@ -78,7 +78,7 @@ Acknowledgment
 3rd Perty Libraries
 *******************************************************************************
 
-| Še DLL ‚Ìƒrƒ‹ƒh‚É‚ÍA‚»‚ê‚¼‚êˆÈ‰º‚Ìƒ‰ƒCƒuƒ‰ƒŠ‚ª•K—v‚Æ‚È‚è‚Ü‚·B
+| å„ DLL ã®ãƒ“ãƒ«ãƒ‰ã«ã¯ã€ãã‚Œãã‚Œä»¥ä¸‹ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªãŒå¿…è¦ã¨ãªã‚Šã¾ã™ã€‚
 | 
 | KTL.Utils
 * tp_stub, ncbind, Sprig, Boost

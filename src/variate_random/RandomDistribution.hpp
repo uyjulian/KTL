@@ -525,7 +525,7 @@ namespace ktl {
 		return variant_type(impl_);
 	}
 	//
-	//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	KTL_INLINE RandomResult NativeRandomDistribution<Impl>::random(iTJSDispatch2* obj) {
@@ -534,14 +534,14 @@ namespace ktl {
 		return boost::apply_visitor(visitor, eng);
 	}
 	//
-	//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+	//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	KTL_INLINE void NativeRandomDistribution<Impl>::reset() {
 		impl_.reset();
 	}
 	//
-	//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	KTL_INLINE tTJSVariant NativeRandomDistribution<Impl>::serialize() const {
@@ -555,7 +555,7 @@ namespace ktl {
 		iss >> impl_;
 	}
 	//
-	//	SUMMARY: Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	KTL_INLINE RandomResult NativeRandomDistribution<Impl>::min() const {
@@ -588,7 +588,7 @@ namespace ktl {
 		instance_.reset();
 	}
 	//
-	//	SUMMARY: “à•”Œnƒƒ\ƒbƒh
+	//	SUMMARY: å†…éƒ¨ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	KTL_INLINE sprig::krkr::tjs::intptr_type RandomDistribution<Impl>::getBase() {
@@ -597,21 +597,21 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	KTL_INLINE tTJSVariant RandomDistribution<Impl>::random(iTJSDispatch2* obj) {
 		return instance_->random(obj);
 	}
 	//
-	//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+	//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	KTL_INLINE void RandomDistribution<Impl>::reset() {
 		instance_->reset();
 	}
 	//
-	//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	KTL_INLINE tTJSVariant RandomDistribution<Impl>::serialize() const {
@@ -622,7 +622,7 @@ namespace ktl {
 		instance_->deserialize(sprig::krkr::tjs::as_c_str(data));
 	}
 	//
-	//	SUMMARY: Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	template<typename Impl>
 	KTL_INLINE tTJSVariant RandomDistribution<Impl>::min() const {

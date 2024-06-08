@@ -40,7 +40,7 @@ namespace ktl {
 		NativeChecksum();
 	public:
 		//
-		//	SUMMARY: ŒvŽZŒnƒƒ\ƒbƒh
+		//	SUMMARY: è¨ˆç®—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static value_type calculateBlock(byte_type const* first, byte_type const* last);
 		static value_type calculateBytes(byte_type const* data, size_type size);
@@ -62,7 +62,7 @@ namespace ktl {
 		static tTJSVariant calculateStorageAsHex(tjs_char const* storage, bool upper = false);
 	public:
 		//
-		//	SUMMARY: ˆ—Œnƒƒ\ƒbƒh
+		//	SUMMARY: å‡¦ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void reset();
 		size_type processBlock(byte_type const* first, byte_type const* last);
@@ -81,7 +81,7 @@ namespace ktl {
 		size_type processStorage(tjs_char const* storage, size_type spos);
 		size_type processStorage(tjs_char const* storage, size_type spos, size_type ssize);
 		//
-		//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		value_type checksum() const;
 		octet_type checksumOctet() const;
@@ -107,7 +107,7 @@ namespace ktl {
 		void TJS_INTF_METHOD Invalidate();
 	public:
 		//
-		//	SUMMARY: ŒvŽZŒnƒƒ\ƒbƒh
+		//	SUMMARY: è¨ˆç®—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTJSVariant calculateBlock(sprig::krkr::tjs::intptr_type first, sprig::krkr::tjs::intptr_type last);
 		static tTJSVariant calculateBytes(sprig::krkr::tjs::intptr_type data, tTVInteger size);
@@ -129,7 +129,7 @@ namespace ktl {
 		static tTJSVariant calculateStorageAsHex(tTJSVariantString const* storage, bool upper = false);
 	public:
 		//
-		//	SUMMARY: ˆ—Œnƒƒ\ƒbƒh
+		//	SUMMARY: å‡¦ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void reset();
 		tTVInteger processBlock(sprig::krkr::tjs::intptr_type first, sprig::krkr::tjs::intptr_type last);
@@ -148,7 +148,7 @@ namespace ktl {
 		tTVInteger processStorage(tTJSVariantString const* storage, tTVInteger spos);
 		tTVInteger processStorage(tTJSVariantString const* storage, tTVInteger spos, tTVInteger ssize);
 		//
-		//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant checksum() const;
 		tTJSVariant checksumOctet() const;

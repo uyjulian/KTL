@@ -24,7 +24,7 @@ namespace ktl {
 #define CHECKSUM_CREATE_NATIVE_CLASS(FUNCTION_NAME, CLASS_NAME, ENTRY_NAME) \
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(FUNCTION_NAME, CLASS_NAME, ENTRY_NAME) \
 	/**/ \
-	/*	SUMMARY: ŒvŽZŒnƒƒ\ƒbƒh */ \
+	/*	SUMMARY: è¨ˆç®—ç³»ãƒ¡ã‚½ãƒƒãƒ‰ */ \
 	/**/ \
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(calculateBlock) \
 	{ \
@@ -252,7 +252,7 @@ namespace ktl {
 	} \
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(calculateStorageAsHex); \
 	/**/ \
-	/*	SUMMARY: ˆ—Œnƒƒ\ƒbƒh */ \
+	/*	SUMMARY: å‡¦ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰ */ \
 	/**/ \
 	SPRIG_KRKR_NATIVE_METHOD_DECL_PARAM_VOID_RES_VOID(CLASS_NAME, reset); \
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(processBlock) \
@@ -381,7 +381,7 @@ namespace ktl {
 	} \
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(processStorage); \
 	/**/ \
-	/*	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh */ \
+	/*	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰ */ \
 	/**/ \
 	SPRIG_KRKR_NATIVE_METHOD_DECL_PARAM_VOID_RES_VARIANT(CLASS_NAME, checksum); \
 	SPRIG_KRKR_NATIVE_METHOD_DECL_PARAM_VOID_RES_VARIANT(CLASS_NAME, checksumOctet); \

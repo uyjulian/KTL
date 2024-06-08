@@ -24,7 +24,7 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME DefinitionClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassDefinition, Definition, Definition)
 	//
-	// ’è‹`Œnƒƒ\ƒbƒh
+	// å®šç¾©ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_STATIC_PROP_DECL_VARIANT_GETONLY(Definition, class_, class_);
 
@@ -37,11 +37,11 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME ClassDefinitionClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassClassDefinition, ClassDefinition, ClassDefinition)
 	//
-	// ’è‹`Œnƒƒ\ƒbƒh
+	// å®šç¾©ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(ClassDefinition, endDefinition, endDefinition);
 	//
-	// ƒNƒ‰ƒX’è‹`Œnƒƒ\ƒbƒh
+	// ã‚¯ãƒ©ã‚¹å®šç¾©ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(name)
 	{

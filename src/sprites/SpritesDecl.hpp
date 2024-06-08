@@ -83,7 +83,7 @@ namespace ktl {
 		void TJS_INTF_METHOD OnContinuousCallback(tjs_uint64 tick);
 	public:
 		//
-		//	SUMMARY: ƒuƒŒƒ“ƒhŒnƒvƒƒpƒeƒB
+		//	SUMMARY: ãƒ–ãƒ¬ãƒ³ãƒ‰ç³»ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£
 		//
 		enum BlendMode {
 			bmDefault = sprite_drawer_type::BLEND_MODE_DEFAULT,
@@ -97,7 +97,7 @@ namespace ktl {
 			bmScreen = sprite_drawer_type::BLEND_MODE_SCREEN
 		};
 		//
-		//	SUMMARY: ƒqƒbƒgƒeƒXƒgŒnƒvƒƒpƒeƒB
+		//	SUMMARY: ãƒ’ãƒƒãƒˆãƒ†ã‚¹ãƒˆç³»ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£
 		//
 		enum HitTestMode {
 			htmNone = sprite_drawer_type::HIT_TEST_MODE_NONE,
@@ -106,14 +106,14 @@ namespace ktl {
 		};
 	public:
 		//
-		//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+		//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		HRESULT initialize(sprig::call_traits<init_params_type>::param_type params);
 		HRESULT reinitialize();
 		bool isInitialized() const;
 		void checkInitialized() const;
 		//
-		//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		string_instance_type saveSpriteBufferByText() const;
 		void loadSpriteBufferByText(tjs_char const* data);
@@ -122,7 +122,7 @@ namespace ktl {
 		binary_instance_type saveSpriteBufferByBinary() const;
 		void loadSpriteBufferByBinary(tTJSVariantOctet const* data);
 		//
-		//	SUMMARY: ƒXƒvƒ‰ƒCƒgƒhƒ[ƒŠÇ—Œnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¹ãƒ—ãƒ©ã‚¤ãƒˆãƒ‰ãƒ­ãƒ¼ãƒ¯ç®¡ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool generateSpriteDrawer(
 			sprig::call_traits<key_type>::param_type key,
@@ -145,7 +145,7 @@ namespace ktl {
 			sprig::call_traits<priority_type>::param_type v
 			);
 		//
-		//	SUMMARY: ƒXƒvƒ‰ƒCƒgƒhƒ[ƒ‘€ìŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¹ãƒ—ãƒ©ã‚¤ãƒˆãƒ‰ãƒ­ãƒ¼ãƒ¯æ“ä½œç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		boost::optional<bool> getVisible(sprig::call_traits<key_type>::param_type key) const;
 		bool setVisible(
@@ -273,14 +273,14 @@ namespace ktl {
 			sprig::call_traits<sprite_drawer_type::hit_threshold_type>::param_type v
 			);
 		//
-		//	SUMMARY: XVŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ›´æ–°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		HRESULT onContinuous();
 		HRESULT update();
 		bool requestUpdate();
 		bool isRequestedUpdate();
 		//
-		//	SUMMARY: •`‰æŒnƒƒ\ƒbƒh
+		//	SUMMARY: æç”»ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		HRESULT draw();
 		HRESULT loadImageFromLayer(
@@ -289,14 +289,14 @@ namespace ktl {
 			);
 		HRESULT clearImage(sprig::call_traits<key_type>::param_type key);
 		//
-		//	SUMMARY: ƒqƒbƒgƒeƒXƒgŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ’ãƒƒãƒˆãƒ†ã‚¹ãƒˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		boost::shared_ptr<key_type> hitTest(sprig::call_traits<coord_type>::param_type point);
 		sprig::krkr::tjs::object_type multiTargetHitTest(sprig::call_traits<coord_type>::param_type point);
 		sprig::krkr::tjs::object_type multiPointHitTest(tjs_int numparams, tTJSVariant** param);
 		sprig::krkr::tjs::object_type multiTPHitTest(tjs_int numparams, tTJSVariant** param);
 		//
-		//	SUMMARY: À•WŒnƒƒ\ƒbƒh
+		//	SUMMARY: åº§æ¨™ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		sprig::krkr::tjs::object_type toLocalCoord(
 			sprig::call_traits<key_type>::param_type key,
@@ -307,7 +307,7 @@ namespace ktl {
 			sprig::call_traits<coord_type>::param_type v
 			) const;
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		color_type getClearColor() const;
 		void setClearColor(sprig::call_traits<color_type>::param_type v);
@@ -318,7 +318,7 @@ namespace ktl {
 		bool getRun() const;
 		void setRun(bool v);
 		//
-		//	SUMMARY: ƒfƒoƒbƒOŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ‡ãƒãƒƒã‚°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void outputValueInfo() const;
 		bool getEnablePerformanceTimer() const;
@@ -343,7 +343,7 @@ namespace ktl {
 		void TJS_INTF_METHOD Invalidate();
 	public:
 		//
-		//	SUMMARY: ƒuƒŒƒ“ƒhŒnƒvƒƒpƒeƒB
+		//	SUMMARY: ãƒ–ãƒ¬ãƒ³ãƒ‰ç³»ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£
 		//
 		static tTVInteger const bmDefault = NativeSprites::bmDefault;
 		static tTVInteger const bmAlpha = NativeSprites::bmAlpha;
@@ -355,19 +355,19 @@ namespace ktl {
 		static tTVInteger const bmDarken = NativeSprites::bmDarken;
 		static tTVInteger const bmScreen = NativeSprites::bmScreen;
 		//
-		//	SUMMARY: ƒqƒbƒgƒeƒXƒgŒnƒvƒƒpƒeƒB
+		//	SUMMARY: ãƒ’ãƒƒãƒˆãƒ†ã‚¹ãƒˆç³»ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£
 		//
 		static tTVInteger const htmNone = NativeSprites::htmNone;
 		static tTVInteger const htmRect = NativeSprites::htmRect;
 		static tTVInteger const htmColor = NativeSprites::htmColor;
 		//
-		//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+		//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool initialize(tTJSVariant const* params);
 		bool reinitialize();
 		bool isInitialized() const;
 		//
-		//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant saveSpriteBufferByText() const;
 		void loadSpriteBufferByText(tTJSVariantString const* data);
@@ -376,7 +376,7 @@ namespace ktl {
 		tTJSVariant saveSpriteBufferByBinary() const;
 		void loadSpriteBufferByBinary(tTJSVariantOctet const* data);
 		//
-		//	SUMMARY: ƒXƒvƒ‰ƒCƒgƒhƒ[ƒŠÇ—Œnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¹ãƒ—ãƒ©ã‚¤ãƒˆãƒ‰ãƒ­ãƒ¼ãƒ¯ç®¡ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool generateSpriteDrawer(
 			tTJSString const& key,
@@ -390,7 +390,7 @@ namespace ktl {
 		boost::optional<tTVReal> getPriority(tTJSString const& key) const;
 		bool setPriority(tTJSString const& key, tTVReal v);
 		//
-		//	SUMMARY: ƒXƒvƒ‰ƒCƒgƒhƒ[ƒ‘€ìŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¹ãƒ—ãƒ©ã‚¤ãƒˆãƒ‰ãƒ­ãƒ¼ãƒ¯æ“ä½œç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		boost::optional<tTVInteger> getVisible(tTJSString const& key) const;
 		bool setVisible(tTJSString const& key, tTVInteger v);
@@ -438,7 +438,7 @@ namespace ktl {
 		boost::optional<tTVInteger> getHitThreshold(tTJSString const& key) const;
 		bool setHitThreshold(tTJSString const& key, tTVInteger v);
 		//
-		//	SUMMARY: Šg’£ƒXƒvƒ‰ƒCƒgƒhƒ[ƒ‘€ìŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ‹¡å¼µã‚¹ãƒ—ãƒ©ã‚¤ãƒˆãƒ‰ãƒ­ãƒ¼ãƒ¯æ“ä½œç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool setScalingXY(tTJSString const& key, tTVReal v);
 		bool setScalingSize(tTJSString const& key, tTVInteger v1, tTVInteger v2);
@@ -472,32 +472,32 @@ namespace ktl {
 		boost::optional<tTVReal> getRotationByDegree(tTJSString const& key) const;
 		bool setRotationByDegree(tTJSString const& key, tTVReal v);
 		//
-		//	SUMMARY: XVŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ›´æ–°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool onContinuous();
 		bool update();
 		bool requestUpdate();
 		bool isRequestedUpdate();
 		//
-		//	SUMMARY: •`‰æŒnƒƒ\ƒbƒh
+		//	SUMMARY: æç”»ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool draw();
 		bool loadImageFromLayer(tTJSString const& key, tTJSVariant const* v);
 		bool clearImage(tTJSString const& key);
 		//
-		//	SUMMARY: ƒqƒbƒgƒeƒXƒgŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ’ãƒƒãƒˆãƒ†ã‚¹ãƒˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		boost::shared_ptr<tTJSString> hitTest(tTVInteger v1, tTVInteger v2);
 		sprig::krkr::tjs::object_type multiTargetHitTest(tTVInteger v1, tTVInteger v2);
 		sprig::krkr::tjs::object_type multiPointHitTest(tjs_int numparams, tTJSVariant** param);
 		sprig::krkr::tjs::object_type multiTPHitTest(tjs_int numparams, tTJSVariant** param);
 		//
-		//	SUMMARY: À•WŒnƒƒ\ƒbƒh
+		//	SUMMARY: åº§æ¨™ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		sprig::krkr::tjs::object_type toLocalCoord(tTJSString const& key, tTVInteger v1, tTVInteger v2) const;
 		sprig::krkr::tjs::object_type toGlobalCoord(tTJSString const& key, tTVInteger v1, tTVInteger v2) const;
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTVInteger getClearColor() const;
 		void setClearColor(tTVInteger v);
@@ -508,7 +508,7 @@ namespace ktl {
 		bool getRun() const;
 		void setRun(bool v);
 		//
-		//	SUMMARY: ƒfƒoƒbƒOŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ‡ãƒãƒƒã‚°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void outputValueInfo() const;
 		bool getEnablePerformanceTimer() const;
@@ -548,7 +548,7 @@ namespace sprig {
 }	// namespace sprig
 
 //
-//	COMMENT: ‹ïÛƒNƒ‰ƒX‚Ì“o˜^
+//	COMMENT: å…·è±¡ã‚¯ãƒ©ã‚¹ã®ç™»éŒ²
 //
 BOOST_CLASS_EXPORT(ktl::NativeSprites::sprite_drawer_type);
 BOOST_CLASS_EXPORT(ktl::NativeSprites::sprite_drawer_type::sprite_drawer_filter_type);

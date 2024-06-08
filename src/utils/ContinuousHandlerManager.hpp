@@ -51,7 +51,7 @@ namespace ktl {
 		}
 	}
 	//
-	//	SUMMARY: ƒnƒ“ƒhƒ‰ŠÇ—Œnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒãƒ³ãƒ‰ãƒ©ç®¡ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativeContinuousHandlerManager::insert(
 		sprig::call_traits<key_type>::param_type key,
@@ -62,7 +62,7 @@ namespace ktl {
 		if (exist(key)) {
 			KTL_WARNING(
 				KTL_WARNING_SECTION,
-				SPRIG_KRKR_TJS_W("Šù‚É“o˜^‚³‚ê‚½ƒnƒ“ƒhƒ‰‚ğã‘‚«‚µ‚Ü‚·:") + key
+				SPRIG_KRKR_TJS_W("æ—¢ã«ç™»éŒ²ã•ã‚ŒãŸãƒãƒ³ãƒ‰ãƒ©ã‚’ä¸Šæ›¸ãã—ã¾ã™:") + key
 				);
 		}
 		tTJSVariantClosure const& obj = v->AsObjectClosureNoAddRef();
@@ -124,7 +124,7 @@ namespace ktl {
 		return *i;
 	}
 	//
-	//	SUMMARY: o—ÍŒnƒƒ\ƒbƒh
+	//	SUMMARY: å‡ºåŠ›ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void NativeContinuousHandlerManager::beginPerformanceTimer() {
 		if (!enable_performance_timer_) {
@@ -168,7 +168,7 @@ namespace ktl {
 		}
 	}
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativeContinuousHandlerManager::getRun() const {
 		return run_;
@@ -182,7 +182,7 @@ namespace ktl {
 		run_ = v;
 	}
 	//
-	//	SUMMARY: ƒfƒoƒbƒOŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ‡ãƒãƒƒã‚°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativeContinuousHandlerManager::getEnablePerformanceTimer() const {
 		return enable_performance_timer_;
@@ -210,7 +210,7 @@ namespace ktl {
 		instance_.reset();
 	}
 	//
-	//	SUMMARY: ƒnƒ“ƒhƒ‰ŠÇ—Œnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒãƒ³ãƒ‰ãƒ©ç®¡ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool ContinuousHandlerManager::insert(
 		tTJSString const& key,
@@ -247,7 +247,7 @@ namespace ktl {
 		return result;
 	}
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool ContinuousHandlerManager::getRun() const {
 		return instance_->getRun();
@@ -256,7 +256,7 @@ namespace ktl {
 		instance_->setRun(v);
 	}
 	//
-	//	SUMMARY: ƒfƒoƒbƒOŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ‡ãƒãƒƒã‚°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool ContinuousHandlerManager::getEnablePerformanceTimer() const {
 		return instance_->getEnablePerformanceTimer();

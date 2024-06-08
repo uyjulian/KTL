@@ -26,7 +26,7 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME AcceptorClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassAcceptor, Acceptor, Acceptor)
 	//
-	//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+	//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(reset)
 	{
@@ -38,7 +38,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(reset);
 	//
-	//	SUMMARY: §ŒäŒnƒƒ\ƒbƒh
+	//	SUMMARY: åˆ¶å¾¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(cancel)
 	{
@@ -60,7 +60,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(close);
 	//
-	//	SUMMARY: Ú‘±‘Ò‚¿Œnƒƒ\ƒbƒh
+	//	SUMMARY: æŽ¥ç¶šå¾…ã¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(monitor)
 	{
@@ -97,7 +97,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(monitorSSL);
 	//
-	//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(popAccepted)
 	{
@@ -109,12 +109,12 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(popAccepted);
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Acceptor, isProcessing, isProcessing);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(Acceptor, acceptedCount, acceptedCount);
 	//
-	//	SUMMARY: ƒR[ƒ‹ƒoƒbƒNŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT(Acceptor, onFinished, getOnFinished, setOnFinished);
 

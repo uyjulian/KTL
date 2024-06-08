@@ -46,7 +46,7 @@ namespace ktl {
 		impl_->init_control(control_obj);
 	}
 	//
-	//	SUMMARY: §ŒäŒnƒƒ\ƒbƒh
+	//	SUMMARY: åˆ¶å¾¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativeThreadTask::start(tTJSVariantClosure const& closure) {
 		return impl_->start(closure);
@@ -55,7 +55,7 @@ namespace ktl {
 		return impl_->cancel();
 	}
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant NativeThreadTask::result() const {
 		return impl_->result();
@@ -75,7 +75,7 @@ namespace ktl {
 		impl_ = impl;
 	}
 	//
-	//	SUMMARY: §ŒäŒnƒƒ\ƒbƒh
+	//	SUMMARY: åˆ¶å¾¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void NativeThreadControl::yield() {
 		impl_->yield();
@@ -84,7 +84,7 @@ namespace ktl {
 		impl_->sleep(milliseconds);
 	}
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativeThreadControl::cancelled() const {
 		return impl_->cancelled();
@@ -109,7 +109,7 @@ namespace ktl {
 		instance_.reset();
 	}
 	//
-	//	SUMMARY: §ŒäŒnƒƒ\ƒbƒh
+	//	SUMMARY: åˆ¶å¾¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool ThreadTask::start(tTJSVariantClosure const& closure) {
 		return instance_->start(closure);
@@ -118,7 +118,7 @@ namespace ktl {
 		return instance_->cancel();
 	}
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant ThreadTask::result() const {
 		return instance_->result();
@@ -152,13 +152,13 @@ namespace ktl {
 		instance_->initImpl(impl);
 	}
 	//
-	//	SUMMARY: “à•”Œnƒƒ\ƒbƒh
+	//	SUMMARY: å†…éƒ¨ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE sprig::krkr::tjs::intptr_type ThreadControl::getInstance() {
 		return reinterpret_cast<sprig::krkr::tjs::intptr_type>(this);
 	}
 	//
-	//	SUMMARY: §ŒäŒnƒƒ\ƒbƒh
+	//	SUMMARY: åˆ¶å¾¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void ThreadControl::yield() {
 		instance_->yield();
@@ -167,7 +167,7 @@ namespace ktl {
 		instance_->sleep(milliseconds);
 	}
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool ThreadControl::cancelled() const {
 		return instance_->cancelled();

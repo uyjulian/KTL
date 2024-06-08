@@ -84,7 +84,7 @@ namespace ktl {
 			if (TJS_FAILED(error) && error != TJS_E_MEMBERNOTFOUND) {
 				KTL_ERROR(
 					KTL_WARNING_SECTION,
-					SPRIG_KRKR_TJS_W("stack‚Ìæ“¾‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½"),
+					SPRIG_KRKR_TJS_W("stackã®å–å¾—ã§ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ"),
 					sprig::krkr::tvp_error
 					);
 			}
@@ -109,7 +109,7 @@ namespace ktl {
 			if (TJS_FAILED(error) && error != TJS_E_MEMBERNOTFOUND) {
 				KTL_ERROR(
 					KTL_WARNING_SECTION,
-					SPRIG_KRKR_TJS_W("stack‚Ìæ“¾‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½"),
+					SPRIG_KRKR_TJS_W("stackã®å–å¾—ã§ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ"),
 					sprig::krkr::tvp_error
 					);
 			}
@@ -168,7 +168,7 @@ namespace ktl {
 				if (TJS_FAILED(error) && error != TJS_E_MEMBERNOTFOUND) {
 					KTL_ERROR(
 						KTL_WARNING_SECTION,
-						SPRIG_KRKR_TJS_W("version‚Ìæ“¾‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½"),
+						SPRIG_KRKR_TJS_W("versionã®å–å¾—ã§ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ"),
 						sprig::krkr::tvp_error
 						);
 				}
@@ -180,7 +180,7 @@ namespace ktl {
 				if (TJS_FAILED(error) && error != TJS_E_MEMBERNOTFOUND) {
 					KTL_ERROR(
 						KTL_WARNING_SECTION,
-						SPRIG_KRKR_TJS_W("identity‚Ìæ“¾‚ÅƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½"),
+						SPRIG_KRKR_TJS_W("identityã®å–å¾—ã§ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ"),
 						sprig::krkr::tvp_error
 						);
 				}
@@ -441,7 +441,7 @@ namespace ktl {
 				tTJSVariantClosure const& closure = archive_.AsObjectClosureNoAddRef();
 				stack_ = getSerializationStackInstance(closure);
 				if (!stack_) {
-					// COMMENT: ƒXƒ^ƒbƒNƒIƒuƒWƒFƒNƒg‚ğæ“¾‚Å‚«‚È‚¢ê‡
+					// COMMENT: ã‚¹ã‚¿ãƒƒã‚¯ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å–å¾—ã§ããªã„å ´åˆ
 					stack_instance_ = boost::make_shared<ScriptSerializationStack>(
 						closure.Object,
 						closure.ObjThis

@@ -24,11 +24,11 @@ namespace ktl {
 #define RANDOM_DISTRIBUTION_CREATE_NATIVE_CLASS(FUNCTION_NAME, CLASS_NAME, ENTRY_NAME) \
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(FUNCTION_NAME, CLASS_NAME, ENTRY_NAME) \
 	/**/ \
-	/*	SUMMARY: “à•”Œnƒƒ\ƒbƒh */ \
+	/*	SUMMARY: å†…éƒ¨ç³»ãƒ¡ã‚½ãƒƒãƒ‰ */ \
 	/**/ \
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(CLASS_NAME, base, getBase); \
 	/**/ \
-	/*	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh */ \
+	/*	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰ */ \
 	/**/ \
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(random) \
 	{ \
@@ -42,11 +42,11 @@ namespace ktl {
 	} \
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(random); \
 	/**/ \
-	/*	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh */ \
+	/*	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰ */ \
 	/**/ \
 	SPRIG_KRKR_NATIVE_METHOD_DECL_PARAM_VOID_RES_VOID(CLASS_NAME, reset); \
 	/**/ \
-	/*	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh */ \
+	/*	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰ */ \
 	/**/ \
 	SPRIG_KRKR_NATIVE_METHOD_DECL_PARAM_VOID_RES_VARIANT(CLASS_NAME, serialize); \
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(deserialize) \
@@ -59,7 +59,7 @@ namespace ktl {
 	} \
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(deserialize); \
 	/**/ \
-	/*	SUMMARY: Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh */ \
+	/*	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰ */ \
 	/**/ \
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(CLASS_NAME, min, min); \
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(CLASS_NAME, max, max); \

@@ -100,7 +100,7 @@ namespace ktl {
 		NativeOdeint();
 	public:
 		//
-		//	SUMMARY: Ï•ªŒnƒƒ\ƒbƒh
+		//	SUMMARY: ç©åˆ†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static std::size_t integrate(
 			tTJSVariantClosure const& system, tTJSVariantClosure const& start_state, time_type start_time, time_type end_time, time_type dt
@@ -129,7 +129,7 @@ namespace ktl {
 		void TJS_INTF_METHOD Invalidate();
 	public:
 		//
-		//	SUMMARY: Ï•ªŒnƒƒ\ƒbƒh
+		//	SUMMARY: ç©åˆ†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static tTVInteger integrate(
 			tTJSVariantClosure const& system, tTJSVariantClosure const& start_state, tTVReal start_time, tTVReal end_time, tTVReal dt

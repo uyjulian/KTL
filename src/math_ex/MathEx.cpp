@@ -24,7 +24,7 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME MathExClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassMathEx, MathEx, MathEx)
 	//
-	//	SUMMARY: ”’lŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ•°å€¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(bernoulliB2n)
 	{
@@ -54,7 +54,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(prime);
 	//
-	//	SUMMARY: ŽZpŒnƒƒ\ƒbƒh
+	//	SUMMARY: ç®—è¡“ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(abs)
 	{
@@ -120,7 +120,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(hypot);
 	//
-	//	SUMMARY: •‚“®¬”“_”Œnƒƒ\ƒbƒh
+	//	SUMMARY: æµ®å‹•å°æ•°ç‚¹æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(round)
 	{
@@ -177,7 +177,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(frexp);
 	//
-	//	SUMMARY: •‚“®¬”“_””äŠrŒnƒƒ\ƒbƒh
+	//	SUMMARY: æµ®å‹•å°æ•°ç‚¹æ•°æ¯”è¼ƒç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(equals)
 	{
@@ -243,7 +243,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(compare);
 	//
-	//	SUMMARY: ŽOŠpŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ä¸‰è§’é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(sin)
 	{
@@ -309,7 +309,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(atan2);
 	//
-	//	SUMMARY: ‘o‹ÈüŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: åŒæ›²ç·šé–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(sinh)
 	{
@@ -366,7 +366,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(atanh);
 	//
-	//	SUMMARY: Žw”‘Î”Œnƒƒ\ƒbƒh
+	//	SUMMARY: æŒ‡æ•°å¯¾æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(pow)
 	{
@@ -495,7 +495,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(log1P);
 	//
-	//	SUMMARY: ƒKƒ“ƒ}ŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¬ãƒ³ãƒžé–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(tgamma)
 	{
@@ -649,7 +649,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(gammaPDerivative);
 	//
-	//	SUMMARY: ƒx[ƒ^ŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ™ãƒ¼ã‚¿é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(beta)
 	{
@@ -758,7 +758,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(ibetaDerivative);
 	//
-	//	SUMMARY:Œë·ŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY:èª¤å·®é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(erf)
 	{
@@ -797,7 +797,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(erfcInv);
 	//
-	//	SUMMARY:ƒ‹ƒWƒƒƒ“ƒhƒ‹‘½€Ž®Œnƒƒ\ƒbƒh
+	//	SUMMARY:ãƒ«ã‚¸ãƒ£ãƒ³ãƒ‰ãƒ«å¤šé …å¼ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(legendreP)
 	{
@@ -918,7 +918,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(sphericalHarmonicI);
 	//
-	//	SUMMARY: ƒxƒbƒZƒ‹ŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ™ãƒƒã‚»ãƒ«é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(cylBesselJ)
 	{
@@ -1047,7 +1047,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(sphNeumannPrime);
 	//
-	//	SUMMARY: ƒnƒ“ƒPƒ‹ŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒãƒ³ã‚±ãƒ«é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(cylHankel1)
 	{
@@ -1086,7 +1086,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(sphHankel2);
 	//
-	//	SUMMARY: ƒGƒAƒŠ[ŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¨ã‚¢ãƒªãƒ¼é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(airyAi)
 	{
@@ -1125,7 +1125,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(airyBiPrime);
 	//
-	//	SUMMARY: ƒ[[ƒ^ŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¼ãƒ¼ã‚¿é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(zeta)
 	{
@@ -1137,7 +1137,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(zeta);
 	//
-	//	SUMMARY: ƒVƒ“ƒNŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒ³ã‚¯é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(sincPi)
 	{
@@ -1158,7 +1158,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(sinhcPi);
 	//
-	//	SUMMARY: ƒI[ƒEƒFƒ“‚ÌTŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚ªãƒ¼ã‚¦ã‚§ãƒ³ã®Té–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(owensT)
 	{
@@ -1170,7 +1170,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(owensT);
 	//
-	//	SUMMARY: ‘È‰~Ï•ªŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ¥•å††ç©åˆ†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(ellintRf)
 	{
@@ -1291,7 +1291,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(heumanLambda);
 	//
-	//	SUMMARY: ƒ„ƒRƒr‚Ì‘È‰~ŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ¤ã‚³ãƒ“ã®æ¥•å††é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(jacobiElliptic)
 	{
@@ -1412,7 +1412,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(jacobiSn);
 	//
-	//	SUMMARY: Žw”Ï•ªŒnƒƒ\ƒbƒh
+	//	SUMMARY: æŒ‡æ•°ç©åˆ†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(expint)
 	{
@@ -1431,7 +1431,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(expint);
 	//
-	//	SUMMARY: ŠKæŒnƒƒ\ƒbƒh
+	//	SUMMARY: éšŽä¹—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(factorial)
 	{
@@ -1479,7 +1479,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(binomialCoefficient);
 	//
-	//	SUMMARY: Œö”{Œö–ñŒnƒƒ\ƒbƒh
+	//	SUMMARY: å…¬å€å…¬ç´„ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(gcd)
 	{
@@ -1500,7 +1500,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(lcm);
 	//
-	//	SUMMARY: ”äŠrŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ¯”è¼ƒç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(min)
 	{
@@ -1521,7 +1521,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(max);
 	//
-	//	SUMMARY: ƒ‰ƒ“ƒ_ƒ€Œnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ©ãƒ³ãƒ€ãƒ ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(random)
 	{
@@ -1540,7 +1540,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(randomDevice);
 	//
-	//	SUMMARY: ’è”ŒnƒvƒƒpƒeƒB
+	//	SUMMARY: å®šæ•°ç³»ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£
 	//
 	SPRIG_KRKR_NATIVE_STATIC_PROP_DECL_VARIANT_GETONLY(MathEx, PI, pi);
 	SPRIG_KRKR_NATIVE_STATIC_PROP_DECL_VARIANT_GETONLY(MathEx, E, e);

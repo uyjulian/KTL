@@ -38,7 +38,7 @@ namespace ktl {
 		void TJS_INTF_METHOD OnContinuousCallback(tjs_uint64 tick);
 	public:
 		//
-		//	SUMMARY: o—ÍŒnƒƒ\ƒbƒh
+		//	SUMMARY: å‡ºåŠ›ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		value_type getTime() const;
 		std::size_t getFPS() const;
@@ -48,7 +48,7 @@ namespace ktl {
 		void resetBeforeTime(value_type const time);
 		void process();
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool getEnable() const;
 		void setEnable(bool v);
@@ -73,7 +73,7 @@ namespace ktl {
 			);
 		void TJS_INTF_METHOD Invalidate();
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool getEnable() const;
 		void setEnable(bool v);

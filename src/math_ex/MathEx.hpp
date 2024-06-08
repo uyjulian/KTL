@@ -95,7 +95,7 @@ namespace ktl {
 	}
 	NativeMathEx::NativeMathEx() {}
 	//
-	//	SUMMARY: ”’lŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ•°å€¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal NativeMathEx::bernoulliB2n(int i) {
 		return boost::math::bernoulli_b2n<tTVReal>(i);
@@ -107,7 +107,7 @@ namespace ktl {
 		return boost::math::prime(n);
 	}
 	//
-	//	SUMMARY: ŽZpŒnƒƒ\ƒbƒh
+	//	SUMMARY: ç®—è¡“ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal NativeMathEx::abs(tTVReal x) {
 		return std::abs(x);
@@ -131,7 +131,7 @@ namespace ktl {
 		return boost::math::hypot(x, y);
 	}
 	//
-	//	SUMMARY: •‚“®¬”“_”Œnƒƒ\ƒbƒh
+	//	SUMMARY: æµ®å‹•å°æ•°ç‚¹æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal NativeMathEx::round(tTVReal x) {
 		return boost::math::round(x);
@@ -168,7 +168,7 @@ namespace ktl {
 		return sprig::krkr::tjs::as_object_closure_variant(obj);
 	}
 	//
-	//	SUMMARY: •‚“®¬”“_””äŠrŒnƒƒ\ƒbƒh
+	//	SUMMARY: æµ®å‹•å°æ•°ç‚¹æ•°æ¯”è¼ƒç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativeMathEx::equals(tTVReal a, tTVReal b) {
 		return boost::geometry::math::equals(a, b);
@@ -197,7 +197,7 @@ namespace ktl {
 			;
 	}
 	//
-	//	SUMMARY: ŽOŠpŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ä¸‰è§’é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal NativeMathEx::sin(tTVReal x) {
 		return std::sin(x);
@@ -221,7 +221,7 @@ namespace ktl {
 		return std::atan2(y, x);
 	};
 	//
-	//	SUMMARY: ‘o‹ÈüŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: åŒæ›²ç·šé–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal NativeMathEx::sinh(tTVReal x) {
 		return std::sinh(x);
@@ -242,7 +242,7 @@ namespace ktl {
 		return boost::math::atanh(x);
 	}
 	//
-	//	SUMMARY: Žw”‘Î”Œnƒƒ\ƒbƒh
+	//	SUMMARY: æŒ‡æ•°å¯¾æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal NativeMathEx::pow(tTVReal base, tTVReal exponent) {
 		return std::pow(base, exponent);
@@ -278,7 +278,7 @@ namespace ktl {
 		return boost::math::log1p(x);
 	}
 	//
-	//	SUMMARY: ƒKƒ“ƒ}ŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¬ãƒ³ãƒžé–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal NativeMathEx::tgamma(tTVReal x) {
 		return boost::math::tgamma(x);
@@ -332,7 +332,7 @@ namespace ktl {
 		return boost::math::gamma_p_derivative(a, x);
 	}
 	//
-	//	SUMMARY: ƒx[ƒ^ŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ™ãƒ¼ã‚¿é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal NativeMathEx::beta(tTVReal a, tTVReal b) {
 		return boost::math::beta(a, b);
@@ -371,7 +371,7 @@ namespace ktl {
 		return boost::math::ibeta_derivative(a, b, x);
 	}
 	//
-	//	SUMMARY:Œë·ŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY:èª¤å·®é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal NativeMathEx::erf(tTVReal x) {
 		return boost::math::erf(x);
@@ -386,7 +386,7 @@ namespace ktl {
 		return boost::math::erfc_inv(p);
 	}
 	//
-	//	SUMMARY:ƒ‹ƒWƒƒƒ“ƒhƒ‹‘½€Ž®Œnƒƒ\ƒbƒh
+	//	SUMMARY:ãƒ«ã‚¸ãƒ£ãƒ³ãƒ‰ãƒ«å¤šé …å¼ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal NativeMathEx::legendreP(int l, tTVReal x) {
 		return boost::math::legendre_p(l, x);
@@ -438,7 +438,7 @@ namespace ktl {
 		return boost::math::spherical_harmonic_i(n, m, theta, phi);
 	}
 	//
-	//	SUMMARY: ƒxƒbƒZƒ‹ŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ™ãƒƒã‚»ãƒ«é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal NativeMathEx::cylBesselJ(tTVReal v, tTVReal x) {
 		return boost::math::cyl_bessel_j(v, x);
@@ -483,7 +483,7 @@ namespace ktl {
 		return boost::math::sph_neumann_prime(v, x);
 	}
 	//
-	//	SUMMARY: ƒnƒ“ƒPƒ‹ŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒãƒ³ã‚±ãƒ«é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE std::complex<tTVReal> NativeMathEx::cylHankel1(tTVReal v, tTVReal x) {
 		return boost::math::cyl_hankel_1(v, x);
@@ -498,7 +498,7 @@ namespace ktl {
 		return boost::math::sph_hankel_2(v, x);
 	}
 	//
-	//	SUMMARY: ƒGƒAƒŠ[ŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¨ã‚¢ãƒªãƒ¼é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal NativeMathEx::airyAi(tTVReal x) {
 		return boost::math::airy_ai(x);
@@ -513,13 +513,13 @@ namespace ktl {
 		return boost::math::airy_bi_prime(x);
 	}
 	//
-	//	SUMMARY: ƒ[[ƒ^ŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¼ãƒ¼ã‚¿é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal NativeMathEx::zeta(tTVReal z) {
 		return boost::math::zeta(z);
 	}
 	//
-	//	SUMMARY: ƒVƒ“ƒNŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒ³ã‚¯é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal NativeMathEx::sincPi(tTVReal x) {
 		return boost::math::sinc_pi(x);
@@ -528,13 +528,13 @@ namespace ktl {
 		return boost::math::sinhc_pi(x);
 	}
 	//
-	//	SUMMARY: ƒI[ƒEƒFƒ“‚ÌTŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚ªãƒ¼ã‚¦ã‚§ãƒ³ã®Té–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal NativeMathEx::owensT(tTVReal h, tTVReal a) {
 		return boost::math::owens_t(h, a);
 	}
 	//
-	//	SUMMARY: ‘È‰~Ï•ªŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ¥•å††ç©åˆ†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal NativeMathEx::ellintRf(tTVReal x, tTVReal y, tTVReal z) {
 		return boost::math::ellint_rf(x, y, z);
@@ -579,7 +579,7 @@ namespace ktl {
 		return boost::math::heuman_lambda(k, phi);
 	}
 	//
-	//	SUMMARY: ƒ„ƒRƒr‚Ì‘È‰~ŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ¤ã‚³ãƒ“ã®æ¥•å††é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE boost::array<tTVReal, 3> NativeMathEx::jacobiElliptic(tTVReal k, tTVReal u) {
 		boost::array<tTVReal, 3> result;
@@ -623,7 +623,7 @@ namespace ktl {
 		return boost::math::jacobi_sn(k, u);
 	}
 	//
-	//	SUMMARY: Žw”Ï•ªŒnƒƒ\ƒbƒh
+	//	SUMMARY: æŒ‡æ•°ç©åˆ†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal NativeMathEx::expint(unsigned n, tTVReal z) {
 		return boost::math::expint(n, z);
@@ -632,7 +632,7 @@ namespace ktl {
 		return boost::math::expint(z);
 	}
 	//
-	//	SUMMARY: ŠKæŒnƒƒ\ƒbƒh
+	//	SUMMARY: éšŽä¹—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal NativeMathEx::factorial(unsigned i) {
 		return boost::math::factorial<tTVReal>(i);
@@ -650,7 +650,7 @@ namespace ktl {
 		return boost::math::binomial_coefficient<tTVReal>(n, k);
 	}
 	//
-	//	SUMMARY: Œö”{Œö–ñŒnƒƒ\ƒbƒh
+	//	SUMMARY: å…¬å€å…¬ç´„ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVInteger NativeMathEx::gcd(tTVInteger a, tTVInteger b) {
 		return boost::math::gcd(a, b);
@@ -659,7 +659,7 @@ namespace ktl {
 		return boost::math::lcm(a, b);
 	}
 	//
-	//	SUMMARY: ”äŠrŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ¯”è¼ƒç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal NativeMathEx::min(tjs_int numparams, tTJSVariant** param) {
 		return **std::min_element(param, param + numparams, RealCompare());
@@ -668,7 +668,7 @@ namespace ktl {
 		return **std::max_element(param, param + numparams, RealCompare());
 	}
 	//
-	//	SUMMARY: ƒ‰ƒ“ƒ_ƒ€Œnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ©ãƒ³ãƒ€ãƒ ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal NativeMathEx::random() {
 		static bool const initialized = seedTime();
@@ -679,7 +679,7 @@ namespace ktl {
 		return tTVReal(random()) / random.max();
 	};
 	//
-	//	SUMMARY: ’è”ŒnƒvƒƒpƒeƒB
+	//	SUMMARY: å®šæ•°ç³»ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£
 	//
 	KTL_INLINE tTVReal NativeMathEx::pi() {
 		return boost::math::constants::pi<tTVReal>();
@@ -725,7 +725,7 @@ namespace ktl {
 		instance_.reset();
 	}
 	//
-	//	SUMMARY: ”’lŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ•°å€¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal MathEx::bernoulliB2n(tTVInteger i) {
 		return NativeMathEx::bernoulliB2n(boost::numeric_cast<int>(i));
@@ -737,7 +737,7 @@ namespace ktl {
 		return NativeMathEx::prime(boost::numeric_cast<unsigned>(n));
 	}
 	//
-	//	SUMMARY: ŽZpŒnƒƒ\ƒbƒh
+	//	SUMMARY: ç®—è¡“ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal MathEx::abs(tTVReal x) {
 		return NativeMathEx::abs(x);
@@ -761,7 +761,7 @@ namespace ktl {
 		return NativeMathEx::hypot(x, y);
 	}
 	//
-	//	SUMMARY: •‚“®¬”“_”Œnƒƒ\ƒbƒh
+	//	SUMMARY: æµ®å‹•å°æ•°ç‚¹æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal MathEx::round(tTVReal x) {
 		return NativeMathEx::round(x);
@@ -782,7 +782,7 @@ namespace ktl {
 		return NativeMathEx::frexp(x);
 	}
 	//
-	//	SUMMARY: •‚“®¬”“_””äŠrŒnƒƒ\ƒbƒh
+	//	SUMMARY: æµ®å‹•å°æ•°ç‚¹æ•°æ¯”è¼ƒç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool MathEx::equals(tTVReal a, tTVReal b) {
 		return NativeMathEx::equals(a, b);
@@ -806,7 +806,7 @@ namespace ktl {
 		return NativeMathEx::compare(a, b);
 	}
 	//
-	//	SUMMARY: ŽOŠpŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ä¸‰è§’é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal MathEx::sin(tTVReal x) {
 		return NativeMathEx::sin(x);
@@ -830,7 +830,7 @@ namespace ktl {
 		return NativeMathEx::atan2(y, x);
 	};
 	//
-	//	SUMMARY: ‘o‹ÈüŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: åŒæ›²ç·šé–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal MathEx::sinh(tTVReal x) {
 		return NativeMathEx::sinh(x);
@@ -851,7 +851,7 @@ namespace ktl {
 		return NativeMathEx::atanh(x);
 	}
 	//
-	//	SUMMARY: Žw”‘Î”Œnƒƒ\ƒbƒh
+	//	SUMMARY: æŒ‡æ•°å¯¾æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal MathEx::pow(tTVReal base, tTVReal exponent) {
 		return NativeMathEx::pow(base, exponent);
@@ -887,7 +887,7 @@ namespace ktl {
 		return NativeMathEx::log1P(x);
 	}
 	//
-	//	SUMMARY: ƒKƒ“ƒ}ŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¬ãƒ³ãƒžé–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal MathEx::tgamma(tTVReal x) {
 		return NativeMathEx::tgamma(x);
@@ -941,7 +941,7 @@ namespace ktl {
 		return NativeMathEx::gammaPDerivative(a, x);
 	}
 	//
-	//	SUMMARY: ƒx[ƒ^ŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ™ãƒ¼ã‚¿é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal MathEx::beta(tTVReal a, tTVReal b) {
 		return NativeMathEx::beta(a, b);
@@ -980,7 +980,7 @@ namespace ktl {
 		return NativeMathEx::betac(a, b, x);
 	}
 	//
-	//	SUMMARY:Œë·ŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY:èª¤å·®é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal MathEx::erf(tTVReal x) {
 		return NativeMathEx::erf(x);
@@ -995,7 +995,7 @@ namespace ktl {
 		return NativeMathEx::erfcInv(p);
 	}
 	//
-	//	SUMMARY:ƒ‹ƒWƒƒƒ“ƒhƒ‹‘½€Ž®Œnƒƒ\ƒbƒh
+	//	SUMMARY:ãƒ«ã‚¸ãƒ£ãƒ³ãƒ‰ãƒ«å¤šé …å¼ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal MathEx::legendreP(tTVInteger l, tTVReal x) {
 		return NativeMathEx::legendreP(boost::numeric_cast<int>(l), x);
@@ -1040,7 +1040,7 @@ namespace ktl {
 		return NativeMathEx::sphericalHarmonicI(boost::numeric_cast<unsigned>(n), boost::numeric_cast<int>(m), theta, phi);
 	}
 	//
-	//	SUMMARY: ƒxƒbƒZƒ‹ŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ™ãƒƒã‚»ãƒ«é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal MathEx::cylBesselJ(tTVReal v, tTVReal x) {
 		return NativeMathEx::cylBesselJ(v, x);
@@ -1085,7 +1085,7 @@ namespace ktl {
 		return NativeMathEx::sphNeumannPrime(boost::numeric_cast<unsigned>(v), x);
 	}
 	//
-	//	SUMMARY: ƒnƒ“ƒPƒ‹ŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒãƒ³ã‚±ãƒ«é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant MathEx::cylHankel1(tTVReal v, tTVReal x) {
 		std::complex<tTVReal> t(NativeMathEx::cylHankel1(v, x));
@@ -1128,7 +1128,7 @@ namespace ktl {
 		return sprig::krkr::tjs::as_object_closure_variant(result);
 	}
 	//
-	//	SUMMARY: ƒGƒAƒŠ[ŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¨ã‚¢ãƒªãƒ¼é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal MathEx::airyAi(tTVReal x) {
 		return NativeMathEx::airyAi(x);
@@ -1143,13 +1143,13 @@ namespace ktl {
 		return NativeMathEx::airyBiPrime(x);
 	}
 	//
-	//	SUMMARY: ƒ[[ƒ^ŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚¼ãƒ¼ã‚¿é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal MathEx::zeta(tTVReal z) {
 		return NativeMathEx::zeta(z);
 	}
 	//
-	//	SUMMARY: ƒVƒ“ƒNŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒ³ã‚¯é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal MathEx::sincPi(tTVReal x) {
 		return NativeMathEx::sincPi(x);
@@ -1158,13 +1158,13 @@ namespace ktl {
 		return NativeMathEx::sinhcPi(x);
 	}
 	//
-	//	SUMMARY: ƒI[ƒEƒFƒ“‚ÌTŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚ªãƒ¼ã‚¦ã‚§ãƒ³ã®Té–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal MathEx::owensT(tTVReal h, tTVReal a) {
 		return NativeMathEx::owensT(h, a);
 	}
 	//
-	//	SUMMARY: ‘È‰~Ï•ªŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ¥•å††ç©åˆ†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal MathEx::ellintRf(tTVReal x, tTVReal y, tTVReal z) {
 		return NativeMathEx::ellintRf(x, y, z);
@@ -1209,7 +1209,7 @@ namespace ktl {
 		return NativeMathEx::heumanLambda(k, phi);
 	}
 	//
-	//	SUMMARY: ƒ„ƒRƒr‚Ì‘È‰~ŠÖ”Œnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ¤ã‚³ãƒ“ã®æ¥•å††é–¢æ•°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant MathEx::jacobiElliptic(tTVReal k, tTVReal u) {
 		boost::array<tTVReal, 3> t(NativeMathEx::jacobiElliptic(k, u));
@@ -1259,7 +1259,7 @@ namespace ktl {
 		return NativeMathEx::jacobiSn(k, u);
 	}
 	//
-	//	SUMMARY: Žw”Ï•ªŒnƒƒ\ƒbƒh
+	//	SUMMARY: æŒ‡æ•°ç©åˆ†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal MathEx::expint(tTVInteger n, tTVReal z) {
 		return NativeMathEx::expint(boost::numeric_cast<unsigned>(n), z);
@@ -1268,7 +1268,7 @@ namespace ktl {
 		return NativeMathEx::expint(z);
 	}
 	//
-	//	SUMMARY: ŠKæŒnƒƒ\ƒbƒh
+	//	SUMMARY: éšŽä¹—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal MathEx::factorial(tTVInteger i) {
 		return NativeMathEx::factorial(boost::numeric_cast<unsigned>(i));
@@ -1286,7 +1286,7 @@ namespace ktl {
 		return NativeMathEx::binomialCoefficient(boost::numeric_cast<unsigned>(n), boost::numeric_cast<unsigned>(k));
 	}
 	//
-	//	SUMMARY: Œö”{Œö–ñŒnƒƒ\ƒbƒh
+	//	SUMMARY: å…¬å€å…¬ç´„ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVInteger MathEx::gcd(tTVInteger a, tTVInteger b) {
 		return NativeMathEx::gcd(a, b);
@@ -1295,7 +1295,7 @@ namespace ktl {
 		return NativeMathEx::lcm(a, b);
 	}
 	//
-	//	SUMMARY: ”äŠrŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ¯”è¼ƒç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal MathEx::min(tjs_int numparams, tTJSVariant** param) {
 		return NativeMathEx::min(numparams, param);
@@ -1304,7 +1304,7 @@ namespace ktl {
 		return NativeMathEx::max(numparams, param);
 	}
 	//
-	//	SUMMARY: ƒ‰ƒ“ƒ_ƒ€Œnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ©ãƒ³ãƒ€ãƒ ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVReal MathEx::random() {
 		return NativeMathEx::random();
@@ -1313,7 +1313,7 @@ namespace ktl {
 		return NativeMathEx::randomDevice();
 	};
 	//
-	//	SUMMARY: ’è”ŒnƒvƒƒpƒeƒB
+	//	SUMMARY: å®šæ•°ç³»ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£
 	//
 	KTL_INLINE tTVReal MathEx::pi() {
 		return NativeMathEx::pi();

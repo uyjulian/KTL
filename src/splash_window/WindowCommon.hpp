@@ -95,7 +95,7 @@ namespace ktl {
 				if (!::UpdateWindow(window_handle)) {
 					KTL_ERROR(
 						KTL_ERROR_SECTION,
-						SPRIG_KRKR_TJS_W("ƒEƒCƒ“ƒhƒE‚ÌÄ•`‰æ‚É¸”s‚µ‚Ü‚µ‚½"),
+						SPRIG_KRKR_TJS_W("ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã®å†æç”»ã«å¤±æ•—ã—ã¾ã—ãŸ"),
 						sprig::krkr::win32_error
 						);
 					return;
@@ -115,7 +115,7 @@ namespace ktl {
 			if (SPRIG_PNG_SETJMP(reader.png())) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("libpng‚Å“à•”ƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½"),
+					SPRIG_KRKR_TJS_W("libpngã§å†…éƒ¨ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ"),
 					sprig::krkr::lib_error
 					);
 				return false;
@@ -138,7 +138,7 @@ namespace ktl {
 				if (!loadImagesFromPNG(bits, bitmap_info, pixels_order, data, size)) {
 					KTL_ERROR(
 						KTL_ERROR_SECTION,
-						SPRIG_KRKR_TJS_W("PNG‚Ìƒ[ƒh‚É¸”s‚µ‚Ü‚µ‚½"),
+						SPRIG_KRKR_TJS_W("PNGã®ãƒ­ãƒ¼ãƒ‰ã«å¤±æ•—ã—ã¾ã—ãŸ"),
 						sprig::krkr::internal_error
 						);
 					return false;
@@ -146,7 +146,7 @@ namespace ktl {
 			} else {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("”ñ‘Î‰‚Ì‰æ‘œŒ`®‚Å‚·"),
+					SPRIG_KRKR_TJS_W("éå¯¾å¿œã®ç”»åƒå½¢å¼ã§ã™"),
 					sprig::krkr::internal_error
 					);
 				return false;
@@ -189,18 +189,18 @@ namespace ktl {
 			, visible_(false)
 			, topMost_(false)
 		{
-			window_class_.cbSize = sizeof(WNDCLASSEX);				// \‘¢‘Ì‚ÌƒTƒCƒY
-			window_class_.style = CS_VREDRAW | CS_HREDRAW;			// ƒNƒ‰ƒXƒXƒ^ƒCƒ‹
-			window_class_.lpfnWndProc = 0;							// ƒEƒBƒ“ƒhƒEƒvƒƒV[ƒWƒƒ
-			window_class_.cbClsExtra = 0;							// •â‘«ƒƒ‚ƒŠƒuƒƒbƒN‚ÌƒTƒCƒY
-			window_class_.cbWndExtra = 0;							// •â‘«ƒƒ‚ƒŠƒuƒƒbƒN‚ÌƒTƒCƒY
-			window_class_.hInstance = ::GetModuleHandle(0);			// ƒCƒ“ƒXƒ^ƒ“ƒX
-			window_class_.hIcon = ::LoadIcon(0, IDI_APPLICATION);	// ƒAƒCƒRƒ“
-			window_class_.hCursor = ::LoadCursor(0, IDC_ARROW);		// ƒJ[ƒ\ƒ‹
-			window_class_.hbrBackground = (HBRUSH)COLOR_WINDOW + 1;	// ”wŒiF
-			window_class_.lpszMenuName = 0;							// ƒƒjƒ…[–¼
-			window_class_.lpszClassName = 0;						// ƒNƒ‰ƒX–¼
-			window_class_.hIconSm = 0;								// ¬‚³‚¢ƒAƒCƒRƒ“
+			window_class_.cbSize = sizeof(WNDCLASSEX);				// æ§‹é€ ä½“ã®ã‚µã‚¤ã‚º
+			window_class_.style = CS_VREDRAW | CS_HREDRAW;			// ã‚¯ãƒ©ã‚¹ã‚¹ã‚¿ã‚¤ãƒ«
+			window_class_.lpfnWndProc = 0;							// ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ãƒ—ãƒ­ã‚·ãƒ¼ã‚¸ãƒ£
+			window_class_.cbClsExtra = 0;							// è£œè¶³ãƒ¡ãƒ¢ãƒªãƒ–ãƒ­ãƒƒã‚¯ã®ã‚µã‚¤ã‚º
+			window_class_.cbWndExtra = 0;							// è£œè¶³ãƒ¡ãƒ¢ãƒªãƒ–ãƒ­ãƒƒã‚¯ã®ã‚µã‚¤ã‚º
+			window_class_.hInstance = ::GetModuleHandle(0);			// ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹
+			window_class_.hIcon = ::LoadIcon(0, IDI_APPLICATION);	// ã‚¢ã‚¤ã‚³ãƒ³
+			window_class_.hCursor = ::LoadCursor(0, IDC_ARROW);		// ã‚«ãƒ¼ã‚½ãƒ«
+			window_class_.hbrBackground = (HBRUSH)COLOR_WINDOW + 1;	// èƒŒæ™¯è‰²
+			window_class_.lpszMenuName = 0;							// ãƒ¡ãƒ‹ãƒ¥ãƒ¼å
+			window_class_.lpszClassName = 0;						// ã‚¯ãƒ©ã‚¹å
+			window_class_.hIconSm = 0;								// å°ã•ã„ã‚¢ã‚¤ã‚³ãƒ³
 			{
 				BITMAPINFOHEADER& header = bitmap_info_.bmiHeader;
 				header.biSize = sizeof(BITMAPINFOHEADER);
@@ -225,7 +225,7 @@ namespace ktl {
 				if (!::DestroyWindow(window_handle_)) {
 					KTL_ERROR_NOTHROW(
 						KTL_ERROR_SECTION,
-						SPRIG_KRKR_TJS_W("ƒEƒCƒ“ƒhƒE‚Ì”jŠü‚É¸”s‚µ‚Ü‚µ‚½")
+						SPRIG_KRKR_TJS_W("ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã®ç ´æ£„ã«å¤±æ•—ã—ã¾ã—ãŸ")
 						);
 				}
 				window_handle_ = 0;
@@ -234,7 +234,7 @@ namespace ktl {
 				if (!::UnregisterClass(reinterpret_cast<LPCTSTR>(MAKELONG(atom_, 0)), 0)) {
 					KTL_ERROR_NOTHROW(
 						KTL_ERROR_SECTION,
-						SPRIG_KRKR_TJS_W("ƒEƒCƒ“ƒhƒEƒNƒ‰ƒX‚Ì“o˜^‰ğœ‚É¸”s‚µ‚Ü‚µ‚½")
+						SPRIG_KRKR_TJS_W("ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã‚¯ãƒ©ã‚¹ã®ç™»éŒ²è§£é™¤ã«å¤±æ•—ã—ã¾ã—ãŸ")
 						);
 				}
 				atom_ = 0;
@@ -252,7 +252,7 @@ namespace ktl {
 			if (window_handle_) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("Šù‚É‰Šú‰»‚³‚ê‚Ä‚¢‚Ü‚·"),
+					SPRIG_KRKR_TJS_W("æ—¢ã«åˆæœŸåŒ–ã•ã‚Œã¦ã„ã¾ã™"),
 					sprig::krkr::internal_error
 					);
 				return;
@@ -274,29 +274,29 @@ namespace ktl {
 			if (!(atom_ = ::RegisterClassEx(&window_class_))) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("ƒEƒCƒ“ƒhƒEƒNƒ‰ƒX‚Ì“o˜^‚É¸”s‚µ‚Ü‚µ‚½"),
+					SPRIG_KRKR_TJS_W("ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã‚¯ãƒ©ã‚¹ã®ç™»éŒ²ã«å¤±æ•—ã—ã¾ã—ãŸ"),
 					sprig::krkr::win32_error
 					);
 				return;
 			}
 			window_handle_ = ::CreateWindowEx(
-				ex_style,										// Šg’£ƒEƒBƒ“ƒhƒEƒXƒ^ƒCƒ‹
-				reinterpret_cast<LPCTSTR>(MAKELONG(atom_, 0)),	// ƒNƒ‰ƒX–¼
-				window_class_.lpszClassName,					// ƒEƒBƒ“ƒhƒEƒ^ƒCƒgƒ‹
-				WS_POPUP,										// ƒEƒBƒ“ƒhƒEƒXƒ^ƒCƒ‹
-				x,												// ƒEƒBƒ“ƒhƒEˆÊ’u
-				y,												// ƒEƒBƒ“ƒhƒEˆÊ’u
-				width,											// ƒEƒBƒ“ƒhƒEƒTƒCƒY
-				height,											// ƒEƒBƒ“ƒhƒEƒTƒCƒY
-				0,												// eƒEƒBƒ“ƒhƒE
-				0,												// ƒƒjƒ…[
-				window_class_.hInstance,						// ƒCƒ“ƒXƒ^ƒ“ƒX
-				0												// ƒEƒBƒ“ƒhƒEì¬ƒf[ƒ^‚ÌƒAƒhƒŒƒX
+				ex_style,										// æ‹¡å¼µã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚¹ã‚¿ã‚¤ãƒ«
+				reinterpret_cast<LPCTSTR>(MAKELONG(atom_, 0)),	// ã‚¯ãƒ©ã‚¹å
+				window_class_.lpszClassName,					// ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚¿ã‚¤ãƒˆãƒ«
+				WS_POPUP,										// ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚¹ã‚¿ã‚¤ãƒ«
+				x,												// ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ä½ç½®
+				y,												// ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ä½ç½®
+				width,											// ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚µã‚¤ã‚º
+				height,											// ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚µã‚¤ã‚º
+				0,												// è¦ªã‚¦ã‚£ãƒ³ãƒ‰ã‚¦
+				0,												// ãƒ¡ãƒ‹ãƒ¥ãƒ¼
+				window_class_.hInstance,						// ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹
+				0												// ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ä½œæˆãƒ‡ãƒ¼ã‚¿ã®ã‚¢ãƒ‰ãƒ¬ã‚¹
 				);
 			if (!window_handle_) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("ƒEƒCƒ“ƒhƒE‚Ìì¬‚É¸”s‚µ‚Ü‚µ‚½"),
+					SPRIG_KRKR_TJS_W("ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã®ä½œæˆã«å¤±æ•—ã—ã¾ã—ãŸ"),
 					sprig::krkr::win32_error
 					);
 				return;
@@ -342,7 +342,7 @@ namespace ktl {
 				{
 					KTL_ERROR(
 						KTL_ERROR_SECTION,
-						SPRIG_KRKR_TJS_W("ƒEƒCƒ“ƒhƒE‚ÌZƒI[ƒ_[•ÏX‚É¸”s‚µ‚Ü‚µ‚½"),
+						SPRIG_KRKR_TJS_W("ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã®Zã‚ªãƒ¼ãƒ€ãƒ¼å¤‰æ›´ã«å¤±æ•—ã—ã¾ã—ãŸ"),
 						sprig::krkr::internal_error
 						);
 					return;
@@ -413,7 +413,7 @@ namespace ktl {
 					if (!dc_handle) {
 						KTL_ERROR(
 							KTL_ERROR_SECTION,
-							SPRIG_KRKR_TJS_W("•`‰æ‚ÌŠJn‚É¸”s‚µ‚Ü‚µ‚½"),
+							SPRIG_KRKR_TJS_W("æç”»ã®é–‹å§‹ã«å¤±æ•—ã—ã¾ã—ãŸ"),
 							sprig::krkr::win32_error
 							);
 					}
@@ -436,7 +436,7 @@ namespace ktl {
 						{
 							KTL_ERROR(
 								KTL_ERROR_SECTION,
-								SPRIG_KRKR_TJS_W("DIB“]‘—‚É¸”s‚µ‚Ü‚µ‚½"),
+								SPRIG_KRKR_TJS_W("DIBè»¢é€ã«å¤±æ•—ã—ã¾ã—ãŸ"),
 								sprig::krkr::win32_error
 								);
 						}
@@ -480,7 +480,7 @@ namespace ktl {
 			if (!::SystemParametersInfo(SPI_GETWORKAREA, 0, static_cast<PVOID>(&work_area_rect), 0)) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("ì‹Æ—Ìˆæ‹éŒ`‚Ìæ“¾‚É¸”s‚µ‚Ü‚µ‚½"),
+					SPRIG_KRKR_TJS_W("ä½œæ¥­é ˜åŸŸçŸ©å½¢ã®å–å¾—ã«å¤±æ•—ã—ã¾ã—ãŸ"),
 					sprig::krkr::win32_error
 					);
 				return;
@@ -499,7 +499,7 @@ namespace ktl {
 			if (!WindowBase::loadImages(sprig::png::png_pixels_order_bgr, data, size)) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("‰æ‘œ‚Ì“Ç‚İ‚İ‚É¸”s‚µ‚Ü‚µ‚½"),
+					SPRIG_KRKR_TJS_W("ç”»åƒã®èª­ã¿è¾¼ã¿ã«å¤±æ•—ã—ã¾ã—ãŸ"),
 					sprig::krkr::win32_error
 					);
 				return false;
@@ -554,7 +554,7 @@ namespace ktl {
 				if (!::DeleteObject(bitmap_handle_)) {
 					KTL_ERROR_NOTHROW(
 						KTL_ERROR_SECTION,
-						SPRIG_KRKR_TJS_W("ƒrƒbƒgƒ}ƒbƒv‚Ì”jŠü‚É¸”s‚µ‚Ü‚µ‚½")
+						SPRIG_KRKR_TJS_W("ãƒ“ãƒƒãƒˆãƒãƒƒãƒ—ã®ç ´æ£„ã«å¤±æ•—ã—ã¾ã—ãŸ")
 						);
 				}
 				bitmap_handle_ = 0;
@@ -592,7 +592,7 @@ namespace ktl {
 			if (!WindowBase::loadImages(sprig::png::png_pixels_order_bgra, data, size)) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("‰æ‘œ‚Ì“Ç‚İ‚İ‚É¸”s‚µ‚Ü‚µ‚½"),
+					SPRIG_KRKR_TJS_W("ç”»åƒã®èª­ã¿è¾¼ã¿ã«å¤±æ•—ã—ã¾ã—ãŸ"),
 					sprig::krkr::win32_error
 					);
 				return false;
@@ -605,7 +605,7 @@ namespace ktl {
 				if (!dc_handle) {
 					KTL_ERROR(
 						KTL_ERROR_SECTION,
-						SPRIG_KRKR_TJS_W("ƒfƒoƒCƒXƒRƒ“ƒeƒLƒXƒg‚Ìæ“¾‚É¸”s‚µ‚Ü‚µ‚½"),
+						SPRIG_KRKR_TJS_W("ãƒ‡ãƒã‚¤ã‚¹ã‚³ãƒ³ãƒ†ã‚­ã‚¹ãƒˆã®å–å¾—ã«å¤±æ•—ã—ã¾ã—ãŸ"),
 						sprig::krkr::win32_error
 						);
 				}
@@ -613,7 +613,7 @@ namespace ktl {
 					if (!::DeleteObject(bitmap_handle_)) {
 						KTL_ERROR(
 							KTL_ERROR_SECTION,
-							SPRIG_KRKR_TJS_W("ƒrƒbƒgƒ}ƒbƒv‚Ì”jŠü‚É¸”s‚µ‚Ü‚µ‚½"),
+							SPRIG_KRKR_TJS_W("ãƒ“ãƒƒãƒˆãƒãƒƒãƒ—ã®ç ´æ£„ã«å¤±æ•—ã—ã¾ã—ãŸ"),
 							sprig::krkr::win32_error
 							);
 						return false;
@@ -632,7 +632,7 @@ namespace ktl {
 				if (!bitmap_handle_) {
 					KTL_ERROR(
 						KTL_ERROR_SECTION,
-						SPRIG_KRKR_TJS_W("DIBƒZƒNƒVƒ‡ƒ“‚Ìì¬‚É¸”s‚µ‚Ü‚µ‚½"),
+						SPRIG_KRKR_TJS_W("DIBã‚»ã‚¯ã‚·ãƒ§ãƒ³ã®ä½œæˆã«å¤±æ•—ã—ã¾ã—ãŸ"),
 						sprig::krkr::win32_error
 						);
 					return false;
@@ -678,7 +678,7 @@ namespace ktl {
 				{
 					KTL_ERROR(
 						KTL_ERROR_SECTION,
-						SPRIG_KRKR_TJS_W("ƒEƒCƒ“ƒhƒE‚ÌƒŠƒTƒCƒY‚É¸”s‚µ‚Ü‚µ‚½"),
+						SPRIG_KRKR_TJS_W("ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã®ãƒªã‚µã‚¤ã‚ºã«å¤±æ•—ã—ã¾ã—ãŸ"),
 						sprig::krkr::win32_error
 						);
 					return false;
@@ -693,7 +693,7 @@ namespace ktl {
 				if (!screen_dc_handle) {
 					KTL_ERROR(
 						KTL_ERROR_SECTION,
-						SPRIG_KRKR_TJS_W("ƒfƒXƒNƒgƒbƒvƒfƒoƒCƒXƒRƒ“ƒeƒLƒXƒg‚Ìæ“¾‚É¸”s‚µ‚Ü‚µ‚½"),
+						SPRIG_KRKR_TJS_W("ãƒ‡ã‚¹ã‚¯ãƒˆãƒƒãƒ—ãƒ‡ãƒã‚¤ã‚¹ã‚³ãƒ³ãƒ†ã‚­ã‚¹ãƒˆã®å–å¾—ã«å¤±æ•—ã—ã¾ã—ãŸ"),
 						sprig::krkr::win32_error
 						);
 					return false;
@@ -705,7 +705,7 @@ namespace ktl {
 				if (!dc_handle) {
 					KTL_ERROR(
 						KTL_ERROR_SECTION,
-						SPRIG_KRKR_TJS_W("ƒfƒoƒCƒXƒRƒ“ƒeƒLƒXƒg‚Ìæ“¾‚É¸”s‚µ‚Ü‚µ‚½"),
+						SPRIG_KRKR_TJS_W("ãƒ‡ãƒã‚¤ã‚¹ã‚³ãƒ³ãƒ†ã‚­ã‚¹ãƒˆã®å–å¾—ã«å¤±æ•—ã—ã¾ã—ãŸ"),
 						sprig::krkr::win32_error
 						);
 					return false;
@@ -717,7 +717,7 @@ namespace ktl {
 				if (!compatible_dc_handle) {
 					KTL_ERROR(
 						KTL_ERROR_SECTION,
-						SPRIG_KRKR_TJS_W("ŒİŠ·ƒfƒoƒCƒXƒRƒ“ƒeƒLƒXƒg‚Ìì¬‚É¸”s‚µ‚Ü‚µ‚½"),
+						SPRIG_KRKR_TJS_W("äº’æ›ãƒ‡ãƒã‚¤ã‚¹ã‚³ãƒ³ãƒ†ã‚­ã‚¹ãƒˆã®ä½œæˆã«å¤±æ•—ã—ã¾ã—ãŸ"),
 						sprig::krkr::win32_error
 						);
 					return false;
@@ -729,7 +729,7 @@ namespace ktl {
 				if (!compatible_dc_handle) {
 					KTL_ERROR(
 						KTL_ERROR_SECTION,
-						SPRIG_KRKR_TJS_W("ƒrƒbƒgƒ}ƒbƒvƒIƒuƒWƒFƒNƒg‚Ì‘I‘ğ‚É¸”s‚µ‚Ü‚µ‚½"),
+						SPRIG_KRKR_TJS_W("ãƒ“ãƒƒãƒˆãƒãƒƒãƒ—ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®é¸æŠã«å¤±æ•—ã—ã¾ã—ãŸ"),
 						sprig::krkr::win32_error
 						);
 					return false;
@@ -748,7 +748,7 @@ namespace ktl {
 				{
 					KTL_ERROR(
 						KTL_ERROR_SECTION,
-						SPRIG_KRKR_TJS_W("ƒrƒbƒgƒuƒƒbƒN“]‘—‚É¸”s‚µ‚Ü‚µ‚½"),
+						SPRIG_KRKR_TJS_W("ãƒ“ãƒƒãƒˆãƒ–ãƒ­ãƒƒã‚¯è»¢é€ã«å¤±æ•—ã—ã¾ã—ãŸ"),
 						sprig::krkr::win32_error
 						);
 					return false;
@@ -782,7 +782,7 @@ namespace ktl {
 					{
 						KTL_ERROR(
 							KTL_ERROR_SECTION,
-							SPRIG_KRKR_TJS_W("ƒŒƒCƒ„[ƒhƒEƒBƒ“ƒhƒE‚ÌXV‚É¸”s‚µ‚Ü‚µ‚½"),
+							SPRIG_KRKR_TJS_W("ãƒ¬ã‚¤ãƒ¤ãƒ¼ãƒ‰ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã®æ›´æ–°ã«å¤±æ•—ã—ã¾ã—ãŸ"),
 							sprig::krkr::win32_error
 							);
 						return false;
@@ -807,7 +807,7 @@ namespace ktl {
 			{
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("ƒEƒCƒ“ƒhƒE‚ÌZƒI[ƒ_[•ÏX‚É¸”s‚µ‚Ü‚µ‚½"),
+					SPRIG_KRKR_TJS_W("ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã®Zã‚ªãƒ¼ãƒ€ãƒ¼å¤‰æ›´ã«å¤±æ•—ã—ã¾ã—ãŸ"),
 					sprig::krkr::win32_error
 					);
 				return false;
@@ -820,7 +820,7 @@ namespace ktl {
 			if (!::SystemParametersInfo(SPI_GETWORKAREA, 0, static_cast<PVOID>(&work_area_rect), 0)) {
 				KTL_ERROR(
 					KTL_ERROR_SECTION,
-					SPRIG_KRKR_TJS_W("ì‹Æ—Ìˆæ‹éŒ`‚Ìæ“¾‚É¸”s‚µ‚Ü‚µ‚½"),
+					SPRIG_KRKR_TJS_W("ä½œæ¥­é ˜åŸŸçŸ©å½¢ã®å–å¾—ã«å¤±æ•—ã—ã¾ã—ãŸ"),
 					sprig::krkr::win32_error
 					);
 				return false;

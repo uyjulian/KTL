@@ -40,7 +40,7 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME OSVersionClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassOSVersion, OSVersion, OSVersion)
 	//
-	//	SUMMARY: ƒo[ƒWƒ‡ƒ“Œnƒtƒ‰ƒO
+	//	SUMMARY: ãƒãƒ¼ã‚¸ãƒ§ãƒ³ç³»ãƒ•ãƒ©ã‚°
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(vfWindows2000, OSVersion::vfWindows2000);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(vfWindowsXP, OSVersion::vfWindowsXP);
@@ -49,7 +49,7 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(vfWindows7, OSVersion::vfWindows7);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(vfWindows8_1, OSVersion::vfWindows8_1);
 	//
-	//	SUMMARY: Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_OS_VERSION_NATIVE_STATIC_PROP_DECL(majorVersion);
 	KTL_OS_VERSION_NATIVE_STATIC_PROP_DECL(minorVersion);
@@ -61,11 +61,11 @@ namespace ktl {
 	KTL_OS_VERSION_NATIVE_STATIC_PROP_DECL(suiteMask);
 	KTL_OS_VERSION_NATIVE_STATIC_PROP_DECL(productType);
 	//
-	//	SUMMARY: Šg’£Žæ“¾ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ‹¡å¼µå–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_OS_VERSION_NATIVE_STATIC_PROP_DECL(versionFlag);
 	//
-	//	SUMMARY: ƒ`ƒFƒbƒNŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒã‚§ãƒƒã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(checkVersion)
 	{

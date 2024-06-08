@@ -38,7 +38,7 @@ namespace ktl {
 		big_int_type& ref();
 	public:
 		//
-		//	SUMMARY: ‰‰ŽZŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ¼”ç®—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static sprig::krkr::tjs::object_type opAdd(tjs_int numparams, tTJSVariant** param);
 		static sprig::krkr::tjs::object_type opSub(tjs_int numparams, tTJSVariant** param);
@@ -49,24 +49,24 @@ namespace ktl {
 		static sprig::krkr::tjs::object_type opAnd(tjs_int numparams, tTJSVariant** param);
 		static sprig::krkr::tjs::object_type opXor(tjs_int numparams, tTJSVariant** param);
 		//
-		//	SUMMARY: “¯’èŒnƒƒ\ƒbƒh
+		//	SUMMARY: åŒå®šç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static bool opEq(tjs_int numparams, tTJSVariant** param);
 		static bool opNEq(tjs_int numparams, tTJSVariant** param);
 		//
-		//	SUMMARY: ”äŠrŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ¯”è¼ƒç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static bool opLs(tjs_int numparams, tTJSVariant** param);
 		static bool opLsEq(tjs_int numparams, tTJSVariant** param);
 		static bool opGr(tjs_int numparams, tTJSVariant** param);
 		static bool opGrEq(tjs_int numparams, tTJSVariant** param);
 		//
-		//	SUMMARY: ’P€‰‰ŽZŒnƒƒ\ƒbƒh
+		//	SUMMARY: å˜é …æ¼”ç®—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static sprig::krkr::tjs::object_type opPlus(tTJSVariant const& v);
 		static sprig::krkr::tjs::object_type opMinus(tTJSVariant const& v);
 		//
-		//	SUMMARY: ŽZpŒnƒƒ\ƒbƒh
+		//	SUMMARY: ç®—è¡“ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static sprig::krkr::tjs::object_type abs(tTJSVariant const& v);
 		static sprig::krkr::tjs::object_type pow(tTJSVariant const& v, int e);
@@ -75,11 +75,11 @@ namespace ktl {
 		static sprig::krkr::tjs::object_type min(tTJSVariant const& v1, tTJSVariant const& v2);
 	public:
 		//
-		//	SUMMARY: ‘ã“üŒnƒƒ\ƒbƒh
+		//	SUMMARY: ä»£å…¥ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		NativeBigInt& assign(tTJSVariant const& v);
 		//
-		//	SUMMARY: ‰‰ŽZ‘ã“üŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ¼”ç®—ä»£å…¥ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		NativeBigInt& assignAdd(tjs_int numparams, tTJSVariant** param);
 		NativeBigInt& assignSub(tjs_int numparams, tTJSVariant** param);
@@ -90,14 +90,14 @@ namespace ktl {
 		NativeBigInt& assignAnd(tjs_int numparams, tTJSVariant** param);
 		NativeBigInt& assignXor(tjs_int numparams, tTJSVariant** param);
 		//
-		//	SUMMARY: •ÏŠ·Œnƒƒ\ƒbƒh
+		//	SUMMARY: å¤‰æ›ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTVInteger asInt() const;
 		tTVReal asReal() const;
 		tTJSString asString() const;
 		tTJSVariant asOctet() const;
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		int sign() const;
 	};
@@ -125,7 +125,7 @@ namespace ktl {
 		big_int_type& ref();
 	public:
 		//
-		//	SUMMARY: ‰‰ŽZŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ¼”ç®—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static sprig::krkr::tjs::object_type opAdd(tjs_int numparams, tTJSVariant** param);
 		static sprig::krkr::tjs::object_type opSub(tjs_int numparams, tTJSVariant** param);
@@ -136,24 +136,24 @@ namespace ktl {
 		static sprig::krkr::tjs::object_type opAnd(tjs_int numparams, tTJSVariant** param);
 		static sprig::krkr::tjs::object_type opXor(tjs_int numparams, tTJSVariant** param);
 		//
-		//	SUMMARY: “¯’èŒnƒƒ\ƒbƒh
+		//	SUMMARY: åŒå®šç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static bool opEq(tjs_int numparams, tTJSVariant** param);
 		static bool opNEq(tjs_int numparams, tTJSVariant** param);
 		//
-		//	SUMMARY: ”äŠrŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ¯”è¼ƒç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static bool opLs(tjs_int numparams, tTJSVariant** param);
 		static bool opLsEq(tjs_int numparams, tTJSVariant** param);
 		static bool opGr(tjs_int numparams, tTJSVariant** param);
 		static bool opGrEq(tjs_int numparams, tTJSVariant** param);
 		//
-		//	SUMMARY: ’P€‰‰ŽZŒnƒƒ\ƒbƒh
+		//	SUMMARY: å˜é …æ¼”ç®—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static sprig::krkr::tjs::object_type opPlus(tTJSVariant const& v);
 		static sprig::krkr::tjs::object_type opMinus(tTJSVariant const& v);
 		//
-		//	SUMMARY: ŽZpŒnƒƒ\ƒbƒh
+		//	SUMMARY: ç®—è¡“ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		static sprig::krkr::tjs::object_type abs(tTJSVariant const& v);
 		static sprig::krkr::tjs::object_type pow(tTJSVariant const& v, tTVInteger e);
@@ -162,15 +162,15 @@ namespace ktl {
 		static sprig::krkr::tjs::object_type min(tTJSVariant const& v1, tTJSVariant const& v2);
 	public:
 		//
-		//	SUMMARY: “à•”Œnƒƒ\ƒbƒh
+		//	SUMMARY: å†…éƒ¨ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		sprig::krkr::tjs::intptr_type getInstance();
 		//
-		//	SUMMARY: ‘ã“üŒnƒƒ\ƒbƒh
+		//	SUMMARY: ä»£å…¥ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		BigInt& assign(tTJSVariant const& v);
 		//
-		//	SUMMARY: ‰‰ŽZ‘ã“üŒnƒƒ\ƒbƒh
+		//	SUMMARY: æ¼”ç®—ä»£å…¥ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		BigInt& assignAdd(tjs_int numparams, tTJSVariant** param);
 		BigInt& assignSub(tjs_int numparams, tTJSVariant** param);
@@ -181,14 +181,14 @@ namespace ktl {
 		BigInt& assignAnd(tjs_int numparams, tTJSVariant** param);
 		BigInt& assignXor(tjs_int numparams, tTJSVariant** param);
 		//
-		//	SUMMARY: •ÏŠ·Œnƒƒ\ƒbƒh
+		//	SUMMARY: å¤‰æ›ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTVInteger asInt() const;
 		tTVReal asReal() const;
 		tTJSString asString() const;
 		tTJSVariant asOctet() const;
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTVInteger sign() const;
 	};

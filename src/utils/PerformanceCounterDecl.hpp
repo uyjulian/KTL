@@ -27,12 +27,12 @@ namespace ktl {
 		NativePerformanceCounter();
 	public:
 		//
-		//	SUMMARY: o—ÍŒnƒƒ\ƒbƒh
+		//	SUMMARY: å‡ºåŠ›ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void begin();
 		void end();
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool getEnable() const;
 		void setEnable(bool v);
@@ -55,12 +55,12 @@ namespace ktl {
 			);
 		void TJS_INTF_METHOD Invalidate();
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void begin();
 		void end();
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool getEnable() const;
 		void setEnable(bool v);

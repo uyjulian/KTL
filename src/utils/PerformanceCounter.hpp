@@ -31,7 +31,7 @@ namespace ktl {
 		: enable_(false)
 	{}
 	//
-	//	SUMMARY: o—ÍŒnƒƒ\ƒbƒh
+	//	SUMMARY: å‡ºåŠ›ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void NativePerformanceCounter::begin() {
 		if (!enable_) {
@@ -60,7 +60,7 @@ namespace ktl {
 		}
 	}
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativePerformanceCounter::getEnable() const {
 		return enable_;
@@ -88,7 +88,7 @@ namespace ktl {
 		instance_.reset();
 	}
 	//
-	//	SUMMARY: o—ÍŒnƒƒ\ƒbƒh
+	//	SUMMARY: å‡ºåŠ›ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void PerformanceCounter::begin() {
 		instance_->begin();
@@ -97,7 +97,7 @@ namespace ktl {
 		instance_->end();
 	}
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool PerformanceCounter::getEnable() const {
 		return instance_->getEnable();

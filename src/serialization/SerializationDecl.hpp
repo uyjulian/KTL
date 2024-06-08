@@ -51,7 +51,7 @@ namespace ktl {
 		NativeSerializationObject();
 	public:
 		//
-		//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒUŠÇ—Œnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚¶ç®¡ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool insert(
 			key_type const& key,
@@ -69,7 +69,7 @@ namespace ktl {
 		bool exist(key_type const& key) const;
 		optional_value_type findValue(key_type const& key) const;
 		//
-		//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void save(
 			tTJSVariant const* ar_v,
@@ -102,7 +102,7 @@ namespace ktl {
 			);
 		void TJS_INTF_METHOD Invalidate();
 		//
-		//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒUŠÇ—Œnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚¶ç®¡ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool insert(
 			tTJSString const& key,
@@ -113,7 +113,7 @@ namespace ktl {
 		tTVInteger size() const;
 		bool exist(tTJSString const& key) const;
 		//
-		//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void save(
 			tTJSVariant const* ar_v,

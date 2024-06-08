@@ -265,18 +265,18 @@ namespace ktl {
 		{
 			boost::asio::io_service& io_service = *NetworkService::get_const_instance().io_service();
 			//
-			//	COMMENT: –¼‘O‰ğŒˆ
+			//	COMMENT: åå‰è§£æ±º
 			//
 			boost::asio::ip::tcp::resolver resolver(io_service);
 			boost::asio::ip::tcp::resolver::query query(host_name, "http");
 			boost::system::error_code resolve_error;
 			boost::asio::ip::tcp::resolver::iterator endpoint_first = resolver.resolve(query, resolve_error);
 			if (resolve_error) {
-				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("–¼‘O‰ğŒˆ‚É¸”s‚µ‚Ü‚µ‚½"), SPRIG_KRKR_LOG_LEVEL_WARNING);
+				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("åå‰è§£æ±ºã«å¤±æ•—ã—ã¾ã—ãŸ"), SPRIG_KRKR_LOG_LEVEL_WARNING);
 				return false;
 			}
 			//
-			//	COMMENT: Ú‘±
+			//	COMMENT: æ¥ç¶š
 			//
 			boost::asio::ip::tcp::socket socket(io_service);
 			boost::system::error_code connect_error;
@@ -286,11 +286,11 @@ namespace ktl {
 				connect_error
 				);
 			if (connect_error) {
-				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("Ú‘±‚É¸”s‚µ‚Ü‚µ‚½"), SPRIG_KRKR_LOG_LEVEL_WARNING);
+				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("æ¥ç¶šã«å¤±æ•—ã—ã¾ã—ãŸ"), SPRIG_KRKR_LOG_LEVEL_WARNING);
 				return false;
 			}
 			//
-			//	COMMENT: ƒŠƒNƒGƒXƒg‘—M
+			//	COMMENT: ãƒªã‚¯ã‚¨ã‚¹ãƒˆé€ä¿¡
 			//
 			boost::asio::streambuf writing_streambuf;
 			{
@@ -311,11 +311,11 @@ namespace ktl {
 				write_error
 				);
 			if (write_error) {
-				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ƒŠƒNƒGƒXƒg‘—M‚É¸”s‚µ‚Ü‚µ‚½"), SPRIG_KRKR_LOG_LEVEL_WARNING);
+				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ãƒªã‚¯ã‚¨ã‚¹ãƒˆé€ä¿¡ã«å¤±æ•—ã—ã¾ã—ãŸ"), SPRIG_KRKR_LOG_LEVEL_WARNING);
 				return false;
 			}
 			//
-			//	COMMENT: ƒŒƒXƒ|ƒ“ƒXƒwƒbƒ_óM
+			//	COMMENT: ãƒ¬ã‚¹ãƒãƒ³ã‚¹ãƒ˜ãƒƒãƒ€å—ä¿¡
 			//
 			boost::asio::streambuf header_reading_streambuf;
 			boost::system::error_code header_read_error;
@@ -326,7 +326,7 @@ namespace ktl {
 				header_read_error
 				);
 			if (header_read_error) {
-				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ƒŒƒXƒ|ƒ“ƒXƒwƒbƒ_óM‚É¸”s‚µ‚Ü‚µ‚½"), SPRIG_KRKR_LOG_LEVEL_WARNING);
+				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ãƒ¬ã‚¹ãƒãƒ³ã‚¹ãƒ˜ãƒƒãƒ€å—ä¿¡ã«å¤±æ•—ã—ã¾ã—ãŸ"), SPRIG_KRKR_LOG_LEVEL_WARNING);
 				return false;
 			}
 			std::string string(header_reading_bytes_transferred, '\0');
@@ -339,7 +339,7 @@ namespace ktl {
 				string.find(' ')
 				);
 			if (http_version.find("HTTP/") != 0) {
-				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("•s³‚ÈƒŒƒXƒ|ƒ“ƒX‚ª•Ô‚³‚ê‚Ü‚µ‚½"), SPRIG_KRKR_LOG_LEVEL_WARNING);
+				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ä¸æ­£ãªãƒ¬ã‚¹ãƒãƒ³ã‚¹ãŒè¿”ã•ã‚Œã¾ã—ãŸ"), SPRIG_KRKR_LOG_LEVEL_WARNING);
 				return false;
 			}
 			std::string status_code = string.substr(
@@ -347,15 +347,15 @@ namespace ktl {
 				3
 				);
 			if (status_code != "200") {
-				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("¸”s‚ÌƒXƒe[ƒ^ƒXƒR[ƒh‚ª•Ô‚³‚ê‚Ü‚µ‚½"), SPRIG_KRKR_LOG_LEVEL_WARNING);
+				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("å¤±æ•—ã®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚³ãƒ¼ãƒ‰ãŒè¿”ã•ã‚Œã¾ã—ãŸ"), SPRIG_KRKR_LOG_LEVEL_WARNING);
 				return false;
 			}
 			//
-			//	COMMENT: ƒtƒ@ƒCƒ‹óM
+			//	COMMENT: ãƒ•ã‚¡ã‚¤ãƒ«å—ä¿¡
 			//
 			sprig::com_ptr<IStream> out(::TVPCreateIStream(storage, TJS_BS_WRITE));
 			if (!out) {
-				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒI[ƒvƒ“‚É¸”s‚µ‚Ü‚µ‚½"), SPRIG_KRKR_LOG_LEVEL_WARNING);
+				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚ªãƒ¼ãƒ—ãƒ³ã«å¤±æ•—ã—ã¾ã—ãŸ"), SPRIG_KRKR_LOG_LEVEL_WARNING);
 				return false;
 			}
 			boost::array<char, KTL_STORAGE_BUFFER_SIZE> storage_buffer;
@@ -368,7 +368,7 @@ namespace ktl {
 					size = (std::min)(remained_size, sizeof(storage_buffer.elems));
 					reading_istream.read(&storage_buffer[0], size);
 					if (FAILED(out->Write(&storage_buffer[0], size, &io_size))) {
-						SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹‘‚É¸”s‚µ‚Ü‚µ‚½"), SPRIG_KRKR_LOG_LEVEL_WARNING);
+						SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«æ›¸è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ"), SPRIG_KRKR_LOG_LEVEL_WARNING);
 						return false;
 					}
 				} while (remained_size -= size);
@@ -382,12 +382,12 @@ namespace ktl {
 					read_error
 					);
 				if (FAILED(out->Write(&storage_buffer[0], reading_bytes_transferred, &io_size))) {
-					SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹‘‚É¸”s‚µ‚Ü‚µ‚½"), SPRIG_KRKR_LOG_LEVEL_WARNING);
+					SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«æ›¸è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ"), SPRIG_KRKR_LOG_LEVEL_WARNING);
 					return false;
 				}
 			} while (!read_error);
 			if (read_error != boost::asio::error::eof) {
-				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹óM‚É¸”s‚µ‚Ü‚µ‚½"), SPRIG_KRKR_LOG_LEVEL_WARNING);
+				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«å—ä¿¡ã«å¤±æ•—ã—ã¾ã—ãŸ"), SPRIG_KRKR_LOG_LEVEL_WARNING);
 				return false;
 			}
 			return true;
@@ -400,18 +400,18 @@ namespace ktl {
 		{
 			boost::asio::io_service& io_service = *NetworkService::get_const_instance().io_service();
 			//
-			//	COMMENT: –¼‘O‰ğŒˆ
+			//	COMMENT: åå‰è§£æ±º
 			//
 			boost::asio::ip::tcp::resolver resolver(io_service);
 			boost::asio::ip::tcp::resolver::query query(host_name, "https");
 			boost::system::error_code resolve_error;
 			boost::asio::ip::tcp::resolver::iterator endpoint_first = resolver.resolve(query, resolve_error);
 			if (resolve_error) {
-				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("–¼‘O‰ğŒˆ‚É¸”s‚µ‚Ü‚µ‚½"), SPRIG_KRKR_LOG_LEVEL_WARNING);
+				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("åå‰è§£æ±ºã«å¤±æ•—ã—ã¾ã—ãŸ"), SPRIG_KRKR_LOG_LEVEL_WARNING);
 				return false;
 			}
 			//
-			//	COMMENT: Ú‘±
+			//	COMMENT: æ¥ç¶š
 			//
 			boost::asio::ssl::context context(io_service, boost::asio::ssl::context::sslv23);
 			boost::asio::ssl::stream<boost::asio::ip::tcp::socket> socket(io_service, context);
@@ -422,20 +422,20 @@ namespace ktl {
 				connect_error
 				);
 			if (connect_error) {
-				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("Ú‘±‚É¸”s‚µ‚Ü‚µ‚½"), SPRIG_KRKR_LOG_LEVEL_WARNING);
+				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("æ¥ç¶šã«å¤±æ•—ã—ã¾ã—ãŸ"), SPRIG_KRKR_LOG_LEVEL_WARNING);
 				return false;
 			}
 			//
-			//	COMMENT: ƒnƒ“ƒhƒVƒFƒCƒN
+			//	COMMENT: ãƒãƒ³ãƒ‰ã‚·ã‚§ã‚¤ã‚¯
 			//
 			boost::system::error_code handshake_error;
 			socket.handshake(boost::asio::ssl::stream_base::client, handshake_error);
 			if (handshake_error) {
-				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ƒnƒ“ƒhƒVƒFƒCƒN‚É¸”s‚µ‚Ü‚µ‚½"), SPRIG_KRKR_LOG_LEVEL_WARNING);
+				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ãƒãƒ³ãƒ‰ã‚·ã‚§ã‚¤ã‚¯ã«å¤±æ•—ã—ã¾ã—ãŸ"), SPRIG_KRKR_LOG_LEVEL_WARNING);
 				return false;
 			}
 			//
-			//	COMMENT: ƒŠƒNƒGƒXƒg‘—M
+			//	COMMENT: ãƒªã‚¯ã‚¨ã‚¹ãƒˆé€ä¿¡
 			//
 			boost::asio::streambuf writing_streambuf;
 			{
@@ -456,11 +456,11 @@ namespace ktl {
 				write_error
 				);
 			if (write_error) {
-				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ƒŠƒNƒGƒXƒg‘—M‚É¸”s‚µ‚Ü‚µ‚½"), SPRIG_KRKR_LOG_LEVEL_WARNING);
+				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ãƒªã‚¯ã‚¨ã‚¹ãƒˆé€ä¿¡ã«å¤±æ•—ã—ã¾ã—ãŸ"), SPRIG_KRKR_LOG_LEVEL_WARNING);
 				return false;
 			}
 			//
-			//	COMMENT: ƒŒƒXƒ|ƒ“ƒXóM
+			//	COMMENT: ãƒ¬ã‚¹ãƒãƒ³ã‚¹å—ä¿¡
 			//
 			boost::asio::streambuf header_reading_streambuf;
 			boost::system::error_code header_read_error;
@@ -471,7 +471,7 @@ namespace ktl {
 				header_read_error
 				);
 			if (header_read_error) {
-				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ƒŒƒXƒ|ƒ“ƒXóM‚É¸”s‚µ‚Ü‚µ‚½"), SPRIG_KRKR_LOG_LEVEL_WARNING);
+				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ãƒ¬ã‚¹ãƒãƒ³ã‚¹å—ä¿¡ã«å¤±æ•—ã—ã¾ã—ãŸ"), SPRIG_KRKR_LOG_LEVEL_WARNING);
 				return false;
 			}
 			std::string string(header_reading_bytes_transferred, '\0');
@@ -484,7 +484,7 @@ namespace ktl {
 				string.find(' ')
 				);
 			if (http_version.find("HTTP/") != 0) {
-				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("•s³‚ÈƒŒƒXƒ|ƒ“ƒX‚ª•Ô‚³‚ê‚Ü‚µ‚½"), SPRIG_KRKR_LOG_LEVEL_WARNING);
+				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ä¸æ­£ãªãƒ¬ã‚¹ãƒãƒ³ã‚¹ãŒè¿”ã•ã‚Œã¾ã—ãŸ"), SPRIG_KRKR_LOG_LEVEL_WARNING);
 				return false;
 			}
 			std::string status_code = string.substr(
@@ -492,15 +492,15 @@ namespace ktl {
 				3
 				);
 			if (status_code != "200") {
-				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("¸”s‚ÌƒXƒe[ƒ^ƒXƒR[ƒh‚ª•Ô‚³‚ê‚Ü‚µ‚½"), SPRIG_KRKR_LOG_LEVEL_WARNING);
+				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("å¤±æ•—ã®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚³ãƒ¼ãƒ‰ãŒè¿”ã•ã‚Œã¾ã—ãŸ"), SPRIG_KRKR_LOG_LEVEL_WARNING);
 				return false;
 			}
 			//
-			//	COMMENT: ƒtƒ@ƒCƒ‹óM
+			//	COMMENT: ãƒ•ã‚¡ã‚¤ãƒ«å—ä¿¡
 			//
 			sprig::com_ptr<IStream> out(::TVPCreateIStream(storage, TJS_BS_WRITE));
 			if (!out) {
-				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒI[ƒvƒ“‚É¸”s‚µ‚Ü‚µ‚½"), SPRIG_KRKR_LOG_LEVEL_WARNING);
+				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚ªãƒ¼ãƒ—ãƒ³ã«å¤±æ•—ã—ã¾ã—ãŸ"), SPRIG_KRKR_LOG_LEVEL_WARNING);
 				return false;
 			}
 			boost::array<char, KTL_STORAGE_BUFFER_SIZE> storage_buffer;
@@ -513,7 +513,7 @@ namespace ktl {
 					size = (std::min)(remained_size, sizeof(storage_buffer.elems));
 					reading_istream.read(&storage_buffer[0], size);
 					if (FAILED(out->Write(&storage_buffer[0], size, &io_size))) {
-						SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹‘‚É¸”s‚µ‚Ü‚µ‚½"), SPRIG_KRKR_LOG_LEVEL_WARNING);
+						SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«æ›¸è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ"), SPRIG_KRKR_LOG_LEVEL_WARNING);
 						return false;
 					}
 				} while (remained_size -= size);
@@ -527,12 +527,12 @@ namespace ktl {
 					read_error
 					);
 				if (FAILED(out->Write(&storage_buffer[0], reading_bytes_transferred, &io_size))) {
-					SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹‘‚É¸”s‚µ‚Ü‚µ‚½"), SPRIG_KRKR_LOG_LEVEL_WARNING);
+					SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«æ›¸è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ"), SPRIG_KRKR_LOG_LEVEL_WARNING);
 					return false;
 				}
 			} while (!read_error);
 			if (read_error != boost::asio::error::eof) {
-				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹óM‚É¸”s‚µ‚Ü‚µ‚½"), SPRIG_KRKR_LOG_LEVEL_WARNING);
+				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«å—ä¿¡ã«å¤±æ•—ã—ã¾ã—ãŸ"), SPRIG_KRKR_LOG_LEVEL_WARNING);
 				return false;
 			}
 			return true;
@@ -542,7 +542,7 @@ namespace ktl {
 			SPRIG_KRKR_OUTPUT_VALUE(SPRIG_KRKR_TJS_W("url"), url, SPRIG_KRKR_LOG_LEVEL_NORMAL);
 			SPRIG_KRKR_OUTPUT_VALUE(SPRIG_KRKR_TJS_W("storage"), storage, SPRIG_KRKR_LOG_LEVEL_NORMAL);
 			//
-			//	COMMENT: URL‰ğÍ
+			//	COMMENT: URLè§£æ
 			//
 			impl_string_type impl_url = sprig::str_cast<impl_string_type>(url);
 			impl_string_type::size_type host_offset = 0;
@@ -555,12 +555,12 @@ namespace ktl {
 				host_offset = 8;
 			}
 			if (impl_url.size() <= host_offset) {
-				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("•s³‚ÈURL‚Å‚·"), SPRIG_KRKR_LOG_LEVEL_WARNING);
+				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ä¸æ­£ãªURLã§ã™"), SPRIG_KRKR_LOG_LEVEL_WARNING);
 				return false;
 			}
 			impl_string_type::size_type host_size = impl_url.find('/', host_offset);
 			if (host_size == impl_string_type::npos || host_size - host_offset == 0) {
-				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("•s³‚ÈURL‚Å‚·"), SPRIG_KRKR_LOG_LEVEL_WARNING);
+				SPRIG_KRKR_OUTPUT_COMMENT(SPRIG_KRKR_TJS_W("ä¸æ­£ãªURLã§ã™"), SPRIG_KRKR_LOG_LEVEL_WARNING);
 				return false;
 			}
 			impl_string_type host_name = impl_url.substr(host_offset, host_size - host_offset);

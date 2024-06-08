@@ -53,7 +53,7 @@ namespace ktl {
 		: ptime_(date_type(1970, 1, 1))
 	{}
 	//
-	//	SUMMARY: Š„‚è“–‚ÄŒnƒƒ\ƒbƒh
+	//	SUMMARY: å‰²ã‚Šå½“ã¦ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativePTime::assignLocalTimeSecondClock() {
 		ptime_type ptime = boost::posix_time::second_clock::local_time();
@@ -229,7 +229,7 @@ namespace ktl {
 		return true;
 	}
 	//
-	//	SUMMARY: •ÏXŒnƒƒ\ƒbƒh
+	//	SUMMARY: å¤‰æ›´ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void NativePTime::moveYears(boost::gregorian::years t) {
 		ptime_ += t;
@@ -256,7 +256,7 @@ namespace ktl {
 		ptime_ += t;
 	}
 	//
-	//	SUMMARY: •¶Žš—ñ‰»Œnƒƒ\ƒbƒh
+	//	SUMMARY: æ–‡å­—åˆ—åŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant NativePTime::toString() const {
 		return tTJSVariant(boost::posix_time::to_simple_wstring(ptime_).c_str());
@@ -283,7 +283,7 @@ namespace ktl {
 		return tTJSVariant(boost::posix_time::to_iso_wstring(ptime_.time_of_day()).c_str());
 	}
 	//
-	//	SUMMARY: “ú•tƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ—¥ä»˜ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE NativePTime::date_type::year_type NativePTime::year() const {
 		return ptime_.date().year();
@@ -310,7 +310,7 @@ namespace ktl {
 		return ptime_.date().modjulian_day();
 	}
 	//
-	//	SUMMARY: ŽžƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ™‚åˆ»ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE NativePTime::time_duration_type::hour_type NativePTime::hours() const {
 		return ptime_.time_of_day().hours();
@@ -359,13 +359,13 @@ namespace ktl {
 		instance_.reset();
 	}
 	//
-	//	SUMMARY: “à•”Œnƒƒ\ƒbƒh
+	//	SUMMARY: å†…éƒ¨ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE sprig::krkr::tjs::intptr_type PTime::getInstance() {
 		return reinterpret_cast<sprig::krkr::tjs::intptr_type>(this);
 	}
 	//
-	//	SUMMARY: Š„‚è“–‚ÄŒnƒƒ\ƒbƒh
+	//	SUMMARY: å‰²ã‚Šå½“ã¦ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool PTime::assignLocalTimeSecondClock() {
 		return instance_->assignLocalTimeSecondClock();
@@ -466,7 +466,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: •ÏXŒnƒƒ\ƒbƒh
+	//	SUMMARY: å¤‰æ›´ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void PTime::moveYears(tTVInteger t) {
 		instance_->moveYears(
@@ -509,7 +509,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: •¶Žš—ñ‰»Œnƒƒ\ƒbƒh
+	//	SUMMARY: æ–‡å­—åˆ—åŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant PTime::toString() const {
 		return instance_->toString();
@@ -536,7 +536,7 @@ namespace ktl {
 		return instance_->toTimeISOString();
 	}
 	//
-	//	SUMMARY: “ú•tƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ—¥ä»˜ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVInteger PTime::year() const {
 		return instance_->year();
@@ -563,7 +563,7 @@ namespace ktl {
 		return instance_->modjulianDay();
 	}
 	//
-	//	SUMMARY: ŽžƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ™‚åˆ»ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVInteger PTime::hours() const {
 		return instance_->hours();

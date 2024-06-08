@@ -92,31 +92,31 @@ namespace ktl {
 		bool doCancel();
 	public:
 		//
-		//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+		//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool reset();
 		//
-		//	SUMMARY: §ŒäŒnƒƒ\ƒbƒh
+		//	SUMMARY: åˆ¶å¾¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool cancel();
 		bool cancelled() const;
 		bool close();
 		//
-		//	SUMMARY: ŠÄŽ‹Œnƒƒ\ƒbƒh
+		//	SUMMARY: ç›£è¦–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool monitor(unsigned short port, flag_type protocol_flag = NetworkUtils::pfIPv4);
 		bool monitorSSL(unsigned short port, flag_type protocol_flag = NetworkUtils::pfIPv4);
 		//
-		//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant popAccepted();
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool isProcessing() const;
 		size_type acceptedCount() const;
 		//
-		//	SUMMARY: ƒR[ƒ‹ƒoƒbƒNŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant getOnFinished() const;
 		void setOnFinished(tTJSVariant const& func);
@@ -153,31 +153,31 @@ namespace ktl {
 		void TJS_INTF_METHOD Invalidate();
 	public:
 		//
-		//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+		//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool reset();
 		//
-		//	SUMMARY: §ŒäŒnƒƒ\ƒbƒh
+		//	SUMMARY: åˆ¶å¾¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool cancel();
 		bool cancelled() const;
 		bool close();
 		//
-		//	SUMMARY: ŠÄŽ‹Œnƒƒ\ƒbƒh
+		//	SUMMARY: ç›£è¦–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool monitor(tTVInteger port, tTVInteger protocol_flag = NetworkUtils::pfIPv4);
 		bool monitorSSL(tTVInteger port, tTVInteger protocol_flag = NetworkUtils::pfIPv4);
 		//
-		//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant popAccepted();
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool isProcessing() const;
 		tTVInteger acceptedCount() const;
 		//
-		//	SUMMARY: ƒR[ƒ‹ƒoƒbƒNŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant getOnFinished() const;
 		void setOnFinished(tTJSVariant const& func);

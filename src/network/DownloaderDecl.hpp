@@ -194,16 +194,16 @@ namespace ktl {
 		bool doCancel();
 	public:
 		//
-		//	SUMMARY: ƒ_ƒEƒ“ƒ[ƒhŒnƒtƒ‰ƒO
+		//	SUMMARY: ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ç³»ãƒ•ãƒ©ã‚°
 		//
 		static flag_type const dhfAnalyHTTPHeader = 0x00000001;
 	public:
 		//
-		//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+		//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool reset();
 		//
-		//	SUMMARY: ƒ_ƒEƒ“ƒ[ƒhŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool downloadHTTP(
 			tjs_char const* url,
@@ -220,13 +220,13 @@ namespace ktl {
 		bool failed() const;
 		bool cancelled() const;
 		//
-		//	SUMMARY: î•ñŒnƒƒ\ƒbƒh
+		//	SUMMARY: æƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		size_type transferredSize() const;
 		size_type contentLength() const;
 		bool chunked() const;
 		//
-		//	SUMMARY: ƒoƒbƒtƒ@ƒ_ƒEƒ“ƒ[ƒhŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒãƒƒãƒ•ã‚¡ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool downloadHTTPToBuffer(
 			tjs_char const* url,
@@ -240,7 +240,7 @@ namespace ktl {
 		bool bufferEnable() const;
 		int_type bufferSize() const;
 		//
-		//	SUMMARY: ƒoƒbƒtƒ@Žæ“¾Œnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒãƒƒãƒ•ã‚¡å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant getBufferAsOctet() const;
 		tTJSVariant getBufferAsOctet(size_type pos) const;
@@ -252,7 +252,7 @@ namespace ktl {
 		tTJSVariant getBufferAsNarrowString(size_type pos) const;
 		tTJSVariant getBufferAsNarrowString(size_type pos, size_type size) const;
 		//
-		//	SUMMARY: ƒ^ƒCƒ€ƒAƒEƒgŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¿ã‚¤ãƒ ã‚¢ã‚¦ãƒˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool waitTimeoutFromNow(rep_type expiry_time_millisec);
 		bool waitTimeoutAt(rep_type expiry_time_millisec);
@@ -263,11 +263,11 @@ namespace ktl {
 		rep_type expiresTimeoutFromNow() const;
 		rep_type expiresTimeoutAt() const;
 		//
-		//	SUMMARY: ‘Ò‹@Œnƒƒ\ƒbƒh
+		//	SUMMARY: å¾…æ©Ÿç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool join();
 		//
-		//	SUMMARY: ƒ|ƒXƒgŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒã‚¹ãƒˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool addPostDataEncoded(tjs_char const* source);
 		bool addPostDataEncoded(tTJSVariantOctet const* source);
@@ -275,7 +275,7 @@ namespace ktl {
 		bool postDataEnable() const;
 		int_type postDataSize() const;
 		//
-		//	SUMMARY: URLî•ñŒnƒƒ\ƒbƒh
+		//	SUMMARY: URLæƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		impl_string_type const& hostName() const;
 		impl_string_type const& serviceName() const;
@@ -283,24 +283,24 @@ namespace ktl {
 		impl_string_type URL() const;
 		std::string storageLocalName() const;
 		//
-		//	SUMMARY: HTTPƒŒƒXƒ|ƒ“ƒXŒnƒƒ\ƒbƒh
+		//	SUMMARY: HTTPãƒ¬ã‚¹ãƒãƒ³ã‚¹ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		impl_string_type const& HTTPVersion() const;
 		impl_string_type const& statusCode() const;
 		impl_string_type const& reasonPhrase() const;
 		tTJSVariant getField(tjs_char const* name) const;
 		//
-		//	SUMMARY: ƒR[ƒ‹ƒoƒbƒNŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant getOnFinished() const;
 		void setOnFinished(tTJSVariant const& func);
 		//
-		//	SUMMARY: ƒJƒXƒ^ƒ€ƒwƒbƒ_Œnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚«ã‚¹ã‚¿ãƒ ãƒ˜ãƒƒãƒ€ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool setCustomHeader(tjs_char const* source);
 		bool clearCustomHeader();
 		//
-		//	SUMMARY: ˆ—Ý’èŒnƒƒ\ƒbƒh
+		//	SUMMARY: å‡¦ç†è¨­å®šç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void setProcessStatusCodeError(bool value);
 		bool getProcessStatusCodeError() const;
@@ -337,16 +337,16 @@ namespace ktl {
 		void TJS_INTF_METHOD Invalidate();
 	public:
 		//
-		//	SUMMARY: ƒ_ƒEƒ“ƒ[ƒhŒnƒtƒ‰ƒO
+		//	SUMMARY: ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ç³»ãƒ•ãƒ©ã‚°
 		//
 		static tTVInteger const dhfAnalyHTTPHeader = NativeDownloader::dhfAnalyHTTPHeader;
 	public:
 		//
-		//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+		//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool reset();
 		//
-		//	SUMMARY: ƒ_ƒEƒ“ƒ[ƒhŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool downloadHTTP(
 			tTJSVariantString const* url,
@@ -363,13 +363,13 @@ namespace ktl {
 		bool failed() const;
 		bool cancelled() const;
 		//
-		//	SUMMARY: î•ñŒnƒƒ\ƒbƒh
+		//	SUMMARY: æƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTVInteger transferredSize() const;
 		tTVInteger contentLength() const;
 		bool chunked() const;
 		//
-		//	SUMMARY: ƒoƒbƒtƒ@ƒ_ƒEƒ“ƒ[ƒhŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒãƒƒãƒ•ã‚¡ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool downloadHTTPToBuffer(
 			tTJSVariantString const* url,
@@ -383,7 +383,7 @@ namespace ktl {
 		bool bufferEnable() const;
 		tTVInteger bufferSize() const;
 		//
-		//	SUMMARY: ƒoƒbƒtƒ@Žæ“¾Œnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒãƒƒãƒ•ã‚¡å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant getBufferAsOctet() const;
 		tTJSVariant getBufferAsOctet(tTVInteger pos) const;
@@ -395,7 +395,7 @@ namespace ktl {
 		tTJSVariant getBufferAsNarrowString(tTVInteger pos) const;
 		tTJSVariant getBufferAsNarrowString(tTVInteger pos, tTVInteger size) const;
 		//
-		//	SUMMARY: ƒ^ƒCƒ€ƒAƒEƒgŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¿ã‚¤ãƒ ã‚¢ã‚¦ãƒˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool waitTimeoutFromNow(tTVInteger expiry_time_millisec);
 		bool waitTimeoutAt(tTVInteger expiry_time_millisec);
@@ -406,11 +406,11 @@ namespace ktl {
 		tTVInteger expiresTimeoutFromNow() const;
 		tTVInteger expiresTimeoutAt() const;
 		//
-		//	SUMMARY: ‘Ò‹@Œnƒƒ\ƒbƒh
+		//	SUMMARY: å¾…æ©Ÿç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool join();
 		//
-		//	SUMMARY: ƒ|ƒXƒgŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒã‚¹ãƒˆç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool addPostDataEncoded(tTJSVariantString const* source);
 		bool addPostDataEncoded(tTJSVariantOctet const* source);
@@ -418,7 +418,7 @@ namespace ktl {
 		bool postDataEnable() const;
 		tTVInteger postDataSize() const;
 		//
-		//	SUMMARY: URLî•ñŒnƒƒ\ƒbƒh
+		//	SUMMARY: URLæƒ…å ±ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSString hostName() const;
 		tTJSString serviceName() const;
@@ -426,24 +426,24 @@ namespace ktl {
 		tTJSString URL() const;
 		tTJSString storageLocalName() const;
 		//
-		//	SUMMARY: HTTPƒŒƒXƒ|ƒ“ƒXŒnƒƒ\ƒbƒh
+		//	SUMMARY: HTTPãƒ¬ã‚¹ãƒãƒ³ã‚¹ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSString HTTPVersion() const;
 		tTJSString statusCode() const;
 		tTJSString reasonPhrase() const;
 		tTJSVariant getField(tTJSVariantString const* name) const;
 		//
-		//	SUMMARY: ƒR[ƒ‹ƒoƒbƒNŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant getOnFinished() const;
 		void setOnFinished(tTJSVariant const& func);
 		//
-		//	SUMMARY: ƒJƒXƒ^ƒ€ƒwƒbƒ_Œnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚«ã‚¹ã‚¿ãƒ ãƒ˜ãƒƒãƒ€ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool setCustomHeader(tTJSVariantString const* source);
 		bool clearCustomHeader();
 		//
-		//	SUMMARY: ˆ—Ý’èŒnƒƒ\ƒbƒh
+		//	SUMMARY: å‡¦ç†è¨­å®šç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void setProcessStatusCodeError(bool value);
 		bool getProcessStatusCodeError() const;

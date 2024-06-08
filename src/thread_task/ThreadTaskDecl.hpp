@@ -25,12 +25,12 @@ namespace ktl {
 		NativeThreadTask();
 	public:
 		//
-		//	SUMMARY: §ŒäŒnƒƒ\ƒbƒh
+		//	SUMMARY: åˆ¶å¾¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool start(tTJSVariantClosure const& closure);
 		bool cancel();
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant result() const;
 		bool isProcessing() const;
@@ -49,12 +49,12 @@ namespace ktl {
 		void initImpl(boost::shared_ptr<ThreadTaskImpl> const& impl);
 	public:
 		//
-		//	SUMMARY: §ŒäŒnƒƒ\ƒbƒh
+		//	SUMMARY: åˆ¶å¾¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void yield();
 		void sleep(time_count_type milliseconds);
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool cancelled() const;
 	};
@@ -77,12 +77,12 @@ namespace ktl {
 		void TJS_INTF_METHOD Invalidate();
 	public:
 		//
-		//	SUMMARY: §ŒäŒnƒƒ\ƒbƒh
+		//	SUMMARY: åˆ¶å¾¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool start(tTJSVariantClosure const& closure);
 		bool cancel();
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant result() const;
 		bool isProcessing() const;
@@ -107,15 +107,15 @@ namespace ktl {
 		void initImpl(boost::shared_ptr<ThreadTaskImpl> const& impl);
 	public:
 		//
-		//	SUMMARY: “à•”Œnƒƒ\ƒbƒh
+		//	SUMMARY: å†…éƒ¨ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		sprig::krkr::tjs::intptr_type getInstance();
 		//
-		//	SUMMARY: §ŒäŒnƒƒ\ƒbƒh
+		//	SUMMARY: åˆ¶å¾¡ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void yield();
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		bool cancelled() const;
 		void sleep(tTVInteger milliseconds);

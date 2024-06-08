@@ -24,7 +24,7 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME FPSCounterClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassFPSCounter, FPSCounter, FPSCounter)
 	//
-	//	SUMMARY: プロパティ系メソッド
+	//	SUMMARY: 繝励Ο繝代ユ繧｣邉ｻ繝｡繧ｽ繝�繝�
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT(FPSCounter, enable, getEnable, setEnable);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT(FPSCounter, run, getRun, setRun);

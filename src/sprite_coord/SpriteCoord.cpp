@@ -24,7 +24,7 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME SpriteCoordClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassSpriteCoord, SpriteCoord, SpriteCoord)
 	//
-	//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(saveCoordTransByText)
 	{
@@ -75,11 +75,11 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(loadCoordTransByBinary);
 	//
-	//	SUMMARY: XVŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ›´æ–°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_METHOD_DECL_PARAM_VOID_RES_VOID(SpriteCoord, update);
 	//
-	//	SUMMARY: ƒpƒ‰ƒ[ƒ^Œnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(setScaling)
 	{
@@ -122,7 +122,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(setCenter);
 	//
-	//	SUMMARY: ƒpƒ‰ƒ[ƒ^ƒvƒƒpƒeƒCŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ—ãƒ­ãƒ‘ãƒ†ã‚¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT(SpriteCoord, scalingX, getScalingX, setScalingX);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT(SpriteCoord, scalingY, getScalingY, setScalingY);
@@ -136,7 +136,7 @@ namespace ktl {
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT(SpriteCoord, centerX, getCenterX, setCenterX);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT(SpriteCoord, centerY, getCenterY, setCenterY);
 	//
-	//	SUMMARY: Žæ“¾ƒvƒƒpƒeƒCŒnƒƒ\ƒbƒh
+	//	SUMMARY: å–å¾—ãƒ—ãƒ­ãƒ‘ãƒ†ã‚¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(SpriteCoord, sizeX, getSizeX);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(SpriteCoord, sizeY, getSizeY);

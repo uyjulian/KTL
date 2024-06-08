@@ -24,20 +24,20 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME StorageStreamClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassStorageStream, StorageStream, StorageStream)
 	//
-	//	SUMMARY: ƒAƒNƒZƒXŒnƒtƒ‰ƒO
+	//	SUMMARY: ã‚¢ã‚¯ã‚»ã‚¹ç³»ãƒ•ãƒ©ã‚°
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(afRead, StorageStream::afRead);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(afWrite, StorageStream::afWrite);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(afAppend, StorageStream::afAppend);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(afUpdate, StorageStream::afUpdate);
 	//
-	//	SUMMARY: ƒV[ƒNŒnƒtƒ‰ƒO
+	//	SUMMARY: ã‚·ãƒ¼ã‚¯ç³»ãƒ•ãƒ©ã‚°
 	//
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(sfSet, StorageStream::sfSet);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(sfCur, StorageStream::sfCur);
 	SPRIG_KRKR_NATIVE_CONSTANT_PROP_DECL(sfEnd, StorageStream::sfEnd);
 	//
-	//	SUMMARY: ŠJ•ÂŒnƒƒ\ƒbƒh
+	//	SUMMARY: é–‹é–‰ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(open)
 	{
@@ -62,7 +62,7 @@ namespace ktl {
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(close);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT_GETONLY(StorageStream, isOpen, isOpen);
 	//
-	//	SUMMARY: “ÇžŒnƒƒ\ƒbƒh
+	//	SUMMARY: èª­è¾¼ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(readOctet)
 	{
@@ -113,7 +113,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(readNarrowString);
 	//
-	//	SUMMARY: ‘žŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ›¸è¾¼ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(writeOctet)
 	{
@@ -208,7 +208,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(writeBytes);
 	//
-	//	SUMMARY: ƒV[ƒNŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒ¼ã‚¯ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(seek)
 	{

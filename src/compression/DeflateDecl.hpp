@@ -48,25 +48,25 @@ namespace ktl {
 		NativeDeflate();
 	public:
 		//
-		//	SUMMARY: ˆ³kƒŒƒxƒ‹Œnƒtƒ‰ƒO
+		//	SUMMARY: åœ§ç¸®ãƒ¬ãƒ™ãƒ«ç³»ãƒ•ãƒ©ã‚°
 		//
 		static int const clfNoCompression;
 		static int const clfBestSpeed;
 		static int const clfBestCompression;
 		static int const clfDefaultCompression;
 		//
-		//	SUMMARY: ˆ³kƒƒ\ƒbƒhŒnƒtƒ‰ƒO
+		//	SUMMARY: åœ§ç¸®ãƒ¡ã‚½ãƒƒãƒ‰ç³»ãƒ•ãƒ©ã‚°
 		//
 		static int const cmfDeflated;
 		//
-		//	SUMMARY: ˆ³kƒXƒgƒ‰ƒeƒW[Œnƒtƒ‰ƒO
+		//	SUMMARY: åœ§ç¸®ã‚¹ãƒˆãƒ©ãƒ†ã‚¸ãƒ¼ç³»ãƒ•ãƒ©ã‚°
 		//
 		static int const csfDefaultStrategy;
 		static int const csfFiltered;
 		static int const csfHuffmanOnly;
 	public:
 		//
-		//	SUMMARY: ƒZƒbƒgƒAƒbƒvŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚»ãƒƒãƒˆã‚¢ãƒƒãƒ—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void reset();
 		bool setup();
@@ -74,7 +74,7 @@ namespace ktl {
 		bool finish();
 		bool flush();
 		//
-		//	SUMMARY: ƒpƒ‰ƒ[ƒ^Œnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		int getLevel() const;
 		void setLevel(int v);
@@ -91,12 +91,12 @@ namespace ktl {
 		bool getCalculateCRC() const;
 		void setCalculateCRC(bool v);
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant CRC();
 		tTJSVariant originalSize();
 		//
-		//	SUMMARY: ˆ—Œnƒƒ\ƒbƒh
+		//	SUMMARY: å‡¦ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		int_type processBlock(byte_type const* first, byte_type const* last);
 		int_type processBytes(byte_type const* data, size_type size);
@@ -114,14 +114,14 @@ namespace ktl {
 		int_type processStorage(tjs_char const* storage, size_type spos);
 		int_type processStorage(tjs_char const* storage, size_type spos, size_type ssize);
 		//
-		//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		size_type size() const;
 		tTJSVariant asOctet() const;
 		tTJSVariant asOctet(size_type pos) const;
 		tTJSVariant asOctet(size_type pos, size_type size) const;
 		//
-		//	SUMMARY: ƒXƒgƒŒ[ƒWŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¹ãƒˆãƒ¬ãƒ¼ã‚¸ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		int_type saveStorage(tjs_char const* storage) const;
 		int_type saveStorage(tjs_char const* storage, size_type pos) const;
@@ -138,18 +138,18 @@ namespace ktl {
 		boost::shared_ptr<NativeDeflate> instance_;
 	public:
 		//
-		//	SUMMARY: ˆ³kƒŒƒxƒ‹Œnƒtƒ‰ƒO
+		//	SUMMARY: åœ§ç¸®ãƒ¬ãƒ™ãƒ«ç³»ãƒ•ãƒ©ã‚°
 		//
 		static tTVInteger const clfNoCompression;
 		static tTVInteger const clfBestSpeed;
 		static tTVInteger const clfBestCompression;
 		static tTVInteger const clfDefaultCompression;
 		//
-		//	SUMMARY: ˆ³kƒƒ\ƒbƒhŒnƒtƒ‰ƒO
+		//	SUMMARY: åœ§ç¸®ãƒ¡ã‚½ãƒƒãƒ‰ç³»ãƒ•ãƒ©ã‚°
 		//
 		static tTVInteger const cmfDeflated;
 		//
-		//	SUMMARY: ˆ³kƒXƒgƒ‰ƒeƒW[Œnƒtƒ‰ƒO
+		//	SUMMARY: åœ§ç¸®ã‚¹ãƒˆãƒ©ãƒ†ã‚¸ãƒ¼ç³»ãƒ•ãƒ©ã‚°
 		//
 		static tTVInteger const csfDefaultStrategy;
 		static tTVInteger const csfFiltered;
@@ -164,7 +164,7 @@ namespace ktl {
 		void TJS_INTF_METHOD Invalidate();
 	public:
 		//
-		//	SUMMARY: ƒZƒbƒgƒAƒbƒvŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚»ãƒƒãƒˆã‚¢ãƒƒãƒ—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		void reset();
 		bool setup();
@@ -172,7 +172,7 @@ namespace ktl {
 		bool finish();
 		bool flush();
 		//
-		//	SUMMARY: ƒpƒ‰ƒ[ƒ^Œnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTVInteger getLevel() const;
 		void setLevel(tTVInteger v);
@@ -189,12 +189,12 @@ namespace ktl {
 		bool getCalculateCRC() const;
 		void setCalculateCRC(bool v);
 		//
-		//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+		//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTJSVariant CRC();
 		tTJSVariant originalSize();
 		//
-		//	SUMMARY: ˆ—Œnƒƒ\ƒbƒh
+		//	SUMMARY: å‡¦ç†ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTVInteger processBlock(sprig::krkr::tjs::intptr_type first, sprig::krkr::tjs::intptr_type last);
 		tTVInteger processBytes(sprig::krkr::tjs::intptr_type data, tTVInteger size);
@@ -212,14 +212,14 @@ namespace ktl {
 		tTVInteger processStorage(tTJSVariantString const* storage, tTVInteger spos);
 		tTVInteger processStorage(tTJSVariantString const* storage, tTVInteger spos, tTVInteger ssize);
 		//
-		//	SUMMARY: Žæ“¾Œnƒƒ\ƒbƒh
+		//	SUMMARY: å–å¾—ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTVInteger size() const;
 		tTJSVariant asOctet() const;
 		tTJSVariant asOctet(tTVInteger pos) const;
 		tTJSVariant asOctet(tTVInteger pos, tTVInteger size) const;
 		//
-		//	SUMMARY: ƒXƒgƒŒ[ƒWŒnƒƒ\ƒbƒh
+		//	SUMMARY: ã‚¹ãƒˆãƒ¬ãƒ¼ã‚¸ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 		//
 		tTVInteger saveStorage(tTJSVariantString const* storage) const;
 		tTVInteger saveStorage(tTJSVariantString const* storage, tTVInteger pos) const;

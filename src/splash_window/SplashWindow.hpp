@@ -36,7 +36,7 @@ namespace ktl {
 		: impl_(new impl_type())
 	{}
 	//
-	//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+	//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void NativeSplashWindow::initialize(size_type width, size_type height) {
 		if (impl_->initialized()) {
@@ -54,14 +54,14 @@ namespace ktl {
 		impl_.reset(new impl_type());
 	}
 	//
-	//	SUMMARY: “Ç‚İ‚İŒnƒƒ\ƒbƒh
+	//	SUMMARY: èª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativeSplashWindow::loadImages(tTJSString const& storage) {
 		sprig::com_ptr<::IStream> in(::TVPCreateIStream(storage, TJS_BS_READ));
 		if (!in) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒI[ƒvƒ“‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚ªãƒ¼ãƒ—ãƒ³ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::bad_state
 				);
 			return false;
@@ -72,7 +72,7 @@ namespace ktl {
 		if (FAILED(in->Seek(move, TJS_BS_SEEK_END, &new_pos))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒV[ƒN‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚·ãƒ¼ã‚¯ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -81,7 +81,7 @@ namespace ktl {
 		if (!file_size) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹‚ª‹ó‚Å‚·: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ãŒç©ºã§ã™: ")) + storage,
 				sprig::krkr::bad_state
 				);
 			return false;
@@ -90,7 +90,7 @@ namespace ktl {
 		if (FAILED(in->Seek(move, TJS_BS_SEEK_SET, &new_pos))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹ƒV[ƒN‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«ã‚·ãƒ¼ã‚¯ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 			return false;
@@ -100,7 +100,7 @@ namespace ktl {
 		if (FAILED(in->Read(&buffer[0], buffer.size(), &io_size))) {
 			KTL_ERROR(
 				KTL_ERROR_SECTION,
-				tTJSString(SPRIG_KRKR_TJS_W("ƒtƒ@ƒCƒ‹“Ç‚É¸”s‚µ‚Ü‚µ‚½: ")) + storage,
+				tTJSString(SPRIG_KRKR_TJS_W("ãƒ•ã‚¡ã‚¤ãƒ«èª­è¾¼ã«å¤±æ•—ã—ã¾ã—ãŸ: ")) + storage,
 				sprig::krkr::internal_error
 				);
 		}
@@ -110,7 +110,7 @@ namespace ktl {
 		return impl_->loadImages(sprig::krkr::tjs::octet_data(source), sprig::krkr::tjs::octet_length(source));
 	}
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒCŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool NativeSplashWindow::getVisible() const {
 		return impl_->getVisible();
@@ -168,7 +168,7 @@ namespace ktl {
 		instance_.reset();
 	}
 	//
-	//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+	//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void SplashWindow::initialize(tTVInteger width, tTVInteger height) {
 		instance_->initialize(
@@ -187,7 +187,7 @@ namespace ktl {
 		instance_->uninitialize();
 	}
 	//
-	//	SUMMARY: “Ç‚İ‚İŒnƒƒ\ƒbƒh
+	//	SUMMARY: èª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool SplashWindow::loadImages(tTJSVariantString const* storage) {
 		return instance_->loadImages(
@@ -198,7 +198,7 @@ namespace ktl {
 		return instance_->loadImagesFromOctet(source);
 	}
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒCŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE bool SplashWindow::getVisible() const {
 		return instance_->getVisible();

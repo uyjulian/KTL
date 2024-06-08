@@ -24,7 +24,7 @@ namespace ktl {
 #define TJS_NATIVE_CLASSID_NAME LayeredSplashWindowClassID
 	SPRIG_KRKR_BEGIN_CREATE_NATIVE_CLASS(CreateNativeClassLayeredSplashWindow, LayeredSplashWindow, LayeredSplashWindow)
 	//
-	//	SUMMARY: ‰Šú‰»Œnƒƒ\ƒbƒh
+	//	SUMMARY: åˆæœŸåŒ–ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(initialize)
 	{
@@ -40,7 +40,7 @@ namespace ktl {
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(initialize);
 	SPRIG_KRKR_NATIVE_METHOD_DECL_PARAM_VOID_RES_VOID(LayeredSplashWindow, uninitialize);
 	//
-	//	SUMMARY: “Ç‚Ýž‚ÝŒnƒƒ\ƒbƒh
+	//	SUMMARY: èª­ã¿è¾¼ã¿ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(loadImages)
 	{
@@ -65,7 +65,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(loadImagesFromOctet);
 	//
-	//	SUMMARY: XVŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ›´æ–°ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_BEGIN_NATIVE_METHOD_DECL(update)
 	{
@@ -102,7 +102,7 @@ namespace ktl {
 	}
 	SPRIG_KRKR_END_NATIVE_METHOD_DECL(updateToCenter);
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒCŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚¤ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT(LayeredSplashWindow, visible, getVisible, setVisible);
 	SPRIG_KRKR_NATIVE_PROP_DECL_VARIANT(LayeredSplashWindow, topMost, getTopMost, setTopMost);

@@ -48,7 +48,7 @@ namespace ktl {
 	}
 	NativeArchive::NativeArchive() {}
 	//
-	//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE NativeArchive::string_instance_type NativeArchive::saveText() const {
 		std::basic_ostringstream<tjs_char> os;
@@ -110,7 +110,7 @@ namespace ktl {
 		}
 	}
 	//
-	//	SUMMARY: PtƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+	//	SUMMARY: Ptã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE NativeArchive::string_instance_type NativeArchive::savePtXML(
 		boost::optional<tjs_char> indent_char,
@@ -205,13 +205,13 @@ namespace ktl {
 		}
 	}
 	//
-	//	SUMMARY: ‘€ìŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ“ä½œç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void NativeArchive::clear() {
 		element_stack_.clear();
 	}
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE NativeArchive::size_type NativeArchive::size() const {
 		return element_stack_.size();
@@ -242,7 +242,7 @@ namespace ktl {
 		instance_.reset();
 	}
 	//
-	//	SUMMARY: “à•”Œnƒƒ\ƒbƒh
+	//	SUMMARY: å†…éƒ¨ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE sprig::krkr::tjs::intptr_type Archive::getStack() {
 		return reinterpret_cast<sprig::krkr::tjs::intptr_type>(
@@ -250,7 +250,7 @@ namespace ktl {
 			);
 	}
 	//
-	//	SUMMARY: ƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+	//	SUMMARY: ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant Archive::saveText() const {
 		return tTJSVariant(instance_->saveText()->c_str());
@@ -272,7 +272,7 @@ namespace ktl {
 		instance_->loadBinary(data);
 	}
 	//
-	//	SUMMARY: PtƒVƒŠƒAƒ‰ƒCƒYŒnƒƒ\ƒbƒh
+	//	SUMMARY: Ptã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTJSVariant Archive::savePtXML(
 		boost::optional<tTVInteger> indent_char,
@@ -331,13 +331,13 @@ namespace ktl {
 		instance_->loadPtINFO(sprig::krkr::tjs::as_c_str(data));
 	}
 	//
-	//	SUMMARY: ‘€ìŒnƒƒ\ƒbƒh
+	//	SUMMARY: æ“ä½œç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE void Archive::clear() {
 		instance_->clear();
 	}
 	//
-	//	SUMMARY: ƒvƒƒpƒeƒBŒnƒƒ\ƒbƒh
+	//	SUMMARY: ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ç³»ãƒ¡ã‚½ãƒƒãƒ‰
 	//
 	KTL_INLINE tTVInteger Archive::size() const {
 		return instance_->size();
